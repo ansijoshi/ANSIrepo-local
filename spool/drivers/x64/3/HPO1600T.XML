@@ -1,0 +1,2981 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE device SYSTEM "hpzscwn7.dtd">
+<device>
+   <software>
+      <file_header>
+         <file_name>hpo1600t.xml</file_name>
+         <file_version>053.2507</file_version>
+         <file_timestamp>06/23/2006</file_timestamp>
+      </file_header>
+      <component>
+         <name>Mombi</name>
+         <helper>
+            <name></name>
+            <events><!--    =========================================    --><!--                DMCInstallTime                   --><!--     called during DMC Install Time (Import)     --><!--    =========================================    -->
+          <event>
+            <name>DMCInstallTime</name>
+            <macro_name>macro_PrintQualityImport</macro_name>
+          </event><!--    =========================================    --><!--                DMCUpgradeTime                   --><!--     called during DMC Upgrade Time (Export)     --><!--    =========================================    -->
+          <event>
+            <name>DMCUpgradeTime</name>
+            <macro_name>macro_PrintQualityExport</macro_name>
+          </event>
+        </events>
+        
+            <!-- put a name if we have multiple helpers-->
+            <features>
+            <!-- ========================================= -->
+            <!--     Emulate LaserJet Margins              -->
+            <!-- ========================================= -->
+                <feature>
+                <name>HP_Emulate_Margins</name>
+                <switch>
+                <name>Paper_Dimensions</name>
+                <case_default>
+                      <data>200_200_200_200</data>
+               </case_default>
+               </switch>
+               </feature>
+            <!--  Features are Paper size, Media Type and Print Quality -->
+             <!-- =========================================== -->
+             <!--                  Paper Size                 -->
+             <!-- =========================================== -->
+             <feature>
+                 <name>PaperSize</name>
+                 <macro_name>macro_PaperSize</macro_name>
+             </feature>
+               <!-- ========================================= -->
+               <!--                 MediaType                 -->
+               <!-- ========================================= -->
+               <feature>
+                  <name>MediaType</name>
+                  <macro_name>macro_MediaType</macro_name>
+               </feature>
+               <!-- ========================================= -->
+               <!--           Print Quality Group             -->
+               <!--   Options are as follows                  -->
+               <!--   (a) PQGroup_1 - Best                    -->
+               <!--   (b) PQGroup_2 - Normal                  -->
+               <!--   (c) PQGroup_3 - FastDraft                    -->
+               <!--   (d) PQGroup_4 - Fast Normal             -->
+               <!--   (e) PQGroup_5 - 4800x1200             -->
+               <!-- ========================================= -->
+               <feature>
+                  <name>PrintQualityGroup</name>
+                  <macro_name>macro_PrintQualityGroup</macro_name>
+               </feature>
+              <feature>
+                <name>CustomSize</name>
+                <macro_name>macro_custom_size</macro_name>            
+              </feature> 
+               <!--                                             -->
+               <!--            ICM Profile FileName macro       -->
+               <!-- ========================================= -->
+              <feature>
+                 <name>ICCProfileFileName</name>
+                 <macro_name>macro_ICCProfileFileName</macro_name>
+             </feature>
+             <feature>
+                 <name>InstalledPenSet_Premium</name>
+                 <macro_name>macro_InstalledPenSet_Premium</macro_name>
+             </feature>
+             <feature>
+                 <name>InstalledPenSet_PremiumHighGloss</name>
+                 <macro_name>macro_InstalledPenSet_PremiumHighGloss</macro_name>
+             </feature>
+             <feature>
+                 <name>InstalledPenSet_PremiumPlusPhoto</name>
+                 <macro_name>macro_InstalledPenSet_PremiumPlusPhoto</macro_name>
+             </feature>       
+            </features>
+            <macros>
+            <macro>
+            <name>macro_pop_up_Missing_Duplexer</name>
+              <title>4319</title>                   
+              <string_id>4320</string_id>    
+              <butt1>4330</butt1>
+              <butt2>4342</butt2>                                                  
+              <showpopup>MODAL_DLG</showpopup>                     
+            </macro>
+            <macro>
+            <name>macro_pop_up_Photo_BlackOnly</name>
+              <title>4326</title>                   
+              <string_id>4327</string_id>    
+              <butt1>4330</butt1>
+              <butt2>4342</butt2>                                                  
+              <showpopup>MODAL_DLG</showpopup>                     
+            </macro>
+            <macro>
+            <name>macro_pop_up_LargeMedia_PhotoTray</name>
+              <title>4321</title>                   
+              <string_id>4323</string_id>    
+              <butt1>4330</butt1>
+              <butt2>4342</butt2>                                                  
+              <showpopup>MODAL_DLG</showpopup>                     
+            </macro>
+            <macro>
+            <name>macro_pop_up_Duplex_PhotoTray</name>
+              <title>4321</title>                   
+              <string_id>4322</string_id>    
+              <butt1>4330</butt1>                                                             
+              <showpopup>MODAL_DLG</showpopup>                     
+            </macro>
+            <macro>
+            <name>macro_pop_up_Black_PhotoCartridge</name>
+              <title>4324</title>                   
+              <string_id>4325</string_id>    
+              <butt1>4330</butt1>
+              <butt2>4342</butt2>                                                  
+              <showpopup>MODAL_DLG</showpopup>                     
+            </macro>
+<!-- ====================    NonHP INK    ========================= -->
+            <macro>
+            <name>macro_pop_up_Color_NonHP_Ink</name>
+              <title>4732</title>                   
+              <string_id>4740</string_id>    
+              <butt1>849</butt1>
+              <showpopup>MODAL_DLG</showpopup>                     
+            </macro>
+            <macro>
+            <name>macro_pop_up_Black_NonHP_Ink</name>
+              <title>4733</title>                   
+              <string_id>4740</string_id>    
+              <butt1>849</butt1>
+              <showpopup>MODAL_DLG</showpopup>                     
+            </macro>
+            <macro>
+            <name>macro_pop_up_Photo_NonHP_Ink</name>
+              <title>4734</title>                   
+              <string_id>4740</string_id>    
+              <butt1>849</butt1>
+              <showpopup>MODAL_DLG</showpopup>                     
+            </macro>
+            <macro>
+            <name>macro_pop_up_Gray_NonHP_Ink</name>
+              <title>4735</title>                   
+              <string_id>4740</string_id>    
+              <butt1>849</butt1>
+              <showpopup>MODAL_DLG</showpopup>                     
+            </macro>
+<!--===========    NonHP Cartridge    ====================== -->
+            <macro>       
+            <name>macro_pop_up_Color_NonHP_Cartridge</name>
+              <title>4736</title>                   
+              <string_id>4740</string_id>    
+              <butt1>849</butt1>
+              <showpopup>MODAL_DLG</showpopup>                     
+            </macro>
+            <macro>
+            <name>macro_pop_up_Black_NonHP_Cartridge</name>
+              <title>4737</title>                   
+              <string_id>4740</string_id>    
+              <butt1>849</butt1>
+              <showpopup>MODAL_DLG</showpopup>                     
+            </macro>
+            <macro>
+            <name>macro_pop_up_Photo_NonHP_Cartridge</name>
+              <title>4738</title>                   
+              <string_id>4740</string_id>    
+              <butt1>849</butt1>
+              <showpopup>MODAL_DLG</showpopup>                     
+            </macro>
+            <macro>
+            <name>macro_pop_up_Gray_NonHP_Cartridge</name>
+              <title>4739</title>                   
+              <string_id>4740</string_id>    
+              <butt1>849</butt1>
+              <showpopup>MODAL_DLG</showpopup>                     
+            </macro>
+<!--===============    Used Cartridge  ========================= -->      
+            <macro>
+            <name>macro_pop_up_Color_Used_Cartridge</name>
+              <title>4741</title>                   
+              <string_id>4745</string_id>    
+              <butt1>849</butt1>
+              <showpopup>MODAL_DLG</showpopup>                     
+            </macro>
+            <macro>
+            <name>macro_pop_up_Black_Used_Cartridge</name>
+              <title>4742</title>                   
+              <string_id>4745</string_id>    
+              <butt1>849</butt1>
+              <showpopup>MODAL_DLG</showpopup>                     
+            </macro>
+            <macro>
+            <name>macro_pop_up_Photo_Used_Cartridge</name>
+              <title>4743</title>                   
+              <string_id>4745</string_id>    
+              <butt1>849</butt1>
+              <showpopup>MODAL_DLG</showpopup>                     
+            </macro>
+            <macro>
+            <name>macro_pop_up_Gray_Used_Cartridge</name>
+              <title>4744</title>                   
+              <string_id>4745</string_id>    
+              <butt1>849</butt1>
+              <showpopup>MODAL_DLG</showpopup>                     
+            </macro>
+<!--=================   End OF Smart JobUI   ============================= -->
+            <macro>
+            <name>macro_pop_up_Borderless_BlkCartridge</name>
+              <title>4328</title>                   
+              <string_id>4329</string_id>    
+              <butt1>849</butt1>                                                                
+              <showpopup>MODAL_DLG</showpopup>                     
+            </macro>
+            <macro>
+            <name>macro_PaperSize</name>
+            <switch>
+              <name>PaperSize</name>
+               
+               <case>
+                  <name>HP_BORDERLESS_8_5_X_11_IN</name>
+                  <select_option>MediaType.HP_PREMIUM_PLUS_PHOTO_PAPER</select_option>
+               </case>
+               <case>
+                  <name>HP_BORDERLESS_PHOTO_A4</name>
+                  <select_option>MediaType.HP_PREMIUM_PLUS_PHOTO_PAPER</select_option>
+               </case>
+               <case>
+                  <name>HP_BORDERLESS_PHOTO_A6</name>
+                  <select_option>MediaType.HP_PREMIUM_PLUS_PHOTO_PAPER</select_option>
+               </case>
+               <case>
+                  <name>HP_BORDERLESS_HAGAKI_CARD</name>
+                  <select_option>MediaType.HP_PREMIUM_PLUS_PHOTO_PAPER</select_option>
+               </case>
+               <case>
+                  <name>HP_BORDERLESS_4X6_IN</name>
+                  <select_option>MediaType.HP_PREMIUM_PLUS_PHOTO_PAPER</select_option>
+               </case>
+               <case>
+                  <name>HP_BORDERLESS_4X6_IN_WT</name>
+                  <select_option>MediaType.HP_PREMIUM_PLUS_PHOTO_PAPER</select_option>
+               </case>
+               
+               <case>
+                  <name>4X6_IN</name>
+                  <select_option>MediaType.HP_PREMIUM_PLUS_PHOTO_PAPER</select_option>
+               </case>
+               <case>
+                  <name>4X6_IN_WT</name>
+                  <select_option>MediaType.HP_PREMIUM_PLUS_PHOTO_PAPER</select_option>
+               </case>
+               <case>
+                  <name>HP_BORDERLESS_PHOTO_10_X_15_CM</name>
+                  <select_option>MediaType.HP_PREMIUM_PLUS_PHOTO_PAPER</select_option>
+               </case>
+               
+               <case>
+                  <name>HP_BORDERLESS_PHOTO_10_X_15_CM_WT</name>
+                  <select_option>MediaType.HP_PREMIUM_PLUS_PHOTO_PAPER</select_option>
+               </case>
+
+			   <case>
+                  <name>5x7_IN</name>
+                  <select_option>MediaType.HP_PREMIUM_PLUS_PHOTO_PAPER</select_option>
+               </case>
+               
+			   <case>
+                  <name>HP_BORDERLESS_PHOTO_A5</name>
+                  <select_option>MediaType.HP_PREMIUM_PLUS_PHOTO_PAPER</select_option>
+               </case>
+                <case>
+                  <name>HP_BORDERLESS_PHOTO_5X7_IN</name>
+                  <select_option>MediaType.HP_PREMIUM_PLUS_PHOTO_PAPER</select_option>
+               </case>
+			   <case>
+                  <name>HP_BORDERLESS_PHOTO_B5</name>
+                  <select_option>MediaType.HP_PREMIUM_PLUS_PHOTO_PAPER</select_option>
+               </case>
+			   
+			   <case>
+                  <name>8X10_IN</name>
+                  <select_option>MediaType.HP_PREMIUM_PLUS_PHOTO_PAPER</select_option>
+               </case>
+               <case>
+                  <name>HP_BORDERLESS_PHOTO_PANORAMA_4x10</name>
+                  <select_option>MediaType.HP_PREMIUM_PLUS_PHOTO_PAPER</select_option>
+               </case>
+			   <case>
+                  <name>HP_BORDERLESS_PHOTO_PANORAMA_4x11</name>
+                  <select_option>MediaType.HP_PREMIUM_PLUS_PHOTO_PAPER</select_option>
+               </case>
+			   <case>
+                  <name>HP_BORDERLESS_PHOTO_PANORAMA_4x12</name>
+                  <select_option>MediaType.HP_PREMIUM_PLUS_PHOTO_PAPER</select_option>
+               </case>
+			   <case>
+                  <name>HP_BORDERLESS_PHOTO_PANORAMA_10x30</name>
+                  <select_option>MediaType.HP_PREMIUM_PLUS_PHOTO_PAPER</select_option>
+               </case>
+			   <case>
+                  <name>HP_BORDERLESS_PHOTO_PANORAMA_A4</name>
+                  <select_option>MediaType.HP_PREMIUM_PLUS_PHOTO_PAPER</select_option>
+               </case>
+			   <case>
+                  <name>13X18_CM</name>
+                  <select_option>MediaType.HP_PREMIUM_PLUS_PHOTO_PAPER</select_option>
+               </case>
+			   <case>
+                  <name>HP_BORDERLESS_PHOTO_13X18_CM</name>
+                  <select_option>MediaType.HP_PREMIUM_PLUS_PHOTO_PAPER</select_option>
+               </case>
+			   <case>
+                  <name>A5</name>
+                  <select_option>MediaType.PLAIN</select_option>
+               </case>
+               <case_default>
+                 <select_option>MediaType.AUTOMATIC</select_option>
+               </case_default>
+            </switch>
+              <call>macro_MediaType</call>
+          </macro>
+          <macro>
+            <name>macro_Mediatype_to_PaperSize</name>
+                 <select_option>PaperSize.LETTER</select_option>
+          </macro>
+          <macro>
+            <name>macro_custom_paper_size</name>
+            <select_option>MediaType.AUTOMATIC</select_option>
+          </macro>
+               <!-- ========================================= -->
+               <!--                 MediaType                 -->
+               <!-- ========================================= -->
+           <macro>
+              <name>macro_MediaType</name>
+              <!-- ========================================= -->
+              <!-- First macro statement                     -->
+              <!-- determines which PQ options are           -->
+              <!-- displayed for each media type, and        -->
+              <!-- select a default PQ option                -->
+              <!-- ========================================= -->
+          <switch>
+            <name>MediaType</name>
+               
+			    <case>
+                <name>AUTOMATIC</name>
+                <enable_option>PrintQualityGroup.PQGroup_1</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_2</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_3</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_4</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_5</enable_option>
+                <select_option>PrintQualityGroup.PQGroup_2</select_option> 
+                </case>
+                <case>
+                <name>PLAIN</name>
+                <enable_option>PrintQualityGroup.PQGroup_1</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_2</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_3</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_4</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_5</enable_option>
+                <select_option>PrintQualityGroup.PQGroup_2</select_option>
+                </case>
+              
+                <case>
+                <name>HP_BRIGHT_WHITE_INKJET_PAPER</name>
+                <enable_option>PrintQualityGroup.PQGroup_1</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_2</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_3</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_4</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_5</enable_option>
+                <select_option>PrintQualityGroup.PQGroup_2</select_option>
+                </case>
+                
+				<case>
+                <name>HP_PREM_INKJET_PAPER</name>
+                <enable_option>PrintQualityGroup.PQGroup_1</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_2</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_3</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_4</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_5</enable_option>
+                <select_option>PrintQualityGroup.PQGroup_2</select_option>
+                </case>
+                
+				<case>
+                <name>OTHER_INKJET_PAPERS</name>
+                <enable_option>PrintQualityGroup.PQGroup_1</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_2</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_3</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_4</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_5</enable_option>
+                <select_option>PrintQualityGroup.PQGroup_2</select_option>
+                </case>
+              
+                <case>
+                <name>HP_PREMIUM_PLUS_PHOTO_PAPER</name>
+                <enable_option>PrintQualityGroup.PQGroup_1</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_2</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_3</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_4</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_5</enable_option>
+                <select_option>PrintQualityGroup.PQGroup_1</select_option>
+                </case>
+              
+              <case>
+                <name>HP_PREMIUM_PHOTO_PAPER</name>
+                <enable_option>PrintQualityGroup.PQGroup_1</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_2</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_3</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_4</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_5</enable_option>
+                <select_option>PrintQualityGroup.PQGroup_1</select_option>
+              </case>
+              
+              <case>
+                <name>HP_PHOTO_PAPER_GLOSSY</name>
+                <enable_option>PrintQualityGroup.PQGroup_1</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_2</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_3</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_4</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_5</enable_option>
+                <select_option>PrintQualityGroup.PQGroup_1</select_option>
+              </case>
+              
+              <case>
+                <name>HP_PHOTO_PAPER_PROJECT</name>
+                <enable_option>PrintQualityGroup.PQGroup_1</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_2</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_3</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_4</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_5</enable_option>
+                <select_option>PrintQualityGroup.PQGroup_1</select_option>
+              </case>
+
+			  <case>
+                <name>HP_EVERYDAY_PHOTO_PAPER_SEMI_GLOSS</name>
+                <enable_option>PrintQualityGroup.PQGroup_1</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_2</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_3</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_4</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_5</enable_option>
+                <select_option>PrintQualityGroup.PQGroup_2</select_option>
+              </case>    
+              <case>
+                <name>HP_EVERYDAY_PHOTO_PAPER_MATTE</name>
+                <enable_option>PrintQualityGroup.PQGroup_1</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_2</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_3</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_4</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_5</enable_option>
+                <select_option>PrintQualityGroup.PQGroup_2</select_option>
+              </case>
+              <case>
+                <name>HP_PREMIUM_HIGH_GLOSS_FILM</name>
+                <enable_option>PrintQualityGroup.PQGroup_1</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_2</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_3</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_4</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_5</enable_option>
+                <select_option>PrintQualityGroup.PQGroup_1</select_option>
+              </case>
+              
+              <case>
+                <name>OTHER_PHOTO_PAPER</name>
+                <enable_option>PrintQualityGroup.PQGroup_1</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_2</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_3</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_4</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_5</enable_option>
+                <select_option>PrintQualityGroup.PQGroup_1</select_option>
+              </case>
+              
+			  <case>
+                <name>HP_PHOTO_PAPER</name>
+                <enable_option>PrintQualityGroup.PQGroup_1</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_2</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_3</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_4</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_5</enable_option>
+                <select_option>PrintQualityGroup.PQGroup_1</select_option>
+              </case>
+              <case>
+                <name>HP_PREM_PLUS_INKJET_TRANSPARENCY</name>
+                <enable_option>PrintQualityGroup.PQGroup_1</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_2</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_3</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_4</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_5</enable_option>
+                <select_option>PrintQualityGroup.PQGroup_2</select_option>
+              </case>
+              <case>
+                <name>OTHER_TRANSPARENCY_FILMS</name>
+                <enable_option>PrintQualityGroup.PQGroup_1</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_2</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_3</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_4</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_5</enable_option>
+                <select_option>PrintQualityGroup.PQGroup_2</select_option>
+              </case>
+              
+              <case>
+                <name>HP_IRON_ON_TRANSFER</name>
+                <enable_option>PrintQualityGroup.PQGroup_1</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_2</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_3</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_4</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_5</enable_option>
+                <select_option>PrintQualityGroup.PQGroup_2</select_option>
+              </case>
+              
+              
+              <case>
+                <name>OTHER_SPECIALTY_PAPERS</name>
+                <enable_option>PrintQualityGroup.PQGroup_1</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_2</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_3</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_4</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_5</enable_option>
+                <select_option>PrintQualityGroup.PQGroup_2</select_option>
+                
+              </case>
+              
+              <case>
+                <name>HP_PHOTO_GREETING_CARDS</name>
+                <enable_option>PrintQualityGroup.PQGroup_1</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_2</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_3</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_4</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_5</enable_option>
+                <select_option>PrintQualityGroup.PQGroup_1</select_option>
+                <select_option>HPBorderLessPhoto.False</select_option>           
+                </case>
+                
+				<case>
+                <name>OTHER_GREETING_CARDS</name>
+                <enable_option>PrintQualityGroup.PQGroup_1</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_2</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_3</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_4</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_5</enable_option>
+                <select_option>PrintQualityGroup.PQGroup_2</select_option>
+                <select_option>HPBorderLessPhoto.False</select_option>
+                </case>
+                
+				<case>
+                <name>HP_BROCHURE_GLOSSY</name>
+                <enable_option>PrintQualityGroup.PQGroup_1</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_2</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_3</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_4</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_5</enable_option>
+                <select_option>PrintQualityGroup.PQGroup_2</select_option>
+                <select_option>HPBorderLessPhoto.False</select_option>
+                </case>     
+              
+                <case>
+                <name>HP_BROCHURE_MATTE</name>
+                <enable_option>PrintQualityGroup.PQGroup_1</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_2</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_3</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_4</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_5</enable_option>
+                <select_option>PrintQualityGroup.PQGroup_2</select_option>
+                <select_option>HPBorderLessPhoto.False</select_option>
+                </case>
+              
+                <case>
+                <name>OTHER_BROCHURE_PAPERS</name>
+                <enable_option>PrintQualityGroup.PQGroup_1</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_2</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_3</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_4</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_5</enable_option>
+                <select_option>PrintQualityGroup.PQGroup_2</select_option>
+                 </case>
+               
+                <case>
+                <name>HP_LABELS_MATTE</name>
+                <enable_option>PrintQualityGroup.PQGroup_1</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_2</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_3</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_4</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_5</enable_option>
+                <select_option>PrintQualityGroup.PQGroup_2</select_option>
+                
+              </case>
+              <case>
+                <name>HP_LABELS_GLOSSY</name>
+                <enable_option>PrintQualityGroup.PQGroup_1</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_2</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_3</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_4</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_5</enable_option>
+                <select_option>PrintQualityGroup.PQGroup_2</select_option>
+                
+              </case>
+              <case>
+                <name>HP_NOTE_CARDS</name>
+                <enable_option>PrintQualityGroup.PQGroup_1</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_2</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_3</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_4</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_5</enable_option>
+                <select_option>PrintQualityGroup.PQGroup_2</select_option>
+                
+              </case>
+             <case_default>
+                <enable_option>PrintQualityGroup.PQGroup_1</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_2</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_3</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_4</enable_option>
+                <enable_option>PrintQualityGroup.PQGroup_5</enable_option>
+                <select_option>PrintQualityGroup.PQGroup_2</select_option>
+             </case_default>
+                  </switch>
+                  <!-- ========================================= -->
+                  <!-- Second macro statement                    -->
+                  <!-- invokes the Print Quality macro           -->
+                  <!-- to make selections to Resolution etc      -->
+                  <!-- ========================================= -->
+                  <call>macro_PrintQualityGroup</call>
+               </macro>
+               <!-- ========================================= -->
+               <!--                 Print Quality             -->
+               <!--                                           -->
+               <!-- Print Quality macro can be invoked either -->
+               <!-- 1. by the Media Type macro, or            -->
+               <!-- 2. when the user explicitly selects a PQ  -->
+               <!--    setting from the Print Quality control -->
+               <!-- ========================================= -->
+               <macro>
+                  <name>macro_PrintQualityGroup</name>
+                  <switch>
+                     <name>PrintQualityGroup</name>
+                     <case>
+                        <name>PQGroup_1</name>
+                        <select_option>Resolution.600dpi</select_option>
+                        <select_option>PrintQuality.Best</select_option>
+                        <resource_id>3996</resource_id>
+                        <resource_id>3996</resource_id>
+                        <resource_id>1008</resource_id>
+                     </case>
+                     <case>
+                        <name>PQGroup_2</name>
+                        <select_option>Resolution.600dpi</select_option>
+                        <select_option>PrintQuality.Normal</select_option>
+                        <resource_id>3996</resource_id>
+                        <resource_id>3996</resource_id>
+                        <resource_id>968</resource_id>
+                     </case>
+                     <case>
+                        <name>PQGroup_3</name>
+                        <select_option>Resolution.300dpi</select_option>
+                        <select_option>PrintQuality.FastDraft</select_option>
+                        <resource_id>3995</resource_id>
+                        <resource_id>3995</resource_id>
+                        <resource_id>968</resource_id>
+                     </case>
+                     <case>
+                        <name>PQGroup_4</name>
+                        <select_option>Resolution.300dpi</select_option>
+                        <select_option>PrintQuality.FastNormal</select_option>
+                        <resource_id>3995</resource_id>
+                        <resource_id>3995</resource_id>
+                        <resource_id>968</resource_id>
+                     </case>
+                     <case>
+                        <name>PQGroup_5</name>
+                        <select_option>Resolution.1200dpi</select_option>
+                        <select_option>PrintQuality.4800x1200</select_option>
+                        <resource_id>3997</resource_id>
+                        <resource_id>3997</resource_id>
+                        <resource_id>3434</resource_id>
+                     </case>
+                  </switch>
+               </macro>
+               <!-- ========================================= -->
+               <!--    Print Quality Import                   -->
+               <!--   Mapping is as follows                   -->
+               <!--   (a) Best         - PQGroup_1            -->
+               <!--   (b) Normal       - PQGroup_2            -->
+               <!--   (c) FastDraft         - PQGroup_3            -->
+               <!--   (d) FastNormal   - PQGroup_4            -->
+               <!--   (e) 4800x1200  - PQGroup_5            -->
+               <!-- Print Quality options have single level   -->
+               <!-- association only                          -->
+               <!-- ========================================= -->
+               <macro>
+                  <name>macro_PrintQualityImport</name>
+                  <switch>
+                     <name>PrintQualityImport</name>
+                     <case>
+                        <name>Best</name>
+                        <map_option>PQGroup_1</map_option>
+                     </case>
+                     <case>
+                        <name>Normal</name>
+                        <map_option>PQGroup_2</map_option>
+                     </case>
+                     <case>
+                        <name>FastDraft</name>
+                        <map_option>PQGroup_3</map_option>
+                     </case>
+                     <case>
+                        <name>FastNormal</name>
+                        <map_option>PQGroup_4</map_option>
+                     </case>
+                     <case>
+                        <name>4800x1200</name>
+                        <map_option>PQGroup_5</map_option>
+                     </case>
+                  </switch>
+                  <call>macro_PrintQualityGroup</call>
+               </macro>
+               <!-- ========================================= -->
+               <!--    Print Quality Export                   -->
+               <!--   Mapping is as follows                   -->
+               <!--   (a) Best         - PQGroup_1            -->
+               <!--   (b) Normal       - PQGroup_2            -->
+               <!--   (c) FastDraft         - PQGroup_3            -->
+               <!--   (d) FastNormal   - PQGroup_4            -->
+               <!--   (e) 4800x1200  - PQGroup_5            -->
+               <!-- Print Quality options have single level   -->
+               <!-- association only                          -->
+               <!-- ========================================= -->
+               <macro>
+                  <name>macro_PrintQualityExport</name>
+                  <switch>
+                     <name>PrintQualityExport</name>
+                     <case>
+                        <name>PQGroup_1</name>
+                        <unmap_option>Best</unmap_option>
+                     </case>
+                     <case>
+                        <name>PQGroup_2</name>
+                        <unmap_option>Normal</unmap_option>
+                     </case>
+                     <case>
+                        <name>PQGroup_3</name>
+                        <unmap_option>FastDraft</unmap_option>
+                     </case>
+                     <case>
+                        <name>PQGroup_4</name>
+                        <unmap_option>FastNormal</unmap_option>
+                     </case>
+                     <case>
+                        <name>PQGroup_5</name>
+                        <unmap_option>4800x1200</unmap_option>
+                     </case>
+                  </switch>
+               </macro>
+              <macro>
+                    <name>macro_pop_up_4800_1200_warning</name>
+                    <title>3356</title>
+                    <string_id>4657</string_id>
+                    <butt1>849</butt1>
+                    <showpopup>MSG_BOX</showpopup>
+                </macro>
+              <macro>
+                <name>macro_pop_up_CustomPaper</name>
+                <title>876</title> 
+                <icon>MB_ICONWARNING</icon>
+                <string_id>4254</string_id>    
+                <message_type>MB_OK</message_type>                                     
+                <showpopup>MSG_BOX</showpopup>                     
+              </macro>
+              <macro>
+                <name>macro_custom_size</name>
+                <option_name>min_width.76200</option_name>
+                <option_name>max_width.330200</option_name>
+                <option_name>min_length.127000</option_name>
+                <option_name>max_length.1270000</option_name>
+              </macro>
+              <macro>
+                <name>macro_InstalledPenSet_Premium</name>
+                <switch>
+                    <name>HPInstalledPrintCartridges</name>
+                    <case>
+                        <name>BLACK</name>
+                        <select_option>HPICCProfileName.PremiumPaperTricolorblack</select_option>
+                    </case>
+                    <case>
+                        <name>PHOTO</name>
+                        <select_option>HPICCProfileName.PremiumPaperTricolorphoto</select_option>
+                    </case>
+                    <case>
+                        <name>PHOTOGRAY</name>
+                        <select_option>HPICCProfileName.PremiumPaperTricolorgray</select_option>
+                    </case>
+                    <case_default>
+                      <select_option>HPICCProfileName.sRGB</select_option>
+                   </case_default>
+                </switch>         
+              </macro>
+              <macro>
+                <name>macro_InstalledPenSet_PremiumHighGloss</name>
+                <switch>
+                    <name>HPInstalledPrintCartridges</name>
+                    <case>
+                        <name>BLACK</name>
+                        <select_option>HPICCProfileName.PremiumHighGlossTricolorblack</select_option>
+                    </case>
+                    <case>
+                        <name>PHOTO</name>
+                        <select_option>HPICCProfileName.PremiumHighGlossTricolorphoto</select_option>
+                    </case>
+                    <case>
+                        <name>PHOTOGRAY</name>
+                        <select_option>HPICCProfileName.PremiumHighGlossTricolorgray</select_option>
+                    </case>
+                    <case_default>
+                      <select_option>HPICCProfileName.sRGB</select_option>
+                   </case_default>
+                </switch>         
+              </macro>
+              <macro>
+                <name>macro_InstalledPenSet_PremiumPlusPhoto</name>
+                <switch>
+                    <name>HPInstalledPrintCartridges</name>
+                    <case>
+                        <name>BLACK</name>
+                        <select_option>HPICCProfileName.PremiumPlusPhotoTricolorblack</select_option>
+                    </case>
+                    <case>
+                        <name>PHOTO</name>
+                        <select_option>HPICCProfileName.PremiumPlusPhotoTricolorphoto</select_option>
+                    </case>
+                    <case>
+                        <name>PHOTOGRAY</name>
+                        <select_option>HPICCProfileName.PremiumPlusPhotoTricolorgray</select_option>
+                    </case>
+                    <case_default>
+                      <select_option>HPICCProfileName.sRGB</select_option>
+                   </case_default>
+                </switch>         
+              </macro>
+              <macro>
+                <name>macro_ICCProfileFileName</name>
+                <switch>
+                    <name>MediaType</name>
+                    <case>
+                        <name>HP_PREM_INKJET_PAPER</name>
+                        <call>macro_InstalledPenSet_Premium</call> 
+                    </case>
+                    <case>
+                        <name>HP_PREMIUM_HIGH_GLOSS_FILM</name>
+                        <call>macro_InstalledPenSet_PremiumHighGloss</call> 
+                    </case>
+                    <case>
+                        <name>HP_PREMIUM_PLUS_PHOTO_PAPER</name>
+                        <call>macro_InstalledPenSet_PremiumPlusPhoto</call> 
+                    </case>
+                    <case_default>
+                      <select_option>HPICCProfileName.sRGB</select_option>
+                   </case_default>
+                </switch>
+              </macro>
+              <macro>
+                <name>macro_pop_up_MinimizeMargin</name>
+                <title>876</title> 
+                <icon>MB_ICONWARNING</icon>
+                <string_id>4213</string_id>    
+                <message_type>MB_OKCANCEL</message_type>                                     
+                <showpopup>MSG_BOX</showpopup>                     
+              </macro>
+              
+            </macros>
+            <presets>
+                <presetenglish>
+                    <name>Default Print Settings</name> 
+                    <resource_id>3041</resource_id> 
+                    <setting>MediaType.PLAIN</setting>
+                    <setting>PrintQualityGroup.PQGroup_2</setting> 
+                </presetenglish>
+                
+                <presetenglish>
+                    <name>borderless photo, 4x6 in</name> 
+                    <resource_id>3395</resource_id> 
+                    <setting>MediaType.HP_PREMIUM_PLUS_PHOTO_PAPER</setting>
+                    <setting>PrintQualityGroup.PQGroup_1</setting> 
+                     <setting>PaperSize.HP_BORDERLESS_PHOTO_4X6_IN</setting>
+                     <setting>HPBorderLessPhoto.TRUE</setting>                
+                </presetenglish>
+                
+                 <presetenglish>
+                    <name>borderless photo,8.5x11 in</name> 
+                    <resource_id>4798</resource_id> 
+                    <setting>MediaType.HP_PREMIUM_PLUS_PHOTO_PAPER</setting>
+                    <setting>PrintQualityGroup.PQGroup_1</setting> 
+                    <setting>PaperSize.HP_BORDERLESS_8_5_X_11_IN</setting>                
+                    <setting>HPBorderLessPhoto.TRUE</setting>              
+                </presetenglish>   
+                
+				<presetenglish>
+                  <name>Draft text or text with color printing</name> 
+                  <resource_id>3357</resource_id> 
+                  <setting>PaperSize.LETTER</setting>
+                  <setting>MediaType.PLAIN</setting> 
+                  <setting>PrintQualityGroup.PQGroup_3</setting> 
+                </presetenglish>
+
+				<presetenglish>
+                    <name>Economical 4x6 in photo, HP Everyday Photo Paper </name> 
+                    <resource_id>4830</resource_id> 
+                    <setting>MediaType.HP_EVERYDAY_PHOTO_PAPER_SEMI_GLOSS</setting>
+                    <setting>PrintQualityGroup.PQGroup_2</setting> 
+                    <setting>PaperSize.HP_BORDERLESS_4_x_6_IN</setting>
+                    <setting>HPBorderLessPhoto.TRUE</setting>
+                </presetenglish>
+				
+				<presetenglish>
+                    <name>Manual two-sided printing</name> 
+                    <resource_id>-1</resource_id> 
+                    <setting>MediaType.AUTOMATIC</setting>
+                    <setting>PrintQualityGroup.PQGroup_2</setting>
+                    <setting>PaperSize.LETTER</setting>
+                    <setting>Duplex.True</setting> 
+                    <setting>HPPrintOnBothSidesManually.True</setting>              
+                 </presetenglish>
+				
+				<presetenglish>
+                    <name>Professional photo-quality printing</name> 
+                    <resource_id>3354</resource_id> 
+                    <setting>MediaType.HP_PREMIUM_PLUS_PHOTO_PAPER</setting>
+                    <setting>PrintQualityGroup.PQGroup_1</setting> 
+                    <setting>PaperSize.LETTER</setting>
+                 </presetenglish>
+				
+				<presetenglish>
+                  <name>Professional text or text with color printing</name> 
+                  <resource_id>3371</resource_id> 
+                  <setting>PaperSize.LETTER</setting>
+                  <setting>MediaType.HP_BRIGHT_WHITE_INKJET_PAPER</setting> 
+                  <setting>PrintQualityGroup.PQGroup_2</setting> 
+                </presetenglish>
+				
+				<presetjapanese>
+                    <name> Default Print Settings</name>
+                    <resource_id>3041</resource_id>
+                    <setting>PaperSize.A4</setting>
+                    <setting>MediaType.PLAIN</setting>
+                    <setting>PrintQualityGroup.PQGroup_2</setting>
+                </presetjapanese>
+                
+                <presetjapanese>
+                    <name>borderless photo, 4x6 in</name> 
+                    <resource_id>3395</resource_id> 
+                    <setting>MediaType.HP_PREMIUM_PLUS_PHOTO_PAPER</setting>
+                    <setting>PrintQualityGroup.PQGroup_1</setting> 
+                     <setting>PaperSize.HP_BORDERLESS_4_x_6_IN</setting>
+                     <setting>HPBorderLessPhoto.TRUE</setting>                
+                </presetjapanese>
+                
+                 <presetjapanese>
+                    <name>borderless photo,8.5x11 in</name> 
+                    <resource_id>4798</resource_id> 
+                    <setting>MediaType.HP_PREMIUM_PLUS_PHOTO_PAPER</setting>
+                    <setting>PrintQualityGroup.PQGroup_1</setting> 
+                    <setting>PaperSize.HP_BORDERLESS_8_5_X_11_IN</setting>                
+                    <setting>HPBorderLessPhoto.TRUE</setting>              
+                </presetjapanese>   
+                
+				<presetjapanese>
+                  <name>Draft text or text with color printing</name> 
+                  <resource_id>3357</resource_id> 
+                  <setting>PaperSize.LETTER</setting>
+                  <setting>MediaType.PLAIN</setting> 
+                  <setting>PrintQualityGroup.PQGroup_3</setting> 
+                </presetjapanese>
+
+			    <presetjapanese>
+                    <name>Economical 4x6 in photo, HP Everyday Photo Paper </name> 
+                    <resource_id>4830</resource_id> 
+                    <setting>MediaType.HP_EVERYDAY_PHOTO_PAPER_SEMI_GLOSS</setting>
+                    <setting>PrintQualityGroup.PQGroup_2</setting> 
+                    <setting>PaperSize.HP_BORDERLESS_4_x_6_IN</setting>
+                    <setting>HPBorderLessPhoto.TRUE</setting>
+                </presetjapanese>
+			
+				<presetjapanese>
+                    <name>Manual two-sided printing</name> 
+                    <resource_id>-1</resource_id> 
+                    <setting>MediaType.AUTOMATIC</setting>
+                    <setting>PrintQualityGroup.PQGroup_2</setting>
+                    <setting>PaperSize.LETTER</setting>
+                    <setting>HPPrintOnBothSidesManually.True</setting>              
+                 </presetjapanese>
+				
+				<presetjapanese>
+                    <name>Professional photo-quality printing</name> 
+                    <resource_id>3354</resource_id> 
+                    <setting>MediaType.HP_PREMIUM_PLUS_PHOTO_PAPER</setting>
+                    <setting>PrintQualityGroup.PQGroup_1</setting> 
+                    <setting>PaperSize.LETTER</setting>
+                 </presetjapanese>
+				
+				<presetjapanese>
+                  <name>Professional text or text with color printing</name> 
+                  <resource_id>3371</resource_id> 
+                  <setting>PaperSize.LETTER</setting>
+                  <setting>MediaType.HP_BRIGHT_WHITE_INKJET_PAPER</setting> 
+                  <setting>PrintQualityGroup.PQGroup_2</setting> 
+                </presetjapanese>
+			
+			</presets>
+            
+			<!-- Start - Locale Specific Device Setting defaults =============== -->
+            <DeviceSettings>
+                <japanesesetting>
+                    <setting>DuplexUnit.Installed</setting>
+                </japanesesetting>
+                <englishsetting>    
+                    <setting>DuplexUnit.NotInstalled</setting>
+                </englishsetting>   
+            </DeviceSettings>
+            <!-- End =============== -->
+            <groups>
+          <group>
+            <groupname>PaperType</groupname>
+            <resource_id>3152</resource_id>
+			 <name>AUTOMATIC</name>           
+            <subgroup>
+              <subgroupname>Plain Papers</subgroupname>
+              <resource_id>3126</resource_id>
+              <name>PLAIN</name>
+              </subgroup>
+            
+            <subgroup>
+              <subgroupname>Inkjet Papers</subgroupname>
+              <resource_id>3120</resource_id>
+              <name>HP_BRIGHT_WHITE_INKJET_PAPER</name>
+              <name>HP_PREM_INKJET_PAPER</name>
+			  <name>HP_PLAIN_HAGAKI</name>
+              <name>OTHER_INKJET_PAPERS</name>			       
+             </subgroup>
+            
+            <subgroup>
+              <subgroupname>Photo Papers</subgroupname>
+              <resource_id>3121</resource_id>
+              <name>HP_PREMIUM_PLUS_PHOTO_PAPER</name>
+              <name>HP_PREMIUM_PHOTO_PAPER</name>
+			  <name>HP_PHOTO_PAPER_GLOSSY</name>
+              <name>HP_EVERYDAY_PHOTO_PAPER_SEMI_GLOSS</name>
+              <name>HP_EVERYDAY_PHOTO_PAPER_MATTE</name>
+              <name>HP_PREMIUM_HIGH_GLOSS_FILM</name>
+			  <name>HP_PHOTO_PAPER</name>
+              <name>OTHER_PHOTO_PAPER</name>         
+              <name>HP_PHOTO_HAGAKI</name>                     
+             </subgroup>
+            
+            <subgroup>
+              <subgroupname>Transparency Films</subgroupname>
+              <resource_id>3122</resource_id>
+              <name>HP_PREM_PLUS_INKJET_TRANSPARENCY</name>
+              <name>OTHER_TRANSPARENCY_FILMS</name>
+            </subgroup>
+            
+            <subgroup>
+              <subgroupname>Specialty Paper</subgroupname>
+              <resource_id>3123</resource_id>
+			  <name>HP_PHOTO_PAPER_PROJECT</name>
+              <name>HP_IRON_ON_TRANSFER</name>              
+              <name>OTHER_SPECIALTY_PAPERS</name>
+			  <name>HP_LABELS_GLOSSY</name>
+			  <name>HP_LABELS_MATTE</name>
+			  <name>HP_NOTE_CARDS</name>
+            </subgroup>
+			 
+            <subgroup>
+              <subgroupname>Brochure Papers</subgroupname>
+              <resource_id>3125</resource_id>
+              <name>HP_BROCHURE_GLOSSY</name>
+              <name>HP_BROCHURE_MATTE</name>
+              <name>OTHER_BROCHURE_PAPERS</name>            
+            </subgroup>
+            
+            <subgroup>
+              <subgroupname>Greeting Cards</subgroupname>
+              <resource_id>3124</resource_id>                 
+              <name>HP_PHOTO_GREETING_CARDS</name>
+              <name>HP_INKJET_HAGAKI</name>         
+              <name>OTHER_GREETING_CARDS</name>              
+           </subgroup>
+           
+           </group>
+        </groups>
+
+  <DocUISettings>
+    <DocSetting>
+      <name>General Everyday Printing</name>
+      <resource_id>4404</resource_id>
+      <bitmap_id>277</bitmap_id>
+            
+      <DocFeature>
+          <name>PrintQuality</name>
+          <resource_id>4257</resource_id>
+          <help_id>15489</help_id>
+          <select_option>Normal</select_option>
+           <DocOption>
+            <name>FastNormal</name>
+            <bitmap_id>294</bitmap_id>
+          </DocOption> 
+          
+          <DocOption>
+            <name>Normal</name>
+            <bitmap_id>292</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+            <name>FastDraft</name>
+            <bitmap_id>295</bitmap_id>
+          </DocOption>
+                   
+          <DocOption>
+            <name>Best</name>
+            <bitmap_id>290</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+            <name>4800x1200</name>
+            <bitmap_id>287</bitmap_id>
+          </DocOption>
+               
+      </DocFeature>
+
+      <DocFeature>
+          <name>MediaType</name>
+          <resource_id>4258</resource_id>
+          <help_id>15483</help_id>
+          <select_option>PLAIN</select_option>
+          
+          <DocOption>
+             <name>PLAIN</name>
+             <bitmap_id>299</bitmap_id>
+          </DocOption>
+          
+          
+      </DocFeature>
+
+      <DocFeature>
+          <name>PaperSize</name>
+          <resource_id>4259</resource_id>
+          <help_id>15481</help_id>
+          
+          <!-- Locale Specific paper size defaults =============== -->
+          <!-- US - 1, Portugal - 351, Japan - 81  -->          
+          <switch>
+              <name>LocaleID</name>
+              <case>
+                  <name>1</name>
+                  <select_option>LETTER</select_option>
+              </case>
+              <case>
+                  <name>351</name>
+                  <select_option>LETTER</select_option>
+              </case>
+              <case_default>
+                  <select_option>A4</select_option>
+              </case_default>
+          </switch>
+
+          <DocOption>
+            <name>LETTER</name>
+            <bitmap_id>306</bitmap_id>
+          </DocOption>
+          <DocOption>
+            <name>LEGAL</name>
+            <bitmap_id>306</bitmap_id>
+          </DocOption>
+          <DocOption>
+            <name>A4</name>
+            <bitmap_id>306</bitmap_id>
+          </DocOption>
+          <DocOption>
+            <name>ENV_10</name>
+            <bitmap_id>306</bitmap_id>
+          </DocOption>
+
+      </DocFeature>
+
+      <DocFeature>
+          <name>Orientation</name>
+          <resource_id>4261</resource_id>
+          <help_id>15479</help_id>
+          <select_option>PORTRAIT</select_option>
+
+          <DocOption>
+             <name>PORTRAIT</name>
+             <bitmap_id>310</bitmap_id>
+          </DocOption>
+          <DocOption>
+             <name>LANDSCAPE_CC270</name>
+             <bitmap_id>312</bitmap_id>
+          </DocOption>
+      </DocFeature>
+      
+        <DocFeature>
+          <name>Duplex</name>
+          <resource_id>4262</resource_id>
+          <help_id>15487</help_id>
+          <select_option>None</select_option>
+
+          <DocOption>
+             <name>None</name>
+             <resource_id>763</resource_id>
+             <bitmap_id>349</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+             <name>Manually</name>
+             <resource_id>4267</resource_id>
+             <bitmap_id>353</bitmap_id>
+          </DocOption>  
+           <DocOption>
+             <name>LeftEdgeBinding</name>
+             <resource_id>4268</resource_id>
+             <bitmap_id>355</bitmap_id>
+          </DocOption>
+          <DocOption>
+             <name>RightEdgeBinding</name>
+             <resource_id>4269</resource_id>
+             <bitmap_id>357</bitmap_id>
+          </DocOption>        
+      
+      </DocFeature>
+      
+    </DocSetting>
+
+      
+      
+    
+<DocSetting>
+      <name>Photo printing-borderless</name>
+      <resource_id>4274</resource_id>            
+      <bitmap_id>279</bitmap_id>
+
+      <DocFeature>
+          <name>PrintQuality</name>
+          <resource_id>4257</resource_id>
+          <help_id>15489</help_id>
+          <select_option>Best</select_option>
+                    
+          <DocOption>
+            <name>Best</name>
+            <bitmap_id>290</bitmap_id>
+          </DocOption>
+          <DocOption>
+            <name>FastDraft</name>
+            <bitmap_id>295</bitmap_id>
+          </DocOption>
+          <DocOption>
+            <name>FastNormal</name>
+            <bitmap_id>294</bitmap_id>
+          </DocOption>
+          <DocOption>
+            <name>Normal</name>
+            <bitmap_id>292</bitmap_id>
+          </DocOption>
+          <DocOption>
+            <name>4800x1200</name>
+            <bitmap_id>287</bitmap_id>
+          </DocOption>         
+      </DocFeature>
+
+      <DocFeature>
+          <name>MediaType</name>
+          <resource_id>4258</resource_id>
+          <help_id>15483</help_id>
+          <select_option>HP_PREMIUM_PLUS_PHOTO_PAPER</select_option>
+
+                   
+          <DocOption>
+             <name>HP_PREMIUM_PLUS_PHOTO_PAPER</name>
+             <bitmap_id>301</bitmap_id>
+          </DocOption>
+          <DocOption>
+             <name>HP_PREMIUM_PHOTO_PAPER</name>
+             <bitmap_id>301</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+             <name>HP_EVERYDAY_PHOTO_PAPER_SEMI_GLOSS</name>
+             <bitmap_id>301</bitmap_id>
+          </DocOption>
+
+          <DocOption>
+             <name>HP_EVERYDAY_PHOTO_PAPER_MATTE</name>
+             <bitmap_id>301</bitmap_id>
+          </DocOption>          
+          
+          <DocOption>
+             <name>HP_PREMIUM_HIGH_GLOSS_FILM</name>
+             <bitmap_id>301</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+             <name>OTHER_PHOTO_PAPER</name>
+             <bitmap_id>301</bitmap_id>
+          </DocOption>
+          
+      </DocFeature>
+
+      <DocFeature>
+          <name>PaperSize</name>
+          <resource_id>4259</resource_id>
+          <help_id>15481</help_id>
+          <select_option>HP_BORDERLESS_PHOTO_4X6</select_option>
+
+          <DocOption>
+            <name>HP_BORDERLESS_PHOTO_4X6</name>
+            <bitmap_id>306</bitmap_id>
+          </DocOption>
+          <DocOption>
+            <name>HP_BORDERLESS_PHOTO_4X6_WT</name>
+            <bitmap_id>306</bitmap_id>
+          </DocOption>
+          <DocOption>
+            <name>HP_BORDERLESS_PHOTO_5_X_7_IN</name>
+            <bitmap_id>306</bitmap_id>
+          </DocOption>          
+          
+          <DocOption>
+            <name>HP_BORDERLESS_PHOTO_8X10_IN</name>
+            <bitmap_id>306</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+            <name>HP_BORDERLESS_PHOTO_A4</name>
+            <bitmap_id>306</bitmap_id>
+          </DocOption>
+      </DocFeature>      
+
+      <DocFeature>
+          <name>Orientation</name>
+          <resource_id>4261</resource_id>
+          <help_id>15479</help_id>
+          <select_option>LANDSCAPE_CC270</select_option>
+
+          <DocOption>
+             <name>PORTRAIT</name>
+             <bitmap_id>310</bitmap_id>
+          </DocOption>
+          <DocOption>
+             <name>LANDSCAPE_CC270</name>
+             <bitmap_id>312</bitmap_id>
+          </DocOption>
+      </DocFeature>
+      
+       <DocFeature>
+          <name>HPPrintInGrayScale</name>
+          <resource_id>4714</resource_id>
+          <help_id>15486</help_id>
+          <select_option>False</select_option>
+
+          <DocOption>
+             <name>False</name>
+             <bitmap_id>359</bitmap_id>
+          </DocOption>
+          <DocOption>
+             <name>HighQuality</name>
+             <bitmap_id>361</bitmap_id>
+          </DocOption>                
+          <DocOption>
+             <name>BlackOnly</name>
+             <bitmap_id>363</bitmap_id>
+          </DocOption>          
+      </DocFeature>     
+      
+      <DocFeature>
+          <name>DigitalPhotography</name>
+          <resource_id>4165</resource_id>
+          <help_id>15478</help_id>
+          <select_option>Enabled</select_option>
+
+          <DocOption>
+             <name>Enabled</name>
+             <bitmap_id>327</bitmap_id>
+          </DocOption>
+      </DocFeature>
+                              
+    </DocSetting>
+        
+    <DocSetting>
+      <name>Photo Printing-with white borders</name>
+      <resource_id>4275</resource_id>            
+      <bitmap_id>281</bitmap_id>
+
+      <DocFeature>
+          <name>PrintQuality</name>
+          <resource_id>4257</resource_id>
+          <help_id>15489</help_id>
+          <select_option>Best</select_option>
+                    
+          <DocOption>
+            <name>Best</name>
+            <bitmap_id>290</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+            <name>FastDraft</name>
+            <bitmap_id>295</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+            <name>FastNormal</name>
+            <bitmap_id>294</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+            <name>Normal</name>
+            <bitmap_id>292</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+            <name>4800x1200</name>
+            <bitmap_id>287</bitmap_id>
+          </DocOption>         
+      </DocFeature>
+
+      <DocFeature>
+          <name>MediaType</name>
+          <resource_id>4258</resource_id>
+          <help_id>15483</help_id>
+          <select_option>HP_PREMIUM_PLUS_PHOTO_PAPER</select_option>
+
+           <DocOption>
+             <name>HP_PREMIUM_PLUS_PHOTO_PAPER</name>
+             <bitmap_id>301</bitmap_id>
+          </DocOption>
+          <DocOption>
+             <name>HP_PREMIUM_PHOTO_PAPER</name>
+             <bitmap_id>301</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+             <name>HP_EVERYDAY_PHOTO_PAPER_SEMI_GLOSS</name>
+             <bitmap_id>301</bitmap_id>
+          </DocOption>
+
+          <DocOption>
+             <name>HP_EVERYDAY_PHOTO_PAPER_MATTE</name>
+             <bitmap_id>301</bitmap_id>
+          </DocOption>          
+          
+          <DocOption>
+             <name>HP_PREMIUM_HIGH_GLOSS_FILM</name>
+             <bitmap_id>301</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+             <name>OTHER_PHOTO_PAPER</name>
+             <bitmap_id>301</bitmap_id>
+          </DocOption>
+                   
+          
+      </DocFeature>
+
+      <DocFeature>
+          <name>PaperSize</name>
+          <resource_id>4259</resource_id>
+          <help_id>15481</help_id>
+          <select_option>4X6_IN</select_option>
+
+          <DocOption>
+            <name>4X6_IN</name>
+            <bitmap_id>306</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+            <name>LETTER</name>
+            <bitmap_id>306</bitmap_id>
+          </DocOption>
+                    
+          
+          <DocOption>
+            <name>4X6_IN_WT</name>
+            <bitmap_id>306</bitmap_id>
+          </DocOption>
+          
+      </DocFeature>      
+
+      <DocFeature>
+          <name>Orientation</name>
+          <resource_id>4261</resource_id>
+          <help_id>15479</help_id>
+          <select_option>LANDSCAPE_CC270</select_option>
+
+          <DocOption>
+             <name>PORTRAIT</name>
+             <bitmap_id>310</bitmap_id>
+          </DocOption>
+          <DocOption>
+             <name>LANDSCAPE_CC270</name>
+             <bitmap_id>312</bitmap_id>
+          </DocOption>
+      </DocFeature>
+      
+      <DocFeature>
+          <name>HPPrintInGrayScale</name>
+          <resource_id>4714</resource_id>
+          <help_id>15486</help_id>
+          <select_option>False</select_option>
+
+          <DocOption>
+             <name>False</name>
+             <bitmap_id>359</bitmap_id>
+          </DocOption>
+          <DocOption>
+             <name>HighQuality</name>
+             <bitmap_id>361</bitmap_id>
+          </DocOption>                
+          <DocOption>
+             <name>BlackOnly</name>
+             <bitmap_id>363</bitmap_id>
+          </DocOption>          
+      </DocFeature>  
+      
+      <DocFeature>
+          <name>DigitalPhotography</name>
+          <resource_id>4165</resource_id>
+          <help_id>15478</help_id>
+          <select_option>Enabled</select_option>
+
+          <DocOption>
+             <name>Enabled</name>
+             <bitmap_id>327</bitmap_id>
+          </DocOption>
+      </DocFeature>
+                              
+    </DocSetting>
+
+    <DocSetting>
+      <name>Two-sided (Duplex) Printing</name>
+      <resource_id>4276</resource_id>
+      <bitmap_id>283</bitmap_id>
+            
+      <DocFeature>
+          <name>PrintQuality</name>
+          <resource_id>4257</resource_id>
+          <help_id>15489</help_id>
+          <select_option>Normal</select_option>
+          
+          <DocOption>
+            <name>Normal</name>
+            <bitmap_id>292</bitmap_id>
+          </DocOption>
+          <DocOption>
+            <name>FastDraft</name>
+            <bitmap_id>295</bitmap_id>
+          </DocOption>
+          <DocOption>
+            <name>FastNormal</name>
+            <bitmap_id>294</bitmap_id>
+          </DocOption>
+      </DocFeature>
+
+      <DocFeature>
+          <name>MediaType</name>
+          <resource_id>4258</resource_id>
+          <help_id>15483</help_id>
+          <select_option>PLAIN</select_option>
+
+          
+          <DocOption>
+             <name>PLAIN</name>
+             <bitmap_id>299</bitmap_id>
+          </DocOption>
+          <DocOption>
+             <name>HP_BRIGHT_WHITE_INKJET_PAPER</name>
+             <bitmap_id>299</bitmap_id>
+          </DocOption>
+          <DocOption>
+             <name>HP_PREM_INKJET_PAPER</name>            
+             <bitmap_id>299</bitmap_id>
+          </DocOption>
+          
+          
+          <DocOption>
+             <name>OTHER_INKJET_PAPERS</name>
+             <bitmap_id>299</bitmap_id>
+          </DocOption>
+          <DocOption>
+             <name>HP_BROCHURE_GLOSSY</name>
+             <bitmap_id>299</bitmap_id>
+          </DocOption>
+          <DocOption>
+             <name>HP_BROCHURE_MATTE</name>
+             <bitmap_id>299</bitmap_id>
+          </DocOption>
+          <DocOption>
+             <name>HP_PLAIN_HAGAKI</name>
+             <bitmap_id>299</bitmap_id>
+          </DocOption>
+          <DocOption>
+             <name>HP_INKJET_HAGAKI</name>
+             <bitmap_id>299</bitmap_id>
+          </DocOption>
+          <DocOption>
+             <name>HP_PHOTO_HAGAKI</name>
+             <bitmap_id>299</bitmap_id>
+          </DocOption>
+          
+      </DocFeature>
+
+      <DocFeature>
+          <name>PaperSize</name>
+          <resource_id>4259</resource_id>
+          <help_id>15481</help_id>
+          
+          <!-- Locale Specific paper size defaults =============== -->
+          <!-- US - 1, Portugal - 351, Japan - 81  -->          
+          <switch>
+              <name>LocaleID</name>
+              <case>
+                  <name>1</name>
+                  <select_option>LETTER</select_option>
+              </case>
+              <case>
+                  <name>351</name>
+                  <select_option>LETTER</select_option>
+              </case>
+              <case_default>
+                  <select_option>A4</select_option>
+              </case_default>
+          </switch>
+
+          <DocOption>
+            <name>LETTER</name>
+            <bitmap_id>306</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+            <name>EXECUTIVE</name>
+            <bitmap_id>306</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+            <name>A4</name>
+            <bitmap_id>306</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+            <name>A5</name>
+            <bitmap_id>306</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+            <name>B5</name>
+            <bitmap_id>306</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+            <name>A6_CARD</name>
+            <bitmap_id>306</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+            <name>INDEX_CARD_3X5</name>
+            <bitmap_id>306</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+            <name>INDEX_CARD_4X6</name>
+            <bitmap_id>306</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+            <name>INDEX_CARD_5X8</name>
+            <bitmap_id>306</bitmap_id>
+          </DocOption>
+           
+           <DocOption>
+            <name>HP_HAGAKI_CARD</name>
+            <bitmap_id>306</bitmap_id>
+          </DocOption>          
+      </DocFeature>      
+      
+       <DocFeature>
+          <name>Duplex</name>
+          <resource_id>4262</resource_id>
+          <help_id>15487</help_id>
+          <select_option>Manually</select_option>
+
+          <DocOption>
+             <name>None</name>
+             <resource_id>763</resource_id>
+             <bitmap_id>349</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+             <name>Manually</name>
+             <resource_id>4267</resource_id>
+             <bitmap_id>353</bitmap_id>
+          </DocOption>  
+           
+           <DocOption>
+             <name>LeftEdgeBinding</name>
+             <resource_id>4268</resource_id>
+             <bitmap_id>355</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+             <name>RightEdgeBinding</name>
+             <resource_id>4269</resource_id>
+             <bitmap_id>357</bitmap_id>
+          </DocOption>
+       
+       </DocFeature>
+      
+      <DocFeature>
+          <name>PagesPerSheet</name>
+          <resource_id>815</resource_id>
+          <help_id>15480</help_id>
+          <select_option>1</select_option>
+
+          <DocOption>
+             <name>1</name>
+             <resource_id>3300</resource_id>
+             <bitmap_id>329</bitmap_id>
+          </DocOption>
+          <DocOption>
+             <name>2</name>
+             <resource_id>3301</resource_id>
+             <bitmap_id>331</bitmap_id>
+          </DocOption>                
+          <DocOption>
+             <name>4</name>
+             <resource_id>3302</resource_id>
+             <bitmap_id>333</bitmap_id>
+          </DocOption>
+          <DocOption>
+             <name>6</name>
+             <resource_id>3303</resource_id>
+             <bitmap_id>335</bitmap_id>
+          </DocOption>
+          <DocOption>
+             <name>9</name>
+             <resource_id>3304</resource_id>
+             <bitmap_id>339</bitmap_id>
+          </DocOption>
+          <DocOption>
+             <name>16</name>
+             <resource_id>3305</resource_id>
+             <bitmap_id>341</bitmap_id>
+          </DocOption>
+      </DocFeature>  
+    
+    
+    </DocSetting>
+
+    <DocSetting>
+      <name>Presentation Printing</name>
+      <resource_id>4277</resource_id>
+      <bitmap_id>284</bitmap_id>
+            
+      <DocFeature>
+          <name>PrintQuality</name>
+          <resource_id>4257</resource_id>
+          <help_id>15489</help_id>
+          <select_option>Best</select_option>          
+
+          <DocOption>
+            <name>Best</name>
+            <bitmap_id>290</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+            <name>Normal</name>
+            <bitmap_id>292</bitmap_id>
+          </DocOption>
+          
+      </DocFeature>
+
+      <DocFeature>
+          <name>MediaType</name>
+          <resource_id>4258</resource_id>
+          <help_id>15483</help_id>
+          <select_option>PLAIN</select_option>
+
+          
+          <DocOption>
+             <name>PLAIN</name>
+             <bitmap_id>299</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+             <name>HP_BRIGHT_WHITE_INKJET_PAPER</name>
+             <bitmap_id>299</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+             <name>HP_PREM_INKJET_PAPER</name>
+             <bitmap_id>299</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+             <name>OTHER_INKJET_PAPERS</name>
+             <bitmap_id>299</bitmap_id>
+          </DocOption>
+          
+          
+          <DocOption>
+             <name>HP_PREM_PLUS_INKJET_TRANSPARENCY</name>
+             <bitmap_id>303</bitmap_id>
+          </DocOption>
+          <DocOption>
+             <name>OTHER_TRANSPARENCY_FILMS</name>
+             <bitmap_id>303</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+             <name>HP_BROCHURE_GLOSSY</name>
+             <bitmap_id>299</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+             <name>HP_BROCHURE_MATTE</name>
+             <bitmap_id>299</bitmap_id>
+          </DocOption>
+          
+          
+          <DocOption>
+             <name>OTHER_BROCHURE_PAPERS</name>
+             <bitmap_id>299</bitmap_id>
+          </DocOption>
+      
+      </DocFeature>
+
+      <DocFeature>
+          <name>PaperSize</name>
+          <resource_id>4259</resource_id>
+          <help_id>15481</help_id>
+          
+          <!-- Locale Specific paper size defaults =============== -->
+          <!-- US - 1, Portugal - 351, Japan - 81  -->          
+          <switch>
+              <name>LocaleID</name>
+              <case>
+                  <name>1</name>
+                  <select_option>LETTER</select_option>
+              </case>
+              <case>
+                  <name>351</name>
+                  <select_option>LETTER</select_option>
+              </case>
+              <case_default>
+                  <select_option>A4</select_option>
+              </case_default>
+          </switch>
+
+          <DocOption>
+            <name>LETTER</name>
+            <bitmap_id>306</bitmap_id>
+          </DocOption>
+          <DocOption>
+            <name>LEGAL</name>
+            <bitmap_id>306</bitmap_id>
+          </DocOption>
+          <DocOption>
+            <name>EXECUTIVE</name>
+            <bitmap_id>306</bitmap_id>
+          </DocOption>
+          <DocOption>
+            <name>A4</name>
+            <bitmap_id>306</bitmap_id>
+          </DocOption>
+          <DocOption>
+            <name>A5</name>
+            <bitmap_id>306</bitmap_id>
+          </DocOption>
+          <DocOption>
+            <name>B5</name>
+            <bitmap_id>306</bitmap_id>
+          </DocOption>
+               
+      </DocFeature>      
+
+      <DocFeature>
+          <name>Orientation</name>
+          <resource_id>4261</resource_id>
+          <help_id>15479</help_id>
+          <select_option>PORTRAIT</select_option>
+
+          <DocOption>
+             <name>PORTRAIT</name>
+             <bitmap_id>310</bitmap_id>
+          </DocOption>
+          <DocOption>
+             <name>LANDSCAPE_CC270</name>
+             <bitmap_id>312</bitmap_id>
+          </DocOption>
+      </DocFeature>
+
+      <DocFeature>
+          <name>Duplex</name>
+          <resource_id>4262</resource_id>
+          <help_id>15487</help_id>
+          <select_option>None</select_option>
+
+          <DocOption>
+             <name>None</name>
+             <resource_id>763</resource_id>
+             <bitmap_id>349</bitmap_id>
+          </DocOption>
+          
+          
+          
+          <DocOption>
+             <name>Manually</name>
+             <resource_id>4267</resource_id>
+             <bitmap_id>353</bitmap_id>
+          </DocOption>          
+          
+          <DocOption>
+             <name>LeftEdgeBinding</name>
+             <resource_id>4268</resource_id>
+             <bitmap_id>355</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+             <name>RightEdgeBinding</name>
+             <resource_id>4269</resource_id>
+             <bitmap_id>357</bitmap_id>
+          </DocOption>
+      
+      
+      </DocFeature>
+
+      
+            
+      <DocFeature>
+          <name>HPPrintInGrayScale</name>
+          <resource_id>4714</resource_id>
+          <help_id>15486</help_id>
+          <select_option>False</select_option>
+
+          <DocOption>
+             <name>False</name>
+             <bitmap_id>359</bitmap_id>
+          </DocOption>
+          <DocOption>
+             <name>HighQuality</name>
+             <bitmap_id>361</bitmap_id>
+          </DocOption>                
+          <DocOption>
+             <name>BlackOnly</name>
+             <bitmap_id>363</bitmap_id>
+          </DocOption>
+                    
+      </DocFeature>
+      
+      <DocFeature>
+          <name>Copies</name>
+          <resource_id>4271</resource_id>
+          <help_id>15477</help_id>
+          <select_option>1</select_option>
+
+          <DocOption>
+             <name>1</name>
+             <bitmap_id>368</bitmap_id>
+          </DocOption>
+      </DocFeature>
+            
+    </DocSetting>
+
+    <DocSetting>
+      <name>Fast/Economical Printing</name>
+      <resource_id>4278</resource_id>            
+      <bitmap_id>286</bitmap_id>
+
+      <DocFeature>
+          <name>PrintQuality</name>
+          <resource_id>4257</resource_id>
+          <help_id>15489</help_id>
+          <select_option>FastDraft</select_option>
+
+          <DocOption>
+            <name>FastDraft</name>
+            <bitmap_id>295</bitmap_id>
+          </DocOption>
+          <DocOption>
+            <name>FastNormal</name>
+            <bitmap_id>294</bitmap_id>
+          </DocOption>
+      </DocFeature>
+
+      <DocFeature>
+          <name>MediaType</name>
+          <resource_id>4258</resource_id>
+          <help_id>15483</help_id>
+          <select_option>PLAIN</select_option>
+          <DocOption>
+             <name>PLAIN</name>
+             <bitmap_id>299</bitmap_id>
+          </DocOption>
+          
+        </DocFeature>
+
+      <DocFeature>
+          <name>PaperSize</name>
+          <resource_id>4259</resource_id>
+          <help_id>15481</help_id>
+          
+          <!-- Locale Specific paper size defaults =============== -->
+          <!-- US - 1, Portugal - 351, Japan - 81  -->          
+          <switch>
+              <name>LocaleID</name>
+              <case>
+                  <name>1</name>
+                  <select_option>LETTER</select_option>
+              </case>
+              <case>
+                  <name>351</name>
+                  <select_option>LETTER</select_option>
+              </case>
+              <case_default>
+                  <select_option>A4</select_option>
+              </case_default>
+          </switch>
+
+          <DocOption>
+            <name>LETTER</name>
+            <bitmap_id>306</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+            <name>LEGAL</name>
+            <bitmap_id>306</bitmap_id>
+          </DocOption>          
+          
+          <DocOption>
+            <name>EXECUTIVE</name>
+            <bitmap_id>306</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+            <name>A4</name>
+            <bitmap_id>306</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+            <name>A5</name>
+            <bitmap_id>306</bitmap_id>
+          </DocOption>           
+          
+          <DocOption>
+            <name>B5</name>
+            <bitmap_id>306</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+            <name>INDEX_CARD_3X5</name>
+            <bitmap_id>306</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+            <name>INDEX_CARD_4X6</name>
+            <bitmap_id>306</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+            <name>INDEX_CARD_5X8</name>
+            <bitmap_id>306</bitmap_id>
+          </DocOption>
+           
+           <DocOption>
+            <name>HP_HAGAKI_CARD</name>
+            <bitmap_id>306</bitmap_id>
+          </DocOption> 
+          
+      </DocFeature>      
+
+	  <DocFeature>
+          <name>Orientation</name>
+          <resource_id>4261</resource_id>
+          <help_id>15479</help_id>
+          <select_option>PORTRAIT</select_option>
+
+          <DocOption>
+             <name>PORTRAIT</name>
+             <bitmap_id>310</bitmap_id>
+          </DocOption>
+          <DocOption>
+             <name>LANDSCAPE_CC270</name>
+             <bitmap_id>312</bitmap_id>
+          </DocOption>
+      </DocFeature>   
+       
+       <DocFeature>
+          <name>Duplex</name>
+          <resource_id>4262</resource_id>
+          <help_id>15487</help_id>
+          <select_option>None</select_option>
+
+          <DocOption>
+             <name>None</name>
+             <resource_id>763</resource_id>
+             <bitmap_id>349</bitmap_id>
+          </DocOption>
+       
+          
+          <DocOption>
+             <name>Manually</name>
+             <resource_id>4267</resource_id>
+             <bitmap_id>353</bitmap_id>
+          </DocOption>          
+          
+          <DocOption>
+             <name>LeftEdgeBinding</name>
+             <resource_id>4268</resource_id>
+             <bitmap_id>355</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+             <name>RightEdgeBinding</name>
+             <resource_id>4269</resource_id>
+             <bitmap_id>357</bitmap_id>
+          </DocOption>
+      
+      </DocFeature>
+      
+
+      <DocFeature>
+          <name>PagesPerSheet</name>
+          <resource_id>815</resource_id>
+          <help_id>15480</help_id>
+          <select_option>1</select_option>
+
+          <DocOption>
+             <name>1</name>
+             <resource_id>3300</resource_id>
+             <bitmap_id>329</bitmap_id>
+          </DocOption>
+          <DocOption>
+             <name>2</name>
+             <resource_id>3301</resource_id>
+             <bitmap_id>331</bitmap_id>
+          </DocOption>                
+          <DocOption>
+             <name>4</name>
+             <resource_id>3302</resource_id>
+             <bitmap_id>333</bitmap_id>
+          </DocOption>
+          <DocOption>
+             <name>6</name>
+             <resource_id>3303</resource_id>
+             <bitmap_id>335</bitmap_id>
+          </DocOption>
+          <DocOption>
+             <name>9</name>
+             <resource_id>3304</resource_id>
+             <bitmap_id>339</bitmap_id>
+          </DocOption>
+          <DocOption>
+             <name>16</name>
+             <resource_id>3305</resource_id>
+             <bitmap_id>341</bitmap_id>
+          </DocOption>
+      </DocFeature>
+
+      <DocFeature>
+          <name>HPPrintInGrayScale</name>
+          <resource_id>4714</resource_id>
+          <help_id>15486</help_id>
+          <select_option>False</select_option>
+
+          <DocOption>
+             <name>False</name>
+             <bitmap_id>359</bitmap_id>
+          </DocOption>
+          <DocOption>
+             <name>HighQuality</name>
+             <bitmap_id>361</bitmap_id>
+          </DocOption>                
+          <DocOption>
+             <name>BlackOnly</name>
+             <bitmap_id>363</bitmap_id>
+          </DocOption>
+                    
+      </DocFeature>
+           
+      <DocFeature>
+          <name>Copies</name>
+          <resource_id>4271</resource_id>
+          <help_id>15477</help_id>
+          <select_option>1</select_option>
+
+          <DocOption>
+             <name>1</name>
+             <bitmap_id>368</bitmap_id>
+          </DocOption>
+      </DocFeature>
+
+    </DocSetting>
+
+    <DocSetting>
+      <name>Booklet Printing</name>
+      <resource_id>4405</resource_id>            
+      <bitmap_id>820</bitmap_id>
+
+      <DocFeature>
+          
+          <name>PrintQuality</name>
+          <resource_id>4257</resource_id>
+          <help_id>15489</help_id>
+          <select_option>Normal</select_option>
+                   
+          <DocOption>
+            <name>Normal</name>
+            <bitmap_id>292</bitmap_id>
+          </DocOption>
+      
+          <DocOption>
+            <name>Best</name>
+            <bitmap_id>290</bitmap_id>
+          </DocOption>
+      
+          <DocOption>
+            <name>FastDraft</name>
+            <bitmap_id>295</bitmap_id>
+          </DocOption>
+      
+          <DocOption>
+            <name>FastNormal</name>
+            <bitmap_id>294</bitmap_id>
+          </DocOption>
+      
+          <DocOption>
+            <name>4800x1200</name>
+            <bitmap_id>287</bitmap_id>
+          </DocOption>              
+      
+      
+      </DocFeature>
+
+      <DocFeature>
+       
+          <name>MediaType</name>
+          <resource_id>4258</resource_id>
+          <help_id>15483</help_id>
+          <select_option>PLAIN</select_option>
+          
+          <DocOption>
+             <name>PLAIN</name>
+             <bitmap_id>299</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+             <name>HP_BRIGHT_WHITE_INKJET_PAPER</name>
+             <bitmap_id>299</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+             <name>HP_PREM_INKJET_PAPER</name>
+             <bitmap_id>299</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+             <name>OTHER_INKJET_PAPERS</name>
+             <bitmap_id>299</bitmap_id>
+          </DocOption>
+       
+       </DocFeature>
+
+      <DocFeature>
+          <name>PaperSize</name>
+          <resource_id>4259</resource_id>
+          <help_id>15481</help_id>
+          
+          <!-- Locale Specific paper size defaults =============== -->
+          <!-- US - 1, Portugal - 351, Japan - 81  -->          
+          <switch>
+              <name>LocaleID</name>
+              <case>
+                  <name>1</name>
+                  <select_option>LETTER</select_option>
+              </case>
+              <case>
+                  <name>351</name>
+                  <select_option>LETTER</select_option>
+              </case>
+              <case_default>
+                  <select_option>A4</select_option>
+              </case_default>
+          </switch>
+
+          <DocOption>
+            <name>LETTER</name>
+            <bitmap_id>306</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+            <name>LEGAL</name>
+            <bitmap_id>306</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+            <name>EXECUTIVE</name>
+            <bitmap_id>306</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+            <name>A4</name>
+            <bitmap_id>306</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+            <name>A5</name>
+            <bitmap_id>306</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+            <name>B5</name>
+            <bitmap_id>306</bitmap_id>
+          </DocOption>
+      
+      </DocFeature>     
+
+      <DocFeature>
+          <name>Orientation</name>
+          <resource_id>4261</resource_id>
+          <help_id>15479</help_id>
+          <select_option>PORTRAIT</select_option>
+
+          <DocOption>
+             <name>PORTRAIT</name>
+             <bitmap_id>310</bitmap_id>
+          </DocOption>
+          <DocOption>
+             <name>LANDSCAPE_CC270</name>
+             <bitmap_id>312</bitmap_id>
+          </DocOption>
+      </DocFeature>      
+      
+       <DocFeature>
+          <name>Duplex</name>
+          <resource_id>4262</resource_id>
+          <help_id>15487</help_id>
+          <select_option>Manually</select_option>
+
+          <DocOption>
+             <name>None</name>
+             <resource_id>763</resource_id>
+             <bitmap_id>349</bitmap_id>
+          </DocOption>
+          
+          
+          
+          <DocOption>
+             <name>Manually</name>
+             <resource_id>4267</resource_id>
+             <bitmap_id>353</bitmap_id>
+          </DocOption>  
+           
+           <DocOption>
+             <name>LeftEdgeBinding</name>
+             <resource_id>4268</resource_id>
+             <bitmap_id>355</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+             <name>RightEdgeBinding</name>
+             <resource_id>4269</resource_id>
+             <bitmap_id>357</bitmap_id>
+          </DocOption>
+       
+       </DocFeature>
+      
+
+    </DocSetting>
+
+    <DocSetting>
+      <name>Poster Printing</name>
+      <resource_id>3151</resource_id>            
+      <bitmap_id>821</bitmap_id>
+
+       <DocFeature>
+          
+          <name>PrintQuality</name>
+          <resource_id>4257</resource_id>
+          <help_id>15489</help_id>
+          <select_option>Normal</select_option>
+                   
+          <DocOption>
+            <name>Normal</name>
+            <bitmap_id>292</bitmap_id>
+          </DocOption>
+      
+          <DocOption>
+            <name>Best</name>
+            <bitmap_id>290</bitmap_id>
+          </DocOption>
+      
+          <DocOption>
+            <name>FastDraft</name>
+            <bitmap_id>295</bitmap_id>
+          </DocOption>
+      
+          <DocOption>
+            <name>FastNormal</name>
+            <bitmap_id>294</bitmap_id>
+          </DocOption>
+      
+          <DocOption>
+            <name>4800x1200</name>
+            <bitmap_id>287</bitmap_id>
+          </DocOption>         
+                              
+      </DocFeature>
+
+         <DocFeature>
+          <name>MediaType</name>
+          <resource_id>4258</resource_id>
+          <help_id>15483</help_id>
+          <select_option>HP_PREMIUM_PLUS_PHOTO_PAPER</select_option>
+
+           <DocOption>
+             <name>HP_PREMIUM_PLUS_PHOTO_PAPER</name>
+             <bitmap_id>301</bitmap_id>
+          </DocOption>
+          <DocOption>
+             <name>HP_PREMIUM_PHOTO_PAPER</name>
+             <bitmap_id>301</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+             <name>HP_EVERYDAY_PHOTO_PAPER_SEMI_GLOSS</name>
+             <bitmap_id>301</bitmap_id>
+          </DocOption>
+
+          <DocOption>
+             <name>HP_EVERYDAY_PHOTO_PAPER_MATTE</name>
+             <bitmap_id>301</bitmap_id>
+          </DocOption>          
+          
+          <DocOption>
+             <name>HP_PREMIUM_HIGH_GLOSS_FILM</name>
+             <bitmap_id>301</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+             <name>OTHER_PHOTO_PAPER</name>
+             <bitmap_id>301</bitmap_id>
+          </DocOption>
+                   
+          
+      </DocFeature>
+          
+
+      <DocFeature>
+          <name>PaperSize</name>
+          <resource_id>4259</resource_id>
+          <help_id>15481</help_id>
+          
+          <!-- Locale Specific paper size defaults =============== -->
+          <!-- US - 1, Portugal - 351, Japan - 81  -->          
+          <switch>
+              <name>LocaleID</name>
+              <case>
+                  <name>1</name>
+                  <select_option>LETTER</select_option>
+              </case>
+              <case>
+                  <name>351</name>
+                  <select_option>LETTER</select_option>
+              </case>
+              <case_default>
+                  <select_option>A4</select_option>
+              </case_default>
+          </switch>
+
+          <DocOption>
+            <name>LETTER</name>
+            <bitmap_id>306</bitmap_id>
+          </DocOption>          
+          
+      </DocFeature>    
+
+      <DocFeature>
+          <name>Orientation</name>
+          <resource_id>4261</resource_id>
+          <help_id>15479</help_id>
+          <select_option>PORTRAIT</select_option>
+
+          <DocOption>
+             <name>PORTRAIT</name>
+             <bitmap_id>310</bitmap_id>
+          </DocOption>
+          <DocOption>
+             <name>LANDSCAPE_CC270</name>
+             <bitmap_id>312</bitmap_id>
+          </DocOption>
+      </DocFeature>
+
+      <DocFeature>
+          <name>PosterPrinting</name>
+          <resource_id>3090</resource_id>
+          <help_id>15283</help_id>
+          <select_option>POSTER_2</select_option>
+
+          <DocOption>
+             <name>False</name>
+             <resource_id>763</resource_id>
+             <bitmap_id>822</bitmap_id>
+          </DocOption>
+          <DocOption>
+             <name>POSTER_2</name>
+             <resource_id>3093</resource_id>
+             <bitmap_id>823</bitmap_id>
+          </DocOption>
+          <DocOption>
+             <name>POSTER_3</name>
+             <resource_id>3094</resource_id>
+             <bitmap_id>824</bitmap_id>
+          </DocOption>
+          <DocOption>
+             <name>POSTER_4</name>
+             <resource_id>3095</resource_id>
+             <bitmap_id>825</bitmap_id>
+          </DocOption>
+          <DocOption>
+             <name>POSTER_5</name>
+             <resource_id>3345</resource_id>
+             <bitmap_id>826</bitmap_id>
+          </DocOption> 
+      </DocFeature>
+     </DocSetting>
+     
+     <DocSetting>
+      <name>Postcard Printing</name>
+      <resource_id>4280</resource_id>            
+      <bitmap_id>819</bitmap_id>
+
+      <DocFeature>
+          <name>PrintQuality</name>
+          <resource_id>4257</resource_id>
+          <help_id>15489</help_id>
+          <select_option>Normal</select_option>
+          
+          <DocOption>
+            <name>FastNormal</name>
+            <bitmap_id>294</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+            <name>Normal</name>
+            <bitmap_id>292</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+            <name>Best</name>
+            <bitmap_id>290</bitmap_id>
+          </DocOption>          
+    
+          <DocOption>
+            <name>Maximum Dpi</name>
+            <bitmap_id>287</bitmap_id>
+          </DocOption>          
+
+      </DocFeature>
+
+      <DocFeature>
+          <name>MediaType</name>
+          <resource_id>4258</resource_id>
+          <help_id>15483</help_id>
+          <select_option>PLAIN</select_option>
+
+           <DocOption>
+             <name>PLAIN</name>
+             <bitmap_id>299</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+             <name>OTHER_INKJET_PAPERS</name>
+             <bitmap_id>301</bitmap_id>
+          </DocOption>
+
+          <DocOption>
+             <name>HP_PREMIUM_PLUS_PHOTO_PAPER</name>
+             <bitmap_id>301</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+             <name>HP_PREMIUM_PHOTO_PAPER</name>
+             <bitmap_id>301</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+             <name>HP_EVERYDAY_PHOTO_PAPER_SEMI_GLOSS</name>
+             <bitmap_id>301</bitmap_id>
+          </DocOption>
+
+     </DocFeature>
+
+      <DocFeature>
+          <name>PaperSize</name>
+          <resource_id>4259</resource_id>
+          <help_id>15481</help_id>
+          
+          <!-- Locale Specific paper size defaults =============== -->
+          <!-- US - 1, Portugal - 351, Japan - 81  -->          
+          <switch>
+              <name>LocaleID</name>
+              <case>
+                  <name>1</name>
+                  <select_option>INDEX_CARD_3X5</select_option>
+              </case>
+              <case>
+                  <name>351</name>
+                  <select_option>LETTER</select_option>
+              </case>
+              <case_default>
+                  <select_option>INDEX_CARD_3X5</select_option>
+              </case_default>
+          </switch>
+
+         <DocOption>
+            <name>4X6_IN</name>
+            <bitmap_id>306</bitmap_id>
+          </DocOption>
+
+          
+           <DocOption>
+            <name>4X6_IN_WT</name>
+            <bitmap_id>306</bitmap_id>
+           </DocOption>
+         
+           <DocOption>
+            <name>INDEX_CARD_3X5</name>
+            <bitmap_id>306</bitmap_id>
+           </DocOption>          
+    
+          <DocOption>
+            <name>INDEX_CARD_4X6</name>
+            <bitmap_id>306</bitmap_id>
+          </DocOption>             
+         
+          
+          
+          
+        </DocFeature>     
+
+      <DocFeature>
+          <name>Orientation</name>
+          <resource_id>4261</resource_id>
+          <help_id>15479</help_id>
+          <select_option>LANDSCAPE_CC270</select_option>
+
+          <DocOption>
+             <name>PORTRAIT</name>
+             <bitmap_id>310</bitmap_id>
+          </DocOption>
+          <DocOption>
+             <name>LANDSCAPE_CC270</name>
+             <bitmap_id>312</bitmap_id>
+          </DocOption>
+        </DocFeature>      
+
+     
+       <DocFeature>
+          <name>Duplex</name>
+          <resource_id>4262</resource_id>
+          <help_id>15487</help_id>
+          <select_option>Manually</select_option>
+
+          <DocOption>
+             <name>None</name>
+             <resource_id>763</resource_id>
+             <bitmap_id>349</bitmap_id>
+          </DocOption>
+          
+          
+          
+          <DocOption>
+             <name>Manually</name>
+             <resource_id>4267</resource_id>
+             <bitmap_id>353</bitmap_id>
+          </DocOption>  
+           
+           <DocOption>
+             <name>LeftEdgeBinding</name>
+             <resource_id>4268</resource_id>
+             <bitmap_id>355</bitmap_id>
+          </DocOption>
+          
+          <DocOption>
+             <name>RightEdgeBinding</name>
+             <resource_id>4269</resource_id>
+             <bitmap_id>357</bitmap_id>
+          </DocOption>
+       
+       </DocFeature>
+         
+        <DocFeature>
+          <name>DigitalPhotography</name>
+          <resource_id>4165</resource_id>
+          <help_id>15478</help_id>
+          <select_option>Enabled</select_option>
+
+          <DocOption>
+             <name>Enabled</name>
+             <bitmap_id>327</bitmap_id>
+          </DocOption>
+      </DocFeature>
+         
+    </DocSetting>
+      </DocUISettings>
+      
+      <BorderlessSettings>
+         <Borderless>
+               <Borderless_Paper>HP_BORDERLESS_PHOTO_10_X_15_CM</Borderless_Paper>
+               <Paper>HP_10X15</Paper>
+               <Overspray_Left>0.098</Overspray_Left>
+               <Overspray_Right>0.118</Overspray_Right>
+			   <Overspray_Top>0.051</Overspray_Top>
+			   <Overspray_Bottom>0.093</Overspray_Bottom>
+
+         </Borderless>
+         
+		 <Borderless>
+               <Borderless_Paper>HP_BORDERLESS_PHOTO_10_X_15_CM_WT</Borderless_Paper>
+               <Paper>HP_10X15_WT</Paper>
+               <Overspray_Left>0.098</Overspray_Left>
+               <Overspray_Right>0.118</Overspray_Right>
+			   <Overspray_Top>0.051</Overspray_Top>
+			   <Overspray_Bottom>0.093</Overspray_Bottom>
+
+         </Borderless>
+
+		 <Borderless>
+               <Borderless_Paper>HP_BORDERLESS_8.5_X_11_IN</Borderless_Paper>
+               <Paper>LETTER</Paper>
+               <Overspray_Left>0.098</Overspray_Left>
+               <Overspray_Right>0.118</Overspray_Right>
+			   <Overspray_Top>0.051</Overspray_Top>
+               <Overspray_Bottom>0.093</Overspray_Bottom>
+         </Borderless>
+         <Borderless>
+               <Borderless_Paper>HP_BORDERLESS_PHOTO_A4</Borderless_Paper>
+               <Paper>A4</Paper>
+               <Overspray_Left>0.098</Overspray_Left>
+               <Overspray_Right>0.118</Overspray_Right>
+			   <Overspray_Top>0.051</Overspray_Top>
+			   <Overspray_Bottom>0.093</Overspray_Bottom>
+         </Borderless>
+         
+         <Borderless>
+               <Borderless_Paper>HP_BORDERLESS_PHOTO_A6</Borderless_Paper>
+               <Paper>A6</Paper>
+               <Overspray_Left>0.098</Overspray_Left>
+               <Overspray_Right>0.118</Overspray_Right>
+			   <Overspray_Top>0.051</Overspray_Top>
+               <Overspray_Bottom>0.093</Overspray_Bottom>
+		 </Borderless>
+        
+         <Borderless>
+               <Borderless_Paper>HP_BORDERLESS_PHOTO_A5</Borderless_Paper>
+               <Paper>A5</Paper>
+               <Overspray_Left>0.098</Overspray_Left>
+               <Overspray_Right>0.118</Overspray_Right>
+			   <Overspray_Top>0.051</Overspray_Top>
+               <Overspray_Bottom>0.093</Overspray_Bottom>
+		 </Borderless>
+        
+         
+         <Borderless>
+               <Borderless_Paper>HP_BORDERLESS_PHOTO_B5</Borderless_Paper>
+               <Paper>B5</Paper>
+               <Overspray_Left>0.098</Overspray_Left>
+               <Overspray_Right>0.118</Overspray_Right>
+			   <Overspray_Top>0.051</Overspray_Top>
+               <Overspray_Bottom>0.093</Overspray_Bottom>
+         </Borderless>
+         
+         <Borderless>
+               <Borderless_Paper>HP_BORDERLESS_HAGAKI_CARD</Borderless_Paper>
+               <Paper>LETTER</Paper>
+               <Overspray_Left>0.098</Overspray_Left>
+               <Overspray_Right>0.118</Overspray_Right>
+			   <Overspray_Top>0.051</Overspray_Top>
+			   <Overspray_Bottom>0.093</Overspray_Bottom>
+         </Borderless>
+         
+         
+		 <Borderless>
+               <Borderless_Paper>HP_BORDERLESS_4X6_IN</Borderless_Paper>
+               <Paper>4X6_IN</Paper>
+               <Overspray_Left>0.098</Overspray_Left>
+               <Overspray_Right>0.118</Overspray_Right>
+			   <Overspray_Top>0.051</Overspray_Top>
+               <Overspray_Bottom>0.093</Overspray_Bottom>
+         </Borderless>
+         
+         <Borderless>
+               <Borderless_Paper>HP_BORDERLESS_4X6_IN_WT</Borderless_Paper>
+               <Paper>4X6_IN_WT</Paper>
+               <Overspray_Left>0.098</Overspray_Left>
+               <Overspray_Right>0.118</Overspray_Right>
+			   <Overspray_Top>0.051</Overspray_Top>
+			   <Overspray_Bottom>0.093</Overspray_Bottom>
+         </Borderless>
+         
+		 <Borderless>
+               <Borderless_Paper>HP_BORDERLESS_PHOTO_5X7_IN</Borderless_Paper>
+               <Paper>5x7_IN</Paper>
+               <Overspray_Left>0.098</Overspray_Left>
+               <Overspray_Right>0.118</Overspray_Right>
+			   <Overspray_Top>0.051</Overspray_Top>
+			   <Overspray_Bottom>0.093</Overspray_Bottom>
+         </Borderless>
+         
+         <Borderless>
+               <Borderless_Paper>HP_BORDERLESS_PHOTO_8X10_IN</Borderless_Paper>
+               <Paper>LETTER</Paper>
+               <Overspray_Left>0.098</Overspray_Left>
+               <Overspray_Right>0.118</Overspray_Right>
+			   <Overspray_Top>0.051</Overspray_Top>
+			   <Overspray_Bottom>0.093</Overspray_Bottom>
+         </Borderless>
+         
+         
+         <Borderless>
+               <Borderless_Paper>HP_BORDERLESS_PHOTO_PANORAMA_4x10</Borderless_Paper>
+               <Paper>PHOTO_L_WT</Paper>
+               <Overspray_Left>0.098</Overspray_Left>
+               <Overspray_Right>0.118</Overspray_Right>
+			   <Overspray_Top>0.051</Overspray_Top>
+               <Overspray_Bottom>0.093</Overspray_Bottom>
+         </Borderless>
+         
+		 <Borderless>
+               <Borderless_Paper>HP_BORDERLESS_PHOTO_PANORAMA_4x10</Borderless_Paper>
+               <Paper>HP_PANORAMA_4x10</Paper>
+               <Overspray_Left>0.098</Overspray_Left>
+               <Overspray_Right>0.118</Overspray_Right>
+			   <Overspray_Top>0.051</Overspray_Top>
+               <Overspray_Bottom>0.093</Overspray_Bottom>
+         </Borderless>
+         
+		 <Borderless>
+               <Borderless_Paper>HP_BORDERLESS_PHOTO_PANORAMA_10x30</Borderless_Paper>
+               <Paper>HP_PANORAMA_10X30</Paper>
+               <Overspray_Left>0.098</Overspray_Left>
+               <Overspray_Right>0.118</Overspray_Right>
+			   <Overspray_Top>0.051</Overspray_Top>
+               <Overspray_Bottom>0.093</Overspray_Bottom>
+         </Borderless>
+         
+		 <Borderless>
+               <Borderless_Paper>HP_BORDERLESS_PHOTO_PANORAMA_4x11</Borderless_Paper>
+               <Paper>HP_PANORAMA_4x11</Paper>
+               <Overspray_Left>0.098</Overspray_Left>
+               <Overspray_Right>0.118</Overspray_Right>
+			   <Overspray_Top>0.051</Overspray_Top>
+               <Overspray_Bottom>0.093</Overspray_Bottom>
+         </Borderless>
+         
+		 <Borderless>
+               <Borderless_Paper>HP_BORDERLESS_PHOTO_PANORAMA_4x12</Borderless_Paper>
+               <Paper>_PANORAMA_4x12</Paper>
+               <Overspray_Left>0.098</Overspray_Left>
+               <Overspray_Right>0.118</Overspray_Right>
+			   <Overspray_Top>0.051</Overspray_Top>
+               <Overspray_Bottom>0.093</Overspray_Bottom>
+         </Borderless>
+         
+		  <Borderless>
+               <Borderless_Paper>HP_BORDERLESS_PHOTO_PANORAMA_A4</Borderless_Paper>
+               <Paper>HP_PANORAMA_A4</Paper>
+               <Overspray_Left>0.098</Overspray_Left>
+               <Overspray_Right>0.118</Overspray_Right>
+			   <Overspray_Top>0.051</Overspray_Top>
+               <Overspray_Bottom>0.093</Overspray_Bottom>
+         </Borderless>
+		 
+		 <Borderless>
+               <Borderless_Paper>CUSTOMSIZE</Borderless_Paper>
+               <Overspray_Left>0.098</Overspray_Left>
+               <Overspray_Right>0.118</Overspray_Right>
+			   <Overspray_Top>0.051</Overspray_Top>
+               <Overspray_Bottom>0.093</Overspray_Bottom>
+		 </Borderless>
+      
+      </BorderlessSettings>
+     
+     <JobUIEventInfo>
+            <JobUIEvent>
+                    <Name>JOBID_AUTODUPLEX_UNIT</Name>
+                    <EntryPoint>E_STARTDOC</EntryPoint>
+                    <FunctionPtr>pfnCheckAutoDuplexerUnit</FunctionPtr>
+            </JobUIEvent>
+            <JobUIEvent>
+                    <Name>JOBID_ BLACKPRINT_PHOTOCARTRIDGE</Name>
+                    <EntryPoint>E_NEXTBAND</EntryPoint>
+                    <FunctionPtr>pfnCheckBlackPrintWithOnlyPhotoCartridge</FunctionPtr>
+            </JobUIEvent>
+            <JobUIEvent>
+                    <Name>JOBID_ PHOTOMEDIA_BLACKCARTRIDGE</Name>
+                    <EntryPoint>E_STARTDOC</EntryPoint>
+                    <FunctionPtr>pfnCheckPhotoMediaWithOnlyBlackCartridge</FunctionPtr>
+            </JobUIEvent>
+            <JobUIEvent>
+                    <Name>JOBID_ BORDERLESS_BLACKCARTRIDGE</Name>
+                    <EntryPoint>E_STARTDOC</EntryPoint>
+                    <FunctionPtr>pfnCheckBorderlessWithOnlyBlackCartridge</FunctionPtr>
+            </JobUIEvent>
+            <JobUIEvent>
+                    <Name>JOBID_COLOR_NONHP_INK</Name>
+                    <EntryPoint>E_STARTDOC</EntryPoint>
+                    <FunctionPtr>pfnCheckColorNonHpInk</FunctionPtr>
+            </JobUIEvent>
+            <JobUIEvent>
+                    <Name>JOBID_BLACK_NONHP_INK</Name>
+                    <EntryPoint>E_STARTDOC</EntryPoint>
+                    <FunctionPtr>pfnCheckBlackNonHpInk</FunctionPtr>
+            </JobUIEvent>
+            <JobUIEvent>
+                    <Name>JOBID_PHOTO_NONHP_INK</Name>
+                    <EntryPoint>E_STARTDOC</EntryPoint>
+                    <FunctionPtr>pfnCheckPhotoNonHpInk</FunctionPtr>
+            </JobUIEvent>
+            <JobUIEvent>
+                    <Name>JOBID_GRAY_NONHP_INK</Name>
+                    <EntryPoint>E_STARTDOC</EntryPoint>
+                    <FunctionPtr>pfnCheckGrayNonHpInk</FunctionPtr>
+            </JobUIEvent>
+            <JobUIEvent>
+                    <Name>JOBID_COLOR_NONHP_CARTRIDGE</Name>
+                    <EntryPoint>E_STARTDOC</EntryPoint>
+                    <FunctionPtr>pfnCheckColorNonHpCartridge</FunctionPtr>
+            </JobUIEvent>
+            <JobUIEvent>
+                    <Name>JOBID_BLACK_NONHP_CARTRIDGE</Name>
+                    <EntryPoint>E_STARTDOC</EntryPoint>
+                    <FunctionPtr>pfnCheckBlackNonHpCartridge</FunctionPtr>
+            </JobUIEvent>
+            <JobUIEvent>
+                    <Name>JOBID_PHOTO_NONHP_CARTRIDGE</Name>
+                    <EntryPoint>E_STARTDOC</EntryPoint>
+                    <FunctionPtr>pfnCheckPhotoNonHpCartridge</FunctionPtr>
+            </JobUIEvent>
+            <JobUIEvent>
+                    <Name>JOBID_GRAY_NONHP_CARTRIDGE</Name>
+                    <EntryPoint>E_STARTDOC</EntryPoint>
+                    <FunctionPtr>pfnCheckGrayNonHpCartridge</FunctionPtr>
+            </JobUIEvent>
+            <JobUIEvent>
+                    <Name>JOBID_COLOR_USED_CARTRIDGE</Name>
+                    <EntryPoint>E_STARTDOC</EntryPoint>
+                    <FunctionPtr>pfnCheckColorUsedCartridge</FunctionPtr>
+            </JobUIEvent>
+            <JobUIEvent>
+                    <Name>JOBID_BLACK_USED_CARTRIDGE</Name>
+                    <EntryPoint>E_STARTDOC</EntryPoint>
+                    <FunctionPtr>pfnCheckBlackUsedCartridge</FunctionPtr>
+            </JobUIEvent>
+            <JobUIEvent>
+                    <Name>JOBID_PHOTO_USED_CARTRIDGE</Name>
+                    <EntryPoint>E_STARTDOC</EntryPoint>
+                    <FunctionPtr>pfnCheckPhotoUsedCartridge</FunctionPtr>
+            </JobUIEvent>
+            <JobUIEvent>
+                    <Name>JOBID_GRAY_USED_CARTRIDGE</Name>
+                    <EntryPoint>E_STARTDOC</EntryPoint>
+                    <FunctionPtr>pfnCheckGrayUsedCartridge</FunctionPtr>
+            </JobUIEvent>
+        </JobUIEventInfo>
+   </helper>
+  </component>
+  </software>
+</device>

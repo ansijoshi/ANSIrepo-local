@@ -1,0 +1,140 @@
+*%
+*% Copyright (c) Microsoft Corporation
+*%
+*% All rights reserved.
+*%
+*% TODO.P1 fviton: fix up resources
+
+*CodePage: 1252      *% Windows 3.1 US (ANSI) code page
+
+*Feature: RESDLL
+{
+    *Name: "resource dll files"
+    *ConcealFromUI?: TRUE
+
+    *Option: UniresDLL
+    {
+        *Name: "unires.dll"
+    }
+    *Option: SendToOneNoteUI
+    {
+        *Name: "SendToOneNoteUI.dll"
+    }
+}
+
+*Macros: StdFeatureNames
+{
+    IDS_GPD_1PPS:                RESDLL.SendToOneNoteUI.2000
+    IDS_GPD_2PPS:                RESDLL.SendToOneNoteUI.2001
+    IDS_GPD_4PPS:                RESDLL.SendToOneNoteUI.2002
+    IDS_GPD_6PPS:                RESDLL.SendToOneNoteUI.2003
+    IDS_GPD_8PPS:                RESDLL.SendToOneNoteUI.2004
+    IDS_GPD_9PPS:                RESDLL.SendToOneNoteUI.2005
+    IDS_GPD_16PPS:               RESDLL.SendToOneNoteUI.2006
+    IDS_GPD_RES1200:             RESDLL.SendToOneNoteUI.2007
+    IDS_GPD_RES600:              RESDLL.SendToOneNoteUI.2008
+    IDS_GPD_AUTOMATIC:           RESDLL.SendToOneNoteUI.2009
+    IDS_GPD_BORDERED:            RESDLL.SendToOneNoteUI.2010
+    IDS_GPD_BORDERLESS:          RESDLL.SendToOneNoteUI.2011
+    IDS_GPD_BTOT:                RESDLL.SendToOneNoteUI.2012
+    IDS_GPD_BTOTLTOR:            RESDLL.SendToOneNoteUI.2013
+    IDS_GPD_BTOTRTOL:            RESDLL.SendToOneNoteUI.2014
+    IDS_GPD_CMYK:                RESDLL.SendToOneNoteUI.2015
+    IDS_GPD_COLOR:               RESDLL.SendToOneNoteUI.2016
+    IDS_GPD_CONFIDENTIAL:        RESDLL.SendToOneNoteUI.2017
+    IDS_GPD_CUSTSQUARE:          RESDLL.SendToOneNoteUI.2018
+    IDS_GPD_CUSTOM:              RESDLL.SendToOneNoteUI.2019
+    IDS_GPD_DESTCOLPROF:         RESDLL.SendToOneNoteUI.2020
+    IDS_GPD_DEVICE:              RESDLL.SendToOneNoteUI.2021
+    IDS_GPD_DOCBIND:             RESDLL.SendToOneNoteUI.2022
+    IDS_GPD_PAGECOLMAN:          RESDLL.SendToOneNoteUI.2023
+    IDS_GPD_PAGEPHOTINTENT:      RESDLL.SendToOneNoteUI.2024
+    IDS_GPD_DOCDUPLEX:           RESDLL.SendToOneNoteUI.2025
+    IDS_GPD_DOCNUP:              RESDLL.SendToOneNoteUI.2026
+    IDS_GPD_DOCNUPPRESENTORDER:  RESDLL.SendToOneNoteUI.2027
+    IDS_GPD_DRAFT:               RESDLL.SendToOneNoteUI.2028
+    IDS_GPD_DRIVER:              RESDLL.SendToOneNoteUI.2029
+    IDS_GPD_DUPLEX:              RESDLL.SendToOneNoteUI.2030
+    IDS_GPD_FAX:                 RESDLL.SendToOneNoteUI.2031
+    IDS_GPD_FITBLEED:            RESDLL.SendToOneNoteUI.2032
+    IDS_GPD_FITCONTENT:          RESDLL.SendToOneNoteUI.2033
+    IDS_GPD_FITPAGE:             RESDLL.SendToOneNoteUI.2034
+    IDS_GPD_GLOSSY:              RESDLL.SendToOneNoteUI.2035
+    IDS_GPD_GRAYSCALE:           RESDLL.SendToOneNoteUI.2036
+    IDS_GPD_HIGH:                RESDLL.SendToOneNoteUI.2037
+    IDS_GPD_HORIZONTAL:          RESDLL.SendToOneNoteUI.2038
+    IDS_GPD_JOBBINDING:          RESDLL.SendToOneNoteUI.2039
+    IDS_GPD_JOBNUPPRESENTORDER:  RESDLL.SendToOneNoteUI.2040
+    IDS_GPD_JOBNUP:              RESDLL.SendToOneNoteUI.2041
+    IDS_GPD_JOBPAGEORDER:        RESDLL.SendToOneNoteUI.2042
+    IDS_GPD_LANDSCAPE:           RESDLL.SendToOneNoteUI.2043
+    IDS_GPD_LTOR:                RESDLL.SendToOneNoteUI.2044
+    IDS_GPD_LTORBTOT:            RESDLL.SendToOneNoteUI.2045
+    IDS_GPD_LTORTTOB:            RESDLL.SendToOneNoteUI.2046
+    IDS_GPD_MEDIATYPE:           RESDLL.SendToOneNoteUI.2047
+    IDS_GPD_MONO:                RESDLL.SendToOneNoteUI.2048
+    IDS_GPD_NONE:                RESDLL.SendToOneNoteUI.2049
+    IDS_GPD_NORMAL:              RESDLL.SendToOneNoteUI.2050
+    IDS_GPD_OFF:                 RESDLL.SendToOneNoteUI.2051
+    IDS_GPD_ON:                  RESDLL.SendToOneNoteUI.2052
+    IDS_GPD_ORIENATION:          RESDLL.SendToOneNoteUI.2053
+    IDS_GPD_OVERLAYED:           RESDLL.SendToOneNoteUI.2054
+    IDS_GPD_PAGEBORDER:          RESDLL.SendToOneNoteUI.2055
+    IDS_GPD_PAGEQUALITY:         RESDLL.SendToOneNoteUI.2056
+    IDS_GPD_PAGESCALING:         RESDLL.SendToOneNoteUI.2057
+    IDS_GPD_PAPERSOURCE:         RESDLL.SendToOneNoteUI.2058
+    IDS_GPD_PHOTOGRAPHIC:        RESDLL.SendToOneNoteUI.2059
+    IDS_GPD_PORTRAIT:            RESDLL.SendToOneNoteUI.2060
+    IDS_GPD_RASTERIMAGE:         RESDLL.SendToOneNoteUI.2061
+    IDS_GPD_RESOLUTION:          RESDLL.SendToOneNoteUI.2062
+    IDS_GPD_REVERSELANDSCAPE:    RESDLL.SendToOneNoteUI.2063
+    IDS_GPD_REVERSE:             RESDLL.SendToOneNoteUI.2064
+    IDS_GPD_RTOL:                RESDLL.SendToOneNoteUI.2065
+    IDS_GPD_RTOLBTOT:            RESDLL.SendToOneNoteUI.2066
+    IDS_GPD_RTOLTTOB:            RESDLL.SendToOneNoteUI.2067
+    IDS_GPD_SCALEPAGETOPAGE:     RESDLL.SendToOneNoteUI.2068
+    IDS_GPD_SCRGB:               RESDLL.SendToOneNoteUI.2069
+    IDS_GPD_STANDARD:            RESDLL.SendToOneNoteUI.2070
+    IDS_GPD_TEXT:                RESDLL.SendToOneNoteUI.2071
+    IDS_GPD_TTOB:                RESDLL.SendToOneNoteUI.2072
+    IDS_GPD_TTOBLTOR:            RESDLL.SendToOneNoteUI.2073
+    IDS_GPD_TTOBRTOL:            RESDLL.SendToOneNoteUI.2074
+    IDS_GPD_TRANSPARENCY:        RESDLL.SendToOneNoteUI.2075
+    IDS_GPD_TRANSPARENT:         RESDLL.SendToOneNoteUI.2076
+    IDS_GPD_UNDERLAYED:          RESDLL.SendToOneNoteUI.2077
+    IDS_GPD_UPPER:               RESDLL.SendToOneNoteUI.2078
+    IDS_GPD_VECTORIMAGE:         RESDLL.SendToOneNoteUI.2079
+    IDS_GPD_VERTICAL:            RESDLL.SendToOneNoteUI.2080
+    IDS_GPD_WATERMARKLAYERING:   RESDLL.SendToOneNoteUI.2081
+    IDS_GPD_WATERMARKTEXT:       RESDLL.SendToOneNoteUI.2082
+    IDS_GPD_WATERMARKTYPE:       RESDLL.SendToOneNoteUI.2083
+    IDS_GPD_WATERMARKBITMAP:     RESDLL.SendToOneNoteUI.2084
+    IDS_GPD_WATERMARKGRAPHIC:    RESDLL.SendToOneNoteUI.2087
+    IDS_GPD_BEST:                RESDLL.SendToOneNoteUI.2090
+    IDS_GPD_PAGEICMINTENT:       RESDLL.SendToOneNoteUI.2091
+    IDS_GPD_ABSCOLINTENT:        RESDLL.SendToOneNoteUI.2092
+    IDS_GPD_RELCOLINTENT:        RESDLL.SendToOneNoteUI.2093
+    IDS_GPD_PHOTOINTENT:         RESDLL.SendToOneNoteUI.2094
+    IDS_GPD_BIZINTENT:           RESDLL.SendToOneNoteUI.2095
+    IDS_GPD_SYSTEM:              RESDLL.SendToOneNoteUI.2096
+    IDS_GPD_WATERMARKTEXTCOLOR:  RESDLL.SendToOneNoteUI.2097
+    IDS_GPD_RED:                 RESDLL.SendToOneNoteUI.2098
+    IDS_GPD_GREEN:               RESDLL.SendToOneNoteUI.2099
+    IDS_GPD_BLUE:                RESDLL.SendToOneNoteUI.2100
+    IDS_GPD_MAGENTA:             RESDLL.SendToOneNoteUI.2101
+    IDS_GPD_CYAN:                RESDLL.SendToOneNoteUI.2102
+    IDS_GPD_YELLOW:              RESDLL.SendToOneNoteUI.2103
+    IDS_GPD_BLACK:               RESDLL.SendToOneNoteUI.2104
+    IDS_GPD_SCALE_ALIGN:         RESDLL.SendToOneNoteUI.2105
+    IDS_GPD_SCALE_ALIGN_BC:      RESDLL.SendToOneNoteUI.2106
+    IDS_GPD_SCALE_ALIGN_BL:      RESDLL.SendToOneNoteUI.2107
+    IDS_GPD_SCALE_ALIGN_BR:      RESDLL.SendToOneNoteUI.2108
+    IDS_GPD_SCALE_ALIGN_CC:      RESDLL.SendToOneNoteUI.2109
+    IDS_GPD_SCALE_ALIGN_LC:      RESDLL.SendToOneNoteUI.2110
+    IDS_GPD_SCALE_ALIGN_CR:      RESDLL.SendToOneNoteUI.2111
+    IDS_GPD_SCALE_ALIGN_CT:      RESDLL.SendToOneNoteUI.2112
+    IDS_GPD_SCALE_ALIGN_TL:      RESDLL.SendToOneNoteUI.2113
+    IDS_GPD_SCALE_ALIGN_TR:      RESDLL.SendToOneNoteUI.2114
+}
+
+

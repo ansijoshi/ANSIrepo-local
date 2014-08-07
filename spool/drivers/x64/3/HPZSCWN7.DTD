@@ -1,0 +1,94 @@
+<!ELEMENT device (software?)>
+<!ELEMENT software (file_header?, component*)>
+<!ELEMENT file_header (file_name, file_version, file_timestamp)>
+<!ELEMENT file_name (#PCDATA)>
+<!ELEMENT file_version (#PCDATA)>
+<!ELEMENT file_timestamp (#PCDATA)>
+<!ELEMENT component (name, helper*)>
+<!ELEMENT name (#PCDATA)>
+<!ATTLIST  name type CDATA #IMPLIED>
+<!ELEMENT helper (name?, events?, features?, macros?, presets?, DeviceSettings?,groups?, DocUISettings?, BorderlessSettings?,JobUIEventInfo?, ICDRollSheetData?, ICDDeviceSetting?, PmlOIDs?)>
+<!ELEMENT events (event*)>
+<!ELEMENT features (feature*)>
+<!ELEMENT macros (macro*)>
+<!ELEMENT presets (presetenglish* , presetjapanese*)>
+<!ELEMENT PmlOIDs (pmldata*)>
+<!ELEMENT pmldata (pmlname?,oidvalue?)>
+<!ELEMENT DeviceSettings (japanesesetting? , englishsetting?)>
+<!ELEMENT japanesesetting (setting*)>
+<!ELEMENT englishsetting (setting*)>
+<!ELEMENT ICDDeviceSetting (RollWidth?,RollType?)>
+<!ELEMENT RollWidth (Option*)>
+<!ELEMENT RollType (Option*)>
+<!ELEMENT Option (resource_id, bidi_value)>
+<!ELEMENT bidi_value (#PCDATA)>
+<!ELEMENT groups (group*)>
+<!ELEMENT event (name, macro_name?)>
+<!ELEMENT feature (name, switch?, default_ui_state?, macro_name?, disable?)>
+<!ELEMENT default_ui_state (#PCDATA)>
+<!ELEMENT macro_name (#PCDATA)>
+<!ELEMENT macro (name, (switch|select_option|resource_id|map_option|unmap_option|enable_option|disable_option|hide_option|enable|disable|hide|title|icon|message_type|help_id|checkbox_present|dialog_id|reg_name|feature_name|option_name|butt1|butt2|string_id|showpopup|icmfilename)*,call*)>
+<!ELEMENT switch (name, case*, case_default?)>
+<!ELEMENT case (name, data?, (select_option|map_option|resource_id|unmap_option|enable_option|disable_option|hide_option|enable|disable|hide|switch|title|icon|message_type|help_id|checkbox_present|dialog_id|reg_name|feature_name|option_name|butt1|butt2|string_id|showpopup|icmfilename)*,call*)>
+<!ELEMENT case_default ((select_option|map_option|resource_id|unmap_option|enable_option|disable_option|hide_option|enable|disable|hide|data|switch|title|icon|message_type|help_id|checkbox_present|dialog_id|reg_name|feature_name|option_name|butt1|butt2|string_id|showpopup|icmfilename)*,call*)>
+<!ELEMENT select_option (#PCDATA)>
+<!ELEMENT icmfilename (#PCDATA)>
+<!ELEMENT map_option (#PCDATA)>
+<!ELEMENT unmap_option (#PCDATA)>
+<!ELEMENT enable_option (#PCDATA)>
+<!ELEMENT disable_option (#PCDATA)>
+<!ELEMENT hide_option (#PCDATA)>
+<!ELEMENT enable (#PCDATA)>
+<!ELEMENT disable (#PCDATA)>
+<!ELEMENT hide (#PCDATA)>
+<!ELEMENT data (#PCDATA)>
+<!ELEMENT call (#PCDATA)>
+<!ELEMENT presetenglish (name, resource_id?, setting*)>
+<!ELEMENT presetjapanese (name, resource_id?, setting*)>
+<!ELEMENT DocUISettings (DocSetting*)>
+<!ELEMENT DocSetting (name, resource_id?, bitmap_id?, DocFeature*)>
+<!ELEMENT DocFeature (name, resource_id, help_id, (select_option|switch), DocOption*)>
+<!ELEMENT DocOption (name, resource_id?, bitmap_id?)>
+<!ELEMENT bitmap_id (#PCDATA)>
+<!ELEMENT resource_id (#PCDATA)>
+<!ELEMENT setting (#PCDATA)>
+<!ELEMENT group (groupname,resource_id?,name*,subgroup*)>
+<!ELEMENT groupname (#PCDATA)>
+<!ELEMENT subgroup (subgroupname,resource_id?,name*)>
+<!ELEMENT subgroupname (#PCDATA)>
+<!ELEMENT title (#PCDATA)> 
+<!ELEMENT string_id (#PCDATA)> 
+<!ELEMENT icon (#PCDATA)> 
+<!ELEMENT message_type (#PCDATA)>
+<!ELEMENT help_id (#PCDATA)>
+<!ELEMENT checkbox_present (#PCDATA)>
+<!ELEMENT dialog_id (#PCDATA)>
+<!ELEMENT reg_name (#PCDATA)>
+<!ELEMENT feature_name (#PCDATA)>
+<!ELEMENT option_name (#PCDATA)>
+<!ELEMENT butt1 (#PCDATA)>
+<!ELEMENT butt2 (#PCDATA)>
+<!ELEMENT showpopup (#PCDATA)>
+<!ELEMENT BorderlessSettings (Borderless)*>
+<!ELEMENT Borderless (Borderless_Paper,Paper?,Overspray_Left,Overspray_Right,Overspray_Top,Overspray_Bottom)>
+<!ELEMENT Borderless_Paper (#PCDATA)>
+<!ELEMENT Paper (#PCDATA)>
+<!ELEMENT Page_dimension_width (#PCDATA)>
+<!ELEMENT Page_dimension_height (#PCDATA)>
+<!ELEMENT Overspray_Left (#PCDATA)>
+<!ELEMENT Overspray_Right (#PCDATA)>
+<!ELEMENT Overspray_Top (#PCDATA)>
+<!ELEMENT Overspray_Bottom (#PCDATA)>
+<!ELEMENT JobUIEventInfo (JobUIEvent)*>
+<!ELEMENT JobUIEvent (Name,EntryPoint,FunctionPtr)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT EntryPoint (#PCDATA)>
+<!ELEMENT FunctionPtr (#PCDATA)>
+<!ELEMENT ICDRollSheetData (MinJobPageWidth?,MaxJobPageWidth?,RollRealWidth,MinJobPageHeight?,MaxJobPageHeight?)>
+<!ELEMENT MinJobPageWidth (#PCDATA)>
+<!ELEMENT MaxJobPageWidth (#PCDATA)>
+<!ELEMENT RollRealWidth (#PCDATA)>
+<!ELEMENT MinJobPageHeight (#PCDATA)>
+<!ELEMENT MaxJobPageHeight (#PCDATA)>
+<!ELEMENT pmlname (#PCDATA)>
+<!ELEMENT oidvalue (#PCDATA)>

@@ -1,0 +1,49 @@
+% special character definitions
+% % specifies a comment
+% ; is used to delimit an image file name and an array of feature = value pairs
+% = is used to delimit a feature and value
+% [] is used to delimit sections.  The following sections are recognized:
+%	[BASE_MIMIC]
+%	[TRAY_OVERLAY]
+
+% whitespace is optional before and after a special character
+% the line must end with a crlf
+% the format used in this file is an image resource followed by a list of feature=Value pairs necessary for the image to be valid.
+
+% Printer Mimic - installable option mapping for the Elise product
+
+[BASE_MIMIC]
+
+% 3 Tray Options
+Mimic_GR_GCHA_3Tray_CTR.gif; xdrv-device-optional-trays = optional-trays-3-paper-trays; xdrv-device-optional-finisher = optional-finisher-output-tray
+Mimic_GR_GCHA_3Tray_AFIN.gif; xdrv-device-optional-trays = optional-trays-3-paper-trays; xdrv-device-optional-finisher = optional-finisher-type-a
+Mimic_GR_GCHA_3Tray_SBFIN.gif; xdrv-device-optional-trays = optional-trays-3-paper-trays; xdrv-device-optional-finisher = optional-finisher-type-sb
+Mimic_GR_GCHA_3Tray_SBFINBK.gif; xdrv-device-optional-trays = optional-trays-3-paper-trays; xdrv-device-optional-finisher = optional-finisher-type-sb-bk
+
+
+% 5 Tray Options
+Mimic_GR_GCHA_5Tray_CTR.gif; xdrv-device-optional-trays = optional-trays-5-paper-trays; xdrv-device-optional-finisher = optional-finisher-output-tray
+Mimic_GR_GCHA_5Tray_AFIN.gif; xdrv-device-optional-trays = optional-trays-5-paper-trays; xdrv-device-optional-finisher = optional-finisher-type-a
+Mimic_GR_GCHA_5Tray_SBFIN.gif; xdrv-device-optional-trays = optional-trays-5-paper-trays; xdrv-device-optional-finisher = optional-finisher-type-sb
+Mimic_GR_GCHA_5Tray_SBFINBK.gif; xdrv-device-optional-trays = optional-trays-5-paper-trays; xdrv-device-optional-finisher = optional-finisher-type-sb-bk
+
+% Tray overlays
+[TRAY_OVERLAY]
+Mimic_GR_GCHA_Overlay_Tray1.gif; input-tray = tray-1
+Mimic_GR_GCHA_Overlay_Tray2.gif; input-tray = tray-2
+Mimic_GR_GCHA_Overlay_Tray3.gif; input-tray = tray-3; 
+Mimic_GR_GCHA_Overlay_Tray4.gif; input-tray = tray-4; 
+Mimic_GR_GCHA_Overlay_Tray5.gif; input-tray = bypass-tray
+
+
+
+% Output overlays
+[OUTPUT_OVERLAY]
+Mimic_GR_GCHA_Overlay_SBFIN_CTR.gif; xdrv-device-optional-finisher = optional-finisher-type-sb; output-bin = center
+Mimic_GR_GCHA_Overlay_SBFIN_RT.gif; xdrv-device-optional-finisher = optional-finisher-type-sb; output-bin = stacker-1
+Mimic_GR_GCHA_Overlay_SBFINBK_CTR.gif; xdrv-device-optional-finisher = optional-finisher-type-sb-bk; output-bin = center
+Mimic_GR_GCHA_Overlay_SBFINBK_RT.gif; xdrv-device-optional-finisher = optional-finisher-type-sb-bk; output-bin = stacker-1
+Mimic_GR_GCHA_Overlay_CTR_B.gif; output-bin = bottom
+Mimic_GR_GCHA_Overlay_CTR_T.gif; output-bin = top 
+Mimic_GR_GCHA_Overlay_SBFINBK_CTR.gif; output-bin = center
+

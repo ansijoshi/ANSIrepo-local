@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE device SYSTEM "hpzscwn7.dtd">
+
+<device>
+  <software>
+    <file_header>
+      <file_name>hpc3390f.xml</file_name>
+         <file_version>053.2514</file_version>
+         <file_timestamp>09/22/2006</file_timestamp>
+    </file_header>
+    <component>
+      <name>Mombi</name>
+      <helper>
+        <name></name><!--  put a name if we have multiple helpers -->
+        <events><!--  =========================================  --><!--              DMCInstallTime                 --><!--   called during DMC Install Time (Import)   --><!--  =========================================  -->
+          <event>
+            <name>DMCInstallTime</name>
+            <macro_name>macro_PrintQualityImport</macro_name>
+          </event><!--  =========================================  --><!--              DMCUpgradeTime                 --><!--   called during DMC Upgrade Time (Export)   --><!--  =========================================  -->
+          <event>
+            <name>DMCUpgradeTime</name>
+            <macro_name>macro_PrintQualityExport</macro_name>
+          </event>
+        </events>
+        <features><!--  =========================================  --><!--                  MediaType                  --><!--  =========================================  -->
+          <feature>
+            <name>MediaType</name>
+            <macro_name>macro_MediaType</macro_name>
+          </feature><!--  =========================================  --><!--                  Print Quality Group        --><!--  =========================================  -->
+          <feature>
+            <name>PrintQualityGroup</name>
+            <macro_name>macro_PrintQualityGroup</macro_name>
+            <disable>PrintQualityGroup</disable>
+          </feature>
+          <feature>
+            <name>CustomSize</name>
+            <macro_name>macro_custom_size</macro_name>            
+          </feature>
+<feature>
+                        <name>HPSmartHub</name>
+                        <switch>
+                            <name>HPSmartHub</name>
+                            <case>
+                                <name>Inet_SID_263_BID_514_HID_265</name>
+                                <data></data>
+                            </case>
+                            <case>
+                                <name>Inet_SID_251_BID_514_HID_267</name>
+                                <data>http://go.microsoft.com/fwlink/?LinkId=73940</data>
+                            </case>
+                            <case>
+                                <name>Inet_SID_252_BID_514_HID_268</name>
+                                <data>http://go.microsoft.com/fwlink/?LinkId=73941</data>
+                            </case>
+                            <case>
+                                <name>Inet_SID_253_BID_514_HID_269</name>
+                                <data>http://go.microsoft.com/fwlink/?LinkId=73933&amp;clcid=0x409</data>
+                            </case>
+                            <case>
+                                <name>Inet_SID_279_BID_514_HID_280</name>
+                                <data>http://go.microsoft.com/fwlink/?LinkId=73942&amp;clcid=0x409</data>
+                            </case>
+                        </switch>
+                    </feature>       
+        </features>
+        <macros><!--  =========================================  --><!--                  MediaType                  --><!--  =========================================  -->
+          <macro>
+            <name>macro_MediaType</name>
+            <call>macro_PrintQuality</call>
+          </macro><!--  =========================================  --><!--                  Print Quality Group        --><!--                                             --><!--  Print Quality options have single level    --><!--  association only                           --><!--  =========================================  -->
+          <macro>
+            <name>macro_PrintQualityGroup</name>
+             <switch>
+               <name>PrintQualityGroup</name>
+              <case>
+                <name>PQGroup_1</name>
+                <select_option>Resolution.600dpi</select_option>
+                <select_option>PrintQualityGroup.PQGroup_1</select_option>
+              </case>
+             </switch>
+             </macro><!--  =========================================  --><!--     Print Quality Import                    --><!--    Mapping is as follows                    --><!--    (a) Best    - PQGroup_1                  --><!--    (b) Fast    - PQGroup_2                  --><!--    (c) Normal  - PQGroup_3                  --><!--                                             --><!--  Print Quality options have single level    --><!--  association only                           --><!--  =========================================  -->
+          <macro>
+            <name>macro_PrintQualityImport</name>
+            <switch>
+              <name>PrintQualityImport</name>
+              <case>
+                <name>Best</name>
+                <map_option>PQGroup_1</map_option>
+              </case>
+              <case>
+                <name>Fast</name>
+                <map_option>PQGroup_2</map_option>
+              </case>
+            </switch>
+            <call>macro_PrintQualityGroup</call>
+          </macro><!--  =========================================  --><!--     Print Quality Export                    --><!--    Mapping is as follows                    --><!--    (a) Best    - PQGroup_1                  --><!--    (b) Fast    - PQGroup_2                  --><!--    (c) Normal  - PQGroup_3                  --><!--                                             --><!--  Print Quality options have single level    --><!--  association only                           --><!--  =========================================  -->
+          <macro>
+            <name>macro_PrintQualityExport</name>
+            <switch>
+              <name>PrintQualityExport</name>
+               <case>
+                <name>PQGroup_1</name>
+                <unmap_option>Best</unmap_option>
+              </case>
+             </switch>
+          </macro>
+              <macro>
+                <name>macro_pop_up_CustomPaper</name>
+                <title>876</title> 
+                <icon>MB_ICONWARNING</icon>
+                <string_id>4254</string_id>    
+                <message_type>MB_OK</message_type>                                     
+                <showpopup>MSG_BOX</showpopup>                     
+              </macro>
+              <macro>
+                <name>macro_custom_size</name>
+                <option_name>min_width.76200</option_name>
+                <option_name>max_width.297002</option_name>
+                <option_name>min_length.127000</option_name>
+                <option_name>max_length.431800</option_name>
+              </macro>
+            </macros>
+        <presets>
+          <presetenglish>
+            <name>Default Print Settings</name> 
+            <resource_id>3041</resource_id> 
+            <setting>PaperSize.LETTER</setting> 
+            <setting>PrintQualityGroup.PQGroup_1</setting> 
+         </presetenglish>
+         <presetenglish>
+            <name>User Guide Print Settings</name>
+            <resource_id>3042</resource_id>
+            <setting>PrintQualityGroup.PQGroup_1</setting> 
+            <setting>NUpChoice.TwoUp</setting> 
+            <setting>NupPageOrderChoice.RightThenDown</setting>
+            <setting>Duplex.True</setting>
+            <setting>FlipPagesUp.True</setting>
+          </presetenglish>
+       </presets>
+      </helper>
+    </component>
+  </software>
+</device>

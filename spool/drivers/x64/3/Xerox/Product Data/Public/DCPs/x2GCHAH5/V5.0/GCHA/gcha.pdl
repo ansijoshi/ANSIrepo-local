@@ -1,0 +1,482 @@
+<FeatureSet>
+  <Description>print-quality-level</Description>
+  <FeatureItem>
+    <Description>enhanced</Description>
+    <PDLSet>
+      <Instruction>"&lf;featurebegin{&lf;%%BeginFeature: *XImageQuality  HighQuality&lf;     2 dict dup /HWResolution [600 600] put dup 2 dict dup /Type 26 put dup /ValuesPerColorComponent 256 put /DeviceRenderingInfo exch put setpagedevice"&lf;%%EndFeature&lf;}featurecleanup</Instruction>
+      <PDL>PS</PDL>
+    </PDLSet>
+  </FeatureItem>
+</FeatureSet>
+
+<FeatureSet>
+  <Description>media-type</Description>
+  <FeatureItem>
+    <Description>envelope</Description>
+    <PDLSet>
+      <Instruction>"&lf;featurebegin{&lf;%%BeginFeature: *MediaType Envelope&lf;     2 dict dup /MediaClass(envelope) put setpagedevice"&lf;%%EndFeature&lf;}featurecleanup</Instruction>
+      <PDL>PS</PDL>
+    </PDLSet>
+  </FeatureItem>
+  <FeatureItem>
+    <Description>cardstock-lightweight-glossy-reloaded</Description>
+    <PDLSet>
+      <Instruction>"&lf;featurebegin{&lf;%%BeginFeature: *MediaType Gloss Reloaded&lf;     2 dict dup /MediaClass(coating1 side2) put setpagedevice"&lf;%%EndFeature&lf;}featurecleanup</Instruction>
+      <PDL>PS</PDL>
+    </PDLSet>
+  </FeatureItem>
+  <FeatureItem>
+    <Description>cardstock-reloaded</Description>
+    <PDLSet>
+      <Instruction>"&lf;featurebegin{&lf;%%BeginFeature: *MediaType ExtraHeavyweightReloaded&lf;     2 dict dup /MediaClass(thick2 side2) put setpagedevice"&lf;%%EndFeature&lf;}featurecleanup</Instruction>
+      <PDL>PS</PDL>
+    </PDLSet>
+  </FeatureItem>
+  <FeatureItem>
+    <Description>cardstock-glossy-reloaded</Description>
+    <PDLSet>
+      <Instruction>"&lf;featurebegin{&lf;%%BeginFeature: *MediaType HeavyweightGlossReloaded&lf;     2 dict dup /MediaClass(coating2 side2) put setpagedevice"&lf;%%EndFeature&lf;}featurecleanup</Instruction>
+      <PDL>PS</PDL>
+    </PDLSet>
+  </FeatureItem>
+</FeatureSet>
+
+<FeatureSet>
+  <Description>xdrv-media-size-option</Description>
+  <FeatureItem>
+    <Description>na-letter</Description>
+    <PDLSet>
+      <!--<1B>&l2a4d1E<1B>*p0x0Y<1B>*c5761x7561Y-->
+      <Instruction>&esc;&amp;l2A&esc;*p0x0Y&esc;*c0t{PrintableAreaX}x{PrintableAreaY}Y</Instruction>
+      <PDL>PCL5</PDL>
+    </PDLSet>
+    <PDLSet>
+      <!--=ubyte =eXrxUSLetter =attr_ubyte =MediaSize =BeginPage =sint16_xy %l{((400*TextXRes)/ 2400)}%l{((400*TextYRes)/ 2400)} =attr_ubyte =PageOrigin =SetPageOrigin-->
+      <Instruction>&eXrxUSLetter;</Instruction>
+      <PDL>PCL6</PDL>
+    </PDLSet>
+  </FeatureItem>
+  <FeatureItem>
+    <Description>taiwan-815</Description>
+    <PDLSet>
+      <!--<1B>&l220a8c1E<1B>*p0x0Y<1B>*c7208x10696Y-->
+      <Instruction>&esc;&amp;l220A&esc;*p0x0Y&esc;*c0t{PrintableAreaX}x{PrintableAreaY}Y</Instruction>
+      <PDL>PCL5</PDL>
+    </PDLSet>
+    <PDLSet>
+      <!--=ubyte =eFX8K267x388 =attr_ubyte =MediaSize =BeginPage =sint16_xy %l{((400*TextXRes)/ 2400)}%l{((400*TextYRes)/ 2400)} =attr_ubyte =PageOrigin =SetPageOrigin-->
+      <Instruction>&eFX8K267x388;</Instruction>
+      <PDL>PCL6</PDL>
+    </PDLSet>
+  </FeatureItem>
+  <FeatureItem>
+    <Description>metric-215x315-spanish-folio</Description>
+    <PDLSet>
+      <!--<1B>&l43a8c1E<1B>*p0x0Y<1B>*c5761x8569Y-->
+      <Instruction>&esc;&amp;l43A&esc;*p0x0Y&esc;*c0t{PrintableAreaX}x{PrintableAreaY}Y</Instruction>
+      <PDL>PCL5</PDL>
+    </PDLSet>
+    <PDLSet>
+      <!--=ubyte =eFX215x315 =attr_ubyte =MediaSize =BeginPage =sint16_xy %l{((400*TextXRes)/ 2400)}%l{((400*TextYRes)/ 2400)} =attr_ubyte =PageOrigin =SetPageOrigin-->
+    <Instruction>&eFX215x315;</Instruction>
+      <PDL>PCL6</PDL>
+    </PDLSet>
+  </FeatureItem>
+  <FeatureItem>
+    <Description>na-11x15</Description>
+    <PDLSet>
+      <!--<1B>&l217a8c1E<1B>*p0x0Y<1B>*c7561x10441Y-->
+      <Instruction>&esc;&amp;l217A&esc;*p0x0Y&esc;*c0t{PrintableAreaX}x{PrintableAreaY}Y</Instruction>
+      <PDL>PCL5</PDL>
+    </PDLSet>
+    <PDLSet>
+      <!--=ubyte =eFX11x15 =attr_ubyte =MediaSize =BeginPage =sint16_xy %l{((400*TextXRes)/ 2400)}%l{((400*TextYRes)/ 2400)} =attr_ubyte =PageOrigin =SetPageOrigin-->
+      <Instruction>&eFX11x15;</Instruction>
+      <PDL>PCL6</PDL>
+    </PDLSet>
+  </FeatureItem>
+  <FeatureItem>
+    <Description>taiwan-16K-194x267</Description>
+    <PDLSet>
+      <!--<1B>&l219a8c1E<1B>*p0x0Y<1B>*c5142x7561Y-->
+      <Instruction>&esc;&amp;l219A&esc;*p0x0Y&esc;*c0t{PrintableAreaX}x{PrintableAreaY}Y</Instruction>
+      <PDL>PCL5</PDL>
+    </PDLSet>
+    <PDLSet>
+      <!--=ubyte =eFX16K194x267 =attr_ubyte =MediaSize =BeginPage =sint16_xy %l{((400*TextXRes)/ 2400)}%l{((400*TextYRes)/ 2400)} =attr_ubyte =PageOrigin =SetPageOrigin-->
+      <Instruction>&eFX16K194x267;</Instruction>
+      <PDL>PCL6</PDL>
+    </PDLSet>
+  </FeatureItem>
+  <FeatureItem>
+    <Description>na-4x6</Description>
+    <PDLSet>
+      <!--<1B>&l216a8c1E<1B>*p0x0Y<1B>*c2521x3961Y-->
+      <Instruction>&esc;&amp;l216A&esc;*p0x0Y&esc;*c0t{PrintableAreaX}x{PrintableAreaY}Y</Instruction>
+      <PDL>PCL5</PDL>
+    </PDLSet>
+    <PDLSet>
+      <!--=ubyte =eFXPostcard4x6 =attr_ubyte =MediaSize =BeginPage =sint16_xy %l{((400*TextXRes)/ 2400)}%l{((400*TextYRes)/ 2400)} =attr_ubyte =PageOrigin =SetPageOrigin-->
+      <Instruction>&eFXPostcard4x6;</Instruction>
+      <PDL>PCL6</PDL>
+    </PDLSet>
+  </FeatureItem>
+  <FeatureItem>
+    <Description>jp-hagaki-postcard</Description>
+    <PDLSet>
+      <!--<1B>&l71a8c1E<1B>*p0x0Y<1B>*c2476x3836Y-->
+      <Instruction>&esc;&amp;l71A&esc;*p0x0Y&esc;*c0t{PrintableAreaX}x{PrintableAreaY}Y</Instruction>
+      <PDL>PCL5</PDL>
+    </PDLSet>
+    <PDLSet>
+      <!--=ubyte =eFXPostcard100x148 =attr_ubyte =MediaSize =BeginPage =sint16_xy %l{((400*TextXRes)/ 2400)}%l{((400*TextYRes)/ 2400)} =attr_ubyte =PageOrigin =SetPageOrigin-->
+      <Instruction>&eFXPostcard100x148;</Instruction>
+      <PDL>PCL6</PDL>
+    </PDLSet>
+  </FeatureItem>
+  <FeatureItem>
+    <Description>jp-reply-postcard</Description>
+    <PDLSet>
+      <!--<1B>&l72a8c1E<1B>*p0x0Y<1B>*c3836x5310Y-->
+      <Instruction>&esc;&amp;l72A&esc;*p0x0Y&esc;*c0t{PrintableAreaX}x{PrintableAreaY}Y</Instruction>
+      <PDL>PCL5</PDL>
+    </PDLSet>
+    <PDLSet>
+      <!--=ubyte =eFXPostcard148x200 =attr_ubyte =MediaSize =BeginPage =sint16_xy %l{((400*TextXRes)/ 2400)}%l{((400*TextYRes)/ 2400)} =attr_ubyte =PageOrigin =SetPageOrigin-->
+      <Instruction>&eFXPostcard148x200;</Instruction>
+      <PDL>PCL6</PDL>
+    </PDLSet>
+  </FeatureItem>
+  <FeatureItem>
+    <Description>jp-120x235-envelope-choukei-3-gou</Description>
+    <PDLSet>
+      <!--<1B>&l218a8c1E<1B>*p0x0Y<1B>*c3042x6302Y-->
+      <Instruction>&esc;&amp;l218A&esc;*p0x0Y&esc;*c0t{PrintableAreaX}x{PrintableAreaY}Y</Instruction>
+      <PDL>PCL5</PDL>
+    </PDLSet>
+    <PDLSet>
+      <!--=ubyte =eFXEnvelopeChoukei3Gou =attr_ubyte =MediaSize =BeginPage =sint16_xy %l{((400*TextXRes)/ 2400)}%l{((400*TextYRes)/ 2400)} =attr_ubyte =PageOrigin =SetPageOrigin-->
+      <Instruction>&eFXEnvelopeChoukei3Gou;</Instruction>
+      <PDL>PCL6</PDL>
+    </PDLSet>
+  </FeatureItem>
+  <FeatureItem>
+    <Description>na-legal</Description>
+    <PDLSet>
+      <!--<1B>&l3a4d1E<1B>*p0x0Y<1B>*c5761x9721Y-->
+      <Instruction>&esc;&amp;l3A&esc;*p0x0Y&esc;*c0t{PrintableAreaX}x{PrintableAreaY}Y</Instruction>
+      <PDL>PCL5</PDL>
+    </PDLSet>
+    <PDLSet>
+      <!--=ubyte =eXrxUSLegal =attr_ubyte =MediaSize =BeginPage =sint16_xy %l{((400*TextXRes)/ 2400)}%l{((400*TextYRes)/ 2400)} =attr_ubyte =PageOrigin =SetPageOrigin-->
+      <Instruction>&eXrxUSLegal;</Instruction>
+      <PDL>PCL6</PDL>
+    </PDLSet>
+  </FeatureItem>
+  <FeatureItem>
+    <Description>ledger</Description>
+    <PDLSet>
+      <!--<1B>&l6a8c1E<1B>*p0x0Y<1B>*c7561x11881Y-->
+      <Instruction>&esc;&amp;l6A&esc;*p0x0Y&esc;*c0t{PrintableAreaX}x{PrintableAreaY}Y</Instruction>
+      <PDL>PCL5</PDL>
+    </PDLSet>
+    <PDLSet>
+      <!--=ubyte =eXrxTabloid11x17 =attr_ubyte =MediaSize =BeginPage =sint16_xy %l{((400*TextXRes)/ 2400)}%l{((400*TextYRes)/ 2400)} =attr_ubyte =PageOrigin =SetPageOrigin-->
+      <Instruction>&eXrxTabloid11x17;</Instruction>
+      <PDL>PCL6</PDL>
+    </PDLSet>
+  </FeatureItem>
+  <FeatureItem>
+    <Description>iso-a4</Description>
+    <PDLSet>
+      <!--<1B>&l26a4d1E<1B>*p0x0Y<1B>*c0t5612x8059Y-->
+      <Instruction>&esc;&amp;l26A&esc;*p0x0Y&esc;*c0t{PrintableAreaX}x{PrintableAreaY}Y</Instruction>
+      <PDL>PCL5</PDL>
+    </PDLSet>
+    <PDLSet>
+      <!--=ubyte =eA4Paper =attr_ubyte =MediaSize =BeginPage =sint16_xy %l{((400*TextXRes)/ 2400)}%l{((400*TextYRes)/ 2400)} =attr_ubyte =PageOrigin =SetPageOrigin-->
+    <Instruction>&eA4Paper;</Instruction>
+      <PDL>PCL6</PDL>
+    </PDLSet>
+  </FeatureItem>
+  <FeatureItem>
+    <Description>iso-a3</Description>
+    <PDLSet>
+      <!--<1B>&l27a8c1E<1B>*p0x0Y<1B>*c8079x11547Y-->
+      <Instruction>&esc;&amp;l27A&esc;*p0x0Y&esc;*c0t{PrintableAreaX}x{PrintableAreaY}Y</Instruction>
+      <PDL>PCL5</PDL>
+    </PDLSet>
+    <PDLSet>
+      <!--=ubyte =eXrxA3 =attr_ubyte =MediaSize =BeginPage =sint16_xy %l{((400*TextXRes)/ 2400)}%l{((400*TextYRes)/ 2400)} =attr_ubyte =PageOrigin =SetPageOrigin-->
+      <Instruction>&eXrxA3;</Instruction>
+      <PDL>PCL6</PDL>
+    </PDLSet>
+  </FeatureItem>
+  <FeatureItem>
+    <Description>folio</Description>
+    <PDLSet>
+      <!--<1B>&l18a8c1E<1B>*p0x0Y<1B>*c5754x8995Y-->
+      <Instruction>&esc;&amp;l18A&esc;*p0x0Y&esc;*c0t{PrintableAreaX}x{PrintableAreaY}Y</Instruction>
+      <PDL>PCL5</PDL>
+    </PDLSet>
+    <PDLSet>
+      <!--=ubyte =eFXFolio215x330 =attr_ubyte =MediaSize =BeginPage =sint16_xy %l{((400*TextXRes)/ 2400)}%l{((400*TextYRes)/ 2400)} =attr_ubyte =PageOrigin =SetPageOrigin-->
+      <Instruction>&eFXFolio215x330;</Instruction>
+      <PDL>PCL6</PDL>
+    </PDLSet>
+  </FeatureItem>
+  <FeatureItem>
+    <Description>invoice</Description>
+    <PDLSet>
+      <!--<1B>&l41a8c1E<1B>*p0x0Y<1B>*c3601x5761Y-->
+      <Instruction>&esc;&amp;l41A&esc;*p0x0Y&esc;*c0t{PrintableAreaX}x{PrintableAreaY}Y</Instruction>
+      <PDL>PCL5</PDL>
+    </PDLSet>
+    <PDLSet>
+      <!--=ubyte =eFxStatement55x85 =attr_ubyte =MediaSize =BeginPage =sint16_xy %l{((400*TextXRes)/ 2400)}%l{((400*TextYRes)/ 2400)} =attr_ubyte =PageOrigin =SetPageOrigin-->
+    <Instruction>&eFXStatement55x85;</Instruction>
+      <PDL>PCL6</PDL>
+    </PDLSet>
+  </FeatureItem>
+  <FeatureItem>
+    <Description>iso-a5</Description>
+    <PDLSet>
+      <!--<1B>&l25a8c1E<1B>*p0x0Y<1B>*c3856x5593Y-->
+      <Instruction>&esc;&amp;l25A&esc;*p0x0Y&esc;*c0t{PrintableAreaX}x{PrintableAreaY}Y</Instruction>
+      <PDL>PCL5</PDL>
+    </PDLSet>
+    <PDLSet>
+      <!--=ubyte =eA5Paper =attr_ubyte =MediaSize =BeginPage =sint16_xy %l{((400*TextXRes)/ 2400)}%l{((400*TextYRes)/ 2400)} =attr_ubyte =PageOrigin =SetPageOrigin-->
+      <Instruction>&eA5Paper;</Instruction>
+      <PDL>PCL6</PDL>
+    </PDLSet>
+  </FeatureItem>
+  <FeatureItem>
+    <Description>iso-a6</Description>
+    <PDLSet>
+      <!--<1B>&l24a8c1E<1B>*p0x0Y<1B>*c2637x3837Y-->
+      <Instruction>&esc;&amp;l24A&esc;*p0x0Y&esc;*c0t{PrintableAreaX}x{PrintableAreaY}Y</Instruction>
+      <PDL>PCL5</PDL>
+    </PDLSet>
+    <PDLSet>
+      <!--=ubyte =eXrxA6 =attr_ubyte =MediaSize =BeginPage =sint16_xy %l{((400*TextXRes)/ 2400)}%l{((400*TextYRes)/ 2400)} =attr_ubyte =PageOrigin =SetPageOrigin-->
+      <Instruction>&eXrxA6;</Instruction>
+      <PDL>PCL6</PDL>
+    </PDLSet>
+  </FeatureItem>
+  <FeatureItem>
+    <Description>iso-c5-envelope-c5</Description>
+    <PDLSet>
+      <!--<1B>&l91a8c1E<1B>*p0x0Y<1B>*c0t4252x6132Y-->
+      <Instruction>&esc;&amp;l91A&esc;&amp;l12C&esc;*p0x0Y</Instruction>
+      <PDL>PCL5</PDL>
+    </PDLSet>
+    <PDLSet>
+      <!--=ubyte =eXrxEnvelopeC5 =attr_ubyte =MediaSize =BeginPage =sint16_xy %l{((400*TextXRes)/ 2400)}%l{((400*TextYRes)/ 2400)} =attr_ubyte =PageOrigin =SetPageOrigin-->
+      <Instruction>&eXrxEnvelopeC5;</Instruction>
+      <PDL>PCL6</PDL>
+    </PDLSet>
+  </FeatureItem>
+  <FeatureItem>
+    <Description>iso-c4-envelope-c4</Description>
+    <PDLSet>
+      <!--=uint16 =eFXEnvelopeChoukei3Gou=attr_ubyte =MediaSize =BeginPage =sint16_xy %l{((400*TextXRes)/ 2400)}%l{((400*TextYRes)/ 2400)} =attr_ubyte =PageOrigin =SetPageOrigin-->
+      <Instruction>&eFXEnvelopeChoukei3Gou;</Instruction>
+      <PDL>PCL6</PDL>
+    </PDLSet>
+  </FeatureItem>
+  <FeatureItem>
+    <Description>executive</Description>
+    <PDLSet>
+      <!--<1B>&l1a8c1E<1B>*p0x0Y<1B>*c4861x7201Y-->
+      <Instruction>&esc;&amp;l1A&esc;*p0x0Y&esc;*c0t{PrintableAreaX}x{PrintableAreaY}Y</Instruction>
+      <PDL>PCL5</PDL>
+    </PDLSet>
+    <PDLSet>
+      <!--=ubyte =eXrx725x1050 =attr_ubyte =MediaSize =BeginPage =sint16_xy %l{((400*TextXRes)/ 2400)}%l{((400*TextYRes)/ 2400)} =attr_ubyte =PageOrigin =SetPageOrigin-->
+      <Instruction>&eXrx725x1050;</Instruction>
+      <PDL>PCL6</PDL>
+    </PDLSet>
+  </FeatureItem>
+  <FeatureItem>
+    <Description>jis-b5</Description>
+    <PDLSet>
+      <!--<1B>&l45a8c1E<1B>*p0x0Y<1B>*c4799x6968Y-->
+      <Instruction>&esc;&amp;l45A&esc;*p0x0Y&esc;*c0t{PrintableAreaX}x{PrintableAreaY}Y</Instruction>
+      <PDL>PCL5</PDL>
+    </PDLSet>
+    <PDLSet>
+      <!--=ubyte =eXrxJISB5 =attr_ubyte =MediaSize =BeginPage =sint16_xy %l{((400*TextXRes)/ 2400)}%l{((400*TextYRes)/ 2400)} =attr_ubyte =PageOrigin =SetPageOrigin-->
+      <Instruction>&eXrxJISB5;</Instruction>
+      <PDL>PCL6</PDL>
+    </PDLSet>
+  </FeatureItem>
+  <FeatureItem>
+    <Description>jis-b4</Description>
+    <PDLSet>
+      <!--<1B>&l46a4d1E<1B>*p0x0Y<1B>*c6912x9958Y-->
+      <Instruction>&esc;&amp;l46A&esc;*p0x0Y&esc;*c0t{PrintableAreaX}x{PrintableAreaY}Y</Instruction>
+      <PDL>PCL5</PDL>
+    </PDLSet>
+    <PDLSet>
+      <!--=ubyte =eXrxJISB4 =attr_ubyte =MediaSize =BeginPage =sint16_xy %l{((400*TextXRes)/ 2400)}%l{((400*TextYRes)/ 2400)} =attr_ubyte =PageOrigin =SetPageOrigin-->
+      <Instruction>&eXrxJISB4;</Instruction>
+      <PDL>PCL6</PDL>
+    </PDLSet>
+  </FeatureItem>
+  <FeatureItem>
+    <Description>na-5x7</Description>
+    <PDLSet>
+      <!--<1B>&l204a8c1E<1B>*p0x0Y<1B>*c3240x4680Y-->
+      <Instruction>&esc;&amp;l204A&esc;*p0x0Y&esc;*c0t{PrintableAreaX}x{PrintableAreaY}Y</Instruction>
+      <PDL>PCL5</PDL>
+    </PDLSet>
+    <PDLSet>
+      <!--=ubyte =eFX5x7 =attr_ubyte =MediaSize =BeginPage =sint16_xy %l{((400*TextXRes)/ 2400)}%l{((400*TextYRes)/ 2400)} =attr_ubyte =PageOrigin =SetPageOrigin-->
+      <Instruction>&eFX5x7;</Instruction>
+      <PDL>PCL6</PDL>
+    </PDLSet>
+  </FeatureItem>
+  <FeatureItem>
+    <Description>jis-b6</Description>
+    <PDLSet>
+      <!--<1B>&l44a8c1E<1B>*p0x0Y<1B>*c3287x4799Y-->
+      <Instruction>&esc;&amp;l44A&esc;*p0x0Y&esc;*c0t{PrintableAreaX}x{PrintableAreaY}Y</Instruction>
+      <PDL>PCL5</PDL>
+    </PDLSet>
+    <PDLSet>
+      <!--=ubyte =eXrxJISB6 =attr_ubyte =MediaSize =BeginPage =sint16_xy %l{((400*TextXRes)/ 2400)}%l{((400*TextYRes)/ 2400)} =attr_ubyte =PageOrigin =SetPageOrigin-->
+      <Instruction>&eXrxJISB6;</Instruction>
+      <PDL>PCL6</PDL>
+    </PDLSet>
+  </FeatureItem>
+  <FeatureItem>
+    <Description>na-8x10</Description>
+    <PDLSet>
+      <!--<1B>&l208a8c1E<1B>*p0x0Y<1B>*c5401x6841Y-->
+      <Instruction>&esc;&amp;l208A&esc;*p0x0Y&esc;*c0t{PrintableAreaX}x{PrintableAreaY}Y</Instruction>
+      <PDL>PCL5</PDL>
+    </PDLSet>
+    <PDLSet>
+      <!--=ubyte =eFX8x10 =attr_ubyte =MediaSize =BeginPage =sint16_xy %l{((400*TextXRes)/ 2400)}%l{((400*TextYRes)/ 2400)} =attr_ubyte =PageOrigin =SetPageOrigin-->
+      <Instruction>&eFX8x10;</Instruction>
+      <PDL>PCL6</PDL>
+    </PDLSet>
+  </FeatureItem>
+  <FeatureItem>
+    <Description>na-number-10-envelope</Description>
+    <PDLSet>
+      <!--<1B>&l81a8c1E<1B>*p0x0Y<1B>*c0t2611x6481Y-->
+      <Instruction>&esc;&amp;l81A&esc;*p0x0Y&esc;*c0t{PrintableAreaX}x{PrintableAreaY}Y</Instruction>
+      <PDL>PCL5</PDL>
+    </PDLSet>
+    <PDLSet>
+      <!--=ubyte =eXrxEnvelope10 =attr_ubyte =MediaSize =BeginPage =sint16_xy %l{((400*TextXRes)/ 2400)}%l{((400*TextYRes)/ 2400)} =attr_ubyte =PageOrigin =SetPageOrigin-->
+      <Instruction>&eXrxEnvelope10;</Instruction>
+      <PDL>PCL6</PDL>
+    </PDLSet>
+  </FeatureItem>
+  <FeatureItem>
+    <Description>iso-designated-long-envelope-dl</Description>
+    <PDLSet>
+      <!--<1B>&l90a8c1E<1B>*p0x0Y<1B>*c0t2778x5877Y-->
+      <Instruction>&esc;&amp;l90A&esc;*p0x0Y&esc;*c0t{PrintableAreaX}x{PrintableAreaY}Y</Instruction>
+      <PDL>PCL5</PDL>
+    </PDLSet>
+    <PDLSet>
+      <!--=ubyte =eXrxEnvelopeDL =attr_ubyte =MediaSize =BeginPage =sint16_xy %l{((400*TextXRes)/ 2400)}%l{((400*TextYRes)/ 2400)} =attr_ubyte =PageOrigin =SetPageOrigin-->
+      <Instruction>&eXrxEnvelopeDL;</Instruction>
+      <PDL>PCL6</PDL>
+    </PDLSet>
+  </FeatureItem>
+  <FeatureItem>
+    <Description>na-3.875x7.5-envelope-monarch</Description>
+    <PDLSet>
+      <!--<1B>&l80a8c1E<1B>*p0x0Y<1B>*c0t2431x5041Y-->
+      <Instruction>&esc;&amp;l80A&esc;*p0x0Y&esc;*c0t{PrintableAreaX}x{PrintableAreaY}Y</Instruction>
+      <PDL>PCL5</PDL>
+    </PDLSet>
+    <PDLSet>
+      <!--=ubyte =eXrxEnvelopeMonarch =attr_ubyte =MediaSize =BeginPage =sint16_xy %l{((400*TextXRes)/ 2400)}%l{((400*TextYRes)/ 2400)} =attr_ubyte =PageOrigin =SetPageOrigin-->
+      <Instruction>&eXrxEnvelopeMonarch;</Instruction>
+      <PDL>PCL6</PDL>
+    </PDLSet>
+  </FeatureItem>
+  <FeatureItem>
+    <Description>na-12x18</Description>
+    <PDLSet>
+      <!--<1B>&l213a8c1E<1B>*p0x0Y<1B>*c0t2431x5041Y-->
+      <Instruction>&esc;&amp;l213A&esc;*p0x0Y&esc;*c0t{PrintableAreaX}x{PrintableAreaY}Y</Instruction>
+      <PDL>PCL5</PDL>
+    </PDLSet>
+    <PDLSet>
+      <!--=ubyte =eFX12x18 =attr_ubyte =MediaSize =BeginPage =sint16_xy %l{((400*TextXRes)/ 2400)}%l{((400*TextYRes)/ 2400)} =attr_ubyte =PageOrigin =SetPageOrigin-->
+      <Instruction>&eFX12x18;</Instruction>
+      <PDL>PCL6</PDL>
+    </PDLSet>
+  </FeatureItem>
+ <FeatureItem>
+    <Description>sra3</Description>
+    <PDLSet>
+      <!--<1B>&l197a8c1E<1B>*p0x0Y<1B>*c0t2431x5041Y-->
+      <Instruction>&esc;&amp;l197A&esc;*p0x0Y&esc;*c0t{PrintableAreaX}x{PrintableAreaY}Y</Instruction>
+      <PDL>PCL5</PDL>
+    </PDLSet>
+    <PDLSet>
+      <!--=ubyte =eFXSRA3 =attr_ubyte =MediaSize =BeginPage =sint16_xy %l{((400*TextXRes)/ 2400)}%l{((400*TextYRes)/ 2400)} =attr_ubyte =PageOrigin =SetPageOrigin-->
+      <Instruction>&eFXSRA3;</Instruction>
+      <PDL>PCL6</PDL>
+    </PDLSet>
+  </FeatureItem>
+ <FeatureItem>
+    <Description>iso-a4-wide</Description>
+    <PDLSet>
+      <!--<1B>&l200a8c1E<1B>*p0x0Y<1B>*c0t2431x5041Y-->
+      <Instruction>&esc;&amp;l200A&esc;*p0x0Y&esc;*c0t{PrintableAreaX}x{PrintableAreaY}Y</Instruction>
+      <PDL>PCL5</PDL>
+    </PDLSet>
+    <PDLSet>
+      <!--=ubyte =eFXA4Over =attr_ubyte =MediaSize =BeginPage =sint16_xy %l{((400*TextXRes)/ 2400)}%l{((400*TextYRes)/ 2400)} =attr_ubyte =PageOrigin =SetPageOrigin-->
+      <Instruction>&eFXA4Over;</Instruction>
+      <PDL>PCL6</PDL>
+    </PDLSet>
+  </FeatureItem>
+ <FeatureItem>
+    <Description>na-letter-cover</Description>
+    <PDLSet>
+      <!--<1B>&l201a8c1E<1B>*p0x0Y<1B>*c0t2431x5041Y-->
+      <Instruction>&esc;&amp;l201A&esc;*p0x0Y&esc;*c0t{PrintableAreaX}x{PrintableAreaY}Y</Instruction>
+      <PDL>PCL5</PDL>
+    </PDLSet>
+    <PDLSet>
+      <!--=ubyte =eFX9x11 =attr_ubyte =MediaSize =BeginPage =sint16_xy %l{((400*TextXRes)/ 2400)}%l{((400*TextYRes)/ 2400)} =attr_ubyte =PageOrigin =SetPageOrigin-->
+      <Instruction>&eFX9x11;</Instruction>
+      <PDL>PCL6</PDL>
+    </PDLSet>
+  </FeatureItem>
+  <FeatureItem>
+    <Description>CustomSize</Description>
+    <PDLSet>
+      <!--<1B>&f-->
+      <Instruction>&esc;&amp;f{PhysPaperWidth}I&esc;&amp;f{PhysPaperLength}J&esc;&amp;l101A&esc;*p0x0Y&esc;*c0t{PrintableAreaX}x{PrintableAreaY}Y</Instruction>
+      <PDL>PCL5</PDL>
+    </PDLSet>
+   </FeatureItem>
+</FeatureSet>
+<FeatureSet>
+  <Description>xdrv-margins</Description>
+  <FeatureItem>
+    <Description>xdrv-margins-standard</Description>
+    <PDLSet>
+      <Instruction>&esc;&amp;l1E</Instruction>
+      <PDL>PCL5</PDL>
+    </PDLSet>
+  </FeatureItem>
+  <FeatureItem>
+    <Description>xdrv-margins-none</Description>
+    <PDLSet>
+      <Instruction>&esc;&amp;l0E</Instruction>
+      <PDL>PCL5</PDL>
+    </PDLSet>
+  </FeatureItem>
+</FeatureSet>

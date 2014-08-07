@@ -1,0 +1,1651 @@
+*%% 
+*%% HP DeskJet value macros
+*%%
+
+*Include: "stdnames.gpd"
+
+*Macros: HPImagingFeatureAndOptionNames
+{
+    *% GPD halftoning feature and option names.
+    HPHT_DLLNAME:                               HPHTDLLName
+    HPHT_DLLNAME_DEFAULT:                       HPFIGLHN
+
+    *% Matter Horn DLL
+    HPMH_DLLNAME:                               HPMHDLLName
+    HPMH_DLLNAME_DEFAULT:                       HPFIME50
+
+    *% Resource DLL
+    HPRES_DLLNAME:                               HPRESDLLName
+    HPRES_DLLNAME_DEFAULT:                       HPFRES50
+
+
+    *% Render DLL for Digimarc
+    HPDM_DLLNAME:                               HPDIGIDLLName
+    HPDM_DLLNAME_DEFAULT:                       HPZ3RWN7
+
+    HPHT_BRIGHTNESS:                            HPHTBrightness
+    HPHT_INTENSITY:                             HPHTIntensity
+    HPHT_COLOR_TONE:                            HPHTColorTemp
+    HPHT_SATURATION:                            HPHTVividness
+    HPHT_INK_VOLUME:                            HPHTInkLevels
+    HPHT_OPTIMIZE_PHOTO_COPY:                   HPHTPhotoCopy
+
+    HPHT_SLIDER_HIGHER:                         HPHTSliderHigher 
+    HPHT_SLIDER_HIGH:                           HPHTSliderHigh
+    HPHT_SLIDER_MIDDLE:                         HPHTSliderMiddle
+    HPHT_SLIDER_LOW:                            HPHTSliderLow
+    HPHT_SLIDER_LOWER:                          HPHTSliderLower
+
+    HPHT_ON:                                    HPHTOn
+    HPHT_OFF:                                   HPHTOff
+
+    HPSTATUSCLIENT_EXENAME:                     HPStatusClientExeName
+    HPSTATUSCLIENT_EXENAME_DEFAULT:             HPZSTC09
+
+    HPSTATUSWINDOW_EXENAME:                     HPStatusWindowExeName
+    HPSTATUSWINDOW_EXENAME_DEFAULT:             HPZSTW09
+}
+
+
+*%% 
+*%% OEMCustomData Macros
+*%%
+*Macros: OEMDataPrinterType
+{
+    OEM_PPA:                    "PTYP<00 00 00 04>1PCS"
+    OEM_PCL2:                   "PTYP<00 00 00 04>2MCP"
+    OEM_PCL9:                   "PTYP<00 00 00 04>9MCP"
+    OEM_PCLA:                   "PTYP<00 00 00 04>AMCP"
+}
+
+*Macros: OEMDataPCLMargins
+{
+    OEM_PCL_MARG_0:             "PCMG<00 00 00 04 00 00 00 00>"
+    OEM_PCL_MARG_26:            "PCMG<00 00 00 04 1A 00 00 00>"
+    OEM_PCL_MARG_35:            "PCMG<00 00 00 04 23 00 00 00>"
+    OEM_PCL_MARG_DUP:           "DUPL<00 00 00 04 64 00 00 00>"
+}
+
+*Macros: OEMDataDyeFormats:
+{
+    OEM_DF_K332:   
++               "HTDN<00 00 00 02 01 00>"
++               "HTDF<00 00 00 10>"
++                   "<00 00 00 00 02 00 2C 01 2C 01 00 00 FE FF FF FF>"
+
+    OEM_DF_K662:   
++               "HTDN<00 00 00 02 01 00>"
++               "HTDF<00 00 00 10>"
++                   "<00 00 00 00 02 00 58 02 58 02 00 00 FE FF FF FF>"
+
+OEM_DF_C664: 
++               "HTDN<00 00 00 02 03 00>"
++               "HTDF<00 00 00 30>"
++                   "<02 00 00 00 04 00 58 02 58 02 00 00 FE FF FF FF>"
++                   "<04 00 00 00 04 00 58 02 58 02 00 00 FE FF FF FF>"
++                   "<06 00 00 00 04 00 58 02 58 02 00 00 FE FF FF FF>"
+
+
+    OEM_DF_C12124:   
++               "HTDN<00 00 00 02 03 00>"
++               "HTDF<00 00 00 30>"
++                   "<02 00 00 00 04 00 B0 04 B0 04 00 00 FE FF FF FF>"
++                   "<04 00 00 00 04 00 B0 04 B0 04 00 00 FE FF FF FF>"
++                   "<06 00 00 00 04 00 B0 04 B0 04 00 00 FE FF FF FF>"
+    OEM_DF_K12122:   
++               "HTDN<00 00 00 02 01 00>"
++               "HTDF<00 00 00 10>"
++                   "<00 00 00 00 02 00 B0 04 B0 04 00 00 FE FF FF FF>"
+
+    OEM_DF_K332_C332: 
++               "HTDN<00 00 00 02 04 00>"
++               "HTDF<00 00 00 40>"
++                   "<00 00 00 00 02 00 2C 01 2C 01 00 00 FE FF FF FF>"
++                   "<02 00 00 00 02 00 2C 01 2C 01 00 00 FE FF FF FF>"
++                   "<04 00 00 00 02 00 2C 01 2C 01 00 00 FE FF FF FF>"
++                   "<06 00 00 00 02 00 2C 01 2C 01 00 00 FE FF FF FF>"
+    
+    OEM_DF_K334_C333: 
++               "HTDN<00 00 00 02 04 00>"
++               "HTDF<00 00 00 40>"
++                   "<00 00 00 00 04 00 2C 01 2C 01 00 00 FE FF FF FF>"
++                   "<02 00 00 00 03 00 2C 01 2C 01 00 00 FE FF FF FF>"
++                   "<04 00 00 00 03 00 2C 01 2C 01 00 00 FE FF FF FF>"
++                   "<06 00 00 00 03 00 2C 01 2C 01 00 00 FE FF FF FF>"
+    
+    OEM_DF_K334_C334: 
++               "HTDN<00 00 00 02 04 00>"
++               "HTDF<00 00 00 40>"
++                   "<00 00 00 00 04 00 2C 01 2C 01 00 00 FE FF FF FF>"
++                   "<02 00 00 00 04 00 2C 01 2C 01 00 00 FE FF FF FF>"
++                   "<04 00 00 00 04 00 2C 01 2C 01 00 00 FE FF FF FF>"
++                   "<06 00 00 00 04 00 2C 01 2C 01 00 00 FE FF FF FF>"
+
+    OEM_DF_K332_C334: 
++               "HTDN<00 00 00 02 04 00>"
++               "HTDF<00 00 00 40>"
++                   "<00 00 00 00 02 00 2C 01 2C 01 00 00 FE FF FF FF>"
++                   "<02 00 00 00 04 00 2C 01 2C 01 00 00 FE FF FF FF>"
++                   "<04 00 00 00 04 00 2C 01 2C 01 00 00 FE FF FF FF>"
++                   "<06 00 00 00 04 00 2C 01 2C 01 00 00 FE FF FF FF>"
+
+    OEM_DF_K632_C332: 
++               "HTDN<00 00 00 02 04 00>"
++               "HTDF<00 00 00 40>"
++                   "<00 00 00 00 02 00 58 02 2c 01 00 00 FE FF FF FF>"
++                   "<02 00 00 00 02 00 2C 01 2C 01 00 00 FE FF FF FF>"
++                   "<04 00 00 00 02 00 2C 01 2C 01 00 00 FE FF FF FF>"
++                   "<06 00 00 00 02 00 2C 01 2C 01 00 00 FE FF FF FF>"
+
+    OEM_DF_K632_C632: 
++               "HTDN<00 00 00 02 04 00>"
++               "HTDF<00 00 00 40>"
++                   "<00 00 00 00 02 00 58 02 2c 01 00 00 FE FF FF FF>"
++                   "<02 00 00 00 02 00 58 02 2C 01 00 00 FE FF FF FF>"
++                   "<04 00 00 00 02 00 58 02 2C 01 00 00 FE FF FF FF>"
++                   "<06 00 00 00 02 00 58 02 2C 01 00 00 FE FF FF FF>"
+
+    OEM_DF_K662_C332: 
++               "HTDN<00 00 00 02 04 00>"
++               "HTDF<00 00 00 40>"
++                   "<00 00 00 00 02 00 58 02 58 02 00 00 FE FF FF FF>"
++                   "<02 00 00 00 02 00 2C 01 2C 01 00 00 FE FF FF FF>"
++                   "<04 00 00 00 02 00 2C 01 2C 01 00 00 FE FF FF FF>"
++                   "<06 00 00 00 02 00 2C 01 2C 01 00 00 FE FF FF FF>"
+
+    OEM_DF_K662_C334: 
++               "HTDN<00 00 00 02 04 00>"
++               "HTDF<00 00 00 40>"
++                   "<00 00 00 00 02 00 58 02 58 02 00 00 FE FF FF FF>"
++                   "<02 00 00 00 04 00 2C 01 2C 01 00 00 FE FF FF FF>"
++                   "<04 00 00 00 04 00 2C 01 2C 01 00 00 FE FF FF FF>"
++                   "<06 00 00 00 04 00 2C 01 2C 01 00 00 FE FF FF FF>"
+
+    OEM_DF_K662_C664: 
++               "HTDN<00 00 00 02 04 00>"
++               "HTDF<00 00 00 40>"
++                   "<00 00 00 00 02 00 58 02 58 02 00 00 FE FF FF FF>"
++                   "<02 00 00 00 04 00 58 02 58 02 00 00 FE FF FF FF>"
++                   "<04 00 00 00 04 00 58 02 58 02 00 00 FE FF FF FF>"
++                   "<06 00 00 00 04 00 58 02 58 02 00 00 FE FF FF FF>"
+
+    OEM_DF_K662_C662: 
++               "HTDN<00 00 00 02 04 00>"
++               "HTDF<00 00 00 40>"
++                   "<00 00 00 00 02 00 58 02 58 02 00 00 FE FF FF FF>"
++                   "<02 00 00 00 02 00 58 02 58 02 00 00 FE FF FF FF>"
++                   "<04 00 00 00 02 00 58 02 58 02 00 00 FE FF FF FF>"
++                   "<06 00 00 00 02 00 58 02 58 02 00 00 FE FF FF FF>"
+
+    OEM_DF_K662_C668: 
++               "HTDN<00 00 00 02 04 00>"
++               "HTDF<00 00 00 40>"
++                   "<00 00 00 00 02 00 58 02 58 02 00 00 FE FF FF FF>"
++                   "<02 00 00 00 08 00 58 02 58 02 00 00 FE FF FF FF>"
++                   "<04 00 00 00 08 00 58 02 58 02 00 00 FE FF FF FF>"
++                   "<06 00 00 00 08 00 58 02 58 02 00 00 FE FF FF FF>"
+
+    OEM_DF_K12122_C12122: 
++               "HTDN<00 00 00 02 04 00>"
++               "HTDF<00 00 00 40>"
++                   "<00 00 00 00 02 00 B0 04 B0 04 00 00 FE FF FF FF>"
++                   "<02 00 00 00 02 00 B0 04 B0 04 00 00 FE FF FF FF>"
++                   "<04 00 00 00 02 00 B0 04 B0 04 00 00 FE FF FF FF>"
++                   "<06 00 00 00 02 00 B0 04 B0 04 00 00 FE FF FF FF>"
+
+    OEM_DF_K12122_C12124: 
++               "HTDN<00 00 00 02 04 00>"
++               "HTDF<00 00 00 40>"
++                   "<00 00 00 00 02 00 B0 04 B0 04 00 00 FE FF FF FF>"
++                   "<02 00 00 00 04 00 B0 04 B0 04 00 00 FE FF FF FF>"
++                   "<04 00 00 00 04 00 B0 04 B0 04 00 00 FE FF FF FF>"
++                   "<06 00 00 00 04 00 B0 04 B0 04 00 00 FE FF FF FF>"
+
+    OEM_DF_HPA_SEQK332: 
++               "HTDN<00 00 00 02 01 00>"
++               "HTDF<00 00 00 10>"
++                   "<00 00 00 00 02 00 2C 01 2C 01 00 00 FE FF FF FF>"
+
+    OEM_DF_HPA_SEQK662:
++               "HTDN<00 00 00 02 01 00>"
++               "HTDF<00 00 00 10>"
++                   "<00 00 00 00 02 00 58 02 58 02 00 00 FE FF FF FF>"
+
+    OEM_DF_HPA_SEQC332:
++               "HTDN<00 00 00 02 03 00>"
++               "HTDF<00 00 00 30>"
++                   "<00 00 00 00 02 00 2C 01 2C 01 00 00 FE FF FF FF>"
++                   "<02 00 00 00 02 00 2C 01 2C 01 00 00 FE FF FF FF>"
++                   "<04 00 00 00 02 00 2C 01 2C 01 00 00 FE FF FF FF>"
+
+    OEM_DF_HPA_SEQC662:
++               "HTDN<00 00 00 02 03 00>"
++               "HTDF<00 00 00 30>"
++                   "<00 00 00 00 02 00 58 02 58 02 00 00 FE FF FF FF>"
++                   "<02 00 00 00 02 00 58 02 58 02 00 00 FE FF FF FF>"
++                   "<04 00 00 00 02 00 58 02 58 02 00 00 FE FF FF FF>"
+
+    OEM_DF_HPA_SEQC12122:
++               "HTDN<00 00 00 02 03 00>"
++               "HTDF<00 00 00 30>"
++                   "<00 00 00 00 02 00 B0 04 B0 04 00 00 FE FF FF FF >"
++                   "<02 00 00 00 02 00 B0 04 B0 04 00 00 FE FF FF FF >"
++                   "<04 00 00 00 02 00 B0 04 B0 04 00 00 FE FF FF FF >"
+
+    OEM_DF_C332: 
++               "HTDN<00 00 00 02 03 00>"
++               "HTDF<00 00 00 30>"
++                   "<02 00 00 00 02 00 2C 01 2C 01 00 00 FE FF FF FF>"
++                   "<04 00 00 00 02 00 2C 01 2C 01 00 00 FE FF FF FF>"
++                   "<06 00 00 00 02 00 2C 01 2C 01 00 00 FE FF FF FF>"
+
+    OEM_DF_P332_C332:     *% Used modes: Fast Normal, Fast Draft
++               "HTDN<00 00 00 02 06 00>"
++               "HTDF<00 00 00 60>"
++                   "<01 00 00 00 02 00 2C 01 2C 01 00 00 FE FF FF FF>"    *% low dye K
++                   "<02 00 00 00 04 00 2C 01 2C 01 00 00 FE FF FF FF>"    *% high dye C
++                   "<03 00 00 00 04 00 2C 01 2C 01 00 00 FE FF FF FF>"    *% low dye C
++                   "<04 00 00 00 04 00 2C 01 2C 01 00 00 FE FF FF FF>"    *% high dye M
++                   "<05 00 00 00 04 00 2C 01 2C 01 00 00 FE FF FF FF>"    *% low dye M
++                   "<06 00 00 00 04 00 2C 01 2C 01 00 00 FE FF FF FF>"    *% Y
+
+
+    OEM_DF_P664_C664:     *% Used modes: Normal, Best 
++               "HTDN<00 00 00 02 06 00>"
++               "HTDF<00 00 00 60>"
++                   "<01 00 00 00 02 00 58 02 58 02 00 00 FE FF FF FF>"    *% low dye K
++                   "<02 00 00 00 04 00 58 02 58 02 00 00 FE FF FF FF>"    *% high dye C
++                   "<03 00 00 00 04 00 58 02 58 02 00 00 FE FF FF FF>"    *% low dye C
++                   "<04 00 00 00 04 00 58 02 58 02 00 00 FE FF FF FF>"    *% high dye M
++                   "<05 00 00 00 04 00 58 02 58 02 00 00 FE FF FF FF>"    *% low dye M
++                   "<06 00 00 00 04 00 58 02 58 02 00 00 FE FF FF FF>"    *% Y
+
+    OEM_DF_P12124_C12124:     *% Used modes: Maximum dpi
++               "HTDN<00 00 00 02 06 00>"
++               "HTDF<00 00 00 60>"
++                   "<01 00 00 00 02 00 B0 04 B0 04 00 00 FE FF FF FF>"    *% low dye K
++                   "<02 00 00 00 04 00 B0 04 B0 04 00 00 FE FF FF FF>"    *% high dye C
++                   "<03 00 00 00 04 00 B0 04 B0 04 00 00 FE FF FF FF>"    *% low dye C
++                   "<04 00 00 00 04 00 B0 04 B0 04 00 00 FE FF FF FF>"    *% high dye M
++                   "<05 00 00 00 04 00 B0 04 B0 04 00 00 FE FF FF FF>"    *% low dye M
++                   "<06 00 00 00 04 00 B0 04 B0 04 00 00 FE FF FF FF>"    *% Y
+
+}
+
+*Macros: OEMDataPQSettings:
+{
+    OEM_PQ_BEST:                "HTPQ<00 00 00 04 00 00 00 00>"
+    OEM_PQ_NORMAL:              "HTPQ<00 00 00 04 01 00 00 00>"
+    OEM_PQ_ECONO:               "HTPQ<00 00 00 04 02 00 00 00>" *% Fast
+    OEM_PQ_HIGH_RES:            "HTPQ<00 00 00 04 03 00 00 00>"
+    OEM_PQ_MARVELOUS:           "HTPQ<00 00 00 04 04 00 00 00>"
+    OEM_PQ_FAST_NORMAL:         "HTPQ<00 00 00 04 05 00 00 00>"
+    OEM_PQ_AUTOMATIC:           "HTPQ<00 00 00 04 06 00 00 00>"
+}
+
+*%-------------------------------------------------------------------------------------------
+*% Enable indicates support for SpeedMech
+*%-------------------------------------------------------------------------------------------
+*Macros: OEMDataSpeedMech:
+{
+    OEM_SPEEDMECH_ENABLE:       "HTSM<00 00 00 04 01 00 00 00>"
+    OEM_SPEEDMECH_DISABLE:      "HTSM<00 00 00 04 00 00 00 00>"
+}
+
+*%-------------------------------------------------------------------------------------------
+*% Enable indicates support for FullSail
+*%-------------------------------------------------------------------------------------------
+*Macros: OEMDataFullSail:
+{
+    OEM_FULLSAIL_ENABLE:       "HTFS<00 00 00 04 01 00 00 00>"
+    OEM_FULLSAIL_DISABLE:      "HTFS<00 00 00 04 00 00 00 00>"
+}
+
+*Macros: OEMDataMediaTypes
+{
+    OEM_MEDIA_HP_AUTOMATIC:                     "HTMD<00 00 00 04 00 00 00 00>"
+    OEM_MEDIA_HP_PLAIN:                         "HTMD<00 00 00 04 00 00 00 00>"
+    OEM_MEDIA_HP_PREMIUM_INKJET_TRANSPARENCY:   "HTMD<00 00 00 04 05 00 00 00>"
+    OEM_MEDIA_HP_PREMIUM_INKJET_RAPIDDRY_TRANS: "HTMD<00 00 00 04 09 00 00 00>"
+    OEM_MEDIA_HP_PREMIUM_INKJET:                "HTMD<00 00 00 04 0A 00 00 00>"
+    OEM_MEDIA_HP_PREMIUM_INKJET_HEAVYWEIGHT:    "HTMD<00 00 00 04 10 00 00 00>"
+    OEM_MEDIA_HP_PHOTO:                         "HTMD<00 00 00 04 0E 00 00 00>"
+    OEM_MEDIA_HP_PREMIUM_PHOTO:                 "HTMD<00 00 00 04 0B 00 00 00>"
+    OEM_MEDIA_HP_PREMIUM_PLUS_PHOTO:            "HTMD<00 00 00 04 11 00 00 00>"
+    OEM_MEDIA_HP_BROCHURE_FLYER:                "HTMD<00 00 00 04 12 00 00 00>"
+    OEM_MEDIA_HP_PHOTO_GREETING:                "HTMD<00 00 00 04 13 00 00 00>"
+    OEM_MEDIA_HP_HIGH_GLOSS_FILM:               "HTMD<00 00 00 04 14 00 00 00>"
+}
+
+*Macros: OEMDataHagakiPrintMode:
+{
+    OEM_HAGAKIPM_ENABLE:       "HTHP<00 00 00 04 01 00 00 00>"
+    OEM_HAGAKIPM_DISABLE:      "HTHP<00 00 00 04 00 00 00 00>"
+}
+
+
+*%-------------------------------------------------------------------------------------------
+*% Pensets recognized by the Halftoning Module (EPenSet enumeration)
+*% To be used for CoolDot halftoning 
+*%-------------------------------------------------------------------------------------------
+
+*Macros: OEMPenSetTypes
+{
+    OEM_PENSET_HP_CMY:                            "HTPS<00 00 00 04 00 00 00 00>"
+    OEM_PENSET_HP_KCMY:                            "HTPS<00 00 00 04 01 00 00 00>"
+    OEM_PENSET_HP_PHOTOCMY:                        "HTPS<00 00 00 04 02 00 00 00>"
+    OEM_PENSET_HP_K:                            "HTPS<00 00 00 04 03 00 00 00>"
+    OEM_PENSET_HP_PHOTO:                        "HTPS<00 00 00 04 05 00 00 00>"
+    OEM_PENSET_HP_PHOTOKCMY:                    "HTPS<00 00 00 04 06 00 00 00>"
+    OEM_PENSET_HP_CMYGRAY:                        "HTPS<00 00 00 04 07 00 00 00>"
+    OEM_PENSET_HP_PHOTOCMYGRAY:                    "HTPS<00 00 00 04 08 00 00 00>"
+    OEM_PENSET_HP_UNKNOWN:                        "HTPS<00 00 00 04 09 00 00 00>"
+    OEM_PENSET_HP_CMBCMY:                        "HTPS<00 00 00 04 0A 00 00 00>"
+    OEM_PENSET_HP_CMBKCMY:                        "HTPS<00 00 00 04 0B 00 00 00>"
+    OEM_PENSET_HP_CMBCMYGRAY:                    "HTPS<00 00 00 04 0C 00 00 00>"
+}
+
+    
+*%-------------------------------------------------------------------------------------------
+*% MediaType names recognised by the Resource Manager (TRMMedia enumeration)
+*% To be used with the ResourceManager for HPA printers only
+*%-------------------------------------------------------------------------------------------
+*Macros: OEMDataHPAMediaTypes
+{
+    OEM_HPA_RM_MEDIA_HP_AUTOMATIC:              "RMMD<00 00 00 04 00 00 00 00>"
+    OEM_HPA_RM_MEDIA_HP_PLAIN:                  "RMMD<00 00 00 04 01 00 00 00>"
+    OEM_HPA_RM_MEDIA_HP_SCOTTY:                 "RMMD<00 00 00 04 02 00 00 00>"
+    OEM_HPA_RM_MEDIA_HP_VAIL:                   "RMMD<00 00 00 04 03 00 00 00>"
+    OEM_HPA_RM_MEDIA_HP_GRAIL:                  "RMMD<00 00 00 04 04 00 00 00>"
+    OEM_HPA_RM_MEDIA_HP_JORDAN:                 "RMMD<00 00 00 04 05 00 00 00>"
+    OEM_HPA_RM_MEDIA_HP_HOMER:                  "RMMD<00 00 00 04 06 00 00 00>"
+    OEM_HPA_RM_MEDIA_HP_GOSSIMER:               "RMMD<00 00 00 04 07 00 00 00>"
+    OEM_HPA_RM_MEDIA_HP_ARCHIE:                 "RMMD<00 00 00 04 07 00 00 00>"
+    OEM_HPA_RM_MEDIA_HP_VANGOGH:                "RMMD<00 00 00 04 07 00 00 00>"
+    OEM_HPA_RM_MEDIA_HP_COSMO:                  "RMMD<00 00 00 04 08 00 00 00>"
+    OEM_HPA_RM_MEDIA_HP_T2:                     "RMMD<00 00 00 04 09 00 00 00>"
+    OEM_HPA_RM_MEDIA_HP_T3:                     "RMMD<00 00 00 04 0A 00 00 00>"
+    OEM_HPA_RM_MEDIA_HP_3MPRESTO:               "RMMD<00 00 00 04 0B 00 00 00>"
+    OEM_HPA_RM_MEDIA_HP_CABO:                   "RMMD<00 00 00 04 0C 00 00 00>"
+    OEM_HPA_RM_MEDIA_HP_GOBI:                   "RMMD<00 00 00 04 0D 00 00 00>"
+    OEM_HPA_RM_MEDIA_HP_ZIRCON:                 "RMMD<00 00 00 04 0E 00 00 00>"
+    OEM_HPA_RM_MEDIA_HP_ACAPULCO:               "RMMD<00 00 00 04 0F 00 00 00>"
+    OEM_HPA_RM_MEDIA_HP_PINAHARI:               "RMMD<00 00 00 04 0F 00 00 00>"
+    OEM_HPA_RM_MEDIA_HP_VEGAS:                  "RMMD<00 00 00 04 10 00 00 00>"
+}
+*%-------------------------------------------------------------------------------------------
+
+
+*%-------------------------------------------------------------------------------------------
+*% Resource Manager Product ID (TRMProduct enumeration)
+*% To be used with the ResourceManager for HPA printers only
+*% Note, these enumerations are different than the HTPD product ID
+*% used for the Halftone Library configuration.
+*%-------------------------------------------------------------------------------------------
+*Macros: OEMDataRMProduct
+{
+    OEM_RM_ALADDIN:              "RMPD<00 00 00 04 01 00 00 00>"
+    OEM_RM_JUPITER:              "RMPD<00 00 00 04 02 00 00 00>"
+    OEM_RM_MALIBU:               "RMPD<00 00 00 04 03 00 00 00>"
+    OEM_RM_ATOMANT:              "RMPD<00 00 00 04 04 00 00 00>"
+    OEM_RM_TINMAN:               "RMPD<00 00 00 04 05 00 00 00>"
+    OEM_RM_MALIBUPLUS:           "RMPD<00 00 00 04 06 00 00 00>"
+    OEM_RM_STINGRAY:             "RMPD<00 00 00 04 07 00 00 00>"
+    OEM_RM_SSQUIRREL:            "RMPD<00 00 00 04 08 00 00 00>"
+    OEM_RM_GRANPRIX:             "RMPD<00 00 00 04 09 00 00 00>"
+    OEM_RM_CRICKMLK:             "RMPD<00 00 00 04 0A 00 00 00>"
+    OEM_RM_TORNADO:              "RMPD<00 00 00 04 0B 00 00 00>"
+    OEM_RM_CONNERY:              "RMPD<00 00 00 04 0C 00 00 00>"
+    OEM_RM_KONG:                 "RMPD<00 00 00 04 0D 00 00 00>"
+}
+*%-------------------------------------------------------------------------------------------
+
+*%-------------------------------------------------------------------------------------------
+*% MediaType names recognized by the Halftoning Module (THPMediaType enumeration)
+*% To be used for CoolDot halftoning 
+*%-------------------------------------------------------------------------------------------
+*Macros: OEMDataCDHTMediaTypes
+{
+    OEM_CD_HT_MEDIA_HP_PLAIN:                  "HTMC<00 00 00 04 00 00 00 00>"
+    OEM_CD_HT_MEDIA_HP_OLDSPECIAL:             "HTMC<00 00 00 04 01 00 00 00>"
+    OEM_CD_HT_MEDIA_HP_VIPERSPECIAL:           "HTMC<00 00 00 04 02 00 00 00>"
+    OEM_CD_HT_MEDIA_HP_TRANSPARENCY:           "HTMC<00 00 00 04 03 00 00 00>"
+    OEM_CD_HT_MEDIA_HP_GLOSSY:                 "HTMC<00 00 00 04 04 00 00 00>"
+    OEM_CD_HT_MEDIA_HP_SCOTTY:                 "HTMC<00 00 00 04 05 00 00 00>"
+    OEM_CD_HT_MEDIA_HP_PICARD:                 "HTMC<00 00 00 04 06 00 00 00>"
+    OEM_CD_HT_MEDIA_HP_NORMAN:                 "HTMC<00 00 00 04 07 00 00 00>"
+    OEM_CD_HT_MEDIA_HP_KODAKPHOTO:             "HTMC<00 00 00 04 08 00 00 00>"
+    OEM_CD_HT_MEDIA_HP_PRESTO:                 "HTMC<00 00 00 04 09 00 00 00>"
+    OEM_CD_HT_MEDIA_HP_VAIL:                   "HTMC<00 00 00 04 0A 00 00 00>"
+    OEM_CD_HT_MEDIA_HP_VERPSI:                 "HTMC<00 00 00 04 0B 00 00 00>"
+    OEM_CD_HT_MEDIA_HP_HOMER:                  "HTMC<00 00 00 04 0C 00 00 00>"
+    OEM_CD_HT_MEDIA_HP_PHELICKS:               "HTMC<00 00 00 04 0D 00 00 00>"
+    OEM_CD_HT_MEDIA_HP_JORDAN:                 "HTMC<00 00 00 04 0E 00 00 00>"
+    OEM_CD_HT_MEDIA_HP_PEPE:                   "HTMC<00 00 00 04 0F 00 00 00>"
+    OEM_CD_HT_MEDIA_HP_GRAIL:                  "HTMC<00 00 00 04 10 00 00 00>"
+    OEM_CD_HT_MEDIA_HP_GOSSIMER:               "HTMC<00 00 00 04 11 00 00 00>"
+    OEM_CD_HT_MEDIA_HP_ARCHIE:                 "HTMC<00 00 00 04 11 00 00 00>"
+    OEM_CD_HT_MEDIA_HP_VANGOGH:                "HTMC<00 00 00 04 11 00 00 00>"
+    OEM_CD_HT_MEDIA_HP_COSMO:                  "HTMC<00 00 00 04 12 00 00 00>"
+    OEM_CD_HT_MEDIA_HP_ZIRCON:                 "HTMC<00 00 00 04 12 00 00 00>"
+    OEM_CD_HT_MEDIA_HP_CABO:                   "HTMC<00 00 00 04 13 00 00 00>"
+    OEM_CD_HT_MEDIA_HP_GOBI:                   "HTMC<00 00 00 04 14 00 00 00>"
+    OEM_CD_HT_MEDIA_HP_PINAHARI:               "HTMC<00 00 00 04 15 00 00 00>"
+    OEM_CD_HT_MEDIA_HP_ACAPULCO:               "HTMC<00 00 00 04 15 00 00 00>"
+    OEM_CD_HT_MEDIA_HP_NAUTILUS:               "HTMC<00 00 00 04 15 00 00 00>"
+    OEM_CD_HT_MEDIA_HP_NAUTILUSSEMI:               "HTMC<00 00 00 04 16 00 00 00>"
+    OEM_CD_HT_MEDIA_HP_FATGRAIL:               "HTMC<00 00 00 04 17 00 00 00>"
+    OEM_CD_HT_MEDIA_HP_PHOTORAG:               "HTMC<00 00 00 04 18 00 00 00>"
+    OEM_CD_HT_MEDIA_HP_WATERCOLOR:               "HTMC<00 00 00 04 19 00 00 00>"
+    OEM_CD_HT_MEDIA_HP_CANVAS:               "HTMC<00 00 00 04 1B 00 00 00>"
+}
+
+*% Replaced with above cooldot halftone media types:
+*Macros: OEMDataMediaTypeCommands
+{
+    OEM_PCL_MEDIA_AUTOMATIC:            "HTMC<00 00 00 04 FF FF 00 00>" *% -1
+    OEM_PCL_MEDIA_PLAIN:                "HTMC<00 00 00 04 00 00 00 00>"
+    OEM_PCL_MEDIA_BOND:                 "HTMC<00 00 00 04 01 00 00 00>"
+    OEM_PCL_MEDIA_SPECIAL:              "HTMC<00 00 00 04 02 00 00 00>"
+    OEM_PCL_MEDIA_GLOSSY:               "HTMC<00 00 00 04 03 00 00 00>"
+    OEM_PCL_MEDIA_TRANSPARENCY:         "HTMC<00 00 00 04 04 00 00 00>"
+    OEM_PCL_MEDIA_FAST_GLOSSY:          "HTMC<00 00 00 04 05 00 00 00>"
+    OEM_PCL_MEDIA_FAST_TRANSP:          "HTMC<00 00 00 04 06 00 00 00>"
+    OEM_PCL_MEDIA_PREMIUM_PHOTO:        "HTMC<00 00 00 04 07 00 00 00>"
+    OEM_PCL_MEDIA_BROCHURE_GLOSSY:      "HTMC<00 00 00 04 08 00 00 00>"
+    OEM_PCL_MEDIA_INKJET_HEAVY:         "HTMC<00 00 00 04 09 00 00 00>"
+    OEM_PCL_MEDIA_BROCHURE_MATTE:       "HTMC<00 00 00 04 0A 00 00 00>"
+    OEM_PCL_MEDIA_THICK_PHOTO:          "HTMC<00 00 00 04 0E 00 00 00>"
+}
+
+*%-------------------------------------------------------------------------------------------
+*% Pensets recognized by the Halftoning Module (EPenSet enumeration)
+*% To be used for CoolDot halftoning 
+*%-------------------------------------------------------------------------------------------
+
+*Macros: OEMPenSetTypes
+{
+    OEM_PENSET_HP_CMY:                            "HTPS<00 00 00 04 00 00 00 00>"
+    OEM_PENSET_HP_KCMY:                            "HTPS<00 00 00 04 01 00 00 00>"
+    OEM_PENSET_HP_PHOTOCMY:                        "HTPS<00 00 00 04 02 00 00 00>"
+    OEM_PENSET_HP_K:                            "HTPS<00 00 00 04 03 00 00 00>"
+    OEM_PENSET_HP_PHOTO:                        "HTPS<00 00 00 04 05 00 00 00>"
+    OEM_PENSET_HP_PHOTOKCMY:                    "HTPS<00 00 00 04 06 00 00 00>"
+    OEM_PENSET_HP_CMYGRAY:                        "HTPS<00 00 00 04 07 00 00 00>"
+    OEM_PENSET_HP_PHOTOCMYGRAY:                    "HTPS<00 00 00 04 08 00 00 00>"
+    OEM_PENSET_HP_UNKNOWN:                        "HTPS<00 00 00 04 09 00 00 00>"
+    OEM_PENSET_HP_CMBCMY:                        "HTPS<00 00 00 04 0A 00 00 00>"
+    OEM_PENSET_HP_CMBKCMY:                        "HTPS<00 00 00 04 0B 00 00 00>"
+    OEM_PENSET_HP_CMBCMYGRAY:                    "HTPS<00 00 00 04 0C 00 00 00>"
+}
+
+
+*Macros: OEMCDPCLDataMediaTypeCommands
+{
+    OEM_CD_PCL_MEDIA_TYPE_AUTOMATIC:            "PCLM<00 00 00 04 FF FF 00 00>" *% -1
+    OEM_CD_PCL_MEDIA_TYPE_PLAIN:                "PCLM<00 00 00 04 00 00 00 00>"
+    OEM_CD_PCL_MEDIA_TYPE_BOND:                 "PCLM<00 00 00 04 01 00 00 00>"
+    OEM_CD_PCL_MEDIA_TYPE_SPECIAL:              "PCLM<00 00 00 04 02 00 00 00>"
+    OEM_CD_PCL_MEDIA_TYPE_GLOSSY:               "PCLM<00 00 00 04 03 00 00 00>"
+    OEM_CD_PCL_MEDIA_TYPE_TRANSPARENCY:         "PCLM<00 00 00 04 04 00 00 00>"
+    OEM_CD_PCL_MEDIA_TYPE_FAST_GLOSSY:          "PCLM<00 00 00 04 05 00 00 00>"
+    OEM_CD_PCL_MEDIA_TYPE_FAST_TRANSP:          "PCLM<00 00 00 04 06 00 00 00>"
+    OEM_CD_PCL_MEDIA_TYPE_PREMIUM_PHOTO:        "PCLM<00 00 00 04 07 00 00 00>"
+    OEM_CD_PCL_MEDIA_TYPE_BROCHURE_GLOSSY:      "PCLM<00 00 00 04 08 00 00 00>"
+    OEM_CD_PCL_MEDIA_TYPE_INKJET_HEAVY:         "PCLM<00 00 00 04 09 00 00 00>"
+    OEM_CD_PCL_MEDIA_TYPE_BROCHURE_MATTE:       "PCLM<00 00 00 04 0A 00 00 00>"
+    OEM_CD_PCL_MEDIA_TYPE_THICK_PHOTO:          "PCLM<00 00 00 04 0E 00 00 00>"
+}
+*%-------------------------------------------------------------------------------------------
+
+*%% 
+*%% PCL/PJL Command Macros
+*%%
+*Macros: PCLPrintModeCRDCommands
+{
+    PCL_CRD_K332:               "<1B>*g8W<0201012C012C0002>"
+    PCL_CRD_K632:               "<1B>*g8W<02010258012C0002>"
+    PCL_CRD_K662:               "<1B>*g8W<0201025802580002>"
+    PCL_CRD_K332_C332:          "<1B>*g26W<0204012C012C0002012C012C0002012C012C0002012C012C0002>"
+    PCL_CRD_K334_C333:          "<1B>*g26W<0204012C012C0004012C012C0003012C012C0003012C012C0003>"
+    PCL_CRD_K334_C334:          "<1B>*g26W<0204012C012C0004012C012C0004012C012C0004012C012C0004>"
+    PCL_CRD_K632_C332:          "<1B>*g26W<02040258012C0002012C012C0002012C012C0002012C012C0002>"
+    PCL_CRD_K632_C632:          "<1B>*g26W<02040258012C00020258012C00020258012C00020258012C0002>"
+    PCL_CRD_K662_C332:          "<1B>*g26W<0204025802580002012C012C0002012C012C0002012C012C0002>"
+    PCL_CRD_K662_C334:          "<1B>*g26W<0204025802580002012C012C0004012C012C0004012C012C0004>"
+    PCL_CRD_K662_C664:          "<1B>*g26W<0204025802580002025802580004025802580004025802580004>"
+    PCL_CRD_K662_C662:          "<1B>*g26W<0204025802580002025802580002025802580002025802580002>"
+    PCL_CRD_K662_C668:          "<1B>*g26W<0204025802580002025802580008025802580008025802580008>"
+    PCL_CRD_K12122_C12122:      "<1B>*g26W<020404B004B0000204B004B0000204B004B0000204B004B00002>"
+    PCL_CRD_K12122_C12124:      "<1B>*g26W<020404B004B0000204B004B0000404B004B0000404B004B00004>"
+    HPA_CRD_SEQK33:             "<1B>*g12W<06070001012C012C09000101>"
+    HPA_CRD_SEQK66:             "<1B>*g12W<060700010258025809000101>"
+    HPA_CRD_SEQC33:             "<1B>*g12W<06070001012C012C0A012001>"
+    HPA_CRD_SEQC66:             "<1B>*g12W<06070001025802580A012001>"
+    HPA_CRD_SEQC1212:           "<1B>*g12W<0607000104B004B00A012001>"
+    VIP_CRD_SEQC33:             "<1B>*g12W<06070001012C012C0A012001>"
+    VIP_CRD_SEQC66:             "<1B>*g12W<06070001025802580A012001>"
+    VIP_CRD_SEQC1212:           "<1B>*g12W<0607000104B004B00A012001>"
+    HPA_CRD_SEQK33_C33:         "<1B>*g20W<061F0002012C012C09000101012C012C0A012001>"
+    HPA_CRD_SEQK66_C66:         "<1B>*g20W<061F00020258025809000101025802580A012001>"
+    HPA_CRD_SEQK1212_C1212:     "<1B>*g20W<061F000204B004B00900010104B004B00A012001>"
+    DJ_TAOS_CRD_SEQC33:         "<1B>*g12W<061F0001012C012C0C012001>"
+    DJ_TAOS_CRD_SEQC66:         "<1B>*g12W<061F0001025802580C012001>"
+    DJ_TAOS_CRD_SEQC1212:       "<1B>*g12W<061F000104B004B00C012001>"
+
+}
+
+*Macros: PCLPrintQualityCommands
+{
+    PCL_PQ_ECONO:               "<1B>*o-2M"
+    PCL_PQ_NORMAL:              "<1B>*o0M"
+    PCL_PQ_BEST:                "<1B>*o1M"
+    PCL_PQ_FASTNORMAL:          "<1B>*o-1M"
+    PCL_PQ_HIGHRES:             "<1B>*o2M"
+    PCL_PQ_AUTOMATIC:           "<1B>*o-3M"
+}
+
+*Macros: PCLMediaTypeCommands
+{
+    PCL_MEDIA_AUTOMATIC:        "<1B>&l-1M"
+    PCL_MEDIA_PLAIN:            "<1B>&l0M"
+    PCL_MEDIA_BOND:             "<1B>&l1M"
+    PCL_MEDIA_SPECIAL:          "<1B>&l2M"
+    PCL_MEDIA_GLOSSY:           "<1B>&l3M"
+    PCL_MEDIA_TRANSPARENCY:     "<1B>&l4M"
+    PCL_MEDIA_FAST_GLOSSY:      "<1B>&l5M"
+    PCL_MEDIA_FAST_TRANSP:      "<1B>&l6M"
+    PCL_MEDIA_PREMIUM_PHOTO:    "<1B>&l7M"
+    PCL_MEDIA_BROCHURE_GLOSSY:  "<1B>&l8M"
+    PCL_MEDIA_INKJET_HEAVY:     "<1B>&l9M"    *% same for Thick Plain
+    PCL_MEDIA_BROCHURE_MATTE:   "<1B>&l10M"
+    PCL_MEDIA_THICK_PHOTO:      "<1B>&l14M"
+
+}
+
+*Macros: PCLMediaSizeCommands:
+{
+    PCL_US_LETTER:              "<1B>&l2A"   *% same for Banner Letter/Borderless 8.5 x 11 in.
+    PCL_US_LEGAL:               "<1B>&l3A"
+    PCL_US_EXECUTIVE:           "<1B>&l1A"
+    PCL_LEDGER:                 "<1B>&l6A"   *% same for Banner Tabloid
+    PCL_MINI:                   "<1B>&l15A"
+    PCL_SUPER_B:                "<1B>&l16A"  *% same for A3 Nobi
+    PCL_A3:                     "<1B>&l27A"  *% same for Banner A3
+    PCL_A4:                     "<1B>&l26A"  *% same for Banner A4 and Borderless A4
+    PCL_A5:                     "<1B>&l25A"  *% same for Special hagaki paper with tear-off tab 
+    PCL_A6:                     "<1B>&l73A"  *% same as Borderless A6 Card
+    PCL_B4:                     "<1B>&l46A"
+    PCL_B5:                     "<1B>&l45A"
+    PCL_ENV_MONARCH:            "<1B>&l80A"
+    PCL_ENV_10:                 "<1B>&l81A"
+    PCL_ENV_A2:                 "<1B>&l109A"
+    PCL_ENV_DL:                 "<1B>&l90A"
+    PCL_ENV_C5:                 "<1B>&l91A"
+    PCL_ENV_C6:                 "<1B>&l92A"
+    PCL_JAPANESE_POSTCARD:      "<1B>&l71A"  *% same as Borderless Hagaki
+    PCL_INDEX_3x5:              "<1B>&l78A"
+    PCL_INDEX_4x6:              "<1B>&l74A"  *% same as Borderless Photo 4x6 with and without tab
+    PCL_INDEX_5x8:              "<1B>&l75A"
+    PCL_CUSTOMSIZE:             "<1B>&l101A" *% same as  panorama
+    PCL_JENV_CHOU3:             "<1B>&l110A" *% same for Japanese Envelope #3
+    PCL_JENV_CHOU4:             "<1B>&l111A" *% same for Japanese Envelope #4
+    PCL_JENV_KAKU2:             "<1B>&l113A"
+    PCL_GREETING_CARD_ENV:      "<1B>&l114A"
+    PCL_EXECUTIVE_JIS:          "<1B>&l18A"
+    PCL_OFUKU_HAGAKI:           "<1B>&l72A"
+    PCL_PHOTO_4X6:              "<1B>&l74A"  *% remove this
+    PCL_2E_SIZE:                "<1B>&l125A" *% same for Borderless 2E Size
+    PCL_CABINET:                "<1B>&l119A"   *% same as Borderless Cabniet
+    PCL_E_SIZE:                 "<1B>&l14A"  *% same as Borderless E Size
+    PCL_KG_SIZE:                "<1B>&l124A" *% same as Borderless KG Size
+    PCL_PHOTO_2L:               "<1B>&l126A" *% same as Borderless 2L with tab 
+    PCL_PHOTO_5x7:              "<1B>&l122A" *% same as Borderless Photo 5x7
+    PCL_PHOTO_8X10:             "<1B>&l7A"   *% same for Borderless Photo 8X10
+    PCL_PHOTO_L:                "<1B>&l121A" *% same for Borderless Photo with and without tab
+    PCL_STATEMENT:              "<1B>&l15A"
+    PCL_C_SIZE:                 "<1B>&l12A"
+    PCL_A2:                     "<1B>&l28A" 
+    PCL_10x15:                  "<1B>&l118A" *% same for 10x15 cm with tab
+    PCL_3_5x3_5:                "<1B>&l98A"  *%for 3.5x3.5 CD
+    PCL_5x5:                    "<1B>&l99A"  *%for 5x5 CD
+
+}
+
+*Macros: PCLMediaSourceCommands
+{
+    PCL_MEDSOURCE_PRELOAD:      "<1B>&l-2H"
+    PCL_MEDSOURCE_TRACTORFEED:  "<1B>&l-1H"
+    PCL_MEDSOURCE_TRAY1:        "<1B>&l1H"
+    PCL_MEDSOURCE_MANUALFEED:   "<1B>&l2H"
+    PCL_MEDSOURCE_ENVMANFEED:   "<1B>&l3H"
+    PCL_MEDSOURCE_TRAY2:        "<1B>&l4H"
+    PCL_MEDSOURCE_OPTIONAL:     "<1B>&l5H"
+    PCL_MEDSOURCE_AUTOSELECT:   "<1B>&l7H"
+    PCL_MEDSOURCE_PHOTOTRAY:    "<1B>&l6H"
+}
+
+*Macros: PCLOrientationCommands
+{
+    PCL_ORIENT_PORTRAIT:        "<1B>&l0O"
+    PCL_ORIENT_LANDSCAPE:       "<1B>&l1O"
+    PCL_ORIENT_REVERSE_PORT:    "<1B>&l2O"
+    PCL_ORIENT_REVERSE_LAND:    "<1B>&l3O"
+}
+
+*Macros: PCLMediaIndexCommands
+{
+    PCL_IDX_PLAIN:                      "<1B>*o5W<0D03000001>"      *% Plain Paper
+    PCL_IDX_PREMIUM_TRANSPARENCY:       "<1B>*o5W<0D03000002>"      *% hp premium inkjet transparency film
+    PCL_IDX_PREMIUM_PHOTO_GLOSSY:       "<1B>*o5W<0D03000003>"      *% hp premium photo paper, glossy
+    PCL_IDX_THICK_PLAIN:                "<1B>*o5W<0D03000009>"      *% Thick Plain paper
+    PCL_IDX_BRIGHT_WHITE_INKJET:        "<1B>*o5W<0D030003EC>"      *% hp bright white paper
+    PCL_IDX_PREMIUM_INKJET:             "<1B>*o5W<0D030003ED>"      *% hp premium paper
+    PCL_IDX_PREMIUM_INKJET_HWT:         "<1B>*o5W<0D030003EE>"      *% hp heavyweight premium paper
+    PCL_IDX_OTHER_INKJET:               "<1B>*o5W<0D030003EF>"      *% other inkjet paper
+    PCL_IDX_HP_DESIGN_HWT:              "<1B>*o5W<0D030003F0>"      *% hp design heavyweight premium paper
+    PCL_IDX_HP_PHOTO:                   "<1B>*o5W<0D030003F2>"      *% hp photo paper, glossy
+    PCL_IDX_PREMIUM_PLUS_PHOTO_GLOSSY:  "<1B>*o5W<0D030003F3>"      *% hp premium plus photo paper, glossy
+    PCL_IDX_PREMIUM_PLUS_PHOTO_MATTE:   "<1B>*o5W<0D030003F4>"      *% hp premium plus photo paper, matte
+    PCL_IDX_OTHER_PHOTO:                "<1B>*o5W<0D0300042D>"      *% Other Photo Papers
+    PCL_IDX_THICK_PHOTO:                "<1B>*o5W<0D030003F6>"      *% Thick Photo Paper
+    PCL_IDX_OTHER_TRANSPARENCY:         "<1B>*o5W<0D030003FD>"      *% Other Transparency Films
+    PCL_IDX_HP_BANNER:                  "<1B>*o5W<0D03000406>"      *% hp banner paper
+    PCL_IDX_HP_GREETING_CARD:           "<1B>*o5W<0D03000407>"      *% hp matte greeting cards
+    PCL_IDX_HP_GLOSSY_GREETING_CARD:    "<1B>*o5W<0D03000408>"      *% hp photo greeting cards
+    PCL_IDX_HP_BROCHURE_MATTE:          "<1B>*o5W<0D0300040A>"      *% hp brochure & flyer, matte finish
+    PCL_IDX_HP_BROCHURE_GLOSSY:         "<1B>*o5W<0D03000409>"      *% hp brochure & flyer, gloss
+    PCL_IDX_HP_IRON_ON:                 "<1B>*o5W<0D0300040B>"      *% hp iron-on transfers
+    PCL_IDX_INKJET_HAGAKI:              "<1B>*o5W<0D0300040E>"      *% Inkjet Hagaki
+    PCL_IDX_OTHER_SPECIALTY:            "<1B>*o5W<0D0300040F>"      *% Other Specialty Papers
+    PCL_IDX_HP_TEXTURED_GREETING_CARDS: "<1B>*o5W<0D03000410>"      *% hp textured greeting cards
+    PCL_IDX_AUTOMATIC:                  "<1B>*o5W<0D03000411>"      *% Automatic
+    PCL_IDX_PHOTO_TWO_SIDED_MATTE:      "<1B>*o5W<0D03000414>"      *% hp premium high-gloss film
+    PCL_IDX_EVERYDAY_PHOTO_GLOSS:       "<1B>*o5W<0D03000415>"      *% hp everyday photo paper, semi gloss
+    PCL_IDX_OTHER_BROCHURE:             "<1B>*o5W<0D03000416>"      *% Other Brochure Papers
+    PCL_IDX_OTHER_GREETING_CARDS:       "<1B>*o5W<0D03000417>"      *% Other Greeting Cards
+    PCL_IDX_COLORFAST_PHOTO_GLOSSY:     "<1B>*o5W<0D03000419>"      *% hp colorfast photo paper, glossy
+    PCL_IDX_PREMIUM_PLUS_TRANSPARENCY:  "<1B>*o5W<0D0300041A>"      *% hp premium plus transparency film
+    PCL_IDX_EVERYDAY_PHOTO_MATTE:       "<1B>*o5W<0D0300041C>"      *% hp everyday photo paper, matte finish
+    PCL_IDX_LINEN_GREETING_CARD:        "<1B>*o5W<0D0300041D>"      *% hp linen greeting cards
+    PCL_IDX_TRI_FOLD_BROCHURE:          "<1B>*o5W<0D0300041E>"      *% hp tri-fold brochure paper, glossy
+    PCL_IDX_GLOSSY_HAGAKI:              "<1B>*o5W<0D03000429>"      *% Glossy Hagaki
+    PCL_IDX_HP_DESIGN_GLOSSY:           "<1B>*o5W<0D0300042A>"      *% Not used
+    PCL_IDX_HP_INKJET_HAGAKI:           "<1B>*o5W<0D03000420>"      *% Inkjet Hagaki
+    PCL_IDX_HP_PLAIN_HAGAKI:            "<1B>*o5W<0D0300041F>"      *% Plain Hagaki    
+    PCL_IDX_HP_PHOTO_HAGAKI:            "<1B>*o5W<0D03000421>"      *% Photo Hagaki
+    PCL_IDX_HP_MATTE_PHOTO_AND_PROJECT: "<1B>*o5W<0D03000433>"      *% HP Matte Photo and Project Paper
+    PCL_IDX_HP_PREMIUM_PRESENTATION:    "<1B>*o5W<0D03000434>"      *% HP Premium Presentation Paper
+    PCL_IDX_HP_PREMIUM_PRESENTATION_NEW:"<1B>*o5W<0D0300043A>"     *% HP Premium Presentation Paper
+    PCL_IDX_HP_PREMIUM_PHOTO_MATTE:     "<1B>*o5W<0D03000435>"      *% HP Premium Photo Paper, Matte
+    PCL_IDX_HP_LABELS:                  "<1B>*o5W<0D030003FE>"      *% HP Labels (Matte and Glossy)
+    PCL_IDX_HP_LABELS_MATTE:            "<1B>*o5W<0D0300042F>"      *% HP Labels Matte came for Crick_MLK
+    PCL_IDX_HP_LABELS_GLOSSY:           "<1B>*o5W<0D03000430>"      *% HP Labels Glossy came for Crick_MLK
+    PCL_IDX_HP_PHOTO_AND_PROJECT:       "<1B>*o5W<0D03000431>"      *% HP Photo and Project Paper
+    PCL_IDX_PREMIUM_PLUS_PHOTO:         "<1B>*o5W<0D03000432>"      *% HP Premium Plus Photo Paper
+    PCL_IDX_PREMIUM_PHOTO:              "<1B>*o5W<0D03000433>"      *% HP Premium Photo Paper
+    PCL_IDX_HP_PHOTO_PAPER_MATTE:       "<1B>*o5W<0D0300043F>"      *% HP Photo Paper Matte
+    PCL_IDX_HP_PREMIUM_PLUS_PHOTO_PROOF:"<1B>*o5W<0D0300043D>"      *% HP Premium Plus Photo Paper & Proofing Glossy
+    PCL_IDX_HP_PREMIUM_PLUS_PHOTO_SATIN:"<1B>*o5W<0D0300043E>"      *% HP Premium Plus Photo Paper & Proofing Satin
+    PCL_IDX_HP_HOLIDAY_PHOTO_CARDS:     "<1B>*o5W<0D0300043C>"      *% HP Holiday Photo Cards
+    PCL_IDX_HP_BROCHURE_FLYER_SEMIGLOSS:"<1B>*o5W<0D03000440>"      *% HP Brochure & Flyer Semi-gloss
+    PCL_IDX_HP_TRI_FOLD_BROCHURE_MATTE: "<1B>*o5W<0D03000441>"      *% HP Tri-fold Brochure Paper Matte
+    PCL_IDX_HP_ADVANCED_PHOTO_PAPER:    "<1B>*o5W<0D03000442>"      *% HP Advanced Photo Paper
+    PCL_IDX_HP_ADV_PHOTO_PAPER_GLOSSY:  "<1B>*o5W<0D0300043B>"      *% HP Advanced Photo Paper Glossy
+    PCL_IDX_HP_PHOTO_PAPER:             "<1B>*o5W<0D030003F5>"      *% HP Photo Paper
+    PCL_IDX_HP_MULTIPURPOSE_LABELS:        "<1B>*o5W<0D03000445>"      *% HP Multipurpose Labels
+    PCL_IDX_HP_MATTE_POSTCARDS:         "<1B>*o5W<0D03000446>"      *% HP Matte Postcards
+    PCL_IDX_HP_PROFESSIONAL_PAPER:        "<1B>*o5W<0D03000447>"      *% HP Professional Paper
+    PCL_IDX_HP_PREM_PLUS_SATIN:         "<1B>*o5W<0D03000448>"      *% HP Premium Plus Photo Satin
+    PCL_IDX_HP_SUPERIOR_PAPER_GLOSSY:    "<1B>*o5W<0D03000449>"      *% HP Superior Paper, Glossy
+    PCL_IDX_HP_SUPERIOR_PAPER_MATTE:    "<1B>*o5W<0D0300044A>"      *% HP Superior Paper, Matte
+    PCL_IDX_HP_PREMIUM_HIGH_GLOSS_FILM:         "<1B>*o5W<0D030003F7>"      *% HP premium high-gloss film
+    PCL_IDX_HP_NOTE_CARD:                "<1B>*o5W<0D0300042E>"        *% HP Note Cards
+    PCL_IDX_HP_PHOTO_PAPER_NEW:            "<1B>*o5W<0D03000439>"        *% HP Photo Paper (new for Eijkman,Q205 Ink)
+    PCL_IDX_PRINTABLE_CD:                "<1B>*o5W<0D0300044C>"
+    PCL_IDX_PHOTO_RAG_PAPER:            "<1B>*o5W<0D0300044F>"          *%Photo Rag Paper
+    PCL_IDX_WATERCOLOR_PAPER:            "<1B>*o5W<0D03000450>"         *%Watercolor Paper
+    PCL_IDX_CANVAS:                     "<1B>*o5W<0D03000451>"         *%Canvas
+    PCL_IDX_OTHER_FINEART_PAPERS:       "<1B>*o5W<0D03000452>"         *%Other fine art papers
+    PCL_IDX_RIGID_COATED_PAPER:         "<1B>*o5W<0D03000454>"          *%Rigid coated paper
+    PCL_IDX_RIGID_PHOTO_RAG:             "<1B>*o5W<0D03000455>"          *%Rigid photo rag
+    PCL_IDX_RIGID_WATERCOLOR:           "<1B>*o5W<0D03000456>"          *%Rigid watercolor
+    PCL_IDX_RIGID_CANVAS:               "<1B>*o5W<0D03000457>"          *%Rigid canvas
+    PCL_IDX_RIGID_PHOTO:                "<1B>*o5W<0D03000453>"          *%Rigid Photo
+    PCL_IDX_HP_CD_DVD_TATTOO:           "<1B>*o5W<0D03000458>"          *% HP CD/DVD Tattoo
+    PCL_IDX_HP_TATTOOS_FOR_IPOD:        "<1B>*o5W<0D03000459>"          *% HP Tattoos for iPod
+    PCL_IDX_HP_STUDIOPRO_PHOTO_GLOSSY:  "<1B>*o5W<0D0300044D>"          *%HP Studio Pro Photo Paper, Glossy
+    PCL_IDX_HP_STUDIOPRO_PHOTO_SATIN:   "<1B>*o5W<0D0300044E>"          *%HP Studio Pro Photo Paper, Soft Gloss/Satin
+    PCL_IDX_HP_SELF_ADHESIVE_PHOTO_PAPER:    "<1B>*o5W<0D03000444>"      *% HP Self-adhesive Photo Paper
+
+
+}
+
+*Macros: PCLRasterWidthCommands
+{
+    *% letter printable width 8" for A sized printers
+    PCL_RASWIDTH_300LETTER:     "<1B>*r2400S"
+    PCL_RASWIDTH_600LETTER:     "<1B>*r4800S"
+    PCL_RASWIDTH_1200LETTER:    "<1B>*r9600S"
+
+    *% superb printable width 12.6" for B sized printers
+    PCL_RASWIDTH_300SUPERB:     "<1B>*r3780S"
+    PCL_RASWIDTH_600SUPERB:     "<1B>*r7560S"
+    PCL_RASWIDTH_1200SUPERB:    "<1B>*r15120S"
+
+}
+
+*Macros: PCLMiscCommands
+{
+    PCL_RESET:                  "<1B>E"
+}
+
+*Macros: PJLCommands
+{
+    PJL_EXIT_LANGUAGE:          =PCL_RESET "<1B>%%-12345X"
+    PJL_ENTER_PCL:              =PJL_EXIT_LANGUAGE "@PJL ENTER LANGUAGE=PCL<0D><0A>"      =PCL_RESET
+    PJL_ENTER_PCL3GUI:          =PJL_EXIT_LANGUAGE "@PJL ENTER LANGUAGE=PCL3GUI<0D><0A>"  =PCL_RESET
+    PJL_ENTER_PCLSLEEK:         =PJL_EXIT_LANGUAGE "@PJL ENTER LANGUAGE=PCLSLEEK<0D><0A>" =PCL_RESET
+    PJL_ENTER_PCL3GUICE:        "@PJL ENTER LANGUAGE=PCL3GUI<0D><0A>"  =PCL_RESET
+}
+
+*Macros: PMLTrayCommands
+{
+    PML_TRAY_ENABLED:                   "<1B>&b16WPML<20040006010401030102040102>"
+    PML_TRAY_DISABLED:                  "<1B>&b16WPML<20040006010401030102040101>"
+
+}
+
+*Macros: PMLDryTimeCommands
+{
+    PML_DRYTIME_M15:                   "<1B>&b16WPML<200400060104010401060801F1>"
+    PML_DRYTIME_M10:                   "<1B>&b16WPML<200400060104010401060801F6>"
+    PML_DRYTIME_M5:                    "<1B>&b16WPML<200400060104010401060801FB>"
+    PML_DRYTIME_0:                     "<1B>&b16WPML<20040006010401040106080100>"
+    PML_DRYTIME_P5:                    "<1B>&b16WPML<20040006010401040106080105>"
+    PML_DRYTIME_P10:                   "<1B>&b16WPML<2004000601040104010608010A>"
+    PML_DRYTIME_P15:                   "<1B>&b16WPML<2004000601040104010608010F>"
+    PML_DRYTIME_P20:                   "<1B>&b16WPML<20040006010401040106080114>"
+    PML_DRYTIME_P25:                   "<1B>&b16WPML<20040006010401040106080119>"
+    PML_DRYTIME_P30:                   "<1B>&b16WPML<2004000601040104010608011E>"
+
+}
+
+*Macros: PCLInkVolumeCommands
+{
+    PCL_INKVOL_HEAVIER:                "<1B>*o5W<0B09000006>"
+    PCL_INKVOL_HEAVY:                  "<1B>*o5W<0B09000005>"
+    PCL_INKVOL_NORMAL:                 "<1B>*o5W<0B09000004>"
+    PCL_INKVOL_LIGHT:                  "<1B>*o5W<0B09000003>"
+    PCL_INKVOL_LIGHTER:                "<1B>*o5W<0B09000002>"
+}
+
+*Macros: BorderlessCommands
+{
+    PCL_BORDERLESS_TOP:         "<1B>*o5W<0E02000026>"
+    PCL_BORDERLESS_LEFT:        "<1B>*o5W<0E01000004>"
+    PCL_BORDERLESS_2E_TOP:         "<1B>*o5W<0E0200008D>"
+    PCL_BORDERLESS_2E_LEFT:        "<1B>*o5W<0E0100003D>"    
+    PCL_BORDERLESS_85x11_TOP:         "<1B>*o5W<0E0200008D>"
+    PCL_BORDERLESS_85x11_LEFT:        "<1B>*o5W<0E0100003D>"
+    PCL_BORDERLESS_A4_TOP:         "<1B>*o5W<0E0200008D>"
+    PCL_BORDERLESS_A4_LEFT:        "<1B>*o5W<0E0100003D>"     
+    PCL_BORDERLESS_A6_CARD_TOP:         "<1B>*o5W<0E02000076>"
+    PCL_BORDERLESS_A6_CARD_LEFT:        "<1B>*o5W<0E0100003D>"
+    PCL_BORDERLESS_CABINET_TOP:         "<1B>*o5W<0E0200008D>"
+    PCL_BORDERLESS_CABINET_LEFT:        "<1B>*o5W<0E0100003D>"
+    PCL_BORDERLESS_E_TOP:         "<1B>*o5W<0E0200008D>"
+    PCL_BORDERLESS_E_LEFT:        "<1B>*o5W<0E0100003D>"
+    PCL_BORDERLESS_HAGAKICARD_TOP:         "<1B>*o5W<0E0200008D>"
+    PCL_BORDERLESS_HAGAKICARD_LEFT:        "<1B>*o5W<0E0100003D>"
+    PCL_BORDERLESS_KG_TOP:         "<1B>*o5W<0E0200008D>"
+    PCL_BORDERLESS_KG_LEFT:        "<1B>*o5W<0E0100003D>"
+    PCL_BORDERLESS_PHOTO_2L_TOP:         "<1B>*o5W<0E0200006A>"
+    PCL_BORDERLESS_PHOTO_2L_LEFT:        "<1B>*o5W<0E0100003D>"
+    PCL_BORDERLESS_PHOTO_2L_WT_TOP:         "<1B>*o5W<0E0200006A>"
+    PCL_BORDERLESS_PHOTO_2L_WT_LEFT:        "<1B>*o5W<0E0100003D>"
+    PCL_BORDERLESS_PHOTO_4x6_TOP:         "<1B>*o5W<0E0200008D>"
+    PCL_BORDERLESS_PHOTO_4x6_LEFT:        "<1B>*o5W<0E0100003D>"
+    PCL_BORDERLESS_PHOTO_4x6_WT_TOP:         "<1B>*o5W<0E0200008D>"
+    PCL_BORDERLESS_PHOTO_4x6_WT_LEFT:        "<1B>*o5W<0E0100003D>"
+    PCL_BORDERLESS_PHOTO_5x7_TOP:         "<1B>*o5W<0E0200006A>"
+    PCL_BORDERLESS_PHOTO_5x7_LEFT:        "<1B>*o5W<0E0100003D>"
+    PCL_BORDERLESS_PHOTO_8x10_TOP:         "<1B>*o5W<0E0200006A>"
+    PCL_BORDERLESS_PHOTO_8x10_LEFT:        "<1B>*o5W<0E0100003D>"
+    PCL_BORDERLESS_PHOTO_L_TOP:         "<1B>*o5W<0E02000063>"
+    PCL_BORDERLESS_PHOTO_L_LEFT:        "<1B>*o5W<0E0100003D>"
+    PCL_BORDERLESS_PHOTO_L_WT_TOP:         "<1B>*o5W<0E02000063>"
+    PCL_BORDERLESS_PHOTO_L_WT_LEFT:        "<1B>*o5W<0E0100003D>"
+}
+
+*Macros: OEMBandFilterPipelineSettings
+{
+    OEM_BFP_BLACKEXTRACT_ENABLE:                    "BFBE<00 00 00 04 01 00 00 00>"
+    OEM_BFP_BLACKEXTRACT_DISABLE:                   "BFBE<00 00 00 04 00 00 00 00>"
+    OEM_BFP_SEPARATEBLACK_ENABLE:                   "BFSB<00 00 00 04 01 00 00 00>"
+    OEM_BFP_SEPARATEBLACK_DISABLE:                  "BFSB<00 00 00 04 00 00 00 00>"
+    OEM_BFP_HALFTONE_COLORCOUNT_3:                  "BFCC<00 00 00 04 03 00 00 00>"
+    OEM_BFP_HALFTONE_COLORCOUNT_5:                  "BFCC<00 00 00 04 05 00 00 00>"
+    OEM_BFP_HALFTONE_COLORLEVELS_2:                 "BFCL<00 00 00 04 02 00 00 00>"
+    OEM_BFP_HALFTONE_COLORLEVELS_3:                 "BFCL<00 00 00 04 03 00 00 00>"
+    OEM_BFP_HALFTONE_COLORLEVELS_4:                 "BFCL<00 00 00 04 04 00 00 00>"
+    OEM_BFP_HALFTONE_COLORLEVELS_8:                 "BFCL<00 00 00 04 08 00 00 00>"
+    OEM_BFP_HALFTONE_COLORHORZRES_200:              "BFCH<00 00 00 04 c8 00 00 00>"
+    OEM_BFP_HALFTONE_COLORHORZRES_300:              "BFCH<00 00 00 04 2C 01 00 00>"
+    OEM_BFP_HALFTONE_COLORHORZRES_600:              "BFCH<00 00 00 04 58 02 00 00>"
+    OEM_BFP_HALFTONE_COLORHORZRES_1200:             "BFCH<00 00 00 04 B0 04 00 00>"
+    OEM_BFP_HALFTONE_COLORVERTRES_200:              "BFCV<00 00 00 04 c8 00 00 00>"
+    OEM_BFP_HALFTONE_COLORVERTRES_300:              "BFCV<00 00 00 04 2C 01 00 00>"
+    OEM_BFP_HALFTONE_COLORVERTRES_600:              "BFCV<00 00 00 04 58 02 00 00>"
+    OEM_BFP_HALFTONE_COLORVERTRES_1200:             "BFCV<00 00 00 04 B0 04 00 00>"
+    OEM_BFP_HALFTONE_BLACKLEVELS_2:                 "BFBL<00 00 00 04 02 00 00 00>"
+    OEM_BFP_HALFTONE_BLACKLEVELS_3:                 "BFBL<00 00 00 04 03 00 00 00>"
+    OEM_BFP_HALFTONE_BLACKHORZRES_200:              "BFBH<00 00 00 04 c8 00 00 00>"
+    OEM_BFP_HALFTONE_BLACKHORZRES_300:              "BFBH<00 00 00 04 2C 01 00 00>"
+    OEM_BFP_HALFTONE_BLACKHORZRES_600:              "BFBH<00 00 00 04 58 02 00 00>"
+    OEM_BFP_HALFTONE_BLACKHORZRES_1200:             "BFBH<00 00 00 04 B0 04 00 00>"
+    OEM_BFP_HALFTONE_BLACKVERTRES_200:              "BFBV<00 00 00 04 c8 00 00 00>"
+    OEM_BFP_HALFTONE_BLACKVERTRES_300:              "BFBV<00 00 00 04 2C 01 00 00>"
+    OEM_BFP_HALFTONE_BLACKVERTRES_600:              "BFBV<00 00 00 04 58 02 00 00>"
+    OEM_BFP_HALFTONE_BLACKVERTRES_1200:             "BFBV<00 00 00 04 B0 04 00 00>"
+    OEM_BFP_KFORTIFICATION_ENABLE:                  "BFKF<00 00 00 04 01 00 00 00>"
+    OEM_BFP_KFORTIFICATION_DISABLE:                 "BFKF<00 00 00 04 00 00 00 00>"
+}
+
+*Macros: OEMCommandStoreSettings
+{
+    OEM_CS_REDUCED_K_CHANNEL_ENABLE:                "CSRK<00 00 00 04 01 00 00 00>"
+    OEM_CS_REDUCED_K_CHANNEL_DISABLE:               "CSRK<00 00 00 04 00 00 00 00>"
+    OEM_CS_REDUCED_K_CHANNEL_MAX_LINE_WIDTH_12:     "CSML<00 00 00 04 0C 00 00 00>"
+    OEM_CS_REDUCED_K_CHANNEL_MAX_FONT_SIZE_24:      "CSMF<00 00 00 04 18 00 00 00>"
+}
+
+*Macros: OEMHPAFilterSettings
+{
+    OEM_HPAFLT_COMPRESSION_SLOPE_1340:              "VFCS<00 00 00 04 3C 05 00 00>"
+    OEM_HPAFLT_COMPRESSION_SLOPE_3430:              "VFCS<00 00 00 04 66 0D 00 00>"
+    OEM_HPAFLT_COMPRESSION_SLOPE_8000:              "VFCS<00 00 00 04 40 1F 00 00>"
+    OEM_HPAFLT_COMPRESSION_SLOPE_10670:             "VFCS<00 00 00 04 AE 29 00 00>"
+    OEM_HPAFLT_COMPRESSION_SLOPE_16000:             "VFCS<00 00 00 04 80 3E 00 00>"
+    OEM_HPAFLT_COMPRESSION_SLOPE_21330:             "VFCS<00 00 00 04 52 53 00 00>"
+    OEM_HPAFLT_COMPRESSION_SLOPE_42670:             "VFCS<00 00 00 04 AE A6 00 00>"
+    OEM_HPAFLT_COMPRESSION_INTERCEPT_0:             "VFCI<00 00 00 04 00 00 00 00>"
+    OEM_HPAFLT_COMPRESSION_INTERCEPT_200000:        "VFCI<00 00 00 04 40 0D 03 00>"
+}
+
+*Macros: OEMHPImageEnhancementSettings
+{
+    OEM_IE_FLAGS_0:                                 "IEFL<00 00 00 04 00 00 00 00>"
+    OEM_IE_FLAGS_64:                                "IEFL<00 00 00 04 40 00 00 00>"
+    OEM_IE_FLAGS_128:                               "IEFL<00 00 00 04 80 00 00 00>"
+}
+
+*Macros: PCLColorSpaceCommands
+{
+    PCL_COLORSPACE_SRGB:        "<1B>*o5W<0E03000000>"
+    PCL_COLORSPACE_ADOBERGB:    "<1B>*o5W<0E03000004>"
+    PCL_COLORSPACE_RAW:         "<1B>*o5W<0E03000005>"
+}
+
+*Macros: PCLQuietPrintingCommands
+{
+    PCL_QM_ENABLED:       "<1B>*o5W<0E04000001>"
+    PCL_QM_DISABLED:       "<1B>*o5W<0E04000000>"
+  
+}
+
+*Macros: HPAPCLGrayscaleCommands
+{
+    HPA_PCL_GRAYSCALE_COMMAND_HIGH_QUALITY:     "<1B2A6F35570B01000001>"
+    HPA_PCL_GRAYSCALE_COMMAND_BLACK_ONLY:       "<1B2A6F35570B01000002>"
+    HPA_PCL_GRAYSCALE_COMMAND_PHOTOCOPY_FAX:    "<1B2A6F35570B01000003>"
+}
+
+*Macros: MediaTypeMappingSetting
+{
+    OEM_MTMB_HP_PREMIUM_PLUS_PHOTO_PAPER:       "MTMB<00 00 00 04 07 02 00 00>"
+}
+
+*Macros: PaperSourceMappingSetting
+{
+    OEM_PSMP_DISABLED:                         "PSMP<00 00 00 04 00 00 00 00>"
+    OEM_PSMP_ENABLED:                          "PSMP<00 00 00 04 01 00 00 00>"
+}
+
+*Macros: HPAPCLSepiaCommands
+{
+    HPA_PCL_SEPIA_COMMAND_FW:   "<1B>*o5W<0B 02 00 00 01>"
+    HPA_PCL_SEPIA_COMMAND_9X8:
++   "<1B2A6F35570B080000001B252550642E647320603439363420620000000000030100>"
++   "<00060200000B04000010060000170900001E0C0000261000002F150100231204002B>"
++   "<1908002E1A0900301E0E0033211100362212003A2413003F271400442A1500452308>"
++   "<00492B12005531100054361A0055391F00553A2200563B2400573D26005940290066>"
++   "<432100664628006E4A280077512D007654340072533700705339006F543B006D553D>"
++   "<0086623A0083613F0088633F008F69440099714900916E4C008C6C4E00876B4F0082>"
++   "<6A51009B724B00977251009A745200A07A5700A7815C00AB846000A48163009D8063>"
++   "<00977F6400B0825D00AB836400AD866600B18B6A00B7916F00BA947300BE977800B4>"
++   "<957800AB947800BE937400BB957900BD987B00C09C7E00C4A18200C5A58500C8A889>"
++   "<00C9AB8C00C0AA8C00CDA58B00CEA88E00CFAC9000D0AF9300D1B29600D2B59800D3>"
++   "<B89B00D4BC9D00D5BFA0000D05000015090000190B01001F10040025251406002B17>"
++   "<0800311B0A00381E0B003E220C0035231000371A03004025250D00422B1400462F1A>"
++   "<00492F1A004C311B0051341D005537200057391B005E3A1800643F1C006444252500>"
++   "<64462A0064462C0065472E0067493100694C340078542D007D5931007E5934008660>"
++   "<3900825F3E007F5E41007D5E43007D6045007E6148008F674000956E4700956E4900>"
++   "<99734E009F7954009A7656009675580093765A0092765C00A4785300AA7D5800A67E>"
++   "<5C00AA836100AF886600B38B6A00AB8A6C00A78A6D00A2896F00B58A6900B98E6D00>"
++   "<B7907100B9947500BC997900BF9C7C00C09F7E00BA9E8100B49D8300C69C8000C8A0>"
++   "<8400C5A18600C6A58900C8A98C00CBAC8F00CCAF9200CEB39400C6B29600D1AD9500>"
++   "<D2B09800D3B39A00D4B69D00D5B99F00D6BDA200D7C0A500D8C3A700D8C5A8001909>"
++   "<0000231003002911000031190600371F0A003C230E0042271200472B14004D2F1700>"
++   "<452A11004C2B0E005331110055371A00573A1F00593B22005C3E2525006040270064>"
++   "<442B006A451F006C452200734F28007454330074523400725135007453380075543C>"
++   "<007C594000825B3500865F3A008F694300926D47008E6A48008B694A008A694D008B>"
++   "<6B50008E6E5300996E49009B734F00A4795300A47C5800A9805C00A37F5E00A07F62>"
++   "<009F806400A1826700AD815E00AD846200B3896600B28C6B00B6906E00B7937000B3>"
++   "<937400B0937700AE947900BF947400BD967800C29A7D00C19D8000C3A18300C4A485>"
++   "<00C6A78700C1A68A00BDA68D00CAA58A00CAA78D00CEAA9100CCAD9400CEB19600CF>"
++   "<B49900D1B79B00D2BA9C00CDB99F00D5B59E00D5B8A100D6BBA500D7BEA700D8C1A9>"
++   "<00DAC4AC00DBC7AE00DCCAB000DCCBAF002F160400371E0A003C210A0045270C004C>"
++   "<2E11004F32170053361B0058391E005D3C2100583414005C391800613F1E006A4620>"
++   "<00694827006A4A2C006C4B2F006F4E320073513600754E2A0078532F00815D370087>"
++   "<633C00845F3D00825F4000836044008462470089664B008E643F009269430096724D>"
++   "<009E744E0098714F00967254009572570097755C00A27B5F00A4795400A47D5A00A8>"
++   "<825E00AD846000AF876300AD876800AA886C00AC8B6F00B38F7200B88B6900B58E6E>"
++   "<00B8927200BD957600BD987800BF9C7B00BC9B7F00BB9D8200BB9F8400C39C7F00C2>"
++   "<9F8200C5A28700CAA58A00C9A88D00CAAC9000CDAE9100C8AF9400C7B09700CEAD94>"
++   "<00CEAF9700D0B39B00D3B69F00D2B9A100D4BCA300D5BEA500D6C1A600D3C1A800D8>"
++   "<BCA800D9BFAB00DAC2AE00DBC5B100DCC8B300DDCBB600DFCEB800E0D0B900DFD1B7>"
++   "<00452308004B2C11005030130058361600613D180063412000664525250069472800>"
++   "<6C492C0066411F006C4926006F4C290075512D007E5A33007C5937007C5A3A007E5B>"
++   "<3D00815E4100825A3400845E3A008D653F008F694300976F4900926D4A00926E4E00>"
++   "<936F5200967255009A6F4A009A734F009F785400A37B5600A87F5A00A57E5E00A37F>"
++   "<6300A6836700AE876A00B1835F00AC886700B08B6A00B28C6A00B8907000B58F7300>"
++   "<B2917800B6957C00C89D7F00BD947400BB987900BD9A7C00C19D7F00C6A08300C7A3>"
++   "<8600C4A58B00C6A88D00CCAB9000C8A58A00C7A88D00C9AB9100CCAD9400CFB29A00>"
++   "<D0B49B00D1B79D00D0B89F00D3BAA200D2B59F00D2B8A100D4BBA500D6BEA900D8C2>"
++   "<AD00D8C4AE00D9C6B000DAC9B000DCCAB200DCC4B100DDC7B500DECAB800DFCDBB00>"
++   "<DFD0BE00E1D3C100E3D5C200E3D7C200E2D7BE00573413005C3B1C00603E1E006744>"
++   "<22006F4A25250075512A0077543000785533007A563700764F29007B552F007C5733>"
++   "<00815C380087623D00906A43008C6845008C6848008C694B008F6640008F69440095>"
++   "<6E480097714D009C755100A27A54009F7A59009E7A5C009E7C6000A77B5500A37D5A>"
++   "<00A6815E00AC856200AE876500B48B6900AF8B6D00AF8D7100B1907500B48C6B00B2>"
++   "<8F7000B5927300B9957600BE987A00C29B7D00BE9D8200C1A08500C7A48900C19D80>"
++   "<00C0A18600C0A28500C5A48900CAA78D00CCAD9400CAAF9700D1B29900D6B59E00CD>"
++   "<AE9500CCB09800CDB29A00D1B59E00D3B9A300D5BEA800D6C0A900D7C1AB00DBC4B0>"
++   "<00D7BEA900D7C0AB00D9C2AE00DBC6B200DCC9B600DCCCB900DECEBB00DECFB900E3>"
++   "<D3C100E0CCBA00E1CFBE00E3D2C200E4D5C600E5D8CA00E7DCCE00E9DED000EAE0D1>"
++   "<00E9E1CE006A451F006D4B2700714E2A0076532E007D583200835E370089653D0089>"
++   "<643F008A634100845D360087613A0089643F008C674300916C470097714C009D764F>"
++   "<009A755300987556009C734D0099745000A07A5500A17C5900A57F5D00A8836000B0>"
++   "<876300AA866700A7876B00A9846100A8866500AD8A6900B28D6D00B4907100B89475>"
++   "<00BD967700B8987C00B8998000B7957600B6977A00BB9B7E00BF9E8200C2A28700C5>"
++   "<A58A00C7A88E00C6AA9000CAAD9400C4A68B00C4A88E00C6AA9000CAAE9500CEB29A>"
++   "<00D0B69F00D1B9A200D2BAA400D6BDA900D2B8A200CFB7A100D1B9A300D6BCA700D8>"
++   "<C1AD00DAC6B200DAC8B400DAC8B500E3CEBE00DBC6B300DBC7B500DDCAB800E0CDBC>"
++   "<00E1D1C100E2D4C400E0D5C500E0D7C500EADDD000E3D3C400E6D7C800E8DACD00EA>"
++   "<DDD100EBE1D500EDE4DA00EFE7DE00F1EAE000F0EBDE0078542D007C5833007F5B36>"
++   "<00855F3A008A643D008F684100946D460098714A0099704C00916B4400936E480094>"
++   "<6F4B0097734F009C775300A07B5600A47E5A00AC825D00A58161009E7B5800A07E5C>"
++   "<00A6826000A9856400AC896800AF8C6B00B38F6E00B8927100B2927600AB8C6C00AE>"
++   "<8F7000B3937500B8977A00BB9A7D00BD9D8000BFA08300C2A38700C0A48A00B89D81>"
++   "<00BBA08400C0A38900C5A78D00C9AC9200CBAE9500CBB19800CDB49C00CEB69F00C5>"
++   "<AD9500C7B09800CBB39B00D0B7A000D4BBA500D7BEA800D6C0AC00D6C3AE00DAC6B4>"
++   "<00D2BDA900D3BFAB00D6C2AE00DAC6B300DDCAB800DFCDBC00DDCEBD00DCD1C000E5>"
++   "<D6C900DECDBC00DECEBD00E2D1C200E5D6C700E8DACC00E9DCCF00E6DDD100E2DBCE>"
++   "<00F1E6DF00E7DBCD00EADFD200ECE2D700EFE5DC00F1E9E000F3ECE500F5F0EA00F7>"
++   "<F3EF00F8F5EF0087633B008B663F008F6A4200936D4600987049009C734C00A07650>"
++   "<00A47A5300A87D570094734F009B7854009E7B5700A27E5B00A6815E00A9846100AC>"
++   "<876500AF8A6800B38E6C00A0836200A7886700AE8C6C00B28F7000B5927300B69576>"
++   "<00B8987A00BB9B7D00BD9E8000AD937600B3987B00BA9C8000C2A18500C4A48800C4>"
++   "<A68B00C5A98F00C6AC9200C8AF9500B9A38900C0A88E00C6AC9300CDB09800D5B59D>"
++   "<00D3B7A100D3BAA400D3BCA700D2BFA900C5B39C00CAB7A100D0BBA600D6BFAB00DC>"
++   "<C4B000DFC7B500DECAB800DECCBC00DDCFBE00D2C3B000D6C7B500DACBBA00DFCFBF>"
++   "<00E5D3C400E7D6C900EADACE00E9DCD100E8DFD400DED3C300E2D7C800E6DACD00EA>"
++   "<DED200EEE2D800F0E5DC00F2E9E100F4ECE600F4EFE900EBE3D700EEE7DC00F2EAE1>"
++   "<00F5EEE600F8F1EB00FAF4F000FBF8F500FDFBFA00FFFFFF00140700001F0E020025>"
++   "<2514060029180A002E1C0D00331D0D0039210E0040240F003E1F060046260A004A2E>"
++   "<14004B321B004D331E004F341F0052372100553A2300623E1D00644221006E482400>"
++   "<6D4C2C006B4C30006A4C32006A4D34006B503700825E3600805C390086603B009069>"
++   "<41008A664500856548008265490081664B0098704900966F4C0099734F00A0795500>"
++   "<A57E5A009F7B5C00997A5E00957A5F00AD805A00A8806000AB846300B08A6800B48E>"
++   "<6D00B8917100B0907200A98F7300BC917000B9927500BA967700BE9B7C00C19F7F00>"
++   "<C4A28300C5A58500BDA48700CAA28700C8A48A00C9A88C00CBAC8F00CDAF9200CFB2>"
++   "<9500D0B69800D1B99A002812020030160200371F0A003C2525100040281300442B16>"
++   "<00492E17004F311A00513011005A3513005B3D1E005D4227005E4027005F41280063>"
++   "<432A0065462E006F4B270078542D007D5831007B5937007957390078583C0078593F>"
++   "<007A5C420089633E00926C4500926C470098734D0094704F00906F51008F7054008F>"
++   "<7156009E755100A77B5500A57D5900A9825F00AE856300A7846500A3846700A28569>"
++   "<00B0876600B68B6A00B48E6E00B7927200BA967500BC997700B7987B00B2987D00C0>"
++   "<997C00C59D8000C39F8300C4A38600C6A78900C8AA8C00CAAD8E00C4AC9000CCA991>"
++   "<00D0AD9400CEB09700D0B39900D1B69C00D3BA9F00D4BDA100D5BFA2003E21090043>"
++   "<260E004C2C0F004F31160052351B0055381F00593B21005E3E2400603D1C00684420>"
++   "<006F4B24006E4D2C006E4D2F006F4E320071503500745339007D553000835C36008B>"
++   "<67400089634100856142008562460085634A0089674E00946C470099724D00A17751>"
++   "<00A47A55009E7957009C785B009B795E009E7D6100A77E5B00AA826000B0866300B1>"
++   "<8A6700B38D6A00AF8D6E00AD8D7100AE8F7400B9907100BA947400C0987900BF9A7C>"
++   "<00C09E7F00C3A18100BEA18400BCA18700C5A18600C7A48A00CCA88E00CAAB9000CC>"
++   "<AE9300CEB19500D0B49700CAB49900D1B29A00D2B59E00D4B8A200D4BBA400D5BEA6>"
++   "<00D7C1A900D9C4AA00D9C6AB00512E1000553518005B391A0066421C006544230067>"
++   "<4728006A492C006E4C2F006E49270077532E007A563100835F3800805C3A007F5C3D>"
++   "<00805E41008360440088603C008D674200966C46009B724B00956F4D00946F510094>"
++   "<71550098755900A2765100A17D5A00A7805C00AA815D00A7816200A5806500A4836A>"
++   "<00AC886D00B2896600B28D6C00B58F6E00BB937200BB967500B8967900B7987D00BD>"
++   "<9B7F00BF997B00BF9D7F00C3A08300C8A28700C7A68A00CAA88B00C6AA8F00C7AB92>"
++   "<00CAAA9000CBAD9400CEB09800D1B49C00D1B79E00D3B9A000D4BCA200D2BCA400D5>"
++   "<BAA400D6BDA800D8C0AB00D9C4AF00DAC6B000DBC9B300DCCBB400DDCDB300623E1C>"
++   "<00654222006946252500714D290079552F0078563300795736007C583A007B563200>"
++   "<845C3700855F3B008B654000936C45008F6A48008E6B4B00906C4E00926B47009670>"
++   "<4C009C744F009F785400A57C5700A27C5B00A07D5F00A3806300A87F5C00A9846200>"
++   "<AD876500B28A6900B68E6C00B28D7000B1907400B8947800B6927300B8967800B997>"
++   "<7700BE9A7C00C49D8000BE9F8500C0A28900CCA78B00C4A38700C4A58A00C7A78D00>"
++   "<CBAB9100CDAF9600CEB29800CEB39B00D2B69D00CFB29B00D0B59E00D2B8A100D5BB>"
++   "<A600D6BFAA00D7C2AB00D8C4AC00D9C5AF00D9C2AE00DBC5B200DCC8B500DDCBB900>"
++   "<DECEBB00E0D0BE00E1D3BF00E0D3BB00734D270074502D00785431007E593500845F>"
++   "<39008C6740008A6642008A66450088623D008E674100906A4600946E4A0099734E00>"
++   "<A07852009D7756009B7859009D775300A07A5700A67F5C00A8815F00AB856300B289>"
++   "<6600AD896A00AB8A6E00AD886800AF8C6C00B4907000B8927400BA967700BF997A00>"
++   "<BB9A7F00BC9D8200BB9A7D00BC9D8000BF9F8300C4A38700C7A78D00C9AA9000C8AC>"
++   "<9300CDAF9600C9AC9400C8AD9300CBAF9600D0B29A00D2B7A000D4BCA600D5BDA600>"
++   "<D8BFAA00D4BBA600D4BDA800D7C0AB00DAC3B000DBC7B400DBCAB600DCCCB600DFCE>"
++   "<BC00DECAB800DFCDBB00E1D0BF00E3D3C300E4D6C700E3D8CA00E6DBCC00E5DCCA00>"
++   "<805A3400825E390085613D008A6540008F6A4400946F49009B734D0099725000936F>"
++   "<4A0099744F009A7552009E795600A27D5A00A6805D00AE846000A7846400A2805E00>"
++   "<A7846200AC886700AE8B6B00B18E6E00B5917100BA947400B5957800B1917300B495>"
++   "<7700B9997B00BD9D8000C0A08300C2A28600C5A68A00C3A78D00BEA28700C1A58B00>"
++   "<C5A88E00C9AC9300CCB19800CDB39B00CFB69F00D0B8A100CBB39C00CDB59E00D0B8>"
++   "<A200D4BCA700D7C0AB00D9C3AE00D8C6B100DAC7B500D7C2AF00D8C4B000DCC7B400>"
++   "<DFCBBA00E1D0BF00E1D2C200DCD2C100E3D4C600E1D1C100E3D4C500E6D8CA00E8DB>"
++   "<CE00EADED200EAE1D600E8E1D600E9E3D6008D6942008E6A4500926D490097714C00>"
++   "<9B754F009F785300A37C5700AA7F5A009A785500A17D5A00A3805E00A7836100AA86>"
++   "<6500AD896800B18D6B00B5906F00A7896900AD8D6E00B3927300B6957600B9987900>"
++   "<BB9A7D00BD9D8000C0A18400B4997D00BA9E8200C0A28700C5A68C00C8A98E00C8AB>"
++   "<9200C9AE9500CAB19800C1A99000C6AD9500CBB19900D1B59E00D6B9A200D4BBA600>"
++   "<D4BEA900D4C1AB00CDBAA400D0BDA800D5C0AD00DAC4B200DEC8B600DECBB900DECD>"
++   "<BD00DDD0BF00D9C9B800DCCCBB00E0D0C000E3D4C500E7D7CA00E7DACD00E6DACE00>"
++   "<E5DDD100E5D9CA00E8DCCF00EBE0D400EEE4D900F0E7DD00F0E9E000EFE9E100F2EE>"
++   "<E93B7564772E717569743B>"
+
+    HPA_PCL_SEPIA_COMMAND_17:
++   "<1B2A6F35570B080000001B252550642E647320603139363532206200000000000101>"
++   "<000002010000040100000602000007020000090300000D0400001006000014070000>"
++   "<16080000190900001E0C0000230E000027100000291100002F150100070200000B04>"
++   "<00000D040000100600001407000017090000190900001E0C0000230E000027100000>"
++   "<291100002F15010033170200371A0300391B04003E1F050042220700170900001C0B>"
++   "<0000210D0000230E0000271000002C1300003016010036190200371A03003C1D0400>"
++   "<412106004523080047252509004C290B00512D0E0055311000563210002F15010030>"
++   "<16010036190200391B04003E1F050041210600452308004A270A004E2B0C00512D0E>"
++   "<0055311000593412005C3715005F3A1700613D180065401B0068431D004222070047>"
++   "<252509004C290B004E2B0C00532F0F00563210005A3513005C3715005F3A1700633E>"
++   "<190067421D0068431D006C4721006F4A2400734E2700744F280075512A0059341200>"
++   "<5A3513005E391600613D180065401B0067421D006A451F006E492300714C2600734E>"
++   "<2700734F280076522B007A562F007B572F007F5A3300815D36008460390068431D00>"
++   "<6C4721006E492300714C2600744F280075512A0078542D007A562F007D5B31007F5B>"
++   "<3400835F38008460390087633B0089663E008B6740008C6841008F6A420075512A00>"
++   "<78542D007B572F007F5A33007F5B3400835F380086623A0089653D0089663E008B67>"
++   "<40008E694200916C4400946E4700956F4800997149009B734C009C754E0084603900>"
++   "<87633B0089653D008B6740008C6841008F6A4200916C4400946E4700967048009972>"
++   "<4A009B734C009C754E009E744E00A0765000A2785100A3795200A57B54008F6A4200>"
++   "<926D4500956F48009971490099724A009C744D009D744D009F754F00A0765000A279>"
++   "<5100A47A5300A77D5700A87D5700AA7E5900AC805B00AC7F5A00AE815C009C754E00>"
++   "<9D744D009F754F00A2785100A3795200A57B5400A77D5700A97E5800AB7F5A00AD81>"
++   "<5C00AC7F5A00B0825D00B2846000B4856200B4856300B6876500B8896800A57B5400>"
++   "<A87D5700AA7E5900AB7F5A00AD815C00AE815C00B1835E00B2846000B4856200B586>"
++   "<6500B7886600B98A6900BA8B6A00BD8D6D00BF906F00C1927200C2947300B0825D00>"
++   "<B1835E00B3856000B4856300B6876500B7886600B98A6900BC8C6B00BE8F6E00BF90>"
++   "<6F00C1927200C3947400C4977800C5987800C79B7B00C6997A00C79C7D00B8896800>"
++   "<BA8B6A00BD8D6D00BE8F6E00C0917100C2947300C4957600C4977800C6997A00C89C>"
++   "<7D00C79A7B00C79C7D00C99D8000CAA08300CBA38600CCA38800CDA58B00C3947400>"
++   "<C4957600C5987800C79B7B00C6997A00C79A7B00C89D7E00C99E8200CAA18500CBA3>"
++   "<8600CDA48A00CEA68C00CEA98E00CEAA8F00CFAB9200D0AD9400D1AE9500C79C7D00>"
++   "<C99D8000C99E8200CAA18500CCA38800CDA58B00CEA68C00CEA98E00CFAB9100D0AD>"
++   "<9300D0AD9400D1AE9500D3B19A00D4B39B00D5B59D00D6B69F00D6B7A000CDA58B00>"
++   "<CEA78D00CEAA8F00CFAB9200D0AD9300D0AD9400D3B19900D4B39B00D4B39B00D5B5>"
++   "<9D00D6B7A000D7B8A200D7B9A200D8BAA300D9BCA600DABEA800DBBFA90004010000>"
++   "<0401000006020000090300000B0400000F0500001206000016080000170900001C0B>"
++   "<0000210D0000240F0000291100002C1300003016010036190200391B04000F050000>"
++   "<1206000016080000190900001C0B0000210D0000240F0000291100002C1300003016>"
++   "<010036190200391B04003C1D040041210600452308004A270A004C290B00230E0000>"
++   "<240F0000291100002F1501003317020036190200391B04003E1F0500422207004725>"
++   "<2509004A270A004E2B0C00532F0F0056321000593412005C3715005F3A1700371A03>"
++   "<003C1D0400412106004222070047252509004C290B00512D0E00532F0F0056321000>"
++   "<5A3513005E3916005F3A1700633E190067421D006A451F006E4923006F4A24004E2B>"
++   "<0C00512D0E0055311000593412005C3715005E391600613D180065401B0068431D00>"
++   "<6A451F006E492300714C2600744F2800734F280076522B007A562F007D5B31005F3A>"
++   "<1700633E190067421D0068431D006C4721006F4A2400734E2700744F280075512A00>"
++   "<78542D007B572F007D5B31007F5B3400835F380086623A0087633B0089663E00714C>"
++   "<2600734E2700734F280076522B0078542D007B572F007F5A3300815D360084603900>"
++   "<86623A0089653D008B6740008C6841008E694200916C4400946E4700967048007D5B>"
++   "<31007F5B3400815D36008460390087633B0089663E008B6740008C6841008F6A4200>"
++   "<926D4500946E47009670480099724A009C744D009D744D009E744E00A07650008966>"
++   "<3E008B6740008E694200916C4400926D4500956F4800997149009B734C009C744D00>"
++   "<9D744D009F754F00A2785100A2795100A47A5300A77D5700A97E5800AA7E59009670>"
++   "<480099724A009B734C009C754E009E744E00A0765000A2785100A3795200A57B5400>"
++   "<A87D5700A97E5800AB7F5A00AD815C00AE815C00B0825D00B2846000B4856200A076>"
++   "<5000A2795100A47A5300A57B5400A87D5700AA7E5900AC805B00AC7F5A00AE815C00>"
++   "<B1835E00B3856000B4856300B5866500B7886600B98A6900BC8C6B00BD8D6D00AB7F>"
++   "<5A00AC805B00AC7F5A00B0825D00B2846000B3856000B4856300B6876500B8896800>"
++   "<B98A6900BC8C6B00BE8F6E00C0917100C2947300C3947400C4977800C6997A00B485>"
++   "<6200B5866500B7886600B8896800BA8B6A00BD8D6D00BF906F00C0917100C2947300>"
++   "<C4957600C5987800C6997A00C89C7D00C79A7B00C89D7E00C99D8000CAA08300BE8F>"
++   "<6E00BF906F00C1927200C3947400C4977800C5987800C79B7B00C6997A00C79C7D00>"
++   "<C89D7E00C99E8200CAA18500CCA38800CDA48A00CEA68C00CEA98E00CFAB9100C699>"
++   "<7A00C89C7D00C6997A00C79C7D00C99D8000CAA08300CBA38600CCA38800CDA58B00>"
++   "<CEA78D00CEAA8F00CFAB9100D0AD9300D0AD9400D3B19900D3B19A00D4B39B00CAA1>"
++   "<8500CBA38600CDA48A00CEA68C00CEA78D00CEAA8F00CFAB9200D0AD9400D0AD9400>"
++   "<D3B19900D4B39B00D4B49C00D6B69F00D6B7A000D7B8A200D8BAA300D9BCA500CFAB>"
++   "<9100D0AD9300D0AD9400D1AE9500D3B19A00D4B39B00D4B49C00D6B69F00D6B7A000>"
++   "<D7B9A200D8BAA300D9BCA500D9BCA600DABEA900DBBFA900DCC0AB00DCC2AC000702>"
++   "<00000B0400000F0500001006000014070000170900001C0B0000210D0000230E0000>"
++   "<271000002C1300003016010033170200371A03003C1D040041210600422207001709>"
++   "<00001C0B0000210D0000230E0000271000002C1300003016010033170200371A0300>"
++   "<3C1D0400412106004222070047252509004C290B00512D0E00532F0F00563210002F>"
++   "<1501003016010036190200391B04003E1F050041210600452308004A270A004E2B0C>"
++   "<00512D0E0055311000593412005C3715005E391600613D180065401B0068431D0042>"
++   "<22070047252509004A270A004E2B0C00532F0F0056321000593412005C3715005F3A>"
++   "<1700633E190067421D0068431D006C4721006F4A2400734E2700744F280075512A00>"
++   "<563210005A3513005E391600613D1800633E190067421D006A451F006E4923006F4A>"
++   "<2400734E2700734F280076522B0078542D007B572F007F5A3300815D360084603900>"
++   "<68431D006C4721006E492300714C2600744F280075512A0076522B007A562F007D5B>"
++   "<31007F5B3400815D36008460390087633B0089663E008B6740008C6841008F6A4200>"
++   "<75512A0078542D007B572F007F5A33007F5B3400835F380086623A0089653D008966>"
++   "<3E008B6740008E694200916C4400926D4500956F4800997149009B734C009C744D00>"
++   "<8460390086623A0089653D008B6740008C6841008E694200916C4400946E47009670>"
++   "<480099724A009B734C009C754E009E744E00A0765000A2785100A3795200A57B5400>"
++   "<8F6A4200926D4500956F48009670480099724A009C744D009D744D009E744E00A076>"
++   "<5000A2795100A47A5300A57B5400A87D5700AA7E5900AC805B00AC7F5A00AE815C00>"
++   "<9C754E009D744D009F754F00A2785100A3795200A47A5300A77D5700A97E5800AB7F>"
++   "<5A00AC805B00AC7F5A00B0825D00B2846000B3856000B4856300B6876500B8896800>"
++   "<A57B5400A87D5700AA7E5900AB7F5A00AD815C00AE815C00B1835E00B2846000B485>"
++   "<6200B5866500B7886600B8896800BA8B6A00BD8D6D00BF906F00C0917100C2947300>"
++   "<B0825D00B1835E00B3856000B4856300B5866500B7886600B98A6900BC8C6B00BE8F>"
++   "<6E00BF906F00C1927200C3947400C4977800C5987800C79B7B00C6997A00C79C7D00>"
++   "<B8896800BA8B6A00BC8C6B00BE8F6E00C0917100C2947300C3947400C4977800C699>"
++   "<7A00C89C7D00C6997A00C79C7D00C99D8000CAA08300CBA38600CCA38800CDA58B00>"
++   "<C2947300C4957600C5987800C79B7B00C89C7D00C79A7B00C89D7E00C99E8200CAA0>"
++   "<8300CBA38600CDA48A00CEA68C00CEA78D00CEAA8F00CFAB9200D0AD9400D0AD9400>"
++   "<C79C7D00C99D8000C99E8200CAA18500CCA38800CDA58B00CEA68C00CEA98E00CFAB>"
++   "<9100D0AD9300D0AD9400D1AE9500D3B19A00D4B39B00D4B49C00D6B69F00D6B7A000>"
++   "<CDA58B00CEA78D00CEAA8F00CFAB9100D0AD9300D0AD9400D3B19900D4B39B00D4B3>"
++   "<9B00D5B59D00D6B7A000D7B8A200D7B9A200D8BAA300D9BCA600DABEA800DABEA900>"
++   "<D1AE9500D3B19900D4B39B00D4B49C00D6B69F00D6B7A000D7B8A200D8BAA300D9BC>"
++   "<A500D9BCA600DABEA800DBBFA900DCC0AB00DCC2AC00DDC2AE00DDC3AF00DFC5B100>"
++   "<100600001407000017090000190900001E0C0000230E000027100000291100002F15>"
++   "<010033170200371A0300391B04003E1F05004222070047252509004A270A004E2B0C>"
++   "<00230E000027100000291100002F15010033170200371A0300391B04003E1F050042>"
++   "<22070047252509004A270A004E2B0C00532F0F0056321000593412005C3715005F3A>"
++   "<1700371A03003C1D0400412106004523080047252509004C290B00512D0E00553110>"
++   "<00563210005A3513005E391600613D1800633E190067421D006A451F006E4923006F>"
++   "<4A24004E2B0C00512D0E0055311000593412005C3715005F3A1700613D180065401B>"
++   "<0068431D006C4721006E492300714C2600744F280075512A0076522B007A562F007D>"
++   "<5B31005F3A1700633E190067421D0068431D006C4721006F4A2400734E2700744F28>"
++   "<0075512A0078542D007B572F007F5A33007F5B3400835F380086623A0089653D0089>"
++   "<663E00714C2600734E2700734F280076522B007A562F007B572F007F5A3300815D36>"
++   "<008460390086623A0089653D008B6740008C6841008E694200916C4400946E470096>"
++   "<7048007D5B31007F5B3400835F38008460390087633B0089663E008B6740008C6841>"
++   "<008F6A4200926D4500956F48009670480099724A009C744D009D744D009E744E00A0>"
++   "<7650008B6740008B6740008E694200916C4400946E4700956F4800997149009B734C>"
++   "<009C754E009D744D009F754F00A2785100A3795200A47A5300A77D5700A97E5800AB>"
++   "<7F5A009670480099724A009B734C009C754E009E744E00A0765000A2785100A37952>"
++   "<00A57B5400A87D5700AA7E5900AB7F5A00AD815C00AE815C00B1835E00B2846000B4>"
++   "<856200A0765000A2795100A47A5300A77D5700A87D5700AA7E5900AC805B00AC7F5A>"
++   "<00AE815C00B1835E00B3856000B4856300B5866500B7886600B98A6900BC8C6B00BE>"
++   "<8F6E00AB7F5A00AD815C00AC7F5A00B0825D00B2846000B4856200B4856300B68765>"
++   "<00B8896800BA8B6A00BC8C6B00BE8F6E00C0917100C2947300C3947400C4977800C6>"
++   "<997A00B4856200B5866500B7886600B98A6900BA8B6A00BD8D6D00BF906F00C19272>"
++   "<00C2947300C4957600C5987800C79B7B00C89C7D00C79A7B00C89D7E00C99E8200CA>"
++   "<A08300BE8F6E00BF906F00C1927200C3947400C4977800C5987800C79B7B00C6997A>"
++   "<00C79C7D00C99D8000C99E8200CAA18500CCA38800CDA58B00CEA68C00CEA98E00CF>"
++   "<AB9100C6997A00C89C7D00C79A7B00C79C7D00C99D8000CAA08300CBA38600CCA388>"
++   "<00CDA58B00CEA78D00CEAA8F00CFAB9100D0AD9300D0AD9400D3B19900D4B39B00D4>"
++   "<B39B00CAA18500CBA38600CDA48A00CEA68C00CEA98E00CEAA8F00CFAB9200D0AD94>"
++   "<00D1AE9500D3B19900D4B39B00D4B49C00D6B69F00D6B7A000D7B8A200D8BAA300D9>"
++   "<BCA500CFAB9100D0AD9300D0AD9400D1AE9500D3B19A00D4B39B00D5B59D00D6B69F>"
++   "<00D6B7A000D7B9A200D8BAA300D9BCA500D9BCA600DABEA900DBBFA900DCC0AB00DC>"
++   "<C2AC00D4B49C00D5B59D00D6B7A000D7B8A200D7B9A200D8BAA300D9BCA600DABEA8>"
++   "<00DBBFA900DBBFA900DCC2AC00DDC2AE00DDC3AF00DEC4B000DFC5B100E0C8B400E0>"
++   "<C8B500190900001E0C0000210D0000240F0000291100002F15010030160100361902>"
++   "<00391B04003E1F050041210600452308004A270A004E2B0C00512D0E005531100059>"
++   "<3412002F1501003016010036190200391B04003E1F050041210600452308004A270A>"
++   "<004E2B0C00512D0E0055311000593412005C3715005F3A1700613D180065401B0068>"
++   "<431D004222070047252509004C290B004E2B0C00532F0F00563210005A3513005C37>"
++   "<15005F3A1700633E190067421D0068431D006C4721006F4A2400734E2700744F2800>"
++   "<75512A00593412005A3513005E391600613D180065401B0067421D006A451F006E49>"
++   "<2300714C2600734E2700734F280076522B007A562F007B572F007F5A3300815D3600>"
++   "<8460390068431D006C4721006E492300714C2600744F280075512A0078542D007A56>"
++   "<2F007D5B31007F5B3400835F38008460390087633B0089663E008B6740008C684100>"
++   "<8F6A420076522B0078542D007B572F007F5A33007F5B3400835F380086623A008965>"
++   "<3D0089663E008B6740008E694200916C4400946E4700956F4800997149009B734C00>"
++   "<9C754E008460390087633B0089653D008B6740008C6841008F6A4200916C4400946E>"
++   "<47009670480099724A009B734C009C754E009E744E00A0765000A2785100A3795200>"
++   "<A57B54008F6A4200926D4500956F48009971490099724A009C744D009D744D009F75>"
++   "<4F00A0765000A2795100A47A5300A77D5700A87D5700AA7E5900AC805B00AC7F5A00>"
++   "<AE815C009C754E009D744D009F754F00A2785100A3795200A57B5400A77D5700A97E>"
++   "<5800AB7F5A00AD815C00AC7F5A00B0825D00B2846000B4856200B4856300B6876500>"
++   "<B8896800A57B5400A87D5700AA7E5900AB7F5A00AD815C00AE815C00B1835E00B284>"
++   "<6000B4856200B5866500B7886600B98A6900BA8B6A00BD8D6D00BF906F00C1927200>"
++   "<C2947300B0825D00B1835E00B3856000B4856300B6876500B7886600B98A6900BC8C>"
++   "<6B00BE8F6E00BF906F00C1927200C3947400C4977800C5987800C79B7B00C6997A00>"
++   "<C79C7D00B8896800BA8B6A00BD8D6D00BE8F6E00C0917100C2947300C4957600C497>"
++   "<7800C6997A00C89C7D00C79A7B00C79C7D00C99D8000CAA08300CBA38600CCA38800>"
++   "<CDA58B00C3947400C4957600C5987800C79B7B00C6997A00C79A7B00C89D7E00C99E>"
++   "<8200CAA18500CBA38600CDA48A00CEA68C00CEA98E00CEAA8F00CFAB9200D0AD9400>"
++   "<D1AE9500C79C7D00C99D8000C99E8200CAA18500CCA38800CDA58B00CEA68C00CEA9>"
++   "<8E00CFAB9100D0AD9300D0AD9400D1AE9500D3B19A00D4B39B00D5B59D00D6B69F00>"
++   "<D6B7A000CDA58B00CEA78D00CEAA8F00CFAB9200D0AD9300D0AD9400D3B19900D4B3>"
++   "<9B00D4B39B00D5B59D00D6B7A000D7B8A200D7B9A200D8BAA300D9BCA600DABEA800>"
++   "<DBBFA900D1AE9500D3B19A00D4B39B00D4B49C00D6B69F00D6B7A000D7B8A200D8BA>"
++   "<A300D9BCA500D9BCA600DABEA800DBBFA900DCC0AB00DCC2AC00DDC2AE00DDC3AF00>"
++   "<DFC5B100D6B7A000D7B9A200D8BAA300D9BCA600D9BCA600DABEA900DBBFA900DCC2>"
++   "<AC00DCC2AC00DDC3AF00DEC4B000DFC5B100DFC6B300E0C8B400E1C9B600E3CBB800>"
++   "<E3CBB800240F0000271000002C1300003016010036190200371A03003C1D04004121>"
++   "<06004523080047252509004C290B00512D0E0055311000563210005A3513005E3916>"
++   "<00613D1800391B04003C1D0400412106004523080047252509004C290B00512D0E00>"
++   "<55311000593412005A3513005E391600613D180065401B0067421D006A451F006E49>"
++   "<2300714C26004E2B0C00532F0F0055311000593412005C3715005F3A1700613D1800>"
++   "<65401B0068431D006C4721006E492300714C2600744F280075512A0078542D007A56>"
++   "<2F007D5B31005F3A1700633E190067421D006A451F006C4721006F4A2400734E2700>"
++   "<734F280075512A0078542D007B572F007F5A33007F5B3400835F380086623A008965>"
++   "<3D0089663E00714C2600744F2800734F280076522B007A562F007D5B31007F5A3300>"
++   "<815D36008460390087633B0089653D008B6740008C6841008F6A4200916C4400946E>"
++   "<4700967048007D5B31007F5B3400835F38008460390087633B0089663E008B674000>"
++   "<8E6942008F6A4200926D4500956F48009971490099724A009C744D009D744D009F75>"
++   "<4F00A07650008B6740008B6740008E694200916C4400946E4700956F480099714900>"
++   "<9B734C009C754E009D744D009F754F00A2785100A3795200A57B5400A77D5700A97E>"
++   "<5800AB7F5A009670480099724A009C744D009C754E009E744E00A0765000A2795100>"
++   "<A3795200A57B5400A87D5700AA7E5900AB7F5A00AD815C00AE815C00B1835E00B284>"
++   "<6000B4856200A2785100A2795100A47A5300A77D5700A97E5800AA7E5900AC805B00>"
++   "<AC7F5A00B0825D00B1835E00B3856000B4856300B6876500B7886600B98A6900BC8C>"
++   "<6B00BE8F6E00AB7F5A00AD815C00AC7F5A00B0825D00B2846000B4856200B5866500>"
++   "<B6876500B8896800BA8B6A00BD8D6D00BE8F6E00C0917100C2947300C4957600C497>"
++   "<7800C6997A00B4856300B5866500B7886600B98A6900BA8B6A00BD8D6D00BF906F00>"
++   "<C1927200C2947300C4957600C5987800C79B7B00C6997A00C79A7B00C89D7E00C99E>"
++   "<8200CAA18500BE8F6E00C0917100C1927200C3947400C4977800C6997A00C79B7B00>"
++   "<C6997A00C79C7D00C99D8000C99E8200CAA18500CCA38800CDA58B00CEA68C00CEA9>"
++   "<8E00CFAB9100C6997A00C89C7D00C79A7B00C89D7E00C99D8000CAA08300CBA38600>"
++   "<CDA48A00CDA58B00CEA78D00CEAA8F00CFAB9200D0AD9300D0AD9400D3B19900D4B3>"
++   "<9B00D4B39B00CAA18500CBA38600CDA48A00CEA68C00CEA98E00CFAB9100CFAB9200>"
++   "<D0AD9400D1AE9500D3B19A00D4B39B00D4B49C00D6B69F00D6B7A000D7B8A200D8BA>"
++   "<A300D9BCA500CFAB9100D0AD9300D0AD9400D1AE9500D3B19A00D4B39B00D5B59D00>"
++   "<D6B69F00D6B7A000D7B9A200D8BAA300D9BCA600D9BCA600DABEA900DBBFA900DCC2>"
++   "<AC00DCC2AC00D4B49C00D5B59D00D6B7A000D7B8A200D8BAA300D8BAA300D9BCA600>"
++   "<DABEA800DBBFA900DBBFA900DCC2AC00DDC2AE00DDC3AF00DEC4B000DFC5B100E0C8>"
++   "<B400E0C8B500D9BCA500D9BCA600DABEA900DBBFA900DCC0AB00DCC2AC00DDC3AF00>"
++   "<DDC3AF00DFC5B100DFC6B300E0C8B400E0C8B500E2C9B700E3CBB800E3CCBA00E4CD>"
++   "<BB00E4CEBC003016010033170200371A03003C1D04003E1F05004222070047252509>"
++   "<004C290B004E2B0C00532F0F00563210005A3513005E3916005F3A1700633E190067>"
++   "<421D006A451F004222070047252509004C290B00512D0E00532F0F00563210005A35>"
++   "<13005E3916005F3A1700633E190067421D006A451F006C4721006F4A2400734E2700>"
++   "<734F280075512A00593412005A3513005E391600613D180065401B0067421D006A45>"
++   "<1F006E492300714C2600744F2800734F280076522B007A562F007D5B31007F5A3300>"
++   "<815D36008460390068431D006C4721006F4A2400714C2600744F280075512A007854>"
++   "<2D007A562F007D5B31007F5B3400835F38008460390087633B0089663E008B674000>"
++   "<8E6942008F6A420076522B0078542D007B572F007F5A3300815D3600835F38008662>"
++   "<3A0089653D008B6740008B6740008E694200916C4400946E4700956F480099714900>"
++   "<9B734C009C754E008460390087633B0089663E008B6740008C6841008F6A4200926D>"
++   "<4500946E47009670480099724A009C744D009C754E009E744E00A0765000A2795100>"
++   "<A3795200A57B5400916C4400926D4500956F48009971490099724A009C744D009D74>"
++   "<4D009F754F00A2785100A2795100A47A5300A77D5700A97E5800AA7E5900AC805B00>"
++   "<AC7F5A00B0825D009C754E009E744E009F754F00A2785100A3795200A57B5400A77D>"
++   "<5700A97E5800AB7F5A00AD815C00AC7F5A00B0825D00B2846000B4856200B5866500>"
++   "<B6876500B8896800A57B5400A87D5700AA7E5900AC805B00AD815C00AE815C00B183>"
++   "<5E00B3856000B4856200B5866500B7886600B98A6900BA8B6A00BD8D6D00BF906F00>"
++   "<C1927200C2947300B0825D00B2846000B3856000B4856300B6876500B8896800B98A>"
++   "<6900BC8C6B00BE8F6E00C0917100C1927200C3947400C4977800C6997A00C79B7B00>"
++   "<C6997A00C79C7D00B8896800BA8B6A00BD8D6D00BE8F6E00C0917100C2947300C495>"
++   "<7600C5987800C6997A00C89C7D00C79A7B00C89D7E00C99D8000CAA08300CBA38600>"
++   "<CDA48A00CDA58B00C3947400C4957600C5987800C79B7B00C6997A00C79A7B00C89D>"
++   "<7E00C99E8200CAA18500CBA38600CDA48A00CEA68C00CEA98E00CFAB9100CFAB9200>"
++   "<D0AD9400D1AE9500C79C7D00C99D8000CAA08300CAA18500CCA38800CDA58B00CEA7>"
++   "<8D00CEA98E00CFAB9100D0AD9300D0AD9400D1AE9500D3B19A00D4B39B00D5B59D00>"
++   "<D6B69F00D6B7A000CEA68C00CEA78D00CEAA8F00CFAB9200D0AD9400D0AD9400D3B1>"
++   "<9900D4B39B00D4B49C00D5B59D00D6B7A000D7B8A200D8BAA300D8BAA300D9BCA600>"
++   "<DABEA800DBBFA900D1AE9500D3B19A00D4B39B00D4B49C00D6B69F00D6B7A000D7B9>"
++   "<A200D8BAA300D9BCA500D9BCA600DABEA900DBBFA900DCC0AB00DCC2AC00DDC3AF00>"
++   "<DDC3AF00DFC5B100D7B8A200D7B9A200D8BAA300D9BCA600D9BCA600DABEA900DBBF>"
++   "<A900DCC2AC00DCC2AC00DDC3AF00DEC4B000DFC5B100E0C8B400E0C8B400E1C9B600>"
++   "<E3CBB800E3CBB900DBBFA900DCC0AB00DCC2AC00DDC2AE00DDC3AF00DFC5B100DFC5>"
++   "<B100E0C8B400E0C8B500E2C9B700E3CBB800E3CBB900E4CDBB00E4CEBC00E5D0BE00>"
++   "<E6D1BF00E6D2C100391B04003E1F050042220700452308004A270A004E2B0C00532F>"
++   "<0F0056321000593412005C3715005F3A1700633E190065401B0068431D006C472100>"
++   "<6F4A2400714C26004E2B0C00532F0F0056321000593412005C3715005F3A1700633E>"
++   "<190065401B0068431D006C4721006F4A2400714C2600744F280075512A0078542D00>"
++   "<7A562F007D5B3100613D1800633E190067421D006A451F006E4923006F4A2400734E>"
++   "<2700734F280076522B0078542D007B572F007F5A3300815D3600835F380086623A00>"
++   "<89653D008B674000714C2600744F2800734F280076522B007A562F007D5B31007F5A>"
++   "<3300815D36008460390087633B0089663E008B6740008C6841008F6A4200926D4500>"
++   "<946E4700967048007D5B31007F5B3400835F380086623A0087633B0089663E008B67>"
++   "<40008E6942008F6A4200926D4500956F48009971490099724A009C744D009D744D00>"
++   "<9F754F00A27851008B6740008C6841008E694200916C4400946E4700967048009971>"
++   "<49009B734C009C754E009E744E009F754F00A2785100A3795200A57B5400A77D5700>"
++   "<A97E5800AB7F5A009670480099724A009C744D009D744D009E744E00A0765000A279>"
++   "<5100A47A5300A57B5400A87D5700AA7E5900AC805B00AD815C00AE815C00B1835E00>"
++   "<B3856000B4856200A2785100A2795100A47A5300A77D5700A97E5800AA7E5900AC80>"
++   "<5B00AC7F5A00B0825D00B2846000B3856000B4856300B6876500B8896800B98A6900>"
++   "<BC8C6B00BE8F6E00AB7F5A00AD815C00AE815C00B0825D00B2846000B4856200B586>"
++   "<6500B6876500B8896800BA8B6A00BD8D6D00BE8F6E00C0917100C2947300C4957600>"
++   "<C5987800C6997A00B4856300B5866500B7886600B98A6900BC8C6B00BD8D6D00BF90>"
++   "<6F00C1927200C3947400C4957600C5987800C79B7B00C6997A00C79A7B00C89D7E00>"
++   "<C99E8200CAA18500BE8F6E00C0917100C2947300C3947400C4977800C6997A00C89C>"
++   "<7D00C6997A00C79C7D00C99D8000CAA08300CAA18500CCA38800CDA58B00CEA78D00>"
++   "<CEA98E00CFAB9100C79B7B00C89C7D00C79A7B00C89D7E00C99D8000CAA08300CBA3>"
++   "<8600CDA48A00CEA68C00CEA78D00CEAA8F00CFAB9200D0AD9400D0AD9400D3B19900>"
++   "<D4B39B00D4B49C00CAA18500CCA38800CDA48A00CEA68C00CEA98E00CFAB9100CFAB>"
++   "<9200D0AD9400D1AE9500D3B19A00D4B39B00D4B49C00D6B69F00D6B7A000D7B9A200>"
++   "<D8BAA300D9BCA500CFAB9100D0AD9300D0AD9400D3B19900D3B19A00D4B39B00D5B5>"
++   "<9D00D6B7A000D6B7A000D7B9A200D8BAA300D9BCA600D9BCA600DABEA900DBBFA900>"
++   "<DCC2AC00DCC2AC00D4B49C00D6B69F00D6B7A000D7B8A200D8BAA300D9BCA500D9BC>"
++   "<A600DABEA800DBBFA900DCC0AB00DCC2AC00DDC2AE00DDC3AF00DFC5B100DFC5B100>"
++   "<E0C8B400E0C8B500D9BCA500D9BCA600DABEA900DBBFA900DCC0AB00DCC2AC00DDC3>"
++   "<AF00DEC4B000DFC5B100DFC6B300E0C8B400E1C9B600E2C9B700E3CBB800E3CCBA00>"
++   "<E4CDBB00E4CEBC00DDC2AE00DDC3AF00DEC4B000DFC5B100E0C8B400E0C8B400E1C9>"
++   "<B600E3CBB800E3CBB900E3CCBA00E4CDBB00E5D0BE00E6D1BF00E6D2C100E6D2C100>"
++   "<E7D3C300E7D4C400452308004A270A004E2B0C00512D0E0055311000593412005C37>"
++   "<15005E391600613D180065401B0068431D006A451F006E492300714C2600744F2800>"
++   "<734F280076522B00593412005C3715005E391600613D180065401B0068431D006A45>"
++   "<1F006E492300714C2600744F2800734F280076522B007A562F007D5B31007F5A3300>"
++   "<815D36008460390068431D006C4721006F4A2400734E2700744F280075512A007854>"
++   "<2D007B572F007D5B31007F5B3400835F380086623A0087633B0089663E008B674000>"
++   "<8E6942008F6A420076522B0078542D007B572F007F5A3300815D3600846039008662>"
++   "<3A0089653D008B6740008C6841008E694200916C4400946E47009670480099714900>"
++   "<9B734C009C754E008460390087633B0089663E008B6740008C6841008F6A4200926D>"
++   "<4500946E47009670480099724A009C744D009D744D009E744E00A0765000A2795100>"
++   "<A47A5300A57B5400916C4400926D4500956F4800997149009B734C009C744D009D74>"
++   "<4D009F754F00A2785100A2795100A47A5300A77D5700A97E5800AA7E5900AC805B00>"
++   "<AC7F5A00B0825D009C754E009E744E00A0765000A2785100A3795200A57B5400A87D>"
++   "<5700A97E5800AB7F5A00AD815C00AE815C00B0825D00B2846000B4856200B5866500>"
++   "<B6876500B8896800A77D5700A87D5700AA7E5900AC805B00AC7F5A00AE815C00B183>"
++   "<5E00B3856000B4856300B5866500B7886600B98A6900BC8C6B00BD8D6D00BF906F00>"
++   "<C1927200C3947400B0825D00B2846000B3856000B4856300B6876500B8896800B98A>"
++   "<6900BC8C6B00BE8F6E00C0917100C2947300C3947400C4977800C6997A00C89C7D00>"
++   "<C6997A00C79C7D00B8896800BA8B6A00BD8D6D00BF906F00C0917100C2947300C495>"
++   "<7600C5987800C6997A00C89C7D00C79A7B00C89D7E00C99D8000CAA08300CBA38600>"
++   "<CDA48A00CEA68C00C3947400C4977800C5987800C79B7B00C6997A00C79C7D00C89D>"
++   "<7E00C99E8200CAA18500CCA38800CDA48A00CEA68C00CEA98E00CFAB9100CFAB9200>"
++   "<D0AD9400D1AE9500C79C7D00C99D8000CAA08300CBA38600CCA38800CDA58B00CEA7>"
++   "<8D00CEAA8F00CFAB9100D0AD9300D0AD9400D3B19900D3B19A00D4B39B00D5B59D00>"
++   "<D6B7A000D6B7A000CEA68C00CEA78D00CEAA8F00CFAB9200D0AD9400D0AD9400D3B1>"
++   "<9900D4B39B00D4B49C00D6B69F00D6B7A000D7B8A200D8BAA300D9BCA500D9BCA600>"
++   "<DABEA800DBBFA900D1AE9500D3B19A00D4B39B00D4B49C00D6B69F00D6B7A000D7B9>"
++   "<A200D8BAA300D9BCA500D9BCA600DABEA900DBBFA900DCC0AB00DCC2AC00DDC3AF00>"
++   "<DEC4B000DFC5B100D7B8A200D7B9A200D8BAA300D9BCA600DABEA800DABEA900DBBF>"
++   "<A900DCC2AC00DDC2AE00DDC3AF00DEC4B000DFC5B100E0C8B400E0C8B400E1C9B600>"
++   "<E3CBB800E3CBB900DBBFA900DCC0AB00DCC2AC00DDC2AE00DDC3AF00DFC5B100DFC6>"
++   "<B300E0C8B400E0C8B500E2C9B700E3CBB800E3CBB900E4CDBB00E4CEBC00E5D0BE00>"
++   "<E6D1BF00E6D2C100DFC5B100DFC6B300E0C8B400E1C9B600E2C9B700E3CBB800E3CC>"
++   "<BA00E4CDBB00E5D0BE00E5D0BE00E6D1C000E6D2C100E7D3C300E7D4C400E8D5C500>"
++   "<E9D6C700E9D7C800512D0E0055311000563210005A3513005E391600613D1800633E>"
++   "<190067421D006A451F006E4923006F4A2400734E2700734F280076522B0078542D00>"
++   "<7B572F007F5A3300613D1800633E190067421D006A451F006E4923006F4A2400734E>"
++   "<2700734F280076522B0078542D007B572F007F5A3300815D36008460390086623A00>"
++   "<89653D008B674000714C2600744F280075512A0076522B007A562F007D5B31007F5B>"
++   "<3400815D36008460390087633B0089663E008B6740008C6841008F6A4200926D4500>"
++   "<946E4700967048007F5A33007F5B3400835F380086623A0089653D0089663E008B67>"
++   "<40008E694200916C4400926D4500956F4800997149009B734C009C744D009D744D00>"
++   "<9F754F00A27851008B6740008C6841008E694200916C4400946E4700967048009972>"
++   "<4A009B734C009C754E009E744E00A0765000A2785100A3795200A57B5400A87D5700>"
++   "<A97E5800AB7F5A009971490099724A009C744D009D744D009E744E00A0765000A279>"
++   "<5100A47A5300A57B5400A87D5700AA7E5900AC805B00AC7F5A00AE815C00B1835E00>"
++   "<B3856000B4856300A2785100A3795200A47A5300A77D5700A97E5800AB7F5A00AC80>"
++   "<5B00AC7F5A00B0825D00B2846000B3856000B4856300B6876500B8896800B98A6900>"
++   "<BC8C6B00BE8F6E00AB7F5A00AD815C00AE815C00B1835E00B2846000B4856200B586>"
++   "<6500B7886600B8896800BA8B6A00BD8D6D00BF906F00C0917100C2947300C4957600>"
++   "<C5987800C6997A00B4856300B5866500B7886600B98A6900BC8C6B00BE8F6E00BF90>"
++   "<6F00C1927200C3947400C4977800C5987800C79B7B00C6997A00C79C7D00C89D7E00>"
++   "<C99E8200CAA18500BE8F6E00C0917100C2947300C3947400C4977800C6997A00C89C>"
++   "<7D00C6997A00C79C7D00C99D8000CAA08300CBA38600CCA38800CDA58B00CEA78D00>"
++   "<CEAA8F00CFAB9100C79B7B00C89C7D00C79A7B00C89D7E00C99E8200CAA08300CBA3>"
++   "<8600CDA48A00CEA68C00CEA78D00CEAA8F00CFAB9200D0AD9400D0AD9400D3B19900>"
++   "<D4B39B00D4B49C00CAA18500CCA38800CDA58B00CEA68C00CEA98E00CFAB9100D0AD>"
++   "<9300D0AD9400D1AE9500D3B19A00D4B39B00D4B49C00D6B69F00D6B7A000D7B9A200>"
++   "<D8BAA300D9BCA500CFAB9200D0AD9300D0AD9400D3B19900D4B39B00D4B39B00D5B5>"
++   "<9D00D6B7A000D7B8A200D7B9A200D8BAA300D9BCA600DABEA800DABEA900DBBFA900>"
++   "<DCC2AC00DDC2AE00D4B49C00D6B69F00D6B7A000D7B8A200D8BAA300D9BCA500D9BC>"
++   "<A600DABEA800DBBFA900DCC0AB00DCC2AC00DDC2AE00DDC3AF00DFC5B100DFC6B300>"
++   "<E0C8B400E0C8B500D9BCA500D9BCA600DABEA900DBBFA900DCC0AB00DCC2AC00DDC3>"
++   "<AF00DEC4B000DFC5B100DFC6B300E0C8B400E1C9B600E2C9B700E3CBB800E3CCBA00>"
++   "<E4CDBB00E5D0BE00DDC2AE00DDC3AF00DEC4B000DFC5B100E0C8B400E0C8B500E1C9>"
++   "<B600E3CBB800E3CBB900E4CDBB00E4CDBB00E5D0BE00E6D1BF00E6D2C100E6D2C100>"
++   "<E7D3C300E7D4C400E0C8B500E2C9B700E3CBB800E3CCBA00E4CDBB00E4CEBC00E5D0>"
++   "<BE00E6D1C000E6D2C100E7D3C300E7D4C400E8D5C500E8D5C500E9D6C700E9D7C800>"
++   "<ECDBCD00ECDBCE005A3513005C3715005F3A1700633E190067421D0068431D006C47>"
++   "<21006F4A2400734E2700744F280075512A0078542D007B572F007D5B31007F5B3400>"
++   "<835F380086623A006A451F006C4721006F4A2400734E2700744F280075512A007854>"
++   "<2D007B572F007F5A33007F5B3400835F380086623A0089653D0089663E008B674000>"
++   "<8E694200916C440076522B007A562F007B572F007F5A3300815D3600846039008662>"
++   "<3A0089653D008B6740008C6841008E694200916C4400946E47009670480099724A00>"
++   "<9B734C009C754E008460390087633B0089663E008B6740008C6841008F6A4200926D>"
++   "<4500956F48009670480099724A009C744D009D744D009E744E00A0765000A2795100>"
++   "<A47A5300A57B5400916C4400946E4700956F4800997149009B734C009C754E009D74>"
++   "<4D009F754F00A2785100A3795200A47A5300A77D5700A97E5800AB7F5A00AC805B00>"
++   "<AC7F5A00B0825D009C754E009E744E00A0765000A2785100A3795200A57B5400A87D>"
++   "<5700AA7E5900AB7F5A00AD815C00AE815C00B1835E00B2846000B4856200B5866500>"
++   "<B7886600B8896800A77D5700A87D5700AA7E5900AC805B00AC7F5A00AE815C00B183>"
++   "<5E00B3856000B4856300B5866500B7886600B98A6900BC8C6B00BE8F6E00BF906F00>"
++   "<C1927200C3947400B0825D00B2846000B4856200B4856300B6876500B8896800BA8B>"
++   "<6A00BC8C6B00BE8F6E00C0917100C2947300C3947400C4977800C6997A00C89C7D00>"
++   "<C6997A00C79C7D00B98A6900BA8B6A00BD8D6D00BF906F00C1927200C2947300C495>"
++   "<7600C5987800C79B7B00C89C7D00C79A7B00C89D7E00C99E8200CAA08300CBA38600>"
++   "<CDA48A00CEA68C00C3947400C4977800C5987800C79B7B00C6997A00C79C7D00C99D>"
++   "<8000C99E8200CAA18500CCA38800CDA58B00CEA68C00CEA98E00CFAB9100D0AD9300>"
++   "<D0AD9400D1AE9500C89D7E00C99D8000CAA08300CBA38600CCA38800CDA58B00CEA7>"
++   "<8D00CEAA8F00CFAB9100D0AD9300D0AD9400D3B19900D4B39B00D4B39B00D5B59D00>"
++   "<D6B7A000D7B8A200CEA68C00CEA98E00CEAA8F00CFAB9200D0AD9400D1AE9500D3B1>"
++   "<9900D4B39B00D4B49C00D6B69F00D6B7A000D7B8A200D8BAA300D9BCA500D9BCA600>"
++   "<DABEA800DBBFA900D1AE9500D3B19A00D4B39B00D5B59D00D6B69F00D6B7A000D7B9>"
++   "<A200D8BAA300D9BCA500D9BCA600DABEA900DBBFA900DCC0AB00DCC2AC00DDC3AF00>"
++   "<DEC4B000DFC5B100D7B8A200D7B9A200D8BAA300D9BCA600DABEA800DBBFA900DBBF>"
++   "<A900DCC2AC00DDC2AE00DDC3AF00DEC4B000DFC5B100E0C8B400E0C8B500E1C9B600>"
++   "<E3CBB800E3CBB900DBBFA900DCC0AB00DCC2AC00DDC2AE00DDC3AF00DFC5B100DFC6>"
++   "<B300E0C8B400E0C8B500E2C9B700E3CBB800E3CCBA00E4CDBB00E4CEBC00E5D0BE00>"
++   "<E6D1C000E6D2C100DFC5B100DFC6B300E0C8B400E1C9B600E3CBB800E3CBB800E3CC>"
++   "<BA00E4CDBB00E5D0BE00E5D0BE00E6D1C000E6D2C100E7D3C300E7D4C400E8D5C500>"
++   "<E9D6C700E9D7C800E3CBB900E4CDBB00E4CEBC00E5D0BE00E6D1BF00E6D2C100E7D3>"
++   "<C300E7D3C300E7D4C400E8D5C500E9D6C700E9D7C800EAD9CA00ECDBCE00ECDBCE00>"
++   "<EDDCCF00EFE0D400633E190065401B0068431D006C4721006E492300714C2600744F>"
++   "<280075512A0076522B007A562F007D5B31007F5B3400835F38008460390087633B00>"
++   "<89663E008B674000714C2600744F280075512A0078542D007A562F007D5B31007F5B>"
++   "<3400835F38008460390087633B0089663E008B6740008C6841008F6A4200926D4500>"
++   "<956F4800967048007F5A33007F5B3400835F380086623A0089653D0089663E008B67>"
++   "<40008E694200916C4400946E4700956F4800997149009B734C009C754E009D744D00>"
++   "<9F754F00A27851008B6740008C6841008F6A4200916C4400946E4700967048009972>"
++   "<4A009B734C009C754E009E744E00A0765000A2785100A3795200A57B5400A87D5700>"
++   "<AA7E5900AB7F5A009971490099724A009C744D009D744D009F754F00A0765000A279>"
++   "<5100A47A5300A77D5700A87D5700AA7E5900AC805B00AC7F5A00AE815C00B1835E00>"
++   "<B3856000B4856300A2785100A3795200A57B5400A77D5700A97E5800AB7F5A00AD81>"
++   "<5C00AC7F5A00B0825D00B2846000B4856200B4856300B6876500B8896800BA8B6A00>"
++   "<BC8C6B00BE8F6E00AC805B00AD815C00AE815C00B1835E00B2846000B4856200B586>"
++   "<6500B7886600B98A6900BA8B6A00BD8D6D00BF906F00C1927200C2947300C4957600>"
++   "<C5987800C79B7B00B4856300B6876500B7886600B98A6900BC8C6B00BE8F6E00BF90>"
++   "<6F00C1927200C3947400C4977800C5987800C79B7B00C6997A00C79C7D00C99D8000>"
++   "<C99E8200CAA18500BE8F6E00C0917100C2947300C4957600C4977800C6997A00C89C>"
++   "<7D00C79A7B00C79C7D00C99D8000CAA08300CBA38600CCA38800CDA58B00CEA78D00>"
++   "<CEAA8F00CFAB9100C79B7B00C6997A00C79A7B00C89D7E00C99E8200CAA18500CBA3>"
++   "<8600CDA48A00CEA68C00CEA98E00CEAA8F00CFAB9200D0AD9400D1AE9500D3B19900>"
++   "<D4B39B00D4B49C00CAA18500CCA38800CDA58B00CEA68C00CEA98E00CFAB9100D0AD>"
++   "<9300D0AD9400D1AE9500D3B19A00D4B39B00D5B59D00D6B69F00D6B7A000D7B9A200>"
++   "<D8BAA300D9BCA500CFAB9200D0AD9300D0AD9400D3B19900D4B39B00D4B39B00D5B5>"
++   "<9D00D6B7A000D7B8A200D7B9A200D8BAA300D9BCA600DABEA800DBBFA900DBBFA900>"
++   "<DCC2AC00DDC2AE00D4B49C00D6B69F00D6B7A000D7B8A200D8BAA300D9BCA500D9BC>"
++   "<A600DABEA800DBBFA900DCC0AB00DCC2AC00DDC2AE00DDC3AF00DFC5B100DFC6B300>"
++   "<E0C8B400E0C8B500D9BCA600D9BCA600DABEA900DBBFA900DCC2AC00DCC2AC00DDC3>"
++   "<AF00DEC4B000DFC5B100DFC6B300E0C8B400E1C9B600E3CBB800E3CBB800E3CCBA00>"
++   "<E4CDBB00E5D0BE00DDC2AE00DDC3AF00DEC4B000DFC5B100E0C8B400E0C8B500E2C9>"
++   "<B700E3CBB800E3CBB900E4CDBB00E4CEBC00E5D0BE00E6D1BF00E6D2C100E7D3C300>"
++   "<E7D3C300E7D4C400E1C9B600E2C9B700E3CBB800E3CCBA00E4CDBB00E4CEBC00E5D0>"
++   "<BE00E6D1C000E6D2C100E7D3C300E7D4C400E8D5C500E9D6C700E9D6C700E9D7C800>"
++   "<ECDBCD00ECDBCE00E5D0BE00E6D1BF00E6D1C000E6D2C100E7D3C300E7D4C400E8D5>"
++   "<C500E9D6C700E9D7C800EAD9CA00ECDBCD00ECDBCE00EDDCCF00EFE0D400F0E3D700>"
++   "<F0E3D800F2E7DD006A451F006E492300714C2600734E2700734F280076522B007A56>"
++   "<2F007D5B31007F5A3300815D36008460390087633B0089653D008B6740008C684100>"
++   "<8F6A4200916C440076522B007A562F007D5B31007F5A3300815D3600846039008763>"
++   "<3B0089653D008B6740008C6841008F6A4200916C4400946E47009670480099724A00>"
++   "<9B734C009C754E0086623A0087633B0089663E008B6740008E6942008F6A4200926D>"
++   "<4500956F48009971490099724A009C744D009D744D009F754F00A0765000A2795100>"
++   "<A47A5300A77D5700916C4400946E4700956F4800997149009B734C009C754E009D74>"
++   "<4D009F754F00A2785100A3795200A57B5400A77D5700A97E5800AB7F5A00AD815C00>"
++   "<AC7F5A00B0825D009C754E009E744E00A0765000A2795100A3795200A57B5400A87D>"
++   "<5700AA7E5900AB7F5A00AD815C00AE815C00B1835E00B2846000B4856200B5866500>"
++   "<B7886600B98A6900A77D5700A97E5800AA7E5900AC805B00AC7F5A00B0825D00B183>"
++   "<5E00B3856000B4856300B6876500B7886600B98A6900BC8C6B00BE8F6E00BF906F00>"
++   "<C1927200C3947400B0825D00B2846000B4856200B5866500B6876500B8896800BA8B>"
++   "<6A00BD8D6D00BE8F6E00C0917100C2947300C4957600C4977800C6997A00C89C7D00>"
++   "<C79A7B00C79C7D00B98A6900BA8B6A00BD8D6D00BF906F00C1927200C2947300C495>"
++   "<7600C5987800C79B7B00C6997A00C79A7B00C89D7E00C99E8200CAA18500CBA38600>"
++   "<CDA48A00CEA68C00C3947400C4977800C6997A00C79B7B00C6997A00C79C7D00C99D>"
++   "<8000C99E8200CAA18500CCA38800CDA58B00CEA68C00CEA98E00CFAB9100D0AD9300>"
++   "<D0AD9400D1AE9500C89D7E00C99D8000CAA08300CBA38600CDA48A00CDA58B00CEA7>"
++   "<8D00CEAA8F00CFAB9200D0AD9300D0AD9400D3B19900D4B39B00D4B39B00D5B59D00>"
++   "<D6B7A000D7B8A200CEA68C00CEA98E00CFAB9100CFAB9200D0AD9400D1AE9500D3B1>"
++   "<9A00D4B39B00D4B49C00D6B69F00D6B7A000D7B8A200D8BAA300D9BCA500D9BCA600>"
++   "<DABEA800DBBFA900D3B19900D3B19A00D4B39B00D5B59D00D6B69F00D6B7A000D7B9>"
++   "<A200D8BAA300D9BCA600D9BCA600DABEA900DBBFA900DCC2AC00DCC2AC00DDC3AF00>"
++   "<DEC4B000DFC5B100D7B8A200D8BAA300D8BAA300D9BCA600DABEA800DBBFA900DBBF>"
++   "<A900DCC2AC00DDC2AE00DDC3AF00DEC4B000DFC5B100E0C8B400E0C8B500E2C9B700>"
++   "<E3CBB800E3CBB900DBBFA900DCC0AB00DCC2AC00DDC3AF00DDC3AF00DFC5B100DFC6>"
++   "<B300E0C8B400E0C8B500E2C9B700E3CBB800E3CCBA00E4CDBB00E4CEBC00E5D0BE00>"
++   "<E6D1C000E6D2C100DFC5B100E0C8B400E0C8B400E1C9B600E3CBB800E3CBB900E3CC>"
++   "<BA00E4CDBB00E5D0BE00E6D1BF00E6D1C000E6D2C100E7D3C300E7D4C400E8D5C500>"
++   "<E9D6C700E9D7C800E3CBB900E4CDBB00E4CEBC00E5D0BE00E6D1BF00E6D2C100E7D3>"
++   "<C300E7D4C400E7D4C400E8D5C500E9D6C700E9D7C800EAD9CA00ECDBCE00ECDBCE00>"
++   "<EEDFD200EFE0D400E6D2C100E7D3C300E7D4C400E8D5C500E9D6C700E9D6C700E9D7>"
++   "<C800ECDBCD00ECDBCE00ECDBCE00EEDFD200F0E3D700F0E3D800F2E7DD00F2E7DD00>"
++   "<F3EAE100F5EDE500734E2700734F280076522B0078542D007B572F007F5A3300815D>"
++   "<3600835F380086623A0089653D008B6740008B6740008E694200916C4400946E4700>"
++   "<956F4800997149007F5A3300815D3600835F380086623A0089653D008B6740008B67>"
++   "<40008E694200916C4400946E4700956F4800997149009B734C009C754E009D744D00>"
++   "<9F754F00A27851008B6740008C6841008F6A4200926D4500946E4700967048009972>"
++   "<4A009C744D009C754E009E744E00A0765000A2795100A3795200A57B5400A87D5700>"
++   "<AA7E5900AB7F5A009971490099724A009C744D009D744D009F754F00A2785100A279>"
++   "<5100A47A5300A77D5700A97E5800AA7E5900AC805B00AC7F5A00B0825D00B1835E00>"
++   "<B3856000B4856300A2785100A3795200A57B5400A77D5700A97E5800AB7F5A00AD81>"
++   "<5C00AC7F5A00B0825D00B2846000B4856200B5866500B6876500B8896800BA8B6A00>"
++   "<BD8D6D00BE8F6E00AC805B00AD815C00AE815C00B1835E00B3856000B4856200B586>"
++   "<6500B7886600B98A6900BA8B6A00BD8D6D00BF906F00C1927200C2947300C4957600>"
++   "<C5987800C79B7B00B4856300B6876500B8896800B98A6900BC8C6B00BE8F6E00C091>"
++   "<7100C1927200C3947400C4977800C6997A00C79B7B00C6997A00C79C7D00C99D8000>"
++   "<C99E8200CAA18500BF906F00C0917100C2947300C4957600C5987800C6997A00C89C>"
++   "<7D00C79A7B00C89D7E00C99D8000CAA08300CBA38600CDA48A00CDA58B00CEA78D00>"
++   "<CEAA8F00CFAB9200C79B7B00C6997A00C79A7B00C89D7E00C99E8200CAA18500CBA3>"
++   "<8600CDA48A00CEA68C00CEA98E00CFAB9100CFAB9200D0AD9400D1AE9500D3B19A00>"
++   "<D4B39B00D4B49C00CAA18500CCA38800CDA58B00CEA78D00CEA98E00CFAB9100D0AD>"
++   "<9300D0AD9400D1AE9500D3B19A00D4B39B00D5B59D00D6B69F00D6B7A000D7B9A200>"
++   "<D8BAA300D9BCA600CFAB9200D0AD9400D0AD9400D3B19900D4B39B00D4B49C00D5B5>"
++   "<9D00D6B7A000D7B8A200D8BAA300D8BAA300D9BCA600DABEA800DBBFA900DBBFA900>"
++   "<DCC2AC00DDC2AE00D4B49C00D6B69F00D6B7A000D7B9A200D8BAA300D9BCA500D9BC>"
++   "<A600DABEA900DBBFA900DCC0AB00DCC2AC00DDC3AF00DDC3AF00DFC5B100DFC6B300>"
++   "<E0C8B400E0C8B500D9BCA600D9BCA600DABEA900DBBFA900DCC2AC00DCC2AC00DDC3>"
++   "<AF00DEC4B000DFC5B100E0C8B400E0C8B400E1C9B600E3CBB800E3CBB900E3CCBA00>"
++   "<E4CDBB00E5D0BE00DDC2AE00DDC3AF00DFC5B100DFC5B100E0C8B400E0C8B500E2C9>"
++   "<B700E3CBB800E3CBB900E4CDBB00E4CEBC00E5D0BE00E6D1BF00E6D2C100E7D3C300>"
++   "<E7D4C400E7D4C400E1C9B600E2C9B700E3CBB800E3CCBA00E4CDBB00E4CEBC00E5D0>"
++   "<BE00E6D1C000E6D2C100E7D3C300E7D4C400E8D5C500E9D6C700E9D6C700E9D7C800>"
++   "<ECDBCD00ECDBCE00E5D0BE00E6D1BF00E6D2C100E6D2C100E7D3C300E7D4C400E8D5>"
++   "<C500E9D6C700E9D7C800EAD9CA00ECDBCE00ECDBCE00EDDCCF00EFE0D400F0E3D700>"
++   "<F0E3D800F2E7DD00E8D5C500E8D5C500E9D6C700E9D7C800EAD9CA00ECDBCE00ECDB>"
++   "<CE00EEDFD200F0E3D700F0E3D700F1E5DB00F2E7DD00F3EAE100F3EAE100F6EEE600>"
++   "<F7F0E900F8F1EB0078542D007B572F007D5B31007F5B3400835F380086623A008763>"
++   "<3B0089663E008B6740008E6942008F6A4200926D4500956F48009971490099724A00>"
++   "<9C744D009D744D0086623A0087633B0089663E008B6740008E6942008F6A4200926D>"
++   "<4500956F48009971490099724A009C744D009D744D009F754F00A2785100A2795100>"
++   "<A47A5300A77D5700916C4400946E470096704800997149009B734C009C754E009E74>"
++   "<4E009F754F00A2785100A3795200A57B5400A77D5700A97E5800AB7F5A00AD815C00>"
++   "<AC7F5A00B0825D009D744D009E744E00A0765000A2795100A47A5300A57B5400A87D>"
++   "<5700AA7E5900AC805B00AD815C00AE815C00B1835E00B3856000B4856200B5866500>"
++   "<B7886600B98A6900A77D5700A97E5800AA7E5900AC805B00AC7F5A00B0825D00B284>"
++   "<6000B3856000B4856300B6876500B8896800B98A6900BC8C6B00BE8F6E00C0917100>"
++   "<C1927200C3947400B1835E00B2846000B4856200B5866500B6876500B8896800BA8B>"
++   "<6A00BD8D6D00BE8F6E00C0917100C2947300C4957600C5987800C6997A00C89C7D00>"
++   "<C79A7B00C89D7E00B98A6900BC8C6B00BD8D6D00BF906F00C1927200C3947400C495>"
++   "<7600C5987800C79B7B00C6997A00C79A7B00C89D7E00C99E8200CAA18500CBA38600>"
++   "<CDA48A00CEA68C00C3947400C4977800C6997A00C89C7D00C6997A00C79C7D00C99D>"
++   "<8000CAA08300CAA18500CCA38800CDA58B00CEA78D00CEA98E00CFAB9100D0AD9300>"
++   "<D0AD9400D1AE9500C89D7E00C99D8000CAA08300CBA38600CDA48A00CEA68C00CEA7>"
++   "<8D00CEAA8F00CFAB9200D0AD9400D0AD9400D3B19900D4B39B00D4B49C00D5B59D00>"
++   "<D6B7A000D7B8A200CEA68C00CEA98E00CFAB9100CFAB9200D0AD9400D1AE9500D3B1>"
++   "<9A00D4B39B00D4B49C00D6B69F00D6B7A000D7B9A200D8BAA300D9BCA500D9BCA600>"
++   "<DABEA900DBBFA900D3B19900D3B19A00D4B39B00D5B59D00D6B7A000D6B7A000D7B9>"
++   "<A200D8BAA300D9BCA600D9BCA600DABEA900DBBFA900DCC2AC00DCC2AC00DDC3AF00>"
++   "<DEC4B000DFC5B100D7B8A200D8BAA300D9BCA500D9BCA600DABEA800DBBFA900DCC0>"
++   "<AB00DCC2AC00DDC2AE00DDC3AF00DFC5B100DFC5B100E0C8B400E0C8B500E2C9B700>"
++   "<E3CBB800E3CBB900DBBFA900DCC0AB00DCC2AC00DDC3AF00DEC4B000DFC5B100DFC6>"
++   "<B300E0C8B400E1C9B600E2C9B700E3CBB800E3CCBA00E4CDBB00E4CEBC00E5D0BE00>"
++   "<E6D1C000E6D2C100DFC5B100E0C8B400E0C8B400E1C9B600E3CBB800E3CBB900E3CC>"
++   "<BA00E4CDBB00E5D0BE00E6D1BF00E6D2C100E6D2C100E7D3C300E7D4C400E8D5C500>"
++   "<E9D6C700E9D7C800E3CBB900E4CDBB00E4CEBC00E5D0BE00E6D1BF00E6D2C100E7D3>"
++   "<C300E7D4C400E7D4C400E8D5C500E9D6C700E9D7C800EAD9CA00ECDBCE00ECDBCE00>"
++   "<EEDFD200F0E3D700E6D2C100E7D3C300E7D4C400E8D5C500E9D6C700E9D7C800E9D7>"
++   "<C800ECDBCD00ECDBCE00EDDCCF00EEDFD200F0E3D700F0E3D800F2E7DD00F2E7DD00>"
++   "<F3EAE100F5EDE500E9D7C800EAD9CA00ECDBCE00ECDBCE00EDDCCF00EFE0D400F0E3>"
++   "<D700F1E5DB00F2E7DD00F3E9E100F3EAE100F6EEE600F6EEE600F8F1EB00F9F4EF00>"
++   "<F9F4F000F9F4F0007F5B3400815D36008460390087633B0089663E008B6740008C68>"
++   "<41008F6A4200926D4500946E47009670480099724A009C744D009C754E009E744E00>"
++   "<A0765000A27951008B6740008C6841008F6A4200926D4500946E4700967048009972>"
++   "<4A009C744D009D744D009E744E00A0765000A2795100A47A5300A57B5400A87D5700>"
++   "<AA7E5900AC805B00997149009B734C009C744D009D744D009F754F00A2785100A279>"
++   "<5100A47A5300A77D5700A97E5800AA7E5900AC805B00AC7F5A00B0825D00B2846000>"
++   "<B3856000B4856300A2785100A3795200A57B5400A87D5700A97E5800AB7F5A00AD81>"
++   "<5C00AE815C00B0825D00B2846000B4856200B5866500B6876500B8896800BA8B6A00>"
++   "<BD8D6D00BE8F6E00AC805B00AC7F5A00AE815C00B1835E00B3856000B4856300B586>"
++   "<6500B7886600B98A6900BC8C6B00BD8D6D00BF906F00C1927200C3947400C4957600>"
++   "<C5987800C79B7B00B4856300B6876500B8896800B98A6900BC8C6B00BE8F6E00C091>"
++   "<7100C2947300C3947400C4977800C6997A00C89C7D00C6997A00C79C7D00C99D8000>"
++   "<CAA08300CAA18500BF906F00C0917100C2947300C4957600C5987800C6997A00C89C>"
++   "<7D00C79A7B00C89D7E00C99D8000CAA08300CBA38600CDA48A00CEA68C00CEA78D00>"
++   "<CEAA8F00CFAB9200C79B7B00C6997A00C79C7D00C89D7E00C99E8200CAA18500CCA3>"
++   "<8800CDA48A00CEA68C00CEA98E00CFAB9100CFAB9200D0AD9400D1AE9500D3B19A00>"
++   "<D4B39B00D4B49C00CBA38600CCA38800CDA58B00CEA78D00CEAA8F00CFAB9100D0AD>"
++   "<9300D0AD9400D3B19900D3B19A00D4B39B00D5B59D00D6B7A000D6B7A000D7B9A200>"
++   "<D8BAA300D9BCA600CFAB9200D0AD9400D0AD9400D3B19900D4B39B00D4B49C00D6B6>"
++   "<9F00D6B7A000D7B8A200D8BAA300D9BCA500D9BCA600DABEA800DBBFA900DCC0AB00>"
++   "<DCC2AC00DDC2AE00D5B59D00D6B69F00D6B7A000D7B9A200D8BAA300D9BCA500D9BC>"
++   "<A600DABEA900DBBFA900DCC0AB00DCC2AC00DDC3AF00DEC4B000DFC5B100DFC6B300>"
++   "<E0C8B400E1C9B600D9BCA600DABEA800DABEA900DBBFA900DCC2AC00DDC2AE00DDC3>"
++   "<AF00DEC4B000DFC5B100E0C8B400E0C8B400E1C9B600E3CBB800E3CBB900E3CCBA00>"
++   "<E4CDBB00E5D0BE00DDC2AE00DDC3AF00DFC5B100DFC6B300E0C8B400E0C8B500E2C9>"
++   "<B700E3CBB800E3CBB900E4CDBB00E4CEBC00E5D0BE00E6D1BF00E6D2C100E7D3C300>"
++   "<E7D4C400E7D4C400E1C9B600E2C9B700E3CBB800E3CCBA00E4CDBB00E5D0BE00E5D0>"
++   "<BE00E6D1C000E6D2C100E7D3C300E7D4C400E8D5C500E9D6C700E9D7C800E9D7C800>"
++   "<ECDBCD00ECDBCE00E5D0BE00E6D1BF00E6D2C100E6D2C100E7D3C300E7D4C400E8D5>"
++   "<C500E9D6C700E9D7C800EAD9CA00ECDBCE00ECDBCE00EDDCCF00EFE0D400F0E3D700>"
++   "<F1E5DB00F2E7DD00E8D5C500E8D5C500E9D6C700E9D7C800ECDBCD00ECDBCE00ECDB>"
++   "<CE00EEDFD200F0E3D700F0E3D700F1E5DB00F2E7DD00F3EAE100F3EAE100F6EEE600>"
++   "<F7F0E900F8F1EB00ECDBCE00EDDCCF00EFE0D400F0E3D700F0E3D800F2E7DD00F3E9>"
++   "<E100F3EAE100F5EDE500F6EEE600F8F1EB00F8F1EB00F9F4F000F9F4F000FBF8F500>"
++   "<FBF8F500FDFBFA0087633B0089653D008B6740008C6841008E694200916C4400946E>"
++   "<470096704800997149009B734C009C754E009E744E00A0765000A2785100A3795200>"
++   "<A57B5400A87D5700916C4400946E47009670480099724A009B734C009C754E009E74>"
++   "<4E00A0765000A2785100A3795200A57B5400A87D5700A97E5800AB7F5A00AD815C00>"
++   "<AE815C00B0825D009D744D009E744E00A0765000A2795100A47A5300A57B5400A87D>"
++   "<5700AA7E5900AC805B00AC7F5A00AE815C00B1835E00B3856000B4856300B5866500>"
++   "<B7886600B98A6900A77D5700A97E5800AB7F5A00AC805B00AC7F5A00B0825D00B284>"
++   "<6000B3856000B4856300B6876500B8896800B98A6900BC8C6B00BE8F6E00C0917100>"
++   "<C2947300C3947400B1835E00B2846000B4856200B5866500B7886600B8896800BA8B>"
++   "<6A00BD8D6D00BF906F00C0917100C2947300C4957600C5987800C6997A00C89C7D00>"
++   "<C79A7B00C89D7E00B98A6900BC8C6B00BE8F6E00BF906F00C1927200C3947400C497>"
++   "<7800C5987800C79B7B00C6997A00C79C7D00C89D7E00C99E8200CAA18500CCA38800>"
++   "<CDA48A00CEA68C00C4957600C4977800C6997A00C89C7D00C6997A00C79C7D00C99D>"
++   "<8000CAA08300CBA38600CCA38800CDA58B00CEA78D00CEAA8F00CFAB9100D0AD9300>"
++   "<D0AD9400D3B19900C89D7E00C99E8200CAA08300CBA38600CDA48A00CEA68C00CEA7>"
++   "<8D00CEAA8F00CFAB9200D0AD9400D0AD9400D3B19900D4B39B00D4B49C00D6B69F00>"
++   "<D6B7A000D7B8A200CEA68C00CEA98E00CFAB9100D0AD9300D0AD9400D1AE9500D3B1>"
++   "<9A00D4B39B00D4B49C00D6B69F00D6B7A000D7B9A200D8BAA300D9BCA500D9BCA600>"
++   "<DABEA900DBBFA900D3B19900D4B39B00D4B39B00D5B59D00D6B7A000D7B8A200D7B9>"
++   "<A200D8BAA300D9BCA600DABEA800DABEA900DBBFA900DCC2AC00DDC2AE00DDC3AF00>"
++   "<DEC4B000DFC5B100D7B8A200D8BAA300D9BCA500D9BCA600DABEA800DBBFA900DCC0>"
++   "<AB00DCC2AC00DDC2AE00DDC3AF00DFC5B100DFC6B300E0C8B400E0C8B500E2C9B700>"
++   "<E3CBB800E3CBB900DBBFA900DCC0AB00DCC2AC00DDC3AF00DEC4B000DFC5B100DFC6>"
++   "<B300E0C8B400E1C9B600E2C9B700E3CBB800E3CCBA00E4CDBB00E5D0BE00E5D0BE00>"
++   "<E6D1C000E6D2C100DFC5B100E0C8B400E0C8B500E1C9B600E3CBB800E3CBB900E4CD>"
++   "<BB00E4CDBB00E5D0BE00E6D1BF00E6D2C100E6D2C100E7D3C300E7D4C400E8D5C500>"
++   "<E9D6C700E9D7C800E3CCBA00E4CDBB00E4CEBC00E5D0BE00E6D1C000E6D2C100E7D3>"
++   "<C300E7D4C400E8D5C500E8D5C500E9D6C700E9D7C800ECDBCD00ECDBCE00ECDBCE00>"
++   "<EEDFD200F0E3D700E6D2C100E7D3C300E7D4C400E8D5C500E9D6C700E9D7C800EAD9>"
++   "<CA00ECDBCD00ECDBCE00EDDCCF00EFE0D400F0E3D700F0E3D800F2E7DD00F3E9E100>"
++   "<F3EAE100F5EDE500E9D7C800EAD9CA00ECDBCE00ECDBCE00EDDCCF00EFE0D400F0E3>"
++   "<D700F1E5DB00F2E7DD00F3E9E100F3EAE100F6EEE600F7F0E900F8F1EB00F9F4EF00>"
++   "<F9F4F000FBF8F500F0E3D700F0E3D800F1E5DB00F2E7DD00F3EAE100F5EDE500F6EE>"
++   "<E600F7F0E900F8F1EB00F9F4F000F9F4F000FBF8F500FBF8F500FDFBFA00FDFBFA00>"
++   "<FEFCFB00FFFFFF3B7564772E717569743B>"
+}
+
+

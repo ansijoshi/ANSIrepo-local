@@ -1,0 +1,927 @@
+UNKNOWN {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; BACKGROUND-COLOR: #ffffff
+}
+BODY {
+	FONT-FAMILY: Arial,sans-serif
+}
+TH {
+	FONT-FAMILY: Arial,sans-serif
+}
+TD {
+	FONT-FAMILY: Arial,sans-serif
+}
+DIV {
+	FONT-FAMILY: Arial,sans-serif
+}
+P {
+	FONT-FAMILY: Arial,sans-serif
+}
+BUTTON {
+	FONT-FAMILY: Arial,sans-serif
+}
+SELECT {
+	FONT-FAMILY: Arial,sans-serif
+}
+INPUT {
+	FONT-FAMILY: Arial,sans-serif
+}
+BODY {
+	FONT-SIZE: 70%
+}
+TD {
+	FONT-SIZE: 70%
+}
+INPUT {
+	FONT-SIZE: 70%
+}
+BUTTON {
+	FONT-SIZE: 70%
+}
+TH {
+	FONT-SIZE: 70%
+}
+CAPTION {
+	FONT-SIZE: 70%
+}
+ HTML BODY {
+	FONT-SIZE: 67%
+}
+ HTML TD {
+	FONT-SIZE: 67%
+}
+ HTML INPUT {
+	FONT-SIZE: 67%
+}
+ HTML BUTTON {
+	FONT-SIZE: 67%
+}
+ HTML TH {
+	FONT-SIZE: 67%
+}
+SELECT {
+	FONT-SIZE: 100%
+}
+DIV TD {
+	FONT-SIZE: 100%
+}
+BODY INPUT {
+	FONT-SIZE: 100%
+}
+BODY BUTTON {
+	FONT-SIZE: 100%
+}
+TD INPUT {
+	FONT-SIZE: 100%
+}
+TD BUTTON {
+	FONT-SIZE: 100%
+}
+TH INPUT {
+	FONT-SIZE: 100%
+}
+TH BUTTON {
+	FONT-SIZE: 100%
+}
+BODY DIV {
+	FONT-SIZE: 100%
+}
+BODY TABLE {
+	FONT-SIZE: 100%
+}
+BODY TD {
+	FONT-SIZE: 100%
+}
+BODY TH {
+	FONT-SIZE: 100%
+}
+BODY CAPTION {
+	FONT-SIZE: 100%
+}
+BODY {
+	BACKGROUND-COLOR: #ffffff
+}
+TD {
+	BACKGROUND-COLOR: #ffffff
+}
+P {
+	BACKGROUND-COLOR: #ffffff
+}
+H1 {
+	MARGIN: 5px 0px 10px; COLOR: #000000
+}
+H2 {
+	MARGIN: 5px 0px 10px; COLOR: #000000
+}
+H3 {
+	MARGIN: 5px 0px 10px; COLOR: #000000
+}
+H4 {
+	MARGIN: 5px 0px 10px; COLOR: #000000
+}
+H1 {
+	FONT-WEIGHT: normal; FONT-SIZE: 180%
+}
+H2 {
+	FONT-WEIGHT: normal; FONT-SIZE: 170%
+}
+H3 {
+	FONT-SIZE: 150%
+}
+H4 {
+	FONT-SIZE: 130%
+}
+H5 {
+	FONT-SIZE: 100%; MARGIN: 0px 0px 7px
+}
+HR {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; MARGIN: 0px 5px 5px; OVERFLOW: hidden; BORDER-LEFT: 0px; COLOR: #cccccc; BORDER-BOTTOM: 0px; HEIGHT: 1px; BACKGROUND-COLOR: #cccccc
+}
+ HTML HR {
+	MARGIN-TOP: -5px; POSITION: relative; TOP: 5px
+}
+.hv {
+	FLOAT: right; BACKGROUND-IMAGE: url(images/divider.gif); MARGIN: 0px 4px 8px 8px; WIDTH: 4px; CURSOR: default; DIRECTION: ltr; HEIGHT: 16px
+}
+FORM {
+	DISPLAY: inline
+}
+SPAN.whiteSpacer {
+	FONT-SIZE: 8px
+}
+INPUT.mini {
+	BORDER-RIGHT: #6699cc 1px solid; BORDER-TOP: #6699cc 1px solid; PADDING-LEFT: 2px; BORDER-LEFT: #6699cc 1px solid; WIDTH: 50px; BORDER-BOTTOM: #6699cc 1px solid
+}
+INPUT.small {
+	BORDER-RIGHT: #6699cc 1px solid; BORDER-TOP: #6699cc 1px solid; PADDING-LEFT: 2px; BORDER-LEFT: #6699cc 1px solid; WIDTH: 100px; BORDER-BOTTOM: #6699cc 1px solid
+}
+SELECT.medium {
+	WIDTH: 145px
+}
+INPUT.medium {
+	BORDER-RIGHT: #6699cc 1px solid; BORDER-TOP: #6699cc 1px solid; PADDING-LEFT: 2px; BORDER-LEFT: #6699cc 1px solid; WIDTH: 145px; BORDER-BOTTOM: #6699cc 1px solid
+}
+INPUT.large {
+	BORDER-RIGHT: #6699cc 1px solid; BORDER-TOP: #6699cc 1px solid; PADDING-LEFT: 2px; BORDER-LEFT: #6699cc 1px solid; WIDTH: 200px; BORDER-BOTTOM: #6699cc 1px solid
+}
+OPTION {
+	OVERFLOW: visible
+}
+DIV.clearFloats {
+	CLEAR: both; MARGIN-BOTTOM: -1px; OVERFLOW: hidden; HEIGHT: 1px
+}
+.applicationPalette {
+	MARGIN: 7px
+}
+.leftContentPane {
+	BORDER-RIGHT: #ccc 7px solid; BORDER-TOP: #ccc 7px solid; VERTICAL-ALIGN: top; BORDER-LEFT: #ccc 7px solid; BORDER-BOTTOM: #ccc 7px solid
+}
+.rightContentPane {
+	BORDER-RIGHT: #cccccc 7px solid; BORDER-TOP: #cccccc 7px solid; VERTICAL-ALIGN: top; BORDER-LEFT: #cccccc 0px solid; WIDTH: 100%; BORDER-BOTTOM: #cccccc 7px solid
+}
+.mainRegion {
+	PADDING-TOP: 5px; BACKGROUND-COLOR: #cccccc
+}
+.paletteBg {
+	PADDING-TOP: 11px; BACKGROUND-COLOR: #cccccc
+}
+.paletteTop H1 {
+	MARGIN: 0px
+}
+.paletteTopButtons {
+	PADDING-RIGHT: 8px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 6px
+}
+.mainNav {
+	WIDTH: 214px
+}
+#navigationControl {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px
+}
+.mainContentArea {
+	WIDTH: 95%
+}
+DIV.userId {
+	MARGIN: 8px 0px 8px 15px
+}
+TD.userId {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 15px; PADDING-BOTTOM: 0px; PADDING-TOP: 5px
+}
+TD.status {
+	PADDING-RIGHT: 23px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; COLOR: #999999; PADDING-TOP: 5px; TEXT-ALIGN: right
+}
+TABLE.applicationMastheadSmall {
+	WIDTH: 100%
+}
+TABLE.applicationMastheadSmall {
+	VERTICAL-ALIGN: top; COLOR: #ffffff; BACKGROUND-COLOR: #4faf00
+}
+TABLE.applicationMastheadSmall TD {
+	VERTICAL-ALIGN: top; COLOR: #ffffff; BACKGROUND-COLOR: #4faf00
+}
+TABLE.applicationMastheadLarge {
+	VERTICAL-ALIGN: top; COLOR: #ffffff; BACKGROUND-COLOR: #4faf00
+}
+TABLE.applicationMastheadLarge TD {
+	VERTICAL-ALIGN: top; COLOR: #ffffff; BACKGROUND-COLOR: #4faf00
+}
+TD.mastheadIcon {
+	PADDING-LEFT: 17px; PADDING-TOP: 14px
+}
+TD.mastheadTitle {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 16px; PADDING-BOTTOM: 0px; WIDTH: 70%; PADDING-TOP: 16px
+}
+TD.medium {
+	WIDTH: 145px
+}
+TD.large {
+	WIDTH: 30%
+}
+TABLE.applicationMastheadLarge TD.mastheadIcon {
+	PADDING-LEFT: 17px; PADDING-TOP: 15px
+}
+TABLE.applicationMastheadLarge TD.mastheadTitle {
+	PADDING-LEFT: 16px; PADDING-TOP: 16px
+}
+TD.mastheadTitle H1 {
+	PADDING-RIGHT: 16px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #ffffff; PADDING-TOP: 0px; WHITE-SPACE: nowrap
+}
+TABLE.applicationMastheadLarge TD.mastheadTitle H1 {
+	FONT-SIZE: 200%
+}
+DIV.mastheadPhoto {
+	BACKGROUND: #fff; FLOAT: right; BORDER-LEFT: #fff 7px solid; WIDTH: 306px; HEIGHT: 57px
+}
+TD.mastheadLinks {
+	PADDING-RIGHT: 16px; PADDING-LEFT: 16px; PADDING-BOTTOM: 12px; BORDER-LEFT: #fff 7px solid; WIDTH: 30%; PADDING-TOP: 12px; WHITE-SPACE: nowrap
+}
+TABLE.applicationMastheadSmall A:link {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+TABLE.applicationMastheadSmall A:visited {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+TABLE.applicationMastheadSmall A:active {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+TABLE.applicationMastheadSmall A:hover {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+TABLE.applicationMastheadLarge A:link {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+TABLE.applicationMastheadLarge A:visited {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+TABLE.applicationMastheadLarge A:active {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+TABLE.applicationMastheadLarge A:hover {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+#navigationControl {
+	MARGIN-TOP: 2px
+}
+DIV.navigationControlOn {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 8px; PADDING-BOTTOM: 4px; PADDING-TOP: 3px; BACKGROUND-COLOR: #ffffff
+}
+DIV.navigationControlOff {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 8px; PADDING-BOTTOM: 4px; PADDING-TOP: 3px; BACKGROUND-COLOR: #ffffff
+}
+DIV.navigationControlHeader {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 8px; PADDING-BOTTOM: 4px; PADDING-TOP: 3px; BACKGROUND-COLOR: #ffffff
+}
+DIV.navigationControlHeader {
+	FONT-WEIGHT: bold
+}
+DIV.navigationControlOn {
+	BACKGROUND-COLOR: #99ccff
+}
+DIV.navigationControlOff {
+	BACKGROUND-COLOR: #ffffff
+}
+DIV.navigationControlOn A:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+DIV.navigationControlOn A:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+DIV.navigationControlOn A:active {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+DIV.navigationControlOff A:link {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+DIV.navigationControlOff A:visited {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+DIV.navigationControlOff A:active {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+DIV.navigationControlOn A:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+DIV.navigationControlOff A:hover {
+	COLOR: #003399; TEXT-DECORATION: underline
+}
+DIV.navigationControlSpacer {
+	OVERFLOW: hidden; HEIGHT: 5px
+}
+DIV.navigationControlIcon {
+	CLEAR: both; MARGIN-TOP: 2px; PADDING-LEFT: 2px; FLOAT: left
+}
+A:link {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+DIV.tabSet {
+	
+}
+DIV.secondaryTabSet {
+	
+}
+DIV.tabSet {
+	BACKGROUND-IMAGE: url(/Images/tab_set_bg.gif)
+}
+DIV.secondaryTabSet {
+	BACKGROUND-IMAGE: url(tab_set_secondary_bg.gif)
+}
+ HTML DIV.tabSet {
+	
+}
+ HTML DIV.secondaryTabSet {
+	
+}
+DIV.tabOff {
+	FONT-WEIGHT: bold; FLOAT: left; WHITE-SPACE: nowrap; HEIGHT: 14px; TEXT-ALIGN: center
+}
+DIV.tabOn {
+	FONT-WEIGHT: bold; FLOAT: left; WHITE-SPACE: nowrap; HEIGHT: 14px; TEXT-ALIGN: center
+}
+DIV.tabOff {
+	BORDER-RIGHT: #fff 2px solid; PADDING-RIGHT: 13px; BACKGROUND-POSITION: right top; PADDING-LEFT: 10px; BACKGROUND-IMAGE: url(/Images/tab_right.gif); PADDING-BOTTOM: 4px; CURSOR: hand; COLOR: #ffffff; PADDING-TOP: 2px; BORDER-BOTTOM: #fff 2px solid; BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #86bb5b
+}
+DIV.tabOn {
+	BORDER-RIGHT: #fff 3px solid; PADDING-RIGHT: 13px; PADDING-LEFT: 10px; PADDING-BOTTOM: 6px; COLOR: #333333; PADDING-TOP: 2px; BACKGROUND-COLOR: #cccccc
+}
+DIV.tabOff A:link {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+DIV.tabOff A:visited {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+DIV.tabOff A:active {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+DIV.tabOff A:hover {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+DIV.tabOn A:link {
+	COLOR: #333333; TEXT-DECORATION: none
+}
+DIV.tabOn A:active {
+	COLOR: #333333; TEXT-DECORATION: none
+}
+DIV.tabOn A:visited {
+	COLOR: #333333; TEXT-DECORATION: none
+}
+DIV.tabOn A:hover {
+	COLOR: #333333; TEXT-DECORATION: none
+}
+DIV.secondaryTabSet DIV.tabOn {
+	BORDER-RIGHT: #cccccc 3px solid; BACKGROUND-COLOR: #ffffff
+}
+DIV.secondaryTabSet DIV.tabOff {
+	BORDER-RIGHT: #ccc 2px solid; PADDING-RIGHT: 13px; BACKGROUND-POSITION: right top; PADDING-LEFT: 10px; BACKGROUND-IMAGE: url(tab_secondary_right.gif); PADDING-BOTTOM: 3px; PADDING-TOP: 1px; BORDER-BOTTOM: #ccc 2px solid; BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #86bb5b; min-width: 58px
+}
+DIV.tabBottomLine {
+	CLEAR: both; OVERFLOW: hidden; HEIGHT: 3px; BACKGROUND-COLOR: #cccccc
+}
+DIV.tabOff {
+	min-width: 88px
+}
+DIV.tabOn {
+	min-width: 89px
+}
+DIV.secondaryTabSet DIV.tabOn {
+	PADDING-RIGHT: 13px; PADDING-LEFT: 10px; PADDING-BOTTOM: 5px; PADDING-TOP: 1px; min-width: 59px
+}
+DIV.buttonSet {
+	FLOAT: right; MARGIN-BOTTOM: 10px
+}
+DIV.bWrapperUp {
+	FLOAT: right; MARGIN-BOTTOM: 4px; MARGIN-LEFT: 8px; DIRECTION: ltr
+}
+DIV.bWrapperOver {
+	FLOAT: right; MARGIN-BOTTOM: 4px; MARGIN-LEFT: 8px; DIRECTION: ltr
+}
+DIV.bWrapperDown {
+	FLOAT: right; MARGIN-BOTTOM: 4px; MARGIN-LEFT: 8px; DIRECTION: ltr
+}
+DIV.bWrapperDisabled {
+	FLOAT: right; MARGIN-BOTTOM: 4px; MARGIN-LEFT: 8px; DIRECTION: ltr
+}
+DIV.buttonsAreLeftAligned {
+	FLOAT: left; MARGIN-LEFT: 0px; MARGIN-RIGHT: 8px; align: center
+}
+DIV.buttonsAreLeftAligned DIV.bWrapperUp {
+	FLOAT: left; MARGIN-LEFT: 0px; MARGIN-RIGHT: 8px; align: center
+}
+DIV.buttonsAreLeftAligned DIV.bWrapperOver {
+	FLOAT: left; MARGIN-LEFT: 0px; MARGIN-RIGHT: 8px; align: center
+}
+DIV.buttonsAreLeftAligned DIV.bWrapperDown {
+	FLOAT: left; MARGIN-LEFT: 0px; MARGIN-RIGHT: 8px; align: center
+}
+DIV.buttonsAreLeftAligned DIV.bWrapperDisabled {
+	FLOAT: left; MARGIN-LEFT: 0px; MARGIN-RIGHT: 8px; align: center
+}
+DIV.buttonsAreRightAligned {
+	FLOAT: right; MARGIN-LEFT: 8px; WIDTH: 100%; MARGIN-RIGHT: 0px
+}
+DIV.buttonsAreRightAligned DIV.bWrapperUp {
+	FLOAT: right; MARGIN-LEFT: 8px; WIDTH: 100%; MARGIN-RIGHT: 0px
+}
+DIV.buttonsAreRightAligned DIV.bWrapperOver {
+	FLOAT: right; MARGIN-LEFT: 8px; WIDTH: 100%; MARGIN-RIGHT: 0px
+}
+DIV.buttonsAreRightAligned DIV.bWrapperDown {
+	FLOAT: right; MARGIN-LEFT: 8px; WIDTH: 100%; MARGIN-RIGHT: 0px
+}
+DIV.buttonsAreRightAligned DIV.bWrapperDisabled {
+	FLOAT: right; MARGIN-LEFT: 8px; WIDTH: 100%; MARGIN-RIGHT: 0px
+}
+DIV.verticalButtonSet {
+	PADDING-RIGHT: 10px
+}
+DIV.verticalButtonSet DIV.bWrapperUp {
+	FLOAT: none; MARGIN-LEFT: 0px
+}
+DIV.verticalButtonSet DIV.bWrapperOver {
+	FLOAT: none; MARGIN-LEFT: 0px
+}
+DIV.verticalButtonSet DIV.bWrapperDown {
+	FLOAT: none; MARGIN-LEFT: 0px
+}
+DIV.verticalButtonSet DIV.bWrapperDisabled {
+	FLOAT: none; MARGIN-LEFT: 0px
+}
+DIV.bWrapperUp DIV {
+	LEFT: -1px; POSITION: relative; TOP: -1px
+}
+DIV.bWrapperOver DIV {
+	LEFT: -1px; POSITION: relative; TOP: -1px
+}
+DIV.bWrapperDown DIV {
+	LEFT: -1px; POSITION: relative; TOP: -1px
+}
+DIV.bWrapperDisabled DIV {
+	LEFT: -1px; POSITION: relative; TOP: -1px
+}
+BUTTON.hpButtonSmall {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 0px; COLOR: #ffffff; PADDING-TOP: 0px; HEIGHT: 19px; min-width: 19px
+}
+INPUT.hpButtonSmall {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 0px; COLOR: #ffffff; PADDING-TOP: 0px; HEIGHT: 19px; min-width: 19px
+}
+BUTTON.hpButtonVerySmall {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; FONT-SIZE: 9px; PADDING-BOTTOM: 0px; COLOR: #ffffff; PADDING-TOP: 0px; HEIGHT: 11px
+}
+INPUT.hpButtonVerySmall {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; FONT-SIZE: 9px; PADDING-BOTTOM: 0px; COLOR: #ffffff; PADDING-TOP: 0px; HEIGHT: 11px
+}
+BUTTON.helpButton {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 2px; PADDING-BOTTOM: 0px; COLOR: #ffffff; PADDING-TOP: 0px
+}
+INPUT.helpButton {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 2px; PADDING-BOTTOM: 0px; COLOR: #ffffff; PADDING-TOP: 0px
+}
+BUTTON.hpButton {
+	FONT-WEIGHT: bold; LEFT: -1px; CURSOR: hand; COLOR: #ffffff; FONT-FAMILY: Arial,sans-serif; POSITION: relative; TOP: -1px; BACKGROUND-COLOR: #86bb5b; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+BUTTON.hpStdButton {
+	FONT-WEIGHT: bold; LEFT: -1px; CURSOR: hand; COLOR: #ffffff; FONT-FAMILY: Arial,sans-serif; POSITION: relative; TOP: -1px; BACKGROUND-COLOR: #86bb5b; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+BUTTON.hpStdButtonLarge {
+	FONT-WEIGHT: bold; LEFT: -1px; CURSOR: hand; COLOR: #ffffff; FONT-FAMILY: Arial,sans-serif; POSITION: relative; TOP: -1px; BACKGROUND-COLOR: #86bb5b; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+BUTTON.hpButtonSmall {
+	FONT-WEIGHT: bold; LEFT: -1px; CURSOR: hand; COLOR: #ffffff; FONT-FAMILY: Arial,sans-serif; POSITION: relative; TOP: -1px; BACKGROUND-COLOR: #86bb5b; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+BUTTON.hpButtonVerySmall {
+	FONT-WEIGHT: bold; LEFT: -1px; CURSOR: hand; COLOR: #ffffff; FONT-FAMILY: Arial,sans-serif; POSITION: relative; TOP: -1px; BACKGROUND-COLOR: #86bb5b; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+INPUT.hpStdButton {
+	FONT-WEIGHT: bold; LEFT: -1px; CURSOR: hand; COLOR: #ffffff; FONT-FAMILY: Arial,sans-serif; POSITION: relative; TOP: -1px; BACKGROUND-COLOR: #86bb5b; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+INPUT.hpStdButtonLarge {
+	FONT-WEIGHT: bold; LEFT: -1px; CURSOR: hand; COLOR: #ffffff; FONT-FAMILY: Arial,sans-serif; POSITION: relative; TOP: -1px; BACKGROUND-COLOR: #86bb5b; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+INPUT.hpButton {
+	FONT-WEIGHT: bold; LEFT: -1px; CURSOR: hand; COLOR: #ffffff; FONT-FAMILY: Arial,sans-serif; POSITION: relative; TOP: -1px; BACKGROUND-COLOR: #86bb5b; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+INPUT.hpButtonSmall {
+	FONT-WEIGHT: bold; LEFT: -1px; CURSOR: hand; COLOR: #ffffff; FONT-FAMILY: Arial,sans-serif; POSITION: relative; TOP: -1px; BACKGROUND-COLOR: #86bb5b; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+INPUT.hpButtonVerySmall {
+	FONT-WEIGHT: bold; LEFT: -1px; CURSOR: hand; COLOR: #ffffff; FONT-FAMILY: Arial,sans-serif; POSITION: relative; TOP: -1px; BACKGROUND-COLOR: #86bb5b; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+DIV.bEmphasized BUTTON {
+	COLOR: #ffffff; BACKGROUND-COLOR: #336633
+}
+DIV.bEmphasized INPUT {
+	COLOR: #ffffff; BACKGROUND-COLOR: #336633
+}
+DIV.bEmphasized submit {
+	COLOR: #ffffff; BACKGROUND-COLOR: #336633
+}
+DIV.bDivider {
+	FLOAT: right; BACKGROUND-IMAGE: url(divider.gif); MARGIN: 0px 4px 8px 8px; WIDTH: 4px; CURSOR: default; DIRECTION: ltr; HEIGHT: 19px
+}
+DIV.bDividerBlank {
+	FLOAT: right; MARGIN: 0px 2px 8px 8px; WIDTH: 4px; DIRECTION: ltr; HEIGHT: 16px
+}
+INPUT.hpButton {
+	HEIGHT: 19px; min-width: 95px
+}
+INPUT.hpStdButton {
+	COLOR: #ffffff; HEIGHT: 19px; min-width: 89px
+}
+INPUT.hpStdButtonLarge {
+	COLOR: #ffffff; HEIGHT: 19px; TEXT-ALIGN: center; min-width: 110px
+}
+BUTTON.hpButton {
+	COLOR: #ffffff; HEIGHT: 19px; min-width: 95px
+}
+BUTTON.hpStdButton {
+	COLOR: #ffffff; HEIGHT: 19px; min-width: 89px
+}
+BUTTON.hpStdButtonLarge {
+	COLOR: #ffffff; HEIGHT: 19px; TEXT-ALIGN: center; min-width: 110px
+}
+DIV.verticalButtonSet {
+	PADDING-LEFT: 13px
+}
+.pad10 {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; PADDING-TOP: 10px
+}
+.pad6x10 {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 6px; PADDING-TOP: 6px
+}
+TABLE.tablePad3 TD {
+	PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top
+}
+TD.aln {
+	TEXT-INDENT: -4px
+}
+TD.tableCellNote {
+	PADDING-RIGHT: 0px! important; PADDING-LEFT: 0px! important; PADDING-BOTTOM: 9px! important; PADDING-TOP: 7px! important
+}
+UL {
+	MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px; PADDING-BOTTOM: 10px; PADDING-TOP: 5px
+}
+OL {
+	MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px; PADDING-BOTTOM: 10px; PADDING-TOP: 5px
+}
+UL UL {
+	MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px; PADDING-BOTTOM: 10px; PADDING-TOP: 0px
+}
+OL OL {
+	MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px; PADDING-BOTTOM: 10px; PADDING-TOP: 0px
+}
+UL OL {
+	MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px; PADDING-BOTTOM: 10px; PADDING-TOP: 0px
+}
+OL UL {
+	MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px; PADDING-BOTTOM: 10px; PADDING-TOP: 0px
+}
+UL {
+	PADDING-LEFT: 0px; MARGIN-LEFT: 22px
+}
+OL {
+	PADDING-LEFT: 0px; MARGIN-LEFT: 22px
+}
+UL LI {
+	LIST-STYLE-IMAGE: url(bullet.gif); MARGIN-BOTTOM: 2px
+}
+OL UL LI {
+	LIST-STYLE-IMAGE: url(bullet.gif); MARGIN-BOTTOM: 2px
+}
+OL UL UL LI {
+	LIST-STYLE-IMAGE: url(bullet.gif); MARGIN-BOTTOM: 2px
+}
+OL OL UL LI {
+	LIST-STYLE-IMAGE: url(bullet.gif); MARGIN-BOTTOM: 2px
+}
+UL OL UL LI {
+	LIST-STYLE-IMAGE: url(bullet.gif); MARGIN-BOTTOM: 2px
+}
+OL LI {
+	LIST-STYLE-IMAGE: none
+}
+UL OL LI {
+	LIST-STYLE-IMAGE: none
+}
+UL OL OL LI {
+	LIST-STYLE-IMAGE: none
+}
+UL UL OL LI {
+	LIST-STYLE-IMAGE: none
+}
+OL UL OL LI {
+	LIST-STYLE-IMAGE: none
+}
+OL LI OL LI {
+	LIST-STYLE-TYPE: lower-alpha
+}
+OL LI OL LI OL LI {
+	LIST-STYLE-TYPE: lower-roman
+}
+H1.pageTitle {
+	MARGIN-TOP: 11px; MARGIN-BOTTOM: 8px; MARGIN-LEFT: 8px
+}
+DIV.pageTitleRightArea {
+	
+}
+H3.subTitle {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 9px; FONT-WEIGHT: bold; FONT-SIZE: 100%; PADDING-BOTTOM: 3px; MARGIN: 0px; COLOR: #fff; PADDING-TOP: 3px; BACKGROUND-COLOR: #666
+}
+DIV.subTitleBottomEdge {
+	BACKGROUND: #484848; OVERFLOW: hidden; HEIGHT: 3px
+}
+DIV.subTitleIcon {
+	MARGIN-TOP: 2px; FLOAT: right
+}
+.buttonA {
+	FONT-WEIGHT: bold; MARGIN-LEFT: 5px; WIDTH: 86px; CURSOR: hand; COLOR: #ffffff; FONT-FAMILY: Arial,sans-serif; HEIGHT: 21px; BACKGROUND-COLOR: #86bb5b; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+.buttonHelp {
+	FONT-WEIGHT: bold; MARGIN-LEFT: 5px; WIDTH: 18px; CURSOR: hand; COLOR: #ffffff; FONT-FAMILY: Arial,sans-serif; HEIGHT: 19px; BACKGROUND-COLOR: #86bb5b; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+.buttonB {
+	FONT-WEIGHT: bold; MARGIN-LEFT: 5px; WIDTH: 95px; CURSOR: hand; COLOR: #ffffff; MARGIN-RIGHT: 5px; FONT-FAMILY: Arial,sans-serif; HEIGHT: 19px; BACKGROUND-COLOR: #86bb5b; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+.buttonC {
+	FONT-WEIGHT: bold; MARGIN-LEFT: 5px; WIDTH: 110px; CURSOR: hand; COLOR: #ffffff; MARGIN-RIGHT: 5px; FONT-FAMILY: Arial,sans-serif; HEIGHT: 19px; BACKGROUND-COLOR: #86bb5b; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+DIV.butSet {
+	FLOAT: right; MARGIN-BOTTOM: 10px
+}
+TD.tableColumnHeader {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 9px; FONT-WEIGHT: bold; FONT-SIZE: 100%; PADDING-BOTTOM: 3px; MARGIN: 0px; COLOR: #ffffff; PADDING-TOP: 3px; BACKGROUND-COLOR: #968f89
+}
+TD.tableDataCellStand {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 9px; FONT-WEIGHT: normal; FONT-SIZE: 100%; PADDING-BOTTOM: 3px; MARGIN: 0px; COLOR: #000000; PADDING-TOP: 3px; BACKGROUND-COLOR: #eeeeee
+}
+TD.tableDataCellAlt {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 9px; FONT-WEIGHT: normal; FONT-SIZE: 100%; PADDING-BOTTOM: 3px; MARGIN: 0px; COLOR: #000000; PADDING-TOP: 3px; BACKGROUND-COLOR: #f5f5f5
+}
+.itemFont {
+	WIDTH: 50%
+}
+.labelFont {
+	FONT-WEIGHT: bold; WIDTH: 50%
+}
+.itemLargeFont {
+	FONT-SIZE: 16px
+}
+.labelLargeFont {
+	FONT-WEIGHT: bold; FONT-SIZE: 16px
+}
+TD.supplyInfo {
+	WIDTH: 350px
+}
+.hpGasGaugeBorder {
+	BORDER-RIGHT: #000000 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #000000 1px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; BORDER-LEFT: #000000 1px solid; WIDTH: 100%; PADDING-TOP: 0px; BORDER-BOTTOM: #000000 1px solid; HEIGHT: 11px
+}
+.hpDocVaryText {
+	FONT-SIZE: 7pt; WIDTH: 100%
+}
+.itemSpsFont {
+	WIDTH: 10%; WHITE-SPACE: nowrap; TEXT-ALIGN: right
+}
+.labelSpsFont {
+	FONT-WEIGHT: bold; WIDTH: 90%; WHITE-SPACE: nowrap; TEXT-ALIGN: left
+}
+.SupplyName {
+	FONT-WEIGHT: bold; COLOR: #ffffff; BACKGROUND-COLOR: #003366
+}
+.SupplyTonerGif {
+	WIDTH: 10%; TEXT-ALIGN: left
+}
+A.SupplyLinks {
+	COLOR: #003399; TEXT-DECORATION: underline
+}
+.alertbox {
+	BORDER-RIGHT: #cccccc 7px solid; PADDING-RIGHT: 10px; BORDER-TOP: #cccccc 7px solid; PADDING-LEFT: 15px; PADDING-BOTTOM: 0px; MARGIN: 10px auto; VERTICAL-ALIGN: top; BORDER-LEFT: #cccccc 7px solid; WIDTH: 306px; PADDING-TOP: 15px; BORDER-BOTTOM: #cccccc 7px solid
+}
+.alertboxmod {
+	BORDER-RIGHT: #cccccc 7px solid; PADDING-RIGHT: 10px; BORDER-TOP: #cccccc 7px solid; PADDING-LEFT: 15px; PADDING-BOTTOM: 0px; MARGIN: 5px auto 10px; VERTICAL-ALIGN: top; BORDER-LEFT: #cccccc 7px solid; WIDTH: 336px; PADDING-TOP: 15px; BORDER-BOTTOM: #cccccc 7px solid
+}
+.alertboxImage {
+	PADDING-RIGHT: 15px; PADDING-LEFT: 15px; BACKGROUND-IMAGE: url(info.gif); PADDING-BOTTOM: 0px; VERTICAL-ALIGN: top; WIDTH: 26px; PADDING-TOP: 0px; BACKGROUND-REPEAT: no-repeat
+}
+.alertboxText {
+	PADDING-LEFT: 15px; VERTICAL-ALIGN: top; WIDTH: 240px; HEIGHT: 42px; TEXT-ALIGN: left
+}
+.alertboxTextmod {
+	PADDING-LEFT: 15px; VERTICAL-ALIGN: top; WIDTH: 320px; HEIGHT: 42px; TEXT-ALIGN: left
+}
+.alertboxButtons {
+	FLOAT: none; PADDING-BOTTOM: 7px; MARGIN-LEFT: 8px; MARGIN-RIGHT: 0px; PADDING-TOP: 20px; TEXT-ALIGN: center
+}
+IMG {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none
+}
+.linkHover A:hover {
+	COLOR: #003399; TEXT-DECORATION: underline
+}
+.height2px {
+	HEIGHT: 2px
+}
+.width350px {
+	WIDTH: 350px
+}
+.width325px {
+	WIDTH: 325px
+}
+.width150px {
+	WIDTH: 150px
+}
+.width20px {
+	WIDTH: 20px
+}
+.width100 {
+	WIDTH: 100%
+}
+.width80 {
+	WIDTH: 80%
+}
+.width30 {
+	WIDTH: 30%
+}
+.width25 {
+	WIDTH: 25%
+}
+.width15 {
+	WIDTH: 15%
+}
+.width10 {
+	WIDTH: 10%
+}
+BODY.supportAndsupplies {
+	MARGIN-TOP: 0px; MARGIN-LEFT: 0px; COLOR: #000000; BACKGROUND-COLOR: #ffffff
+}
+.suppliesSupportHeaderFont {
+	FONT-SIZE: 18pt
+}
+.suppliesSupportFont {
+	FONT-SIZE: 10pt
+}
+TD.suppliesSupportWhiteFont {
+	FONT-SIZE: 10pt; COLOR: #ffffff
+}
+.suppliesSupportCopyrightFont {
+	FONT-SIZE: 7pt; FONT-FAMILY: Arial
+}
+TD.suppliesSupportFont A:link {
+	COLOR: #003399
+}
+TD.suppliesSupportFont A:active {
+	COLOR: #003399
+}
+TD.suppliesSupportCopyrightFont A:link {
+	COLOR: #003399
+}
+TD.suppliesSupportCopyrightFont A:active {
+	COLOR: #003399
+}
+TD.suppliesSupportFont A:visited {
+	COLOR: #660066
+}
+TD.suppliesSupportCopyrightFont A:visited {
+	COLOR: #660066
+}
+TD.suppliesSupportWhiteFont A:link {
+	COLOR: #ffffff
+}
+TD.suppliesSupportWhiteFont A:active {
+	COLOR: #ffffff
+}
+TD.suppliesSupportWhiteFont A:visited {
+	COLOR: #ffffff
+}
+.valignTop {
+	VERTICAL-ALIGN: top
+}
+.valignMiddle {
+	VERTICAL-ALIGN: middle
+}
+.valignBottom {
+	VERTICAL-ALIGN: bottom
+}
+.alignLeft {
+	TEXT-ALIGN: left
+}
+.alignRight {
+	TEXT-ALIGN: right
+}
+.alignCenter {
+	TEXT-ALIGN: center
+}
+.height462px {
+	HEIGHT: 462px
+}
+.height135px {
+	HEIGHT: 135px
+}
+.height250px {
+	HEIGHT: 250px
+}
+.height117px {
+	HEIGHT: 117px
+}
+.height100px {
+	HEIGHT: 100px
+}
+.height60px {
+	HEIGHT: 60px
+}
+.height50px {
+	HEIGHT: 50px
+}
+.height2px {
+	HEIGHT: 2px
+}
+.width600px {
+	WIDTH: 600px
+}
+.width560px {
+	WIDTH: 560px
+}
+.width350px {
+	WIDTH: 350px
+}
+.width325px {
+	WIDTH: 325px
+}
+.width170px {
+	WIDTH: 170px
+}
+.width150px {
+	WIDTH: 150px
+}
+.width90px {
+	WIDTH: 90px
+}
+.width50px {
+	WIDTH: 50px
+}
+.width20px {
+	WIDTH: 20px
+}
+.width10px {
+	WIDTH: 10px
+}
+.width100 {
+	WIDTH: 100%
+}
+.width80 {
+	WIDTH: 80%
+}
+.width65 {
+	WIDTH: 65%
+}
+.width35 {
+	WIDTH: 35%
+}
+.width30 {
+	WIDTH: 30%
+}
+.width25 {
+	WIDTH: 25%
+}
+.width20 {
+	WIDTH: 20%
+}
+.width15 {
+	WIDTH: 15%
+}
+.width10 {
+	WIDTH: 10%
+}
+.bgcolor003366 {
+	BACKGROUND-COLOR: #003366
+}
+.bgcolor3366CC {
+	BACKGROUND-COLOR: #3366cc
+}

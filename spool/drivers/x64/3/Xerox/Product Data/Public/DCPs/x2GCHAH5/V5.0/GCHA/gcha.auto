@@ -1,0 +1,46 @@
+comment;			OAKMONT AUTO-CONFIGURATION MAPPINGS
+
+
+
+comment; Which Finisher
+ACF_SEQUENCE_CONTAINS_OID;installable-output-delivery-unit-actual;1.3.6.1.2.1.25.3.2.1.3;
+	1.3.6.1.2.1.25.3.2.1.3.134;c-type-finisher-booklet-maker;
+	1.3.6.1.2.1.25.3.2.1.3.124;type-sb-booklet-maker;
+	1.3.6.1.2.1.25.3.2.1.3.162;type-sb;
+	1.3.6.1.2.1.25.3.2.1.3.137;a-type-finisher;
+	default;output-bin-500-sheet
+	end;
+
+comment; Hole Punching
+ACF_SEQUENCE_CONTAINS_OID;installable-hole-punch-unit-actual;1.3.6.1.2.1.43.30.1.1.10;
+	1.3.6.1.2.1.43.30.1.1.10.1.4;punch-2-and-3-hole-stack;
+	1.3.6.1.2.1.43.30.1.1.10.1.5;punch-2-and-4-hole-stack;
+	1.3.6.1.2.1.43.30.1.1.10.1.6;punch-4-hole-stack;
+	1.3.6.1.2.1.43.30.1.1.10.1.3;punch-2-hole-stack;
+	default;not-installed
+	end;
+
+comment; LanFax
+comment; This is assumed to always be the 15th service index, and the way it has been detcted in the past is by checking the
+comment; xcmSvcMonServiceStateDetail.  However, this is always returned as a HEX_STRING, which is actually representing
+comment; a bitmask.  It is a 6 character hex string, where each character represents 8 bits for 48-bit flags.  A string of
+comment; "00 00 00 00 00 80" is actually akin to "0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 1000 0000", where the 40th bit is set.  
+comment; When looking at this feature in the device profile (MIB Spec), you will note that it referrs to bits representing states.  For this
+comment; feature, we will mark it as installed if bits 40, 41, or 42 are set, otherwise it will be marked as not installed.
+ACF_VALUE_EQUALS_MAP;installable-fax-out-actual;1.3.6.1.4.1.253.8.74.5.2.1.16.15;
+	00 00 00 00 00 80;installed;
+	00 00 00 00 00 40;installed;
+	00 00 00 00 00 20;installed;
+	default;not-installed
+	end;
+
+
+ACF_SEQUENCE_CONTAINS_OID;installable-input-paper-trays-actual;1.3.6.1.2.1.25.3.2.1.3;
+	1.3.6.1.2.1.25.3.2.1.3.116;5-trays;
+	default;3-trays
+	end;
+	
+ACF_SEQUENCE_CONTAINS_OID;installable-high-capacity-feeder-actual;1.3.6.1.2.1.25.3.2.1.3;
+	1.3.6.1.2.1.25.3.2.1.3.107;hcf;
+	default;not-installed
+	end;

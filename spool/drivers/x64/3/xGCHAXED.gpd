@@ -1,0 +1,1327 @@
+*%%
+*%% Xerox WorkCentre 7120
+*%% 03/25/2010,5162.800.0.0
+*%% "\0"
+*%% All Rights Reserved.
+*%% 
+
+*GPDFileName: "x2GCHAXED.gpd"
+*GPDSpecVersion: "1.1"
+*GPDFileVersion: "1.1.5"
+*Include: "stdnames.gpd"
+*Include: "pjl.gpd"
+*Include: "p6disp.gpd"
+*Include: "pclxl.gpd"
+
+*ModelName: "Xerox WorkCentre 7120 PCL6"
+*MasterUnits: PAIR(2400, 2400)
+
+*PrintRate: 20
+*PrintRateUnit: PPM
+*PrintRatePPM: 20
+
+*HelpFile: "HELPFILE.HLP"
+*PrinterType: PAGE
+
+*MaxCopies: 999
+
+*FontCartSlots: 0
+*Personality: =PERSONALITY_PCLXL
+
+*% These declarations must appear before any feature definitions.
+*Feature: XrxTrueTypeFontDlOption {}
+*Feature: XrxEdgeToEdge {}
+
+*Feature: ColorMode {}			  
+
+*Feature: XrxHalftone {}			  
+*% End, initial declarations.
+
+*Feature: RESDLL
+{
+	*Option: XRenUni
+    {
+		*Name: "x2rpclED.dll"
+    }
+}
+
+*Feature: RESDLL
+{
+	*Option: XTextRes
+    {
+		*Name: "x2txt01.dll"
+    }
+}
+
+*Feature: XEROX_JOB_SETUP_BEGIN
+{
+    *Name: ""
+    *DefaultOption: CB
+    *Option: CB
+    {
+        *Name: ""
+        *Command: CmdSelect
+        {
+		*Order: JOB_SETUP.1
+		*CallbackID: 1
+        }
+    }
+}
+
+*Feature: XEROX_JOB_SETUP_END
+{
+    *Name: ""
+    *DefaultOption: CB
+    *Option: CB
+    {
+        *Name: ""
+        *Command: CmdSelect
+        {
+		*Order: JOB_SETUP.1000
+		*CallbackID: 3
+        }
+    }
+}
+
+*Feature: XEROX_DOC_BEGIN
+{
+    *Name: ""
+    *DefaultOption: CB
+    *Option: CB
+    {
+        *Name: ""
+        *Command: CmdSelect
+        {
+	    *Order: DOC_SETUP.1
+            *NoPageEject?: TRUE
+	    *CallbackID: 5
+        }
+    }
+}
+
+*Feature: XEROX_DOC_SETUP_END
+{
+    *Name: ""
+    *DefaultOption: CB
+    *Option: CB
+    {
+        *Name: ""
+        *Command: CmdSelect
+        {
+	    *Order: DOC_SETUP.1000
+	    *CallbackID: 7
+        }
+    }
+}
+
+*Feature: XEROX_PAGE_SETUP_BEGIN
+{
+    *Name: ""
+    *DefaultOption: CB
+    *Option: CB
+    {
+        *Name: ""
+        *Command: CmdSelect
+        {
+	    *Order: PAGE_SETUP.1
+	    *CallbackID: 8
+        }
+    }
+}
+
+*Feature: XEROX_PAGE_SETUP_END
+{
+    *Name: ""
+    *DefaultOption: CB
+    *Option: CB
+    {
+        *Name: ""
+        *Command: CmdSelect
+        {
+	    *Order: PAGE_SETUP.1000
+	    *CallbackID: 10
+        }
+    }
+}
+
+*Feature: XEROX_PAGE_FINISH_BEGIN
+{
+    *Name: ""
+    *DefaultOption: CB
+    *Option: CB
+    {
+        *Name: ""
+        *Command: CmdSelect
+        {
+	    *Order: PAGE_FINISH.1
+	    *CallbackID: 11
+        }
+    }
+}
+
+*Feature: XEROX_PAGE_FINISH_END
+{
+    *Name: ""
+    *DefaultOption: CB
+    *Option: CB
+    {
+        *Name: ""
+        *Command: CmdSelect
+        {
+	    *Order: PAGE_FINISH.1000
+	    *CallbackID: 13
+        }
+    }
+}
+
+*Feature: XEROX_DOC_FINISH_BEGIN
+{
+    *Name: ""
+    *DefaultOption: CB
+    *Option: CB
+    {
+        *Name: ""
+        *Command: CmdSelect
+        {
+	    *Order: DOC_FINISH.1
+	    *CallbackID: 14
+        }
+    }
+}
+
+*Feature: XEROX_DOC_FINISH_END
+{
+    *Name: ""
+    *DefaultOption: CB
+    *Option: CB
+    {
+        *Name: ""
+        *Command: CmdSelect
+        {
+	    *Order: DOC_FINISH.1000
+	    *CallbackID: 16
+        }
+    }
+}
+
+*Feature: XEROX_JOB_FINISH_BEGIN
+{
+    *Name: ""
+    *DefaultOption: CB
+    *Option: CB
+    {
+        *Name: ""
+        *Command: CmdSelect
+        {
+	    *Order: JOB_FINISH.1
+	    *CallbackID: 17
+        }
+    }
+}
+
+*Feature: XEROX_JOB_FINISH_END
+{
+    *Name: ""
+    *DefaultOption: CB
+    *Option: CB
+    {
+        *Name: ""
+        *Command: CmdSelect
+        {
+	    *Order: JOB_FINISH.1000
+	    *CallbackID: 19
+        }
+    }
+}
+
+*Command: CmdStartJob
+{
+	 *Order: JOB_SETUP.500
+	 *CallbackID: 2
+}
+
+*Command: CmdStartDoc
+{
+	 *Order: DOC_SETUP.500
+	 *CallbackID: 6
+}
+
+*Command: CmdStartPage
+{
+    *Order: PAGE_SETUP.500
+	*CallbackID: 9
+}
+
+*Command: CmdEndPage 
+{
+    *Order: PAGE_FINISH.500
+	*CallbackID: 12
+}
+
+*Command: CmdEndDoc
+{
+    *Order: DOC_FINISH.500
+    *CallbackID: 15
+}
+
+*Command: CmdEndJob
+{
+    *Order: JOB_FINISH.500
+    *CallbackID: 18
+}
+
+*Macros: XrxAttributeEnum
+{
+	
+    eXrxUSLetter: "<00>"
+    eXrxUSLegal: "<01>"
+    eXrxTabloid11x17: "<04>"
+    eXrxA3: "<05>"
+    eXrxA4: "<02>"
+    eXrxA5: "<10>"
+    eXrxA6: "<11>"
+    eXrxB6: "<db>"
+    eXrxJISB4: "<0a>"
+    eXrxJISB5: "<0b>"
+    eXrxJISB6: "<12>"
+    eXrxISO_B4: "<d7>"
+    eXrxISO_B5: "<64>"
+    eXrxOversizedA4: "<d5>"
+    eXrx11x15: "<d0>"
+    eXrx12x18: "<ca>"
+    eXrx12x19: "<d6>"
+    eXrx13x19: "<da>"
+    eXrx725x1050: "<03>"
+    eXrx5x7: "<d8>"
+    eXrx55x7: "<dc>"
+    eXrx8x10: "<ce>"
+    eXrx9x11: "<d6>"
+    eXrxStatement55x85: "<cc>"
+    eXrxFolio215x330: "<cd>"
+    eXrx215x315: "<cf>"
+    eXrx220x330: "<c7>"
+    eXrxSRA3: "<c9>"
+    eXrx8K267x388: "<13>"
+    eXrx16K194x267: "<14>"
+    eXrxPostcard4x6: "<d7>"
+    eXrxPostcard45x60: "<0d>"
+    eXrxPostcard100x148: "<0e>"
+    eXrxPostcard148x200: "<0f>"
+    
+    eXrxEnvelopeC4: "<d9>"
+    eXrxEnvelope9: "<dd>"
+    eXrxEnvelope10: "<06>"
+    eXrxEnvelopeMonarch: "<07>"
+    eXrxEnvelopeC5: "<08>"
+    eXrxEnvelopeDL: "<09>"
+    eXrxEnvelope5_5: "<d0>"
+    eXrxEnvelope6_75: "<53>"
+    eXrxEnvelopeChoukei3Gou: "<d9>"
+    eXrxEnvelopeChoukei4Gou: "<56>"
+
+}
+
+*Macros: XrxMediaSizeStrings
+{
+    sXrxPostcard4x60: =ubyte "<0e>" "4 x 6 Postcard"
+    sXrxPostcard45x60: =ubyte "<10>" "4.5 x 6 Postcard"
+    sXrxA4: =ubyte "<06>" "A4 LEF"
+    sXrxA3: =ubyte "<02>" "A3"
+    sXrxEnvelopeC5: =ubyte "<0b>" "C5 Envelope"
+    sXrxEnvelopeDL: =ubyte "<0b>" "DL Envelope"
+    sXrxEnvelopeMonarch: =ubyte "<10>" "Monarch Envelope"
+    sXrxUSLetter: =ubyte "<09>" "US Letter"
+    sXrxUSLegal: =ubyte "<08>" "US Legal"
+    sXrxJISB4: =ubyte "<06>" "JIS B4"
+    sXrxA5: =ubyte "<02>" "A5"
+    sXrxEnvelope10: =ubyte "<0c>" "#10 Envelope"
+    sXrxTabloid11x17: =ubyte "<0f>" "Tabloid 11 x 17"
+    sXrxJISB5: =ubyte "<06>" "JIS B5"
+    sXrx725x1050: =ubyte "<0b>" "7.25 x 10.5"
+    sXrxFolio215x315 : =ubyte "<09>" "215 x 315"
+    sXrx215x315 : =ubyte "<09>" "215 x 315"
+    sXrx215x330 : =ubyte "<09>" "215 x 330"
+    sXrxStatement55x85 : =ubyte "<09>" "Statement"
+    sXrxA6 : =ubyte "<02>" "A6"
+    sXrxPostcard100x148 : =ubyte "<10>" "Postcard 100x148"
+    sXrx12x18 : =ubyte "<07>" "12 x 18"
+    sXrxPostcard148x200 : =ubyte "<12>" "Postcard 148 x 200"
+    sXrxOversizedA4 : =ubyte "<08>" "A4 Cover"
+    sXrx9x11 : =ubyte "<06>" "9 x 11"
+    sXrx5x7 : =ubyte "<05>" "5 x 7"
+    sXrxJISB6 : =ubyte "<06>" "JIS B6"
+    sXrx8x10 : =ubyte "<06>" "8 x 10"
+    sXrx8K267x388 : =ubyte "<0e>" "267 x 388 (8K)"
+    sXrx220x330 : =ubyte "<09>" "220 x 330"
+    sXrx12x19 : =ubyte "<07>" "12 x 19"
+    sXrx13x19 : =ubyte "<07>" "13 x 19"
+    sXrxSRA3 : =ubyte "<05>" "SR A3"
+    sXrx55x7 : =ubyte "<07>" "5.5 x 7"
+}
+
+*Macros: PCLXLCommand
+{
+
+Width: %m{ RasterDataWidthInBytes }
+Height: %m{ RasterDataHeightInPixels }
+DataSize: %l{ NumOfDataBytes }
+FntHeight: %l{ FontHeight*600/TextYRes }
+FntNextGlyph: %l{ NextGlyph }
+DestinationX: %l{DestX}
+DestinationY: %l{DestY}
+DestinationXRel: %l{DestYRel}
+DestinationYRel: %l{DestXRel}
+NumOfCopy: %l{NumOfCopies}
+PrintDir: %l{PrintDirInCCDegrees}
+FntName: =ubyte_array =uint16 "<1000>" "MS PCLXLFont " %3d{CurrentFontID}
+
+PCLXL_CmdBeginRaster: =ubyte =e1Bit =attr_ubyte =ColorDepth
++                     =ubyte =eDirectPixel =attr_ubyte =ColorMapping
++                     =uint16 =Width =attr_ubyte =SourceWidth
++                     =uint16 =Height =attr_ubyte =SourceHeight
++                     =uint16_xy =Width =Height =attr_ubyte =DestinationSize
++                     =BeginImage
++                     =ubyte =eNoCompression =attr_ubyte =CompressMode
++                     =ubyte "<00>" =attr_ubyte =StartLine
++                     =uint16 =Height =attr_ubyte =BlockHeight
++                     =ReadImage
+
+PCLXL_CmdSendBlockData: =dataLength =DataSize "<0000>"
+
+} 
+
+*Feature: Orientation
+{
+    *rcNameID: =ORIENTATION_DISPLAY
+    *DefaultOption: PORTRAIT
+    *Option: PORTRAIT
+    {
+        
+        *rcNameID: =PORTRAIT_DISPLAY
+    }
+    *Option: LANDSCAPE_CC90
+    {
+        
+        *rcNameID: =LANDSCAPE_DISPLAY
+    }
+}
+
+*Feature: Collate
+{
+	*Name: "_Collate_"
+	*DefaultOption: ON
+	*Option: ON
+	{
+		*rcNameID: =ON_DISPLAY
+	}
+	*Option: OFF
+	{
+		*rcNameID: =OFF_DISPLAY
+	}
+}
+
+*Feature: Duplex
+{
+	*rcNameID: =TWO_SIDED_PRINTING_DISPLAY
+    *DefaultOption: NONE
+    *Option: NONE
+    {
+       	*rcNameID: 10027
+        *Command: CmdSelect
+        {
+            *Order: PAGE_SETUP.300
+ 
+        }
+    }
+	
+    *Option: HORIZONTAL
+    {
+       	*rcNameID: 10028
+        *Command: CmdSelect
+        {
+            *Order: PAGE_SETUP.300
+            
+        }
+     }    
+    *Option: VERTICAL
+    {
+       	*rcNameID: 10029
+        *Command: CmdSelect
+        {
+            *Order: PAGE_SETUP.300
+            
+        }
+    }
+}
+
+*Feature: XrxEdgeToEdge
+{
+    
+	*Name: "XRX_GPD_EDGE_TO_EDGE"
+    *FeatureType: DOC_PROPERTY
+    *DefaultOption: EDGE_TO_EDGE_OFF
+    *Option: EDGE_TO_EDGE_OFF 
+    {
+        *rcNameID: 574
+    }
+    *Option: EDGE_TO_EDGE_ON  
+    {
+       *rcNameID: 575
+    }
+}
+
+*Feature: Resolution
+{
+    *rcNameID: =RESOLUTION_DISPLAY
+    *DefaultOption: Res600x600
+
+    *Option: Res200x200
+    {
+        *Name: "200 x 200 " =DOTS_PER_INCH
+        *DPI: PAIR(200, 200)
+        *TextDPI: PAIR(200,200)
+        *MinStripBlankPixels: 32
+        EXTERN_GLOBAL: *StripBlanks: LIST(ENCLOSED,TRAILING)
+        EXTERN_GLOBAL: *XMoveUnit: 200
+        EXTERN_GLOBAL: *YMoveUnit: 200
+        *SpotDiameter: 100
+        *Command: CmdSelect
+        {
+            *Order: JOB_SETUP.1100
+            *CallbackID: 4
+        }
+    }
+
+    *Option: Res300x300
+    {
+        *Name: "300 x 300 " =DOTS_PER_INCH
+        *DPI: PAIR(300, 300)
+        *TextDPI: PAIR(300, 300)
+        *MinStripBlankPixels: 32
+        EXTERN_GLOBAL: *StripBlanks: LIST(ENCLOSED,TRAILING)
+        EXTERN_GLOBAL: *XMoveUnit: 300
+        EXTERN_GLOBAL: *YMoveUnit: 300
+        *SpotDiameter: 100
+        *Command: CmdSelect
+        {
+            *Order: JOB_SETUP.1100
+            *CallbackID: 4
+        }
+    }
+
+   *Option: Res400x400
+    {
+        *Name: "400 x 400 " =DOTS_PER_INCH
+        *DPI: PAIR(400, 400)
+        *TextDPI: PAIR(400, 400)
+        *MinStripBlankPixels: 32
+        EXTERN_GLOBAL: *StripBlanks: LIST(ENCLOSED,TRAILING)
+        EXTERN_GLOBAL: *XMoveUnit: 300
+        EXTERN_GLOBAL: *YMoveUnit: 300
+        *SpotDiameter: 100
+        *Command: CmdSelect
+        {
+           *Order: JOB_SETUP.1100
+           *CallbackID: 4
+        }
+    }
+
+    *Option: Res600x600
+    {
+        *Name: "600 x 600 " =DOTS_PER_INCH
+        *DPI: PAIR(600, 600)
+        *TextDPI: PAIR(600,600)
+        *MinStripBlankPixels: 32
+        EXTERN_GLOBAL: *StripBlanks: LIST(ENCLOSED,TRAILING)
+        EXTERN_GLOBAL: *XMoveUnit: 600
+        EXTERN_GLOBAL: *YMoveUnit: 600
+        *SpotDiameter: 100
+        *Command: CmdSelect
+        {
+            *Order: JOB_SETUP.1100
+            *CallbackID: 4
+        }
+    }
+
+    *Option: Res1200x1200
+    {
+        *Name: "1200 x 1200 " =DOTS_PER_INCH
+        *DPI: PAIR(1200, 1200)
+        *TextDPI: PAIR(1200,1200)
+        *MinStripBlankPixels: 32
+        EXTERN_GLOBAL: *StripBlanks: LIST(ENCLOSED,TRAILING)
+        EXTERN_GLOBAL: *XMoveUnit: 1200
+        EXTERN_GLOBAL: *YMoveUnit: 1200
+        *SpotDiameter: 100
+        *Command: CmdSelect
+        {
+            *Order: JOB_SETUP.1100
+            *CallbackID: 4
+        }
+    }
+
+    *Option: Res2400x2400
+    {
+        *Name: "2400 x 2400 " =DOTS_PER_INCH
+        *DPI: PAIR(2400, 2400)
+        *TextDPI: PAIR(2400,2400)
+        *MinStripBlankPixels: 32
+        EXTERN_GLOBAL: *StripBlanks: LIST(ENCLOSED,TRAILING)
+        EXTERN_GLOBAL: *XMoveUnit: 2400
+        EXTERN_GLOBAL: *YMoveUnit: 2400
+        *SpotDiameter: 100
+        *Command: CmdSelect
+        {
+            *Order: JOB_SETUP.1100
+            *CallbackID: 4
+        }
+    }
+}
+
+*RotateCoordinate?: TRUE
+*RotateRaster?: TRUE
+*RotateFont?: TRUE
+*EjectPageWithFF?: FALSE
+
+*TextCaps: LIST(TC_CR_ANY,TC_CR_90,TC_SF_X_YINDEP,TC_SA_CONTIN,TC_IA_ABLE,TC_UA_ABLE)
+*CursorXAfterCR: AT_PRINTABLE_X_ORIGIN
+*CursorXAfterSendBlockData: AT_GRXDATA_ORIGIN
+*CursorYAfterSendBlockData: AUTO_INCREMENT
+*BadCursorMoveInGrxMode: LIST(X_PORTRAIT,Y_LANDSCAPE)
+*XMoveThreshold: 0
+*YMoveThreshold: 0
+*XMoveUnit: 2400
+*YMoveUnit: 2400
+
+*MinGrayFill: 1
+*MaxGrayFill: 100
+
+*OutputDataFormat: H_BYTE
+*OptimizeLeftBound?: TRUE
+
+*Feature: XrxTrueTypeFontDlOption
+{
+    
+    *Name: "XRX_GPD_TT_DOWNLOAD_OPT"
+   *DefaultOption: TTF_DOWNLOAD_AS_TRUETYPE
+    *Option: TTF_DOWNLOAD_AS_TRUETYPE
+    {
+	
+	*Name: "Download as TrueType"
+    }
+    *Option: TTF_DOWNLOAD_AS_BITMAP
+    {
+	
+	*Name: "Download as Bitmap"
+    }
+    *Option: TTF_DOWNLOAD_NONE
+    {
+	
+	*Name: "Download as Graphics (None)"
+    }
+}
+
+*switch: XrxTrueTypeFontDlOption
+{
+    *case: TTF_DOWNLOAD_AS_TRUETYPE
+    {
+        *FontFormat: HPPCL_OUTLINE
+        *Command: CmdSetFontID { *Cmd : "" }
+		*Command: CmdSelectFontID
+		{
+			*Cmd: ""
+			*Params: LIST(FontHeight, CurrentFontID, TextYRes)
+		}
+
+		*Command: CmdSetCharCode
+		{
+			*Cmd : ""
+		}
+    }
+    *case: TTF_DOWNLOAD_AS_BITMAP
+    {
+        *FontFormat: HPPCL_RES
+        *Command: CmdSetFontID { *Cmd : "" }
+		*Command: CmdSelectFontID
+		{
+			*Cmd: ""
+			*Params: LIST(FontHeight, CurrentFontID, TextYRes)
+		}
+
+		*Command: CmdSetCharCode
+		{
+			*Cmd : ""
+		}
+    }
+    *case: TTF_DOWNLOAD_NONE
+    {
+    }
+}
+
+*Command: CmdCR { *Cmd: "" }
+*Command: CmdLF { *Cmd: "" }
+*Command: CmdFF { *Cmd: "" }
+
+*Command: CmdXMoveAbsolute
+{
+    *Cmd: ""
+    *Params: LIST(DestX, TextXRes)
+}
+*Command: CmdXMoveRelRight
+{
+    *Cmd: ""
+    *Params: LIST(DestXRel, TextXRes)
+}
+*Command: CmdXMoveRelLeft
+{
+    *Cmd: ""
+    *Params: LIST(DestXRel, TextXRes)
+}
+*Command: CmdYMoveAbsolute
+{
+    *Cmd: ""
+    *Params: LIST(DestY, TextYRes)
+}
+*Command: CmdYMoveRelDown
+{
+    *Cmd: ""
+    *Params: LIST(DestYRel, TextYRes)
+}
+*Command: CmdYMoveRelUp
+{
+    *Cmd: ""
+    *Params: LIST(DestYRel, TextYRes)
+}
+
+*Command: CmdBeginRaster { *Cmd : =PCLXL_CmdBeginRaster }
+*Command: CmdEndRaster { *Cmd : =EndImage }
+*Command: CmdSendBlockData { *Cmd: =PCLXL_CmdSendBlockData }
+
+*Command: CmdEnableTIFF4 { *Cmd : "" }
+*Command: CmdDisableCompression { *Cmd : "" }
+
+*Command: CmdEnableDRC { *Cmd : "" }
+
+*Command: CmdBoldOn { *Cmd : "" }
+*Command: CmdBoldOff { *Cmd : "" }
+
+*Command: CmdSetAnyRotation
+{
+    *Cmd: ""
+    *Params: LIST(PrintDirInCCDegrees)
+}
+*Command: CmdSetSimpleRotation
+{
+    *Cmd: ""
+    *Params: LIST(PrintDirInCCDegrees)
+}
+
+*Macros: XrxPCL6DeviceFontIDs
+{
+	RC_XRXFONT_LP16RB:			    RESDLL.XRenUni.1138
+	RC_XRXFONT_CGTIMESR:			RESDLL.XRenUni.1146
+	RC_XRXFONT_CGTIMESB:			RESDLL.XRenUni.1147
+	RC_XRXFONT_CGTIMESI:			RESDLL.XRenUni.1148
+	RC_XRXFONT_CGTIMESJ:			RESDLL.XRenUni.1149
+	RC_XRXFONT_UNIVERSR:			RESDLL.XRenUni.1150
+	RC_XRXFONT_UNIVERSB:			RESDLL.XRenUni.1151
+	RC_XRXFONT_UNIVERSI:			RESDLL.XRenUni.1152
+	RC_XRXFONT_UNIVERSJ:			RESDLL.XRenUni.1153
+	RC_XRXFONT_UNIVERCR:			RESDLL.XRenUni.1154
+	RC_XRXFONT_UNIVERCB:			RESDLL.XRenUni.1155
+	RC_XRXFONT_UNIVERCI:			RESDLL.XRenUni.1156
+	RC_XRXFONT_UNIVERCJ:			RESDLL.XRenUni.1157
+	RC_XRXFONT_AOLIVEB:				RESDLL.XRenUni.1164
+	RC_XRXFONT_AOLIVEI:				RESDLL.XRenUni.1165
+	RC_XRXFONT_AOLIVER:				RESDLL.XRenUni.1166
+	RC_XRXFONT_CGOMEGAB:			RESDLL.XRenUni.1200
+	RC_XRXFONT_CGOMEGAI:			RESDLL.XRenUni.1201
+	RC_XRXFONT_CGOMEGAJ:			RESDLL.XRenUni.1202
+	RC_XRXFONT_CGOMEGAR:			RESDLL.XRenUni.1203
+	RC_XRXFONT_ALBERTR:				RESDLL.XRenUni.1209
+	RC_XRXFONT_ALBERTX:				RESDLL.XRenUni.1210
+	RC_XRXFONT_CLARCD:				RESDLL.XRenUni.1211
+	RC_XRXFONT_CORONETR:			RESDLL.XRenUni.1212
+	RC_XRXFONT_COURIERB:			RESDLL.XRenUni.1213
+	RC_XRXFONT_COURIERI:			RESDLL.XRenUni.1214
+	RC_XRXFONT_COURIERJ:			RESDLL.XRenUni.1215
+	RC_XRXFONT_COURIERR:			RESDLL.XRenUni.1216
+	RC_XRXFONT_LETGOTHB:			RESDLL.XRenUni.1217
+	RC_XRXFONT_LETGOTHI:			RESDLL.XRenUni.1218
+	RC_XRXFONT_LETGOTHR:			RESDLL.XRenUni.1219
+	RC_XRXFONT_MARGOLDR:			RESDLL.XRenUni.1220
+	RC_XRXFONT_ARIALB:				RESDLL.XRenUni.1221
+	RC_XRXFONT_ARIALI:				RESDLL.XRenUni.1222
+	RC_XRXFONT_ARIALJ:				RESDLL.XRenUni.1223
+	RC_XRXFONT_ARIALR:				RESDLL.XRenUni.1224
+	RC_XRXFONT_SYMBOL:				RESDLL.XRenUni.1225
+	RC_XRXFONT_TIMESNRB:			RESDLL.XRenUni.1226
+	RC_XRXFONT_TIMESNRI:			RESDLL.XRenUni.1227
+	RC_XRXFONT_TIMESNRJ:			RESDLL.XRenUni.1228
+	RC_XRXFONT_TIMESNRR:			RESDLL.XRenUni.1229
+	RC_XRXFONT_WINGDING:			RESDLL.XRenUni.1230
+	RC_XRXFONT_ITCAVANTGARDDB:		RESDLL.XRenUni.1231
+	RC_XRXFONT_ITCANAVTGARDBK:		RESDLL.XRenUni.1232
+	RC_XRXFONT_ITCBOOKMANLT:		RESDLL.XRenUni.1233
+	RC_XRXFONT_ITCBOOKMANLTIT:		RESDLL.XRenUni.1234
+	RC_XRXFONT_ITCBOOKMANDB:		RESDLL.XRenUni.1235
+	RC_XRXFONT_ITCBOOKMANDBIT:		RESDLL.XRenUni.1236
+	RC_XRXFONT_ITCANAVTGARDBKOB:	RESDLL.XRenUni.1237
+	RC_XRXFONT_ITCANAVTGARDDBOB:	RESDLL.XRenUni.1238
+	RC_XRXFONT_HELVNR:				RESDLL.XRenUni.1239
+	RC_XRXFONT_HELVNROB:			RESDLL.XRenUni.1240
+	RC_XRXFONT_HELVNRBD:			RESDLL.XRenUni.1241
+	RC_XRXFONT_HELVNRBDOB:			RESDLL.XRenUni.1242
+	RC_XRXFONT_NWCENTSCHBK:			RESDLL.XRenUni.1243
+	RC_XRXFONT_NWCENTSCHBKIT:		RESDLL.XRenUni.1244
+	RC_XRXFONT_NWCENTSCHBKBD:		RESDLL.XRenUni.1245
+	RC_XRXFONT_NWCENTSCHBKBDIT:		RESDLL.XRenUni.1246
+	RC_XRXFONT_PALATINOROMAN:		RESDLL.XRenUni.1247
+	RC_XRXFONT_PALATINOITALIC:		RESDLL.XRenUni.1248
+	RC_XRXFONT_PALATINOBOLD:		RESDLL.XRenUni.1249
+	RC_XRXFONT_PALATINOBOLDITALIC:	RESDLL.XRenUni.1250
+	RC_XRXFONT_ZAPFCHANCERYMDIT:	RESDLL.XRenUni.1251
+	RC_XRXFONT_COURIERPS:			RESDLL.XRenUni.1252
+	RC_XRXFONT_COURIERPSOB:			RESDLL.XRenUni.1253
+	RC_XRXFONT_COURIERPSBD:			RESDLL.XRenUni.1254
+	RC_XRXFONT_COURIERPSBDOB:		RESDLL.XRenUni.1255
+	RC_XRXFONT_SYMBOLPS:			RESDLL.XRenUni.1256
+	RC_XRXFONT_GARAMANTIQUA:		RESDLL.XRenUni.1257
+	RC_XRXFONT_GARAMKURSIV:			RESDLL.XRenUni.1258
+	RC_XRXFONT_GARAMHALBFETT:		RESDLL.XRenUni.1259
+	RC_XRXFONT_GARAMKURSIVHALBFETT:	RESDLL.XRenUni.1260
+	RC_XRXFONT_TIMES:				RESDLL.XRenUni.1261
+	RC_XRXFONT_TIMESIT:				RESDLL.XRenUni.1262
+	RC_XRXFONT_TIMESBD:				RESDLL.XRenUni.1263
+	RC_XRXFONT_TIMESBDIT:			RESDLL.XRenUni.1264
+	RC_XRXFONT_ZPDNGBAT:			RESDLL.XRenUni.1269
+}
+
+*DeviceFonts: LIST(
++   =RC_XRXFONT_LP16RB,
++   =RC_XRXFONT_CGTIMESR,
++   =RC_XRXFONT_CGTIMESB,
++   =RC_XRXFONT_CGTIMESI,
++   =RC_XRXFONT_CGTIMESJ,
++   =RC_XRXFONT_UNIVERSR,
++   =RC_XRXFONT_UNIVERSB,
++   =RC_XRXFONT_UNIVERSI,
++   =RC_XRXFONT_UNIVERSJ,
++   =RC_XRXFONT_UNIVERCR,
++   =RC_XRXFONT_UNIVERCB,
++   =RC_XRXFONT_UNIVERCI,
++   =RC_XRXFONT_UNIVERCJ,
++   =RC_XRXFONT_AOLIVEB,
++   =RC_XRXFONT_AOLIVEI,
++   =RC_XRXFONT_AOLIVER,
++   =RC_XRXFONT_CGOMEGAB,
++   =RC_XRXFONT_CGOMEGAI,
++   =RC_XRXFONT_CGOMEGAJ,
++   =RC_XRXFONT_CGOMEGAR,
++   =RC_XRXFONT_ALBERTR,
++   =RC_XRXFONT_ALBERTX,
++   =RC_XRXFONT_CLARCD,
++   =RC_XRXFONT_CORONETR,
++   =RC_XRXFONT_COURIERB,
++   =RC_XRXFONT_COURIERI,
++   =RC_XRXFONT_COURIERJ,
++   =RC_XRXFONT_COURIERR,
++   =RC_XRXFONT_LETGOTHB,
++   =RC_XRXFONT_LETGOTHI,
++   =RC_XRXFONT_LETGOTHR,
++   =RC_XRXFONT_MARGOLDR,
++   =RC_XRXFONT_ARIALB,
++   =RC_XRXFONT_ARIALI,
++   =RC_XRXFONT_ARIALJ,
++   =RC_XRXFONT_ARIALR,
++   =RC_XRXFONT_SYMBOL,
++   =RC_XRXFONT_TIMESNRB,
++   =RC_XRXFONT_TIMESNRI,
++   =RC_XRXFONT_TIMESNRJ,
++   =RC_XRXFONT_TIMESNRR,
++   =RC_XRXFONT_WINGDING,
++   =RC_XRXFONT_ITCAVANTGARDDB,
++   =RC_XRXFONT_ITCANAVTGARDBK,
++   =RC_XRXFONT_ITCBOOKMANLT,
++   =RC_XRXFONT_ITCBOOKMANLTIT,
++   =RC_XRXFONT_ITCBOOKMANDB,
++   =RC_XRXFONT_ITCBOOKMANDBIT,
++   =RC_XRXFONT_ITCANAVTGARDBKOB,
++   =RC_XRXFONT_ITCANAVTGARDDBOB,
++   =RC_XRXFONT_HELVNR,
++   =RC_XRXFONT_HELVNROB,
++   =RC_XRXFONT_HELVNRBD,
++   =RC_XRXFONT_HELVNRBDOB,
++   =RC_XRXFONT_NWCENTSCHBK,
++   =RC_XRXFONT_NWCENTSCHBKIT,
++   =RC_XRXFONT_NWCENTSCHBKBD,
++   =RC_XRXFONT_NWCENTSCHBKBDIT,
++   =RC_XRXFONT_PALATINOROMAN,
++   =RC_XRXFONT_PALATINOITALIC,
++   =RC_XRXFONT_PALATINOBOLD,
++   =RC_XRXFONT_PALATINOBOLDITALIC,
++   =RC_XRXFONT_ZAPFCHANCERYMDIT,
++   =RC_XRXFONT_COURIERPS,
++   =RC_XRXFONT_COURIERPSOB,
++   =RC_XRXFONT_COURIERPSBD,
++   =RC_XRXFONT_COURIERPSBDOB,
++   =RC_XRXFONT_SYMBOLPS,
++   =RC_XRXFONT_GARAMANTIQUA,
++   =RC_XRXFONT_GARAMKURSIV,
++   =RC_XRXFONT_GARAMHALBFETT,
++   =RC_XRXFONT_GARAMKURSIVHALBFETT,
++   =RC_XRXFONT_TIMES,
++   =RC_XRXFONT_TIMESIT,
++   =RC_XRXFONT_TIMESBD,
++   =RC_XRXFONT_TIMESBDIT,
++   =RC_XRXFONT_ZPDNGBAT)
+
+*TTFS: AlbertusExtraBold
+{
+	*TTFontName: "Albertus Extra Bold"
+	*DevFontName: "Albertus Extra Bold"
+}
+*TTFS: AlbertusMedium
+{
+	*TTFontName: "Albertus Medium"
+	*DevFontName: "Albertus Medium"
+}
+*TTFS: AntiqueOlive
+{
+	*TTFontName: "Antique Olive"
+	*DevFontName: "Antique Olive"
+}
+*TTFS: Arial
+{
+	*TTFontName: "Arial"
+	*DevFontName: "Arial"
+}
+*TTFS: CGOmega
+{
+	*TTFontName: "CG Omega"
+	*DevFontName: "CG Omega"
+}
+*TTFS: CGTimes
+{
+	*TTFontName: "CG Times"
+	*DevFontName: "CG Times"
+}
+*TTFS: ClarendonCondensed
+{
+	*TTFontName: "Clarendon Condensed"
+	*DevFontName: "Clarendon Condensed"
+}
+*TTFS: Coronet
+{
+	*TTFontName: "Coronet"
+	*DevFontName: "Coronet"
+}
+*TTFS: Courier
+{
+	*TTFontName: "Courier"
+	*DevFontName: "Courier"
+}
+*TTFS: CourierPS
+{
+	*TTFontName: "Courier PS"
+	*DevFontName: "Courier PS"
+}
+*TTFS: CourierPSBold
+{
+	*TTFontName: "Courier PS Bold"
+	*DevFontName: "Courier PS Bold"
+}
+*TTFS: CourierPSBoldOblique
+{
+	*TTFontName: "Courier PS Bold Oblique"
+	*DevFontName: "Courier PS Bold Oblique"
+}
+*TTFS: CourierPSOblique
+{
+	*TTFontName: "Courier PS Oblique"
+	*DevFontName: "Courier PS Oblique"
+}
+*TTFS: GaramondAntiqua
+{
+	*TTFontName: "Garamond Antiqua"
+	*DevFontName: "Garamond Antiqua"
+}
+*TTFS: GaramondHalbfett
+{
+	*TTFontName: "Garamond Halbfett"
+	*DevFontName: "Garamond Halbfett"
+}
+*TTFS: GaramondKursiv
+{
+	*TTFontName: "Garamond Kursiv"
+	*DevFontName: "Garamond Kursiv"
+}
+*TTFS: GaramondKursivHalbfett
+{
+	*TTFontName: "Garamond Kursiv Halbfett"
+	*DevFontName: "Garamond Kursiv Halbfett"
+}
+*TTFS: HelveticaNarrow
+{
+	*TTFontName: "Helvetica Narrow"
+	*DevFontName: "Helvetica Narrow"
+}
+*TTFS: HelveticaNarrowBold
+{
+	*TTFontName: "Helvetica Narrow Bold"
+	*DevFontName: "Helvetica Narrow Bold"
+}
+*TTFS: HelveticaNarrowBoldOblique
+{
+	*TTFontName: "Helvetica Narrow Bold Oblique"
+	*DevFontName: "Helvetica Narrow Bold Oblique"
+}
+*TTFS: HelveticaNarrowOblique
+{
+	*TTFontName: "Helvetica Narrow Oblique"
+	*DevFontName: "Helvetica Narrow Oblique"
+}
+*TTFS: ITCAvantGuardBlack
+{
+	*TTFontName: "ITC AvantGuard Black"
+	*DevFontName: "ITC AvantGuard Black"
+}
+*TTFS: ITCAvantGuardBlackOblique
+{
+	*TTFontName: "ITC AvantGuard Black Oblique"
+	*DevFontName: "ITC AvantGuard Black Oblique"
+}
+*TTFS: ITCAvantGuardDemiBold
+{
+	*TTFontName: "ITC AvantGuard DemiBold"
+	*DevFontName: "ITC AvantGuard DemiBold"
+}
+*TTFS: ITCAvantGuardDemiBoldOblique
+{
+	*TTFontName: "ITC AvantGuard DemiBold Oblique"
+	*DevFontName: "ITC AvantGuard DemiBold Oblique"
+}
+*TTFS: ITCBookmanDemiBold
+{
+	*TTFontName: "ITC Bookman DemiBold"
+	*DevFontName: "ITC Bookman DemiBold"
+}
+*TTFS: ITCBookmanDemiBoldItalic
+{
+	*TTFontName: "ITC Bookman DemiBold Italic"
+	*DevFontName: "ITC Bookman DemiBold Italic"
+}
+*TTFS: ITCBookmanLight
+{
+	*TTFontName: "ITC Bookman Light"
+	*DevFontName: "ITC Bookman Light"
+}
+*TTFS: ITCBookmanLightItalic
+{
+	*TTFontName: "ITC Bookman Light Italic"
+	*DevFontName: "ITC Bookman Light Italic"
+}
+*TTFS: LetterGothic
+{
+	*TTFontName: "Letter Gothic"
+	*DevFontName: "Letter Gothic"
+}
+*TTFS: LinePrinter
+{
+	*TTFontName: "Line Printer"
+	*DevFontName: "Line Printer"
+}
+*TTFS: Marigold
+{
+	*TTFontName: "Marigold"
+	*DevFontName: "Marigold"
+}
+*TTFS: NewCenturySchoolbookBold
+{
+	*TTFontName: "New Century Schoolbook Bold"
+	*DevFontName: "New Century Schoolbook Bold"
+}
+*TTFS: NewCenturySchoolbookBoldItalic
+{
+	*TTFontName: "New Century Schoolbook Bold Italic"
+	*DevFontName: "New Century Schoolbook Bold Italic"
+}
+*TTFS: NewCenturySchoolbookItalic
+{
+	*TTFontName: "New Century Schoolbook Italic"
+	*DevFontName: "New Century Schoolbook Italic"
+}
+*TTFS: NewCenturySchoolbookRoman
+{
+	*TTFontName: "New Century Schoolbook Roman"
+	*DevFontName: "New Century Schoolbook Roman"
+}
+*TTFS: PalatinoBold
+{
+	*TTFontName: "Palatino Bold"
+	*DevFontName: "Palatino Bold"
+}
+*TTFS: PalatinoBoldItalic
+{
+	*TTFontName: "Palatino Bold Italic"
+	*DevFontName: "Palatino Bold Italic"
+}
+*TTFS: PalatinoItalic
+{
+	*TTFontName: "Palatino Italic"
+	*DevFontName: "Palatino Italic"
+}
+*TTFS: PalatinoRoman
+{
+	*TTFontName: "Palatino Roman"
+	*DevFontName: "Palatino Roman"
+}
+*TTFS: Symbol
+{
+	*TTFontName: "Symbol"
+	*DevFontName: "Symbol"
+}
+*TTFS: SymbolPS
+{
+	*TTFontName: "Symbol PS"
+	*DevFontName: "Symbol PS"
+}
+*TTFS: TimesBoldItalic
+{
+	*TTFontName: "Times Bold Italic"
+	*DevFontName: "Times Bold Italic"
+}
+*TTFS: TimesNewRoman
+{
+	*TTFontName: "Times New Roman"
+	*DevFontName: "Times New Roman"
+}
+*TTFS: TimesRoman
+{
+	*TTFontName: "Times Roman"
+	*DevFontName: "Times Roman"
+}
+*TTFS: Univers
+{
+	*TTFontName: "Univers"
+	*DevFontName: "Univers"
+}
+*TTFS: UniversBoldCondensed
+{
+	*TTFontName: "Univers Bold Condensed"
+	*DevFontName: "Univers Bold Condensed"
+}
+*TTFS: UniversBoldCondensed
+{
+	*TTFontName: "Univers Bold Condensed"
+	*DevFontName: "Univers Bold Condensed"
+}
+*TTFS: UniversBoldItalic
+{
+	*TTFontName: "Univers Bold Italic"
+	*DevFontName: "Univers Bold Italic"
+}
+*TTFS: UniversMedium
+{
+	*TTFontName: "Univers Medium"
+	*DevFontName: "Univers Medium"
+}
+*TTFS: UniversMediumCondensed
+{
+	*TTFontName: "Univers Medium Condensed"
+	*DevFontName: "Univers Medium Condensed"
+}
+*TTFS: Wingdings
+{
+	*TTFontName: "Wingdings"
+	*DevFontName: "Wingdings"
+}
+*TTFS: ZapfChanceryMediumItalic
+{
+	*TTFontName: "Zapf Chancery Medium Italic"
+	*DevFontName: "Zapf Chancery Medium Italic"
+}
+*TTFS: ZapfDingbats
+{
+	*TTFontName: "Zapf Dingbats"
+	*DevFontName: "Zapf Dingbats"
+}
+
+*CharPosition: BASELINE
+*TTFSEnabled?: TRUE
+*MinFontID: 1
+*MaxFontID: 65535
+*MinGlyphID: 1
+*MaxGlyphID: 1000
+*DefaultFont: =RC_XRXFONT_COURIERR
+*DefaultCTT: 0
+
+*Feature: ColorMode
+{
+    *rcNameID:=COLOR_PRINTING_MODE_DISPLAY
+    *DefaultOption: 24bpp
+    *Option: Mono
+    {
+        *rcNameID: =MONO_DISPLAY
+        *DevNumOfPlanes: 1
+        *DevBPP: 24
+        *DrvBPP: 24
+        *PaletteSize: 1
+        *PaletteProgrammable? : TRUE
+        *Color? : FALSE
+        *Command: CmdDefinePaletteEntry { *Cmd: "" }
+
+    }
+    *Option: 24bpp
+    {
+        *rcNameID: =24BPP_DISPLAY
+        *DevNumOfPlanes: 1
+        *DevBPP: 24
+        *DrvBPP: 24
+        *PaletteSize: 1
+        *PaletteProgrammable? : TRUE
+        *Color? : TRUE
+        *Command: CmdDefinePaletteEntry { *Cmd: "" }
+
+      }
+}
+
+*Feature: XrxHalftone
+{
+	
+	*rcNameID: =HALFTONING_DISPLAY
+	*DefaultOption : XRX_NORMAL_HT
+	*Option: XRX_NORMAL_HT
+	{
+		*Name:"Normal"
+		*Command: CmdSelect
+		{
+			*Order: PAGE_SETUP.501
+			*CallbackID: 1000
+		}
+	}
+	*Option: XRX_HIGH_CONTRAST_HT
+	{
+		*Name:"High Contrast"
+		*Command: CmdSelect
+		{
+			*Order: PAGE_SETUP.501
+			*CallbackID: 1001
+		}
+	}
+	*Option: XRX_HIGH_BRIGHT_HT
+	{
+		*Name:"High Brightness"
+		*Command: CmdSelect
+		{
+			*Order: PAGE_SETUP.501
+			*CallbackID: 1002
+		}
+	}
+}
+
+*Feature: PaperSize
+{
+    *rcNameID: =PAPER_SIZE_DISPLAY
+    *DefaultOption: LETTER
+    *Option: LETTER
+    {
+         *rcNameID: RESDLL.XTextRes.31500
+         *switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *PrintableArea: PAIR(20400, 26400)
+                *PrintableOrigin: PAIR(0, 0)
+                *Command: CmdSelect
+                {
+                    *Order: PAGE_SETUP.400
+					*CallbackID: 30
+                }
+            }
+            *case: LANDSCAPE_CC90
+            {
+                *PrintableArea: PAIR(20400, 26400)
+                *PrintableOrigin: PAIR(0, 0)
+  				*CursorOrigin: PAIR(0, 26400)
+                *Command: CmdSelect
+                {
+                    *Order: PAGE_SETUP.400
+					*CallbackID: 30
+                }
+            }
+        }
+   }
+
+	*Option: CUSTOMSIZE
+    {
+        *Macros: CustomPaperRanges
+        {
+            MinSizeX: 8400
+            MinSizeY: 9264
+            MaxSizeX: 30260
+            MaxSizeY: 45600
+        }
+
+        *rcNameID: =USER_DEFINED_SIZE_DISPLAY
+
+		*MinSize: PAIR( =MinSizeX, =MinSizeY )
+		*MaxSize: PAIR( =MaxSizeX, =MaxSizeY)
+		*MaxPrintableWidth: =MaxSizeX
+		*CenterPrintable?: FALSE
+
+		*switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+				*MinLeftMargin:	0
+				*TopMargin:		0
+				*BottomMargin:	0
+				*CursorOrigin:	PAIR(0, 0)
+                *Command: CmdSelect
+                {
+                	*Order: PAGE_SETUP.400
+					*CallbackID: 30
+				}
+            }
+            *case: LANDSCAPE_CC90
+            {
+				*MinLeftMargin:	0
+				*TopMargin:		0
+				*BottomMargin:	0
+				*CursorOrigin:	PAIR(0, 0)
+				*Command: CmdSelect
+				{
+                	*Order: PAGE_SETUP.400
+					*CallbackID: 30
+               	}
+            }
+        }
+    }
+}
+
+*MemoryUsage: LIST(FONT)
+
+*Feature: Memory
+{
+    *rcNameID: =PRINTER_MEMORY_DISPLAY
+    *DefaultOption: MB32
+    *Option: MB32
+    {
+        *Name: "32MB"
+        *MemoryConfigMB: PAIR(32, 6)
+    }
+}
+
+*Ifdef: WINNT_60
+*UseHPGLPolylineEncoding?: TRUE
+*UseBMPFontCompression?: TRUE
+
+*PreAnalysisOptions: 0
+*Endif:
+
+*BestQualitySettings: LIST()
+*BetterQualitySettings: LIST()
+*DraftQualitySettings: LIST()
+*DefaultQuality: BETTERQUALITY
+

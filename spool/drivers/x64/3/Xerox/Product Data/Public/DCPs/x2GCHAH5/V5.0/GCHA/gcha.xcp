@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xcap cpss-version="2.07" version="3.0" xml:lang="en-US">
+  <capabilities-attributes>
+    <job-creation-attributes-supported syntax="1setOf">
+      <value syntax="keyword">adjust-lightness</value>
+      <value syntax="keyword">client-default-attributes-col</value>
+      <value syntax="keyword">color-adjustment-set</value>
+      <value syntax="keyword">color-effects-type</value>
+      <value syntax="keyword">color-supported</value>
+      <value syntax="keyword">copies</value>
+      <value syntax="keyword">cover-back</value>
+      <value syntax="keyword">cover-front</value>
+      <value syntax="keyword">creator-name-attributes</value>
+      <value syntax="keyword">creator-name-pdl</value>
+      <value syntax="keyword">creator-version-attributes</value>
+      <value syntax="keyword">creator-version-pdl</value>
+      <value syntax="keyword">document-reading-orientation</value>
+      <value syntax="keyword">fax-out-col</value>
+      <value syntax="keyword">finishings</value>
+      <value syntax="keyword">host-address-col</value>
+      <value syntax="keyword">input-trays-col</value>
+      <value syntax="keyword">insert-sheet</value>
+      <value syntax="keyword">installable-options-actual-col</value>
+      <value syntax="keyword">job-account-id</value>
+      <value syntax="keyword">job-accounting-user-id</value>
+      <value syntax="keyword">job-accounting-user-passcode</value>
+      <value syntax="keyword">job-accounting-user-passcode-encryption</value>
+      <value syntax="keyword">job-billing-id</value>
+      <value syntax="keyword">job-billing-passcode</value>
+      <value syntax="keyword">job-billing-passcode-encryption</value>
+      <value syntax="keyword">job-hold-until-time</value>
+      <value syntax="keyword">job-name</value>
+      <value syntax="keyword">job-offset</value>
+      <value syntax="keyword">job-originating-user-domain</value>
+      <value syntax="keyword">job-originating-user-name</value>
+      <value syntax="keyword">job-password</value>
+      <value syntax="keyword">job-password-encryption</value>
+      <value syntax="keyword">job-save-disposition</value>
+      <value syntax="keyword">job-sheets</value>
+      <value syntax="keyword">max-recipients-col-supported</value>
+      <value syntax="keyword">media-col</value>
+      <value syntax="keyword">output-bin</value>
+      <value syntax="keyword">page-overrides</value>
+      <value syntax="keyword">print-quality-level</value>
+      <value syntax="keyword">printer-resolution</value>
+      <value syntax="keyword">proof-print</value>
+      <value syntax="keyword">sheet-collate</value>
+      <value syntax="keyword">sides</value>
+      <value syntax="keyword">toner-saver</value>
+      <value syntax="keyword">undefined-source-cmyk-graphics</value>
+      <value syntax="keyword">undefined-source-cmyk-images</value>
+      <value syntax="keyword">undefined-source-cmyk-text</value>
+      <value syntax="keyword">xdrv-acct-custom-prompt-not-supported</value>     
+      <value syntax="keyword">xdrv-print-xpif</value>
+    </job-creation-attributes-supported>
+    <attributes-required syntax="1setOf">
+      <value syntax="keyword">adjust-lightness</value>
+      <value syntax="keyword">color-adjustment-set</value>
+      <value syntax="keyword">color-effects-type</value>
+      <value syntax="keyword">copies</value>
+      <value syntax="keyword">creator-name-attributes</value>
+      <value syntax="keyword">creator-name-pdl</value>
+      <value syntax="keyword">creator-version-attributes</value>
+      <value syntax="keyword">creator-version-pdl</value>
+      <value syntax="keyword">host-address-col</value>
+      <value syntax="keyword">input-tray</value>
+      <value syntax="keyword">job-offset</value>
+      <value syntax="keyword">job-sheets</value>
+      <value syntax="keyword">max-recipients-col-supported</value>
+      <value syntax="keyword">media-color</value>
+      <value syntax="keyword">media-type</value>
+      <value syntax="keyword">output-bin</value>
+      <value syntax="keyword">print-quality-level</value>
+      <value syntax="keyword">printer-resolution</value>
+      <value syntax="keyword">sheet-collate</value>
+      <value syntax="keyword">sides</value>
+      <value syntax="keyword">toner-saver</value>
+      <value syntax="keyword">undefined-source-cmyk-graphics</value>
+      <value syntax="keyword">undefined-source-cmyk-images</value>
+      <value syntax="keyword">undefined-source-cmyk-text</value>
+      <value syntax="keyword">finishings</value>
+    </attributes-required>
+    <user-defined-values-supported syntax="1setOf">
+      <value syntax="keyword">job-password</value>
+      <value syntax="keyword">xdrv-media-size-option</value>
+    </user-defined-values-supported>
+    <adjust-lightness-supported syntax="rangeOfInteger">
+      <lower-bound syntax="integer">-100</lower-bound>
+      <upper-bound syntax="integer">100</upper-bound>
+    </adjust-lightness-supported>
+    <client-default-attributes-col-supported syntax="1setOf">
+      <value syntax="keyword">job-account-id</value>
+      <value syntax="keyword">job-accounting-user-id</value>
+      <value syntax="keyword">job-accounting-user-passcode</value>
+      <value syntax="keyword">job-accounting-user-passcode-encryption</value>
+      <value syntax="keyword">job-billing-id</value>
+      <value syntax="keyword">job-billing-passcode</value>
+      <value syntax="keyword">job-billing-passcode-encryption</value>
+      <value syntax="keyword">media-col</value>
+      <value syntax="keyword">print-quality-level</value>
+      <value syntax="keyword">sides</value>
+    </client-default-attributes-col-supported>
+    <color-adjustment-set-supported syntax="1setOf">
+      <value syntax="keyword">automatic</value>
+      <value syntax="keyword">monochrome-grayscale</value>
+      <value syntax="keyword">none</value>
+      <value syntax="keyword">simulate-srgb-display</value>
+    </color-adjustment-set-supported>
+    <color-effects-type-supported syntax="1setOf">
+      <value syntax="keyword">color</value>
+      <value syntax="keyword">monochrome-grayscale</value>
+    </color-effects-type-supported>
+    <copies-supported syntax="rangeOfInteger">
+      <lower-bound syntax="integer">1</lower-bound>
+      <upper-bound syntax="integer">999</upper-bound>
+    </copies-supported>
+    <cover-back-supported syntax="1setOf">
+      <value syntax="keyword">cover-type</value>
+      <value syntax="keyword">media-col</value>
+    </cover-back-supported>
+    <cover-back-context syntax="collection">
+      <attributes-required syntax="1setOf">
+        <value syntax="keyword">cover-type</value>
+      </attributes-required>
+      <cover-type-supported syntax="1setOf">
+        <value syntax="keyword">print-both</value>
+        <value syntax="keyword">print-none</value>
+      </cover-type-supported>
+      <media-col-supported syntax="1setOf">
+        <value syntax="keyword">media-color</value>
+        <value syntax="keyword">media-size</value>
+        <value syntax="keyword">media-type</value>
+        <value syntax="keyword">xdrv-media-size-option</value>
+      </media-col-supported>
+    </cover-back-context>
+    <cover-front-supported syntax="1setOf">
+      <value syntax="keyword">cover-type</value>
+      <value syntax="keyword">media-col</value>
+    </cover-front-supported>
+    <cover-front-context syntax="collection">
+      <attributes-required syntax="1setOf">
+        <value syntax="keyword">cover-type</value>
+      </attributes-required>
+      <cover-type-supported syntax="1setOf">
+        <value syntax="keyword">print-both</value>
+        <value syntax="keyword">print-none</value>
+      </cover-type-supported>
+      <media-col-supported syntax="1setOf">
+        <value syntax="keyword">media-color</value>
+        <value syntax="keyword">media-size</value>
+        <value syntax="keyword">media-type</value>
+        <value syntax="keyword">xdrv-media-size-option</value>
+      </media-col-supported>
+    </cover-front-context>
+    <creator-name-attributes-supported syntax="1setOf">
+      <value syntax="keyword">windows-pcl5c-driver</value>
+      <value syntax="keyword">windows-pcl5e-driver</value>
+      <value syntax="keyword">windows-pcl6-driver</value>
+      <value syntax="keyword">windows-ps-driver</value>
+      <value syntax="keyword">windows-raster-driver</value>
+      <value syntax="keyword">windows-xps-driver</value>
+    </creator-name-attributes-supported>
+    <creator-name-pdl-supported syntax="1setOf">
+      <value syntax="keyword">unknown-application</value>
+    </creator-name-pdl-supported>
+    <document-reading-orientation-supported syntax="1setOf">
+      <value syntax="keyword">landscape</value>
+      <value syntax="keyword">portrait</value>
+    </document-reading-orientation-supported>
+    <fax-out-col-supported syntax="1setOf">
+      <value syntax="keyword">confirmation-sheet</value>
+      <value syntax="keyword">job-hold-until-time</value>
+      <value syntax="keyword">output-quality</value>
+      <value syntax="keyword">recipients-col</value>
+      <value syntax="keyword">send-speed</value>
+    </fax-out-col-supported>
+    <fax-out-col-context syntax="collection">
+      <confirmation-sheet-supported syntax="1setOf">
+        <value syntax="keyword">after-all-recipients</value>
+        <value syntax="keyword">never</value>
+      </confirmation-sheet-supported>
+      <output-quality-supported syntax="1setOf">
+        <value syntax="keyword">fine</value>
+        <value syntax="keyword">standard</value>
+        <value syntax="keyword">super-fine</value>
+        <value syntax="keyword">ultra-fine</value>
+      </output-quality-supported>
+      <send-speed-supported syntax="1setOf">
+        <value syntax="keyword">g3-auto</value>
+        <value syntax="keyword">g3-fixed</value>
+        <value syntax="keyword">g3-fixed-international</value>
+        <value syntax="keyword">g3-international</value>
+      </send-speed-supported>
+    </fax-out-col-context>
+    <finishings-supported syntax="1setOf">
+      <value syntax="enum">3</value>
+      <value syntax="enum">20</value>
+      <value syntax="enum">21</value>
+      <value syntax="enum">28</value>
+      <value syntax="enum">29</value>
+      <value syntax="enum">31</value>
+      <value syntax="enum">40</value>
+      <value syntax="enum">41</value>
+      <value syntax="enum">43</value>
+      <value syntax="enum">90</value>
+      <value syntax="enum">91</value>
+      <value syntax="enum">92</value>
+      <value syntax="enum">93</value>
+      <value syntax="enum">94</value>
+      <value syntax="enum">96</value>
+      <value syntax="enum">110</value>
+      <value syntax="enum">111</value>
+      <value syntax="enum">2000</value>
+    </finishings-supported>
+    <host-address-col-supported syntax="1setOf">
+      <value syntax="keyword">host-address</value>
+      <value syntax="keyword">host-address-type</value>
+    </host-address-col-supported>
+    <host-address-col-context syntax="collection">
+      <host-address-type-supported syntax="1setOf">
+        <value syntax="keyword">ipv4</value>
+        <value syntax="keyword">mac</value>
+      </host-address-type-supported>
+    </host-address-col-context>
+    <input-tray-supported syntax="1setOf">
+      <value syntax="keyword">automatic</value>
+      <value syntax="keyword">bypass-tray</value>
+      <value syntax="keyword">tray-1</value>
+      <value syntax="keyword">tray-2</value>
+      <value syntax="keyword">tray-3</value>
+      <value syntax="keyword">tray-4</value>
+    </input-tray-supported>
+    <input-trays-col-supported syntax="1setOf">
+      <value syntax="keyword">media-col</value>
+      <value syntax="keyword">tray-name</value>
+      <value syntax="keyword">tray-paper-path</value>
+    </input-trays-col-supported>
+    <input-trays-col-context syntax="collection">
+      <tray-name-supported syntax="1setOf">
+        <value syntax="keyword">bypass-tray</value>
+        <value syntax="keyword">tray-1</value>
+        <value syntax="keyword">tray-2</value>
+        <value syntax="keyword">tray-3</value>
+        <value syntax="keyword">tray-4</value>
+      </tray-name-supported>
+      <tray-paper-path-supported syntax="1setOf">
+        <value syntax="keyword">bypass-tray</value>
+        <value syntax="keyword">envelope-tray</value>
+        <value syntax="keyword">normal</value>
+      </tray-paper-path-supported>
+    </input-trays-col-context>
+    <insert-sheet-supported syntax="1setOf">
+      <value syntax="keyword">insert-after-page-number</value>
+      <value syntax="keyword">insert-count</value>
+      <value syntax="keyword">media-col</value>
+    </insert-sheet-supported>
+    <insert-sheet-context syntax="collection">
+      <attributes-required syntax="1setOf">
+        <value syntax="keyword">insert-after-page-number</value>
+        <value syntax="keyword">insert-count</value>
+      </attributes-required>
+      <insert-after-page-number-supported syntax="rangeOfInteger">
+        <lower-bound syntax="integer">0</lower-bound>
+        <upper-bound syntax="integer">99999</upper-bound>
+      </insert-after-page-number-supported>
+      <insert-count-supported syntax="rangeOfInteger">
+        <lower-bound syntax="integer">1</lower-bound>
+        <upper-bound syntax="integer">99999</upper-bound>
+      </insert-count-supported>
+      <media-col-supported syntax="1setOf">
+        <value syntax="keyword">media-color</value>
+        <value syntax="keyword">media-size</value>
+        <value syntax="keyword">media-type</value>
+        <value syntax="keyword">xdrv-media-size-option</value>
+      </media-col-supported>
+    </insert-sheet-context>
+    <installable-options-actual-col-supported syntax="1setOf">
+      <value syntax="keyword">installable-authentication-module-actual</value>
+      <value syntax="keyword">installable-fax-out-actual</value>
+      <value syntax="keyword">installable-hole-punch-unit-actual</value>
+      <value syntax="keyword">installable-input-paper-trays-actual</value>
+      <value syntax="keyword">installable-job-accounting-system-actual</value>
+      <value syntax="keyword">installable-job-storage-actual</value>
+      <value syntax="keyword">installable-output-delivery-unit-actual</value>
+    </installable-options-actual-col-supported>
+    <installable-options-actual-col-context syntax="collection">
+      <installable-authentication-module-possible syntax="1setOf">
+        <value syntax="keyword">common-access-card-piv</value>
+        <value syntax="keyword">none</value>
+      </installable-authentication-module-possible>
+      <installable-fax-out-possible syntax="1setOf">
+        <value syntax="keyword">installed</value>
+        <value syntax="keyword">not-installed</value>
+      </installable-fax-out-possible>
+      <installable-hole-punch-unit-possible syntax="1setOf">
+        <value syntax="keyword">not-installed</value>
+        <value syntax="keyword">punch-2-and-3-hole-stack</value>
+        <value syntax="keyword">punch-2-and-4-hole-stack</value>
+      </installable-hole-punch-unit-possible>
+      <installable-input-paper-trays-possible syntax="1setOf">
+        <value syntax="keyword">3-trays</value>
+        <value syntax="keyword">5-trays</value>
+      </installable-input-paper-trays-possible>
+      <installable-job-accounting-system-possible syntax="1setOf">
+        <value syntax="keyword">accounting-green-account-only</value>
+        <value syntax="keyword">accounting-green-all</value>
+        <value syntax="keyword">accounting-green-billing-only</value>
+        <value syntax="keyword">accounting-green-user-and-account</value>
+        <value syntax="keyword">accounting-green-user-only</value>
+        <value syntax="keyword">none</value>
+      </installable-job-accounting-system-possible>
+      <installable-job-storage-possible syntax="1setOf">
+        <value syntax="keyword">installed</value>
+        <value syntax="keyword">not-installed</value>
+      </installable-job-storage-possible>
+      <installable-output-delivery-unit-possible syntax="1setOf">
+        <value syntax="keyword">a-type-finisher</value>
+        <value syntax="keyword">output-bin-500-sheet</value>
+        <value syntax="keyword">type-sb</value>
+        <value syntax="keyword">type-sb-booklet-maker</value>
+      </installable-output-delivery-unit-possible>
+    </installable-options-actual-col-context>
+    <job-accounting-user-passcode-encryption-supported syntax="1setOf">
+      <value syntax="keyword">none</value>
+      <value syntax="keyword">xerox-simple-1</value>
+    </job-accounting-user-passcode-encryption-supported>
+    <job-billing-passcode-encryption-supported syntax="1setOf">
+      <value syntax="keyword">none</value>
+      <value syntax="keyword">xerox-simple-1</value>
+    </job-billing-passcode-encryption-supported>
+    <job-offset-supported syntax="1setOf">
+      <value syntax="keyword">none</value>
+      <value syntax="keyword">offset-set</value>
+    </job-offset-supported>
+    <job-password-length syntax="rangeOfInteger">
+      <lower-bound syntax="integer">1</lower-bound>
+      <upper-bound syntax="integer">12</upper-bound>
+    </job-password-length>
+    <job-password-characters-supported syntax="text" xml:space="preserve">0123456789</job-password-characters-supported>
+    <job-password-encryption-supported syntax="1setOf">
+      <value syntax="keyword">xerox-simple-1</value>
+    </job-password-encryption-supported>
+    <job-save-disposition-supported syntax="1setOf">
+      <value syntax="keyword">save-disposition</value>
+      <value syntax="keyword">save-info</value>
+    </job-save-disposition-supported>
+    <job-sheets-supported syntax="1setOf">
+      <value syntax="keyword">first-print-stream-page</value>
+      <value syntax="keyword">job-start-sheet</value>
+      <value syntax="keyword">none</value>
+    </job-sheets-supported>
+    <max-recipients-col-supported-supported syntax="rangeOfInteger">
+      <lower-bound syntax="integer">0</lower-bound>
+      <upper-bound syntax="integer">50</upper-bound>
+    </max-recipients-col-supported-supported>
+    <media-col-supported syntax="1setOf">
+      <value syntax="keyword">input-tray</value>
+      <value syntax="keyword">media-color</value>
+      <value syntax="keyword">media-size</value>
+      <value syntax="keyword">media-type</value>
+      <value syntax="keyword">xdrv-media-size-option</value>
+    </media-col-supported>
+    <media-color-supported syntax="1setOf">
+      <value syntax="keyword">blue</value>
+      <value syntax="keyword">buff</value>
+      <value syntax="keyword">custom1</value>
+      <value syntax="keyword">custom2</value>
+      <value syntax="keyword">custom3</value>
+      <value syntax="keyword">custom4</value>
+      <value syntax="keyword">custom5</value>
+      <value syntax="keyword">goldenrod</value>
+      <value syntax="keyword">gray</value>
+      <value syntax="keyword">green</value>
+      <value syntax="keyword">ivory</value>
+      <value syntax="keyword">orange</value>
+      <value syntax="keyword">other</value>
+      <value syntax="keyword">pink</value>
+      <value syntax="keyword">red</value>
+      <value syntax="keyword">use-ready</value>
+      <value syntax="keyword">white</value>
+      <value syntax="keyword">yellow</value>
+    </media-color-supported>
+    <media-size-supported syntax="1setOf">
+      <value syntax="keyword">x-dimension</value>
+      <value syntax="keyword">y-dimension</value>
+    </media-size-supported>
+    <media-type-supported syntax="1setOf">
+      <value syntax="keyword">bond</value>
+      <value syntax="keyword">cardstock</value>
+      <value syntax="keyword">cardstock-glossy</value>
+      <value syntax="keyword">cardstock-glossy-reloaded</value>
+      <value syntax="keyword">cardstock-heavyweight</value>
+      <value syntax="keyword">cardstock-heavyweight-glossy</value>
+      <value syntax="keyword">cardstock-heavyweight-glossy-reloaded</value>
+      <value syntax="keyword">cardstock-heavyweight-reloaded</value>
+      <value syntax="keyword">cardstock-lightweight</value>
+      <value syntax="keyword">cardstock-lightweight-reloaded</value>
+      <value syntax="keyword">cardstock-reloaded</value>
+      <value syntax="keyword">custom1</value>
+      <value syntax="keyword">custom2</value>
+      <value syntax="keyword">custom3</value>
+      <value syntax="keyword">custom4</value>
+      <value syntax="keyword">custom5</value>
+      <value syntax="keyword">envelope</value>
+      <value syntax="keyword">labels</value>
+      <value syntax="keyword">labels-extra-heavyweight</value>
+      <value syntax="keyword">labels-heavyweight</value>
+      <value syntax="keyword">other</value>
+      <value syntax="keyword">stationery</value>
+      <value syntax="keyword">cardstock-lightweight-glossy</value>
+      <value syntax="keyword">cardstock-lightweight-glossy-reloaded</value>
+      <value syntax="keyword">stationery-letterhead</value>
+      <value syntax="keyword">stationery-pre-printed</value>
+      <value syntax="keyword">stationery-pre-punched</value>
+      <value syntax="keyword">stationery-recycled</value>
+      <value syntax="keyword">stationery-reloaded</value>
+      <value syntax="keyword">system-default</value>
+      <value syntax="keyword">use-ready</value>
+    </media-type-supported>
+    <output-bin-supported syntax="1setOf">
+      <value syntax="keyword">automatic</value>
+      <value syntax="keyword">bottom</value>
+      <value syntax="keyword">center</value>
+      <value syntax="keyword">stacker-1</value>
+      <value syntax="keyword">top</value>
+    </output-bin-supported>
+    <page-overrides-supported syntax="1setOf">
+      <value syntax="keyword">input-documents</value>
+      <value syntax="keyword">media-col</value>
+      <value syntax="keyword">pages</value>
+      <value syntax="keyword">sides</value>
+      <value syntax="keyword">x-side1-image-shift</value>
+    </page-overrides-supported>
+    <page-overrides-context syntax="collection">
+      <attributes-required syntax="1setOf">
+        <value syntax="keyword">input-documents</value>
+        <value syntax="keyword">pages</value>
+      </attributes-required>
+      <input-documents-range syntax="rangeOfInteger">
+        <lower-bound syntax="integer">1</lower-bound>
+        <upper-bound syntax="integer">1</upper-bound>
+      </input-documents-range>
+      <media-col-supported syntax="1setOf">
+        <value syntax="keyword">media-color</value>
+        <value syntax="keyword">media-size</value>
+        <value syntax="keyword">media-type</value>
+        <value syntax="keyword">xdrv-media-size-option</value>
+      </media-col-supported>
+      <pages-supported syntax="rangeOfInteger">
+        <lower-bound syntax="integer">1</lower-bound>
+        <upper-bound syntax="integer">99999</upper-bound>
+      </pages-supported>
+      <x-side1-image-shift-supported syntax="rangeOfInteger">
+        <lower-bound syntax="integer">0</lower-bound>
+        <upper-bound syntax="integer">5080</upper-bound>
+      </x-side1-image-shift-supported>
+    </page-overrides-context>
+    <pdl-override-supported syntax="keyword">guaranteed</pdl-override-supported>
+    <print-quality-level-supported syntax="1setOf">
+      <value syntax="keyword">high-speed</value>
+      <value syntax="keyword">highest-quality</value>
+    </print-quality-level-supported>
+    <printer-resolution-supported syntax="1setOf">
+      <value syntax="resolution">
+        <cross-feed syntax="integer">200</cross-feed>
+        <feed-direction syntax="integer">200</feed-direction>
+        <units syntax="integer">3</units>
+      </value>
+      <value syntax="resolution">
+        <cross-feed syntax="integer">300</cross-feed>
+        <feed-direction syntax="integer">300</feed-direction>
+        <units syntax="integer">3</units>
+      </value>
+      <value syntax="resolution">
+        <cross-feed syntax="integer">600</cross-feed>
+        <feed-direction syntax="integer">600</feed-direction>
+        <units syntax="integer">3</units>
+      </value>
+    </printer-resolution-supported>
+    <proof-print-supported syntax="1setOf">
+      <value syntax="keyword">job-name</value>
+      <value syntax="keyword">proof-print-copies</value>
+    </proof-print-supported>
+    <proof-print-copies-supported syntax="rangeOfInteger">
+      <lower-bound syntax="integer">0</lower-bound>
+      <upper-bound syntax="integer">9999</upper-bound>
+    </proof-print-copies-supported>
+    <recipients-col-supported syntax="1setOf">
+      <value syntax="keyword">destination-uri</value>
+      <value syntax="keyword">recipient-email-address</value>
+      <value syntax="keyword">recipient-mailbox-number</value>
+      <value syntax="keyword">recipient-name</value>
+      <value syntax="keyword">recipient-organization</value>
+      <value syntax="keyword">recipient-voice-phone-number</value>
+    </recipients-col-supported>
+    <save-context-supported syntax="1setOf">
+      <value syntax="keyword">mailbox</value>
+    </save-context-supported>
+    <save-disposition-supported syntax="1setOf">
+      <value syntax="keyword">none</value>
+      <value syntax="keyword">save-only</value>
+    </save-disposition-supported>
+    <save-info-supported syntax="1setOf">
+      <value syntax="keyword">save-context</value>
+      <value syntax="keyword">save-location-mailbox-number</value>
+      <value syntax="keyword">save-name</value>
+      <value syntax="keyword">save-password</value>
+      <value syntax="keyword">save-password-encryption</value>
+    </save-info-supported>
+    <save-location-mailbox-number-supported syntax="rangeOfInteger">
+      <lower-bound syntax="integer">1</lower-bound>
+      <upper-bound syntax="integer">200</upper-bound>
+    </save-location-mailbox-number-supported>
+    <save-password-length syntax="rangeOfInteger">
+      <lower-bound syntax="integer">1</lower-bound>
+      <upper-bound syntax="integer">12</upper-bound>
+    </save-password-length>
+    <save-password-characters-supported syntax="text" xml:space="preserve">0123456789</save-password-characters-supported>
+    <save-password-encryption-supported syntax="1setOf">
+      <value syntax="keyword">xerox-simple-1</value>
+    </save-password-encryption-supported>
+    <sheet-collate-supported syntax="1setOf">
+      <value syntax="keyword">collated</value>
+      <value syntax="keyword">uncollated</value>
+    </sheet-collate-supported>
+    <sides-supported syntax="1setOf">
+      <value syntax="keyword">one-sided</value>
+      <value syntax="keyword">two-sided-long-edge</value>
+      <value syntax="keyword">two-sided-short-edge</value>
+    </sides-supported>
+    <toner-saver-supported syntax="1setOf">
+      <value syntax="keyword">none</value>
+      <value syntax="keyword">standard</value>
+    </toner-saver-supported>
+    <undefined-source-cmyk-graphics-supported syntax="1setOf">
+      <value syntax="keyword">euroscale</value>
+      <value syntax="keyword">japan-color</value>
+      <value syntax="keyword">swop</value>
+    </undefined-source-cmyk-graphics-supported>
+    <undefined-source-cmyk-images-supported syntax="1setOf">
+      <value syntax="keyword">euroscale</value>
+      <value syntax="keyword">japan-color</value>
+      <value syntax="keyword">swop</value>
+    </undefined-source-cmyk-images-supported>
+    <undefined-source-cmyk-text-supported syntax="1setOf">
+      <value syntax="keyword">euroscale</value>
+      <value syntax="keyword">japan-color</value>
+      <value syntax="keyword">swop</value>
+    </undefined-source-cmyk-text-supported>
+    <x-dimension-supported syntax="rangeOfInteger">
+      <lower-bound syntax="integer">8900</lower-bound>
+      <upper-bound syntax="integer">32000</upper-bound>
+    </x-dimension-supported>
+    <xdrv-media-size-option-supported syntax="1setOf">
+      <value syntax="keyword">executive</value>
+      <value syntax="keyword">folio</value>
+      <value syntax="keyword">invoice</value>
+      <value syntax="keyword">iso-a3</value>
+      <value syntax="keyword">iso-a4</value>
+      <value syntax="keyword">iso-a4-wide</value>
+      <value syntax="keyword">iso-a5</value>
+      <value syntax="keyword">iso-a6</value>
+      <value syntax="keyword">iso-c4-envelope-c4</value>
+      <value syntax="keyword">iso-designated-long-envelope-dl</value>
+      <value syntax="keyword">jis-b4</value>
+      <value syntax="keyword">jis-b5</value>
+      <value syntax="keyword">jis-b6</value>
+      <value syntax="keyword">jp-120x235-envelope-choukei-3-gou</value>
+      <value syntax="keyword">jp-hagaki-postcard</value>
+      <value syntax="keyword">jp-reply-postcard</value>
+      <value syntax="keyword">ledger</value>
+      <value syntax="keyword">metric-215x315-spanish-folio</value>
+      <value syntax="keyword">na-11x15</value>
+      <value syntax="keyword">na-3.875x7.5-envelope-monarch</value>
+      <value syntax="keyword">na-4x6</value>
+      <value syntax="keyword">na-5x7</value>
+      <value syntax="keyword">na-8x10</value>
+      <value syntax="keyword">na-legal</value>
+      <value syntax="keyword">na-letter</value>
+      <value syntax="keyword">na-letter-cover</value>
+      <value syntax="keyword">na-number-10-envelope</value>
+      <value syntax="keyword">taiwan-16K-194x267</value>
+      <value syntax="keyword">taiwan-815</value>
+    </xdrv-media-size-option-supported>
+    <y-dimension-supported syntax="rangeOfInteger">
+      <lower-bound syntax="integer">9800</lower-bound>
+      <upper-bound syntax="integer">48300</upper-bound>
+    </y-dimension-supported>
+  </capabilities-attributes>
+  
+  <default-settings-attributes>
+    <finishings>3</finishings>
+    <adjust-lightness syntax="integer">0</adjust-lightness>
+    <color-adjustment-set syntax="keyword">automatic</color-adjustment-set>
+    <color-effects-type syntax="keyword">color</color-effects-type>
+    <color-supported syntax="boolean">true</color-supported>
+    <copies syntax="integer">1</copies>
+    <fax-out-col syntax="collection">
+      <confirmation-sheet syntax="keyword">after-all-recipients</confirmation-sheet>
+      <output-quality syntax="keyword">standard</output-quality>
+      <send-speed syntax="keyword">g3-auto</send-speed>
+    </fax-out-col>
+    <input-trays-col syntax="1setOf">
+      <value syntax="collection">
+        <tray-feed-supported syntax="1setOf">
+          <value syntax="keyword">stack</value>
+        </tray-feed-supported>
+        <tray-name syntax="keyword">tray-1</tray-name>
+        <tray-paper-path syntax="keyword">normal</tray-paper-path>
+      </value>
+      <value syntax="collection">
+        <tray-feed-supported syntax="1setOf">
+          <value syntax="keyword">stack</value>
+        </tray-feed-supported>
+        <tray-name syntax="keyword">tray-2</tray-name>
+        <tray-paper-path syntax="keyword">normal</tray-paper-path>
+      </value>
+      <value syntax="collection">
+        <tray-feed-supported syntax="1setOf">
+          <value syntax="keyword">stack</value>
+        </tray-feed-supported>
+        <tray-name syntax="keyword">tray-3</tray-name>
+        <tray-paper-path syntax="keyword">normal</tray-paper-path>
+      </value>
+      <value syntax="collection">
+        <tray-feed-supported syntax="1setOf">
+          <value syntax="keyword">stack</value>
+        </tray-feed-supported>
+        <tray-name syntax="keyword">tray-4</tray-name>
+        <tray-paper-path syntax="keyword">normal</tray-paper-path>
+      </value>
+      <value syntax="collection">
+        <tray-feed-supported syntax="1setOf">
+          <value syntax="keyword">stack</value>
+        </tray-feed-supported>
+        <tray-name syntax="keyword">bypass-tray</tray-name>
+        <tray-paper-path syntax="keyword">normal</tray-paper-path>
+      </value>
+    </input-trays-col>
+    <insert-sheet-context syntax="collection">
+      <insert-after-page-number syntax="integer">1</insert-after-page-number>
+      <insert-count syntax="integer">1</insert-count>
+    </insert-sheet-context>
+    <installable-options-actual-col syntax="collection">
+      <installable-authentication-module-actual syntax="keyword">none</installable-authentication-module-actual>
+      <installable-fax-out-actual syntax="keyword">not-installed</installable-fax-out-actual>
+      <installable-hole-punch-unit-actual syntax="keyword">not-installed</installable-hole-punch-unit-actual>
+      <installable-input-paper-trays-actual syntax="keyword">5-trays</installable-input-paper-trays-actual>
+      <installable-job-accounting-system-actual syntax="keyword">none</installable-job-accounting-system-actual>
+      <installable-job-storage-actual syntax="keyword">installed</installable-job-storage-actual>
+      <installable-output-delivery-unit-actual syntax="keyword">b-type-finisher</installable-output-delivery-unit-actual>
+    </installable-options-actual-col>
+    <job-accounting-user-passcode-encryption syntax="keyword">xerox-simple-1</job-accounting-user-passcode-encryption>
+    <job-billing-passcode-encryption syntax="keyword">xerox-simple-1</job-billing-passcode-encryption>
+    <job-offset syntax="1setOf">
+      <value syntax="keyword">offset-set</value>
+    </job-offset>
+    <job-sheets syntax="keyword">job-start-sheet</job-sheets>
+    <max-recipients-col-supported syntax="integer">50</max-recipients-col-supported>
+    <media-col syntax="collection">
+      <input-tray syntax="keyword">automatic</input-tray>
+      <media-color syntax="keyword">white</media-color>
+      <media-type syntax="keyword">system-default</media-type>
+    </media-col>
+    <output-bin syntax="keyword">automatic</output-bin>
+    <page-overrides-context syntax="collection">
+      <input-documents syntax="1setOf">
+        <value syntax="rangeOfInteger">
+          <lower-bound syntax="integer">1</lower-bound>
+          <upper-bound syntax="integer">1</upper-bound>
+        </value>
+      </input-documents>
+      <pages syntax="1setOf">
+        <value syntax="rangeOfInteger">
+          <lower-bound syntax="integer">1</lower-bound>
+          <upper-bound syntax="integer">1</upper-bound>
+        </value>
+      </pages>
+    </page-overrides-context>
+    <print-quality-level syntax="keyword">high-speed</print-quality-level>
+    <printer-resolution syntax="resolution">
+      <cross-feed syntax="integer">600</cross-feed>
+      <feed-direction syntax="integer">600</feed-direction>
+      <units syntax="integer">3</units>
+    </printer-resolution>
+    <sheet-collate syntax="keyword">uncollated</sheet-collate>
+    <sides syntax="keyword">one-sided</sides>
+    <toner-saver syntax="keyword">none</toner-saver>
+    <undefined-source-cmyk-graphics syntax="keyword">swop</undefined-source-cmyk-graphics>
+    <undefined-source-cmyk-images syntax="keyword">swop</undefined-source-cmyk-images>
+    <undefined-source-cmyk-text syntax="keyword">swop</undefined-source-cmyk-text>
+    <web-link-system syntax="uri"></web-link-system>
+  </default-settings-attributes>
+  
+  <supplemental-defaults>
+    <cover-back syntax="collection">
+      <cover-type syntax="keyword">print-none</cover-type>
+    </cover-back>
+    <cover-front syntax="collection">
+      <cover-type syntax="keyword">print-none</cover-type>
+    </cover-front>
+    <media-col syntax="collection">
+      <media-color syntax="keyword">white</media-color>
+    </media-col>
+  </supplemental-defaults>
+</xcap>

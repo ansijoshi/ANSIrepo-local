@@ -1,0 +1,353 @@
+*%******************************************************************************************
+*% eSmunbd.gdl
+*% GDL file for TOSHIBA e-STUDIO PS3 driver
+*%******************************************************************************************
+
+
+*%******************************************************************************************
+*%			Drawer1
+*%
+*%******************************************************************************************
+
+*Feature: OpDrawer1
+{
+	*FeatureType: PRINTER_PROPERTY
+		*BidiQuery: OpDrawer1
+		{
+			*QueryString: "\Printer.Configuration.OpDrawer1.DrawerIndex001:CurrentValue"
+		}
+		*BidiResponse: OpDrawer1
+		{
+			*ResponseType: BIDI_STRING
+			*ResponseData: ENUM_OPTION(OpDrawer1)
+		}
+		*Option: False
+		{
+			*BidiValue: STRING("NotInstalled")
+		}
+		*Option: True
+		{
+			*BidiValue: STRING("Installed")
+		}
+}
+
+
+*%******************************************************************************************
+*%			Drawer2
+*%
+*%******************************************************************************************
+
+*Feature: OpDrawer2
+{
+	*FeatureType: PRINTER_PROPERTY
+		*BidiQuery: OpDrawer2
+		{
+			*QueryString: "\Printer.Configuration.OpDrawer2.DrawerIndex002:CurrentValue"
+		}
+		*BidiResponse: OpDrawer2
+		{
+			*ResponseType: BIDI_STRING
+			*ResponseData: ENUM_OPTION(OpDrawer2)
+		}
+		*Option: False
+		{
+			*BidiValue: STRING("NotInstalled")
+		}
+		*Option: True
+		{
+			*BidiValue: STRING("Installed")
+		}
+}
+
+
+*%******************************************************************************************
+*%			Drawer3
+*%
+*%******************************************************************************************
+
+*Feature: OpDrawer3
+{
+	*FeatureType: PRINTER_PROPERTY
+		*BidiQuery: OpDrawer3
+		{
+			*QueryString: "\Printer.Configuration.OpDrawer3.DrawerIndex003:CurrentValue"
+		}
+		*BidiResponse: OpDrawer3
+		{
+			*ResponseType: BIDI_STRING
+			*ResponseData: ENUM_OPTION(OpDrawer3)
+		}
+		*Option: False
+		{
+			*BidiValue: STRING("NotInstalled")
+		}
+		*Option: True
+		{
+			*BidiValue: STRING("Installed")
+		}
+}
+
+
+*%******************************************************************************************
+*%			Drawer4
+*%
+*%******************************************************************************************
+
+*Feature: OpDrawer4
+{
+	*FeatureType: PRINTER_PROPERTY
+		*BidiQuery: OpDrawer4
+		{
+			*QueryString: "\Printer.Configuration.OpDrawer4.DrawerIndex004:CurrentValue"
+		}
+		*BidiResponse: OpDrawer4
+		{
+			*ResponseType: BIDI_STRING
+			*ResponseData: ENUM_OPTION(OpDrawer4)
+		}
+		*Option: False
+		{
+			*BidiValue: STRING("NotInstalled")
+		}
+		*Option: True
+		{
+			*BidiValue: STRING("Installed")
+		}
+}
+
+
+*%******************************************************************************************
+*%			LCF
+*%
+*%******************************************************************************************
+
+*Feature: OpDrawerLCF
+{
+	*FeatureType: PRINTER_PROPERTY
+		*BidiQuery: OpDrawerLCF
+		{
+			*QueryString: "\Printer.Configuration.OpDrawerLCF.DrawerIndex005:CurrentValue"
+		}
+		*BidiResponse: OpDrawerLCF
+		{
+			*ResponseType: BIDI_STRING
+			*ResponseData: ENUM_OPTION(OpDrawerLCF)
+		}
+		*Option: False
+		{
+			*BidiValue: STRING("NotInstalled")
+		}
+		*Option: True
+		{
+			*BidiValue: STRING("Installed")
+		}
+}
+
+
+*******************************************************************************************
+*%			External LCF
+*%
+*%******************************************************************************************
+
+*Feature: OpDrawerExLCF
+{
+	*FeatureType: PRINTER_PROPERTY
+		*BidiQuery: OpDrawerExLCF
+		{
+			*QueryString: "\Printer.Configuration.OpDrawerExLCF.DrawerIndex006:CurrentValue"
+		}
+		*BidiResponse: OpDrawerExLCF
+		{
+			*ResponseType: BIDI_STRING
+			*ResponseData: ENUM_OPTION(OpDrawerExLCF)
+		}
+		*Option: False
+		{
+			*BidiValue: STRING("None")
+		}
+		*Option: True
+		{
+			*BidiValue: STRING("Installed")
+		}
+}
+
+
+*%*******************************************************************************************
+*%			Finisher
+*%
+*%******************************************************************************************
+
+*Feature: OpFinisher
+{
+	*FeatureType: PRINTER_PROPERTY
+		*BidiQuery: OpFinisher
+		{
+			*QueryString: "\Printer.Configuration.OpFinisher:CurrentValue"
+		}
+		*BidiResponse: OpFinisher
+		{
+			*ResponseType: BIDI_STRING
+			*ResponseData: ENUM_OPTION(OpFinisher)
+		}
+		*Option: None
+		{
+			*BidiValue: STRING("None")
+		} 
+		*Option: Finisher 
+		{
+			*BidiValue: STRING("Finisher")
+		}
+		*Option: Finisher2
+		{
+			*BidiValue: STRING("Finisher2")
+		}     
+		*Option: Hanging
+		{
+			*BidiValue: STRING("Hanging")
+		}
+		*Option: FinisherOneBin
+		{
+			*BidiValue: STRING("FinisherOneBin")
+		}
+}
+
+
+*%*******************************************************************************************
+*%			Saddle Stitch Finisher
+*%
+*%******************************************************************************************
+
+*Feature: OpSaddle
+{
+	*FeatureType: PRINTER_PROPERTY
+		*BidiQuery: OpSaddle
+		{
+			*QueryString: "\Printer.Configuration.OpSaddle:CurrentValue"
+		}
+		*BidiResponse: OpSaddle
+		{
+			*ResponseType: BIDI_STRING
+			*ResponseData: ENUM_OPTION(OpSaddle)
+		}
+		*Option: False
+		{
+			*BidiValue: STRING("None")
+		}
+		*Option: True
+		{
+			*BidiValue: STRING("SaddleFinisher")
+		}
+}
+
+
+*%*******************************************************************************************
+*%			Job Seperator
+*%
+*%******************************************************************************************
+
+*Feature: OpJobsep
+{
+	*FeatureType: PRINTER_PROPERTY
+		*BidiQuery: OpJobsep
+		{
+			*QueryString: "\Printer.Configuration.OpJobsep.Location003:CurrentValue"
+		}
+		*BidiResponse: OpJobsep
+		{
+			*ResponseType: BIDI_STRING
+			*ResponseData: ENUM_OPTION(OpJobsep)
+		}
+		*Option: False
+		{
+			*BidiValue: STRING("None")
+		}
+		*Option: True
+		{
+			*BidiValue: STRING("Installed")
+		}
+}
+
+
+*%*******************************************************************************************
+*%			Offset Stacker
+*%
+*%******************************************************************************************
+
+*Feature: OpOfset
+{
+	*FeatureType: PRINTER_PROPERTY
+		*BidiQuery: OpOfset
+		{
+			*QueryString: "\Printer.Configuration.OpJobsep.Location002:CurrentValue"
+		}
+		*BidiResponse: OpOfset
+		{
+			*ResponseType: BIDI_STRING
+			*ResponseData: ENUM_OPTION(OpOfset)
+		}
+		*Option: False
+		{
+			*BidiValue: STRING("None")
+		}
+		*Option: True
+		{
+			*BidiValue: STRING("Installed")
+		}
+}
+
+
+*%*******************************************************************************************
+*%			Hole Punch Type
+*%
+*%******************************************************************************************
+
+*Feature: OpPunch
+{
+	*FeatureType: PRINTER_PROPERTY
+		*BidiQuery: OpPunch
+		{
+			*QueryString: "\Printer.Configuration.OpPunch:CurrentValue"
+		}
+		*BidiResponse: OpPunch
+		{
+			*ResponseType: BIDI_STRING
+			*ResponseData: ENUM_OPTION(OpPunch)
+		}
+		*Option: False
+		{
+			*BidiValue: STRING("None")
+		}
+		*Option: True
+		{
+			*BidiValue: STRING("Installed")
+		}
+}
+
+
+*%*******************************************************************************************
+*%			Automatic Duplexing Unit
+*%
+*%******************************************************************************************
+
+*Feature: OpDuplex
+{
+	*FeatureType: PRINTER_PROPERTY
+		*BidiQuery: OpDuplex
+		{
+			*QueryString: "\Printer.Configuration.DuplexUnit:Installed"
+		}
+		*BidiResponse: OpDuplex
+		{
+			*ResponseType: BIDI_BOOL
+			*ResponseData: ENUM_OPTION(OpDuplex)
+		}
+		*Option: False
+		{
+			*BidiValue: BOOL(FALSE)
+		}
+		*Option: True
+		{
+			*BidiValue: BOOL(TRUE)
+		}
+}
+

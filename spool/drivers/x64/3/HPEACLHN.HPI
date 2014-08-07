@@ -1,0 +1,832 @@
+;*************************************************************************
+;*
+;*	General Section
+;*
+;*************************************************************************
+[General]
+File=Files
+Registry=Registry Entries
+
+;*************************************************************************
+;*
+;*	Bi-Di Files
+;*
+;*************************************************************************
+[Files]
+1=File1
+2=File2
+3=File3
+4=File4
+5=File5
+6=File6
+7=File7
+8=File8
+9=File9
+10=File10
+11=File11
+12=File12
+13=File13
+14=File14
+15=File15
+16=File16
+17=File17
+18=File18
+19=File19
+
+[File1]
+Name=ATL.DLL
+Register=DLL
+FullyQualified=%SYSTEM%
+
+[File2]
+Name=HPNRA.EXE
+AutoCfgName=HPNRA.EXT
+Execute=
+Kill=
+Relative=
+FullyQualified=
+
+[File3]
+Name=HPBOID.EXE
+AutoCfgName=HPBOID.EXT
+Register=EXE
+;Unregister=EXE
+Execute=
+Kill=
+Relative=
+FullyQualified= 
+Delete=
+ReregisterCLSID={D713F357-7920-4B91-9EB6-49054709EC7A}
+ReregisterPath=%SYSTEM%
+
+[File4]
+Name=HPBPRO.EXE
+AutoCfgName=HPBPRO.EXT
+Register=EXE
+;Unregister=EXE
+Execute=
+Kill=
+Relative=
+FullyQualified=
+Delete=
+ReregisterCLSID={5A5AA0AA-1DEB-4683-96B0-B43301E83971}
+ReregisterPath=%SYSTEM%
+
+[File5]
+Name=HPBNRAC2.DLL
+AutoCfgName=HPBNRAC2.DLT
+Relative=
+FullyQualified=
+
+[File6]
+Name=HPBOIDPS.DLL
+AutoCfgName=HPBOIDPS.DLT
+Register=DLL
+;Unregister=DLL
+Relative=
+FullyQualified=
+Delete=
+ReregisterCLSID={8AF30D93-D46B-456E-8F70-ED6A07197A3F}
+ReregisterPath=%SYSTEM%
+
+[File7]
+Name=HPBPROPS.DLL
+AutoCfgName=HPBPROPS.DLT
+Register=DLL
+;Unregister=DLL
+Relative=
+FullyQualified=
+Delete=
+ReregisterCLSID={454CB2AB-0024-4434-A5C0-0DF0FB3C3E74}
+ReregisterPath=%SYSTEM%
+
+[File8]
+Name=HPJCMN2U.DLL
+AutoCfgName=HPJCMN2U.DLT
+Relative=
+FullyQualified=
+
+[File9]
+Name=HPJIPX1U.DLL
+AutoCfgName=HPJIPX1U.DLT
+Relative=
+FullyQualified=
+
+[File10]
+Name=HPPAPTS0.DLL
+AutoCfgName=HPPAPTS0.DLT
+Relative=
+FullyQualified=
+
+[File11]
+Name=HPPASNM0.DLL
+AutoCfgName=HPPASNM0.DLT
+Relative=
+FullyQualified=
+
+[File12]
+Name=HPPAPML0.DLL
+AutoCfgName=HPPAPML0.DLT
+Relative=
+FullyQualified=
+
+[File13]
+Name=HPBMIAPI.DLL
+AutoCfgName=HPBMIAPI.DLT
+Register=DLL
+;Unregister=DLL
+Relative=
+FullyQualified=
+Delete=
+ReregisterCLSID={88721C4D-BC58-11D3-A99D-81EAEC5E8E45}
+ReregisterPath=%SYSTEM%
+
+[File14]
+Name=HPZIPM12.EXE
+AutoCfgName=HPZIPM12.EXT
+Relative=
+FullyQualified=
+
+[File15]
+Name=HPZIPT12.DLL
+AutoCfgName=HPZIPT12.DLT
+Relative=
+FullyQualified=
+
+[File16]
+Name=HPZINW12.EXE
+AutoCfgName=HPZINW12.EXT
+Relative=
+FullyQualified=
+
+[File17]
+Name=HPZIPR12.DLL
+AutoCfgName=HPZIPR12.DLT
+Relative=
+FullyQualified=
+
+[File18]
+Name=HPZISN12.DLL
+AutoCfgName=HPZISN12.DLT
+Relative=
+FullyQualified=
+
+[File19]
+Name=HPZIDR12.DLL
+AutoCfgName=HPZIDR12.DLT
+Relative=
+FullyQualified=
+
+;*************************************************************************
+;*
+;*	Bi-Di Registry Entries
+;*
+;*************************************************************************
+[Registry Entries]
+1=Reg1
+2=Reg2
+3=Reg3
+4=Reg4
+5=Reg5
+6=Reg6
+7=Reg7
+8=Reg8
+9=Reg9
+10=Reg10
+11=Reg11
+12=Reg12
+13=Reg13
+14=Reg14
+15=Reg15
+16=Reg16
+17=Reg17
+18=Reg18
+19=Reg19
+20=Reg20
+21=Reg21
+22=Reg22
+23=Reg23
+24=Reg24
+25=Reg25
+26=Reg26
+27=Reg27
+28=Reg28
+29=Reg29
+30=Reg30
+31=Reg31
+32=Reg32
+33=Reg33
+34=Reg34
+35=Reg35
+36=Reg36
+37=Reg37
+38=Reg38
+39=Reg39
+40=Reg40
+41=Reg41
+42=Reg42
+43=Reg43
+44=Reg44
+45=Reg45
+46=Reg46
+47=Reg47
+48=Reg48
+49=Reg49
+50=Reg50
+51=Reg51
+52=Reg52
+53=Reg53
+54=Reg54
+55=Reg55
+56=Reg56
+57=Reg57
+58=Reg58
+59=Reg59
+60=Reg60
+61=Reg61
+62=Reg62
+63=Reg63
+64=Reg64
+65=Reg65
+66=Reg66
+67=Reg67
+68=Reg68
+69=Reg69
+70=Reg70
+71=Reg71
+72=Reg72
+73=Reg73
+;/////////////////////////////////
+;// Added the following for custom media types.
+:////////////////////////////////
+74=Reg74
+75=Reg75
+76=Reg76
+77=Reg77
+78=Reg78
+
+;/////////////////////////////////////////////////////////////////////////
+;//
+;//	Root values:
+;//
+;// ----  HKEY_CLASSES_ROOT		== 1
+;// ----  HKEY_CURRENT_USER		== 2
+;// ----  HKEY_LOCAL_MACHINE	== 3
+;// ----  HKEY_USERS			== 4
+;//
+;// Data Type values supported:
+;//
+;// ----  REG_SZ				== 1
+;// ----  REG_MULTI_SZ			== 2
+;// ----  REG_BINARY			== 3
+;// ----  REG_DWORD				== 4
+;// ----  REG_NONE				== 5
+;//
+;/////////////////////////////////////////////////////////////////////////
+
+[Reg1]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = MODEL_NAME
+DataType = 3
+Value = 01,03,06,01,04,01,0b,02,03,09,04,02,01,01,03,02,00
+
+[Reg2]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = MOPY_MODE
+DataType = 3
+Value = 01,03,06,01,04,01,0b,02,03,09,04,02,01,02,04,01,01,00
+
+[Reg3]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = prtMediaPathType2
+DataType = 3
+Value = 01,03,06,01,02,01,2b,0d,04,01,09,01,02
+
+[Reg4]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = PHD1-MODEL
+DataType = 3
+Value = 01,03,06,01,04,01,0b,02,03,09,04,02,01,01,04,05,01,01,00
+
+[Reg5]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = PHD2-MODEL
+DataType = 3
+Value = 01,03,06,01,04,01,0b,02,03,09,04,02,01,01,04,05,02,01,00
+
+
+[Reg6]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = PHD3-MODEL
+DataType = 3
+Value = 01,03,06,01,04,01,0b,02,03,09,04,02,01,01,04,05,03,01,00
+
+[Reg7]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = PHD4-MODEL
+DataType = 3
+Value = 01,03,06,01,04,01,0b,02,03,09,04,02,01,01,04,05,04,01,00
+
+[Reg8]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = PHD5-MODEL
+DataType = 3
+Value = 01,03,06,01,04,01,0b,02,03,09,04,02,01,01,04,05,05,01,00
+
+[Reg9]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = PHD6-MODEL
+DataType = 3
+Value = 01,03,06,01,04,01,0b,02,03,09,04,02,01,01,04,05,06,01,00
+
+[Reg10]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = PHD1-DEVICE-MEMORY
+DataType = 3
+Value = 01,03,06,01,04,01,0b,02,03,09,04,02,01,04,01,07,03,01,04,00
+
+[Reg11]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = PHD2-DEVICE-MEMORY
+DataType = 3
+Value = 01,03,06,01,04,01,0b,02,03,09,04,02,01,04,01,07,03,02,04,00
+
+[Reg12]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = PHD3-DEVICE-MEMORY
+DataType = 3
+Value = 01,03,06,01,04,01,0b,02,03,09,04,02,01,04,01,07,03,03,04,00
+
+[Reg13]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = PHD4-DEVICE-MEMORY
+DataType = 3
+Value = 01,03,06,01,04,01,0b,02,03,09,04,02,01,04,01,07,03,04,04,00
+
+[Reg14]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = PHD5-DEVICE-MEMORY
+DataType = 3
+Value = 01,03,06,01,04,01,0b,02,03,09,04,02,01,04,01,07,03,05,04,00
+
+[Reg15]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = PHD6-DEVICE-MEMORY
+DataType = 3
+Value = 01,03,06,01,04,01,0b,02,03,09,04,02,01,04,01,07,03,06,04,00
+
+[Reg16]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = MEDIA13-NAME
+DataType = 3
+Value = 01,03,06,01,04,01,0b,02,03,09,04,02,01,04,01,08,03,0d,01,00
+
+[Reg17]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = MEDIA14-NAME
+DataType = 3
+Value = 01,03,06,01,04,01,0b,02,03,09,04,02,01,04,01,08,03,0e,01,00
+
+[Reg18]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = MEDIA15-NAME
+DataType = 3
+Value = 01,03,06,01,04,01,0b,02,03,09,04,02,01,04,01,08,03,0f,01,00
+
+[Reg19]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = MEDIA16-NAME
+DataType = 3
+Value = 01,03,06,01,04,01,0b,02,03,09,04,02,01,04,01,08,03,10,01,00
+
+[Reg20]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = MEDIA17-NAME
+DataType = 3
+Value = 01,03,06,01,04,01,0b,02,03,09,04,02,01,04,01,08,03,11,01,00
+
+[Reg21]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = hrDiskStorageMedia2
+DataType = 3
+Value = 01,03,06,01,02,01,19,03,06,01,02,02
+
+[Reg22]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = hrDiskStorageMedia3
+DataType = 3
+Value = 01,03,06,01,02,01,19,03,06,01,02,03
+
+[Reg23]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = hrDiskStorageMedia4 
+DataType = 3
+Value = 01,03,06,01,02,01,19,03,06,01,02,04
+
+[Reg24]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = hrMemorySize 
+DataType = 3
+Value = 01,03,06,01,02,01,19,02,02,00
+
+[Reg25]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = HELD-JOB-ENABLE
+DataType = 3
+Value = 01,03,06,01,04,01,0B,02,03,09,04,02,01,01,06,07,02,04,00
+
+[Reg26]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = HOST-APPLICATION-AVAILABLE-MEMORY
+DataType = 3
+Value = 01,03,06,01,04,01,0B,02,03,09,04,02,01,01,02,3B,00 
+
+[Reg27]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = PRINT_ENGINE_REVISION
+DataType = 3
+Value = 01,03,06,01,04,01,0B,02,03,09,04,02,01,04,01,02,1A,00
+
+[Reg28]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = prtInputMaxCapacity1
+DataType = 3
+Value = 01,03,06,01,02,01,2B,08,02,01,09,01,01
+
+[Reg29]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = prtInputMaxCapacity2
+DataType = 3
+Value = 01,03,06,01,02,01,2B,08,02,01,09,01,02
+
+[Reg30]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = prtInputMaxCapacity3
+DataType = 3
+Value = 01,03,06,01,02,01,2B,08,02,01,09,01,03
+
+[Reg31]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = prtInputMaxCapacity4
+DataType = 3
+Value = 01,03,06,01,02,01,2B,08,02,01,09,01,04
+
+[Reg32]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = prtInputMaxCapacity5
+DataType = 3
+Value = 01,03,06,01,02,01,2B,08,02,01,09,01,05
+
+[Reg33]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = prtInputMaxCapacity6
+DataType = 3
+Value = 01,03,06,01,02,01,2B,08,02,01,09,01,06
+
+[Reg34]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = prtInputMaxCapacity7
+DataType = 3
+Value = 01,03,06,01,02,01,2B,08,02,01,09,01,07
+
+[Reg35]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = prtInputMaxCapacity8
+DataType = 3
+Value = 01,03,06,01,02,01,2B,08,02,01,09,01,08
+
+[Reg36]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = prtInputMaxCapacity9
+DataType = 3
+Value = 01,03,06,01,02,01,2B,08,02,01,09,01,09
+
+[Reg37]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = prtInputMaxCapacity10
+DataType = 3
+Value = 01,03,06,01,02,01,2B,08,02,01,09,01,0a
+
+[Reg38]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = prtInputMaxCapacity11
+DataType = 3
+Value = 01,03,06,01,02,01,2B,08,02,01,09,01,0b
+
+[Reg39]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = prtInputMaxCapacity12
+DataType = 3
+Value = 01,03,06,01,02,01,2B,08,02,01,09,01,0c
+
+[Reg40]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = prtInputMaxCapacity13
+DataType = 3
+Value = 01,03,06,01,02,01,2B,08,02,01,09,01,0d
+
+[Reg41]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = prtInputMaxCapacity14
+DataType = 3
+Value = 01,03,06,01,02,01,2B,08,02,01,09,01,0e
+
+[Reg42]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = prtInputMaxCapacity15
+DataType = 3
+Value = 01,03,06,01,02,01,2B,08,02,01,09,01,0f
+
+[Reg43]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = prtInputModel1
+DataType = 3
+Value = 01,03,06,01,02,01,2B,08,02,01,0F,01,01
+
+[Reg44]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = prtInputModel2
+DataType = 3
+Value = 01,03,06,01,02,01,2B,08,02,01,0F,01,02
+
+[Reg45]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = prtInputModel3
+DataType = 3
+Value = 01,03,06,01,02,01,2B,08,02,01,0F,01,03
+
+[Reg46]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = prtInputModel4
+DataType = 3
+Value = 01,03,06,01,02,01,2B,08,02,01,0F,01,04
+
+[Reg47]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = prtInputModel5
+DataType = 3
+Value = 01,03,06,01,02,01,2B,08,02,01,0F,01,05
+
+[Reg48]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = prtInputModel6
+DataType = 3
+Value = 01,03,06,01,02,01,2B,08,02,01,0F,01,06
+
+[Reg49]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = prtInputModel7
+DataType = 3
+Value = 01,03,06,01,02,01,2B,08,02,01,0F,01,07
+
+[Reg50]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = prtInputModel8
+DataType = 3
+Value = 01,03,06,01,02,01,2B,08,02,01,0F,01,08
+
+[Reg51]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = prtInputModel9
+DataType = 3
+Value = 01,03,06,01,02,01,2B,08,02,01,0F,01,09
+
+[Reg52]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = prtInputModel10
+DataType = 3
+Value = 01,03,06,01,02,01,2B,08,02,01,0F,01,0a
+
+[Reg53]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = prtInputModel11
+DataType = 3
+Value = 01,03,06,01,02,01,2B,08,02,01,0F,01,0b
+
+[Reg54]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = prtInputModel12
+DataType = 3
+Value = 01,03,06,01,02,01,2B,08,02,01,0F,01,0c
+
+[Reg55]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = prtInputModel13
+DataType = 3
+Value = 01,03,06,01,02,01,2B,08,02,01,0F,01,0d
+
+[Reg56]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = prtInputModel14
+DataType = 3
+Value = 01,03,06,01,02,01,2B,08,02,01,0F,01,0e
+
+[Reg57]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = prtInputModel15
+DataType = 3
+Value = 01,03,06,01,02,01,2B,08,02,01,0F,01,0f
+
+[Reg58]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = prtOutputName1
+DataType = 3
+Value = 01,03,06,01,02,01,2b,09,02,01,07,01,01
+
+[Reg59]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = prtOutputName2
+DataType = 3
+Value = 01,03,06,01,02,01,2b,09,02,01,07,01,02
+
+[Reg60]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = prtOutputName3
+DataType = 3
+Value = 01,03,06,01,02,01,2b,09,02,01,07,01,03
+
+[Reg61]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = prtOutputName4
+DataType = 3
+Value = 01,03,06,01,02,01,2b,09,02,01,07,01,04
+
+[Reg62]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = prtOutputName5
+DataType = 3
+Value = 01,03,06,01,02,01,2b,09,02,01,07,01,05
+
+[Reg63]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = prtOutputName6
+DataType = 3
+Value = 01,03,06,01,02,01,2b,09,02,01,07,01,06
+
+[Reg64]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = prtOutputName7
+DataType = 3
+Value = 01,03,06,01,02,01,2b,09,02,01,07,01,07
+
+[Reg65]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = prtOutputName8
+DataType = 3
+Value = 01,03,06,01,02,01,2b,09,02,01,07,01,08
+
+[Reg66]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = prtOutputName9
+DataType = 3
+Value = 01,03,06,01,02,01,2b,09,02,01,07,01,09
+
+[Reg67]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = prtOutputName10
+DataType = 3
+Value = 01,03,06,01,02,01,2b,09,02,01,07,01,0a
+
+[Reg68]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = prtOutputName11
+DataType = 3
+Value = 01,03,06,01,02,01,2b,09,02,01,07,01,0b
+
+[Reg69]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = prtOutputName12
+DataType = 3
+Value = 01,03,06,01,02,01,2b,09,02,01,07,01,0c
+
+[Reg70]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = prtOutputName13
+DataType = 3
+Value = 01,03,06,01,02,01,2b,09,02,01,07,01,0d
+
+[Reg71]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = prtOutputName14
+DataType = 3
+Value = 01,03,06,01,02,01,2b,09,02,01,07,01,0e
+
+[Reg72]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects
+Name = NOT-READY-SOURCE-SCANNER
+DataType = 3
+Value = 01,03,06,01,04,01,0b,02,03,09,04,02,01,02,02,02,01,00
+
+[Reg73]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HPB BiDi Port Resolver
+Name = Timeout
+DataType = 4
+Value = 30000
+
+[Reg74]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects
+Name = MEDIA18-NAME
+DataType = 3
+Value = 01,03,06,01,04,01,0b,02,03,09,04,02,01,04,01,08,03,12,01,00
+
+[Reg75]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = MEDIA19-NAME
+DataType = 3
+Value = 01,03,06,01,04,01,0b,02,03,09,04,02,01,04,01,08,03,13,01,00
+
+[Reg76]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = MEDIA20-NAME
+DataType = 3
+Value = 01,03,06,01,04,01,0b,02,03,09,04,02,01,04,01,08,03,14,01,00
+
+[Reg77]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = MEDIA21-NAME
+DataType = 3
+Value = 01,03,06,01,04,01,0b,02,03,09,04,02,01,04,01,08,03,15,01,00
+
+[Reg78]
+Root = 3
+Key = SOFTWARE\Hewlett-Packard\HP Network Registry Agent\HprdbObjects 
+Name = MEDIA22-NAME
+DataType = 3
+Value = 01,03,06,01,04,01,0b,02,03,09,04,02,01,04,01,08,03,16,01,00
